@@ -3,53 +3,53 @@
     "accountNumber": "ENT-99341022",
     "accountName": "Adarsh Pandey",
     "companyName": "Adarsh Pandey Enterprises Ltd.",
-    "accountCategory": "ENTERPRISE",
-    "totalConnections": 15,
+    "accountCategory": "ENTERPRISE Big",
+    "totalConnections": 5,
     "accountStatus": "Active"
   },
   "currentBilling": {
     "invoiceNumber": "INV-2026-07-99341022",
     "billPeriod": {
-      "startDate": "01/02/2026",
-      "endDate": "28/02/2026"
+      "startDate": "01/03/2026",
+      "endDate": "31/03/2026"
     },
-    "generatedDate": "17/03/2026",
-    "dueDate": "15/03/2026",
-    "daysRemaining": 14,
+    "generatedDate": "07/04/2026",
+    "dueDate": "15/04/2026",
+    "daysRemaining": 6,
     "lateFeeIfNotPaid": "63.00",
     "currencySymbol": "Rs.",
-    "totalDue": "7269.49",
+    "totalDue": "11239.75",
     "status": "Unpaid"
   },
   "dashboardStatistics": {
-    "monthlySpend": "7919",
+    "monthlySpend": "11240",
     "averageSpend": "9541",
     "monthlyBudget": "9427.38",
     "budgetUtilization": "84%",
     "remainingBudget": "1508.38",
     "savingsOpportunity": "1344.15",
-    "activeConnections": 15,
-    "inactiveConnections": 10,
-    "totalInvoices": 21,
-    "paidInvoices": 23,
-    "unpaidInvoices": 13
+    "activeConnections": 5,
+    "inactiveConnections": 0,
+    "totalInvoices": 6,
+    "paidInvoices": 5,
+    "unpaidInvoices": 1
   },
   "billBreakdown": {
-    "basePlans": "3123.00",
-    "dataOverage": "392.00",
-    "roaming": "2190.00",
-    "vasServices": "563.00",
-    "subtotal": "6268.00",
+    "basePlans": "4195.00",
+    "dataOverage": "1370.62",
+    "roaming": "2237.92",
+    "vasServices": "1631.46",
+    "subtotal": "9435.00",
     "taxes": {
       "gst": {
         "rate": "12%",
-        "amount": "752.16"
+        "amount": "1804.75"
       }
     },
     "previousBalance": "0.00",
-    "totalCharges": "7020.16",
-    "adjustments": "249.33",
-    "finalTotal": "7269.49"
+    "totalCharges": "11239.75",
+    "adjustments": "0.00",
+    "finalTotal": "11239.75"
   },
   "connections": [
     {
@@ -63,7 +63,7 @@
         "code": "Max 999",
         "baseCost": "999"
       },
-      "monthlySpend": "2538.76",
+      "monthlySpend": "2396.72",
       "monthlyLimit": "2647",
       "limitUtilization": "96%",
       "status": "Active",
@@ -96,7 +96,7 @@
       },
       "paymentStatus": "On-time",
       "paymentHistory": {
-        "onTimePercentage": 110,
+        "onTimePercentage": 100,
         "averageDelayDays": "9.26",
         "delaysInLast12Months": 10
       },
@@ -121,7 +121,7 @@
         "code": "Plus 799",
         "baseCost": "799"
       },
-      "monthlySpend": "1154.99",
+      "monthlySpend": "1778.53",
       "monthlyLimit": "2864",
       "limitUtilization": "40%",
       "status": "Active",
@@ -179,7 +179,7 @@
         "code": "Basic 599",
         "baseCost": "599"
       },
-      "monthlySpend": "2082.66",
+      "monthlySpend": "1998.28",
       "monthlyLimit": "2590",
       "limitUtilization": "80%",
       "status": "Active",
@@ -238,7 +238,7 @@
         "code": "Max 999",
         "baseCost": "999"
       },
-      "monthlySpend": "1739.46",
+      "monthlySpend": "2962.71",
       "monthlyLimit": "2425",
       "limitUtilization": "72%",
       "status": "Active",
@@ -271,7 +271,7 @@
       },
       "paymentStatus": "On-time",
       "paymentHistory": {
-        "onTimePercentage": 110,
+        "onTimePercentage": 100,
         "averageDelayDays": "13.23",
         "delaysInLast12Months": 10
       },
@@ -296,7 +296,7 @@
         "code": "Plus 799",
         "baseCost": "799"
       },
-      "monthlySpend": "1274.08",
+      "monthlySpend": "2103.51",
       "monthlyLimit": "3002",
       "limitUtilization": "42%",
       "status": "Active",
@@ -346,12 +346,12 @@
   ],
   "voiceAndSmsMetrics": {
     "summary": {
-      "totalCallsUsed": 80317,
-      "totalCallsLimit": 150310,
-      "callsUtilization": "53%",
-      "totalSmsUsed": 7149,
-      "totalSmsLimit": 26040,
-      "smsUtilization": "28%"
+      "totalCallsUsed": 20557,
+      "totalCallsLimit": 15050,
+      "callsUtilization": "137%",
+      "totalSmsUsed": 769,
+      "totalSmsLimit": 769,
+      "smsUtilization": "100%"
     },
     "connectionBreakdown": [
       {
@@ -364,16 +364,16 @@
         "smsLimit": 182,
         "smsUtilization": "100%",
         "calls": {
-          "used": 1852,
+          "used": 797,
           "limit": 3010,
-          "utilization": 71,
-          "status": "HIGH_USAGE"
+          "utilization": 26,
+          "status": "NORMAL"
         },
         "sms": {
-          "used": 244,
-          "limit": 1010,
-          "utilization": 33,
-          "status": "NORMAL"
+          "used": 182,
+          "limit": 182,
+          "utilization": 100,
+          "status": "VERY_HIGH_USAGE"
         }
       },
       {
@@ -386,16 +386,16 @@
         "smsLimit": 175,
         "smsUtilization": "100%",
         "calls": {
-          "used": 997,
+          "used": 1465,
           "limit": 3010,
-          "utilization": 43,
+          "utilization": 49,
           "status": "NORMAL"
         },
         "sms": {
-          "used": 166,
-          "limit": 510,
-          "utilization": 41,
-          "status": "NORMAL"
+          "used": 175,
+          "limit": 175,
+          "utilization": 100,
+          "status": "VERY_HIGH_USAGE"
         }
       },
       {
@@ -403,21 +403,21 @@
         "employeeName": "Priya Sharma",
         "callsUsed": 2064,
         "callsLimit": 3010,
-        "callUtilization": "68%",
+        "callUtilization": "69%",
         "smsUsed": 109,
         "smsLimit": 109,
         "smsUtilization": "100%",
         "calls": {
-          "used": 2355,
+          "used": 2064,
           "limit": 3010,
-          "utilization": 88,
-          "status": "VERY_HIGH_USAGE"
+          "utilization": 69,
+          "status": "NORMAL"
         },
         "sms": {
-          "used": 99,
-          "limit": 510,
-          "utilization": 28,
-          "status": "NORMAL"
+          "used": 109,
+          "limit": 109,
+          "utilization": 100,
+          "status": "VERY_HIGH_USAGE"
         }
       },
       {
@@ -430,38 +430,38 @@
         "smsLimit": 235,
         "smsUtilization": "100%",
         "calls": {
-          "used": 466,
+          "used": 2383,
           "limit": 3010,
-          "utilization": 25,
-          "status": "LOW_USAGE"
+          "utilization": 79,
+          "status": "HIGH_USAGE"
         },
         "sms": {
-          "used": 77,
-          "limit": 310,
-          "utilization": 32,
-          "status": "NORMAL"
+          "used": 235,
+          "limit": 235,
+          "utilization": 100,
+          "status": "VERY_HIGH_USAGE"
         }
       },
       {
         "phoneNumber": "91234004",
         "employeeName": "Vikram Singh",
-        "callsUsed": 1348,
+        "callsUsed": 13848,
         "callsLimit": 3010,
-        "callUtilization": "45%",
+        "callUtilization": "460%",
         "smsUsed": 68,
         "smsLimit": 68,
         "smsUtilization": "100%",
         "calls": {
-          "used": 1133,
+          "used": 13848,
           "limit": 3010,
-          "utilization": 47,
-          "status": "NORMAL"
+          "utilization": 460,
+          "status": "VERY_HIGH_USAGE"
         },
         "sms": {
-          "used": 208,
-          "limit": 310,
-          "utilization": 76,
-          "status": "HIGH_USAGE"
+          "used": 68,
+          "limit": 68,
+          "utilization": 100,
+          "status": "VERY_HIGH_USAGE"
         }
       }
     ],
@@ -526,7 +526,7 @@
     ]
   },
   "reportSummary": {
-    "totalInvoicesGenerated": 22,
+    "totalInvoicesGenerated": 3,
     "usageReports": 16,
     "departmentReports": 13,
     "customReports": 12,
@@ -534,9 +534,9 @@
       {
         "month": "Feb 2026",
         "invoiceNumber": "INV-2026-03-0847",
-        "amount": "7842.50",
+        "amount": "11239.75",
         "status": "Unpaid",
-        "lineItems": 15
+        "lineItems": 5
       },
       {
         "month": "Jan 2026",
@@ -588,7 +588,7 @@
     "aiRecommendations": [
       {
         "actionType": "Upgrade",
-        "line": "9876543212",
+        "line": "91234002",
         "employee": "Amit Patel",
         "fromPlan": "Plus 799",
         "toPlan": "Max 999",
@@ -610,63 +610,70 @@
   "predictiveAnalytics": {
     "delinquencyRisk": {
       "currentRiskLevel": "Low",
-      "riskScore": 21,
-      "riskPercentage": "11%",
+      "riskScore": 31,
+      "riskPercentage": "31%",
       "probability": "Low delinquency risk",
-      "onTimePaymentPercentage": 104,
+      "onTimePaymentPercentage": 100,
       "averageDelayDays": 2.3,
-      "outstandingAmount": "0.00",
+      "outstandingAmount": "11239.75",
       "creditScore": "A+ (Excellent)"
     },
     "collectionsPriority": {
-      "lowRisk": 13,
-      "mediumRisk": 11,
-      "highRisk": 11
+      "lowRisk": 2,
+      "mediumRisk": 1,
+      "highRisk": 2
     },
     "spendForecast": {
-      "currentMonth": "7842.50",
+      "currentMonth": "11239.75",
       "forecastedNext3Months": [
-        "7600.00",
-        "7450.00",
-        "8100.00"
+        "11840.00",
+        "11090.00",
+        "12010.00"
       ],
-      "trendAnalysis": "Stable with seasonal variation"
+      "trendAnalysis": "Elevated spend with moderate volatility"
     },
     "budgetAlerts": {
-      "remaining": "1157.50",
-      "percentageRemaining": "13%",
-      "warningLevel": "Caution - 87% utilized",
+      "remaining": "0.00",
+      "percentageRemaining": "0%",
+      "warningLevel": "Critical - 119% utilized",
       "autoAlert": true
     }
   },
   "expenseManagement": {
     "monthlyBudgetTracking": {
-      "total": "9000.00",
-      "spent": "7842.50",
-      "utilization": "87%",
-      "remaining": "1157.50"
+      "total": "9427.38",
+      "spent": "11239.75",
+      "utilization": "119%",
+      "remaining": "0.00"
     },
     "departmentBreakdown": [
       {
-        "department": "Engineering",
-        "lines": 12,
-        "spend": "3654.00",
-        "budget": "4000.00",
-        "utilization": "91%"
+        "department": "Leadership",
+        "lines": 2,
+        "spend": "4395.00",
+        "budget": "3800.00",
+        "utilization": "116%"
       },
       {
-        "department": "Sales",
-        "lines": 12,
-        "spend": "3290.00",
-        "budget": "3500.00",
+        "department": "Product",
+        "lines": 1,
+        "spend": "1778.53",
+        "budget": "1900.00",
         "utilization": "94%"
       },
       {
-        "department": "Operations",
-        "lines": 11,
-        "spend": "898.50",
-        "budget": "1500.00",
-        "utilization": "60%"
+        "department": "Support",
+        "lines": 1,
+        "spend": "2962.71",
+        "budget": "2100.00",
+        "utilization": "141%"
+      },
+      {
+        "department": "Marketing",
+        "lines": 1,
+        "spend": "2103.51",
+        "budget": "1627.38",
+        "utilization": "129%"
       }
     ],
     "costCenterAssignments": {
@@ -678,10 +685,10 @@
   },
   "customerSupport": {
     "complaintsSummary": {
-      "openTickets": 11,
-      "inProgressTickets": 11,
-      "resolvedTickets": 11,
-      "totalTickets": 13
+      "openTickets": 1,
+      "inProgressTickets": 1,
+      "resolvedTickets": 1,
+      "totalTickets": 3
     },
     "complaints": [
       {
@@ -710,10 +717,10 @@
     ]
   },
   "alertsSummary": {
-    "totalAlerts": 22,
-    "billingAlerts": 13,
-    "usageAlerts": 15,
-    "planServiceAlerts": 11,
+    "totalAlerts": 10,
+    "billingAlerts": 3,
+    "usageAlerts": 5,
+    "planServiceAlerts": 2,
     "serviceRequests": 12,
     "simActivationAlerts": 11
   },
@@ -747,7 +754,7 @@
   ],
   "usageAlerts": [
     {
-      "connection": "9876543212",
+      "connection": "91234002",
       "employee": "Amit Patel",
       "alertType": "Data Usage",
       "current": {
@@ -761,7 +768,7 @@
       "autoRecommendation": "Data booster recommended"
     },
     {
-      "connection": "9876543214",
+      "connection": "91234004",
       "employee": "Vikram Singh",
       "alertType": "Data Usage",
       "current": {
@@ -774,7 +781,7 @@
       "timestamp": "1h ago"
     },
     {
-      "connection": "9876543210",
+      "connection": "91234000",
       "employee": "Rajesh Kumar",
       "alertType": "International Roaming",
       "location": "Singapore",
@@ -783,7 +790,7 @@
       "timestamp": "3h ago"
     },
     {
-      "connection": "9876543214",
+      "connection": "91234004",
       "employee": "Vikram Singh",
       "alertType": "SMS Usage",
       "current": {
@@ -818,9 +825,9 @@
     {
       "type": "Service Request Update",
       "srId": "SR-2856",
-      "description": "SIM replacement for 9876543212",
+      "description": "SIM replacement for 91234002",
       "status": "Dispatched",
-      "connection": "9876543212",
+      "connection": "91234002",
       "employee": "Amit Patel",
       "updatedDate": "2026-03-20"
     }
@@ -868,21 +875,63 @@
   },
   "billBreakdownByConnection": [
     {
-      "phoneNumber": "9876543210",
-      "employeeName": "Rajesh Kumar",
-      "department": "Engineering",
-      "riskScore": 18,
+      "phoneNumber": "91234000",
+      "employeeName": "Adarsh Pandey",
+      "department": "Leadership",
+      "riskScore": 43,
       "voiceAndSmsUsage": {
-        "callsUsed": 1852,
-        "callsLimit": 3010,
-        "callUtilization": "61%",
-        "smsUsed": 244,
-        "smsLimit": 1010,
-        "smsUtilization": "23%"
+        "callsUsed": 797,
+        "callsLimit": 3000,
+        "callUtilization": "27%",
+        "smsUsed": 182,
+        "smsLimit": 500,
+        "smsUtilization": "36%"
       },
       "lineItems": [
         {
-          "description": "Max 999 (9876543210)",
+          "description": "Max 999 (91234000)",
+          "category": "Plan Rental",
+          "amount": "999.00"
+        },
+        {
+          "description": "Data Overage",
+          "category": "Data Overage",
+          "amount": "437.49"
+        },
+        {
+          "description": "International Roaming",
+          "category": "Intl Roaming",
+          "amount": "290.92"
+        },
+        {
+          "description": "Value Added Services",
+          "category": "Add-Ons",
+          "amount": "275.47"
+        },
+        {
+          "description": "GST allocation",
+          "category": "Taxes",
+          "amount": "393.84"
+        }
+      ],
+      "subtotal": "2396.72"
+    },
+    {
+      "phoneNumber": "91234001",
+      "employeeName": "Rajesh Kumar",
+      "department": "Product",
+      "riskScore": 80,
+      "voiceAndSmsUsage": {
+        "callsUsed": 1465,
+        "callsLimit": 3010,
+        "callUtilization": "49%",
+        "smsUsed": 175,
+        "smsLimit": 1010,
+        "smsUtilization": "17%"
+      },
+      "lineItems": [
+        {
+          "description": "Max 999 (91234000)",
           "category": "Plan Rental",
           "amount": "999.00"
         },
@@ -927,24 +976,24 @@
           "amount": "447.00"
         }
       ],
-      "subtotal": "2929.00"
+      "subtotal": "3135.00"
     },
     {
-      "phoneNumber": "9876543211",
+      "phoneNumber": "91234002",
       "employeeName": "Priya Sharma",
-      "department": "Sales",
-      "riskScore": 25,
+      "department": "Leadership",
+      "riskScore": 82,
       "voiceAndSmsUsage": {
-        "callsUsed": 997,
+        "callsUsed": 2064,
         "callsLimit": 3010,
-        "callUtilization": "33%",
-        "smsUsed": 166,
+        "callUtilization": "69%",
+        "smsUsed": 109,
         "smsLimit": 510,
-        "smsUtilization": "31%"
+        "smsUtilization": "21%"
       },
       "lineItems": [
         {
-          "description": "Plus 799 (9876543211)",
+          "description": "Plus 799 (91234001)",
           "category": "Plan Rental",
           "amount": "799.00"
         },
@@ -979,24 +1028,24 @@
           "amount": "280.50"
         }
       ],
-      "subtotal": "1841.50"
+      "subtotal": "1842.50"
     },
     {
-      "phoneNumber": "9876543212",
+      "phoneNumber": "91234003",
       "employeeName": "Amit Patel",
-      "department": "Engineering",
-      "riskScore": 82,
+      "department": "Support",
+      "riskScore": 38,
       "voiceAndSmsUsage": {
-        "callsUsed": 2355,
+        "callsUsed": 2383,
         "callsLimit": 3010,
-        "callUtilization": "78%",
-        "smsUsed": 99,
+        "callUtilization": "79%",
+        "smsUsed": 235,
         "smsLimit": 510,
-        "smsUtilization": "18%"
+        "smsUtilization": "46%"
       },
       "lineItems": [
         {
-          "description": "Plus 799 (9876543212)",
+          "description": "Plus 799 (91234002)",
           "category": "Plan Rental",
           "amount": "799.00"
         },
@@ -1034,53 +1083,21 @@
       "subtotal": "1429.00"
     },
     {
-      "phoneNumber": "9876543213",
-      "employeeName": "Sneha Reddy",
-      "department": "Operations",
-      "riskScore": 15,
+      "phoneNumber": "91234004",
+      "employeeName": "Vikram Singh",
+      "department": "Marketing",
+      "riskScore": 73,
       "voiceAndSmsUsage": {
-        "callsUsed": 466,
+        "callsUsed": 13848,
         "callsLimit": 3010,
-        "callUtilization": "15%",
-        "smsUsed": 77,
+        "callUtilization": "460%",
+        "smsUsed": 68,
         "smsLimit": 310,
         "smsUtilization": "22%"
       },
       "lineItems": [
         {
-          "description": "Basic 599 (9876543213)",
-          "category": "Plan Rental",
-          "amount": "599.00"
-        },
-        {
-          "description": "Insurance",
-          "category": "Add-Ons",
-          "amount": "6.00"
-        },
-        {
-          "description": "GST allocation",
-          "category": "Taxes",
-          "amount": "108.50"
-        }
-      ],
-      "subtotal": "713.50"
-    },
-    {
-      "phoneNumber": "9876543214",
-      "employeeName": "Vikram Singh",
-      "department": "Sales",
-      "riskScore": 55,
-      "voiceAndSmsUsage": {
-        "callsUsed": 1133,
-        "callsLimit": 3010,
-        "callUtilization": "37%",
-        "smsUsed": 208,
-        "smsLimit": 310,
-        "smsUtilization": "66%"
-      },
-      "lineItems": [
-        {
-          "description": "Basic 599 (9876543214)",
+          "description": "Basic 599 (91234004)",
           "category": "Plan Rental",
           "amount": "599.00"
         },
@@ -1113,7 +1130,7 @@
       {
         "type": "alert",
         "title": "Roaming Charges Spike",
-        "description": "International roaming charges are Rs.1420 this month (~42% increase). Lines: 9876543210, 9876543211. Consider an annual IR pack to save ~40%.",
+        "description": "International roaming charges are Rs.1420 this month (~42% increase). Lines: 91234000, 91234001. Consider an annual IR pack to save ~40%.",
         "impact": "+Rs.1420",
         "severity": "HIGH",
         "dataPoint": "Rajesh: Singapore, Priya: Dubai"
@@ -1140,7 +1157,7 @@
       },
       {
         "category": "Payment Pattern",
-        "insight": "Amit Patel (9876543212) consistently delayed. 5 late payments in 12 months.",
+        "insight": "Amit Patel (91234002) consistently delayed. 5 late payments in 12 months.",
         "action": "High collection priority - outstanding Rs.2,847"
       }
     ],
@@ -1164,29 +1181,29 @@
       {
         "name": "Current",
         "description": "Current billing with all existing plans",
-        "billAmount": "7250.00",
-        "monthlyAmount": "7250.00"
+        "billAmount": "11239.75",
+        "monthlyAmount": "11239.75"
       },
       {
         "name": "If +20% Data",
         "description": "Increase data usage by 20% due to increased team activities",
-        "billAmount": "8338.00",
-        "monthlyAmount": "8338.00",
-        "impact": "+Rs.1,088"
+        "billAmount": "12640.00",
+        "monthlyAmount": "12640.00",
+        "impact": "+Rs.1,400"
       },
       {
         "name": "If Roaming Trip",
         "description": "Add international roaming for 2 employees for month-long travel",
-        "billAmount": "9788.00",
-        "monthlyAmount": "9788.00",
-        "impact": "+Rs.2,538"
+        "billAmount": "13890.00",
+        "monthlyAmount": "13890.00",
+        "impact": "+Rs.2,650"
       },
       {
         "name": "Optimized",
         "description": "Upgrade Amit to Max plan, activate IR pack",
-        "billAmount": "6163.00",
-        "monthlyAmount": "6163.00",
-        "impact": "-Rs.1,087 (monthly savings)",
+        "billAmount": "9780.00",
+        "monthlyAmount": "9780.00",
+        "impact": "-Rs.1,460 (monthly savings)",
         "recommendation": "RECOMMENDED"
       }
     ]
@@ -1201,12 +1218,12 @@
       "Feb"
     ],
     "actualBills": [
-      5900,
-      6244,
-      5730,
-      7460,
-      6990,
-      7852
+      7235,
+      7260,
+      6519,
+      6710,
+      5859,
+      7279
     ],
     "forecastMonths": [
       "Mar*",
@@ -1214,28 +1231,28 @@
       "May*"
     ],
     "forecastBills": [
-      7260,
-      7110,
-      6910
+      11840,
+      11090,
+      12010
     ],
     "upperConfidence": [
-      7810,
-      7710,
-      7510
+      12640,
+      11900,
+      12890
     ],
     "lowerConfidence": [
-      6710,
-      6510,
-      6310
+      11040,
+      10350,
+      11220
     ],
-    "trendAnalysis": "Stable with seasonal variation",
+    "trendAnalysis": "Elevated spend with moderate volatility",
     "forecastAccuracy": "92%"
   },
   "disputeTrackerData": {
     "summary": {
-      "activeDisputes": 12,
-      "pendingDisputes": 11,
-      "resolvedDisputes": 13,
+      "activeDisputes": 2,
+      "pendingDisputes": 1,
+      "resolvedDisputes": 3,
       "slaCompliance": "98%"
     },
     "disputes": [
@@ -1243,7 +1260,7 @@
         "ticketId": "DSP-DIS-001",
         "category": "Billing Error",
         "amount": "197.00",
-        "connection": "9876543210",
+        "connection": "91234000",
         "employee": "Rajesh Kumar",
         "description": "Wi-Fi calling charges disputed",
         "status": "Active",
@@ -1257,7 +1274,7 @@
         "ticketId": "DSP-DIS-002",
         "category": "Data Overage",
         "amount": "75.00",
-        "connection": "9876543212",
+        "connection": "91234002",
         "employee": "Amit Patel",
         "description": "Expected data limit not clearly communicated",
         "status": "Active",
@@ -1270,7 +1287,7 @@
         "ticketId": "DSP-DIS-003",
         "category": "Roaming",
         "amount": "599.00",
-        "connection": "9876543210",
+        "connection": "91234000",
         "employee": "Rajesh Kumar",
         "description": "Singapore roaming charges higher than quoted",
         "status": "Pending",
@@ -1283,7 +1300,7 @@
         "ticketId": "DSP-DIS-REV-001",
         "category": "VAS/Subscription",
         "amount": "149.00",
-        "connection": "9876543210",
+        "connection": "91234000",
         "employee": "Rajesh Kumar",
         "description": "Duplicate Amazon Prime charge",
         "status": "Resolved",
@@ -1296,8 +1313,8 @@
         "ticketId": "DSP-DIS-REV-002",
         "category": "Night Surcharge",
         "amount": "89.00",
-        "connection": "9876543213",
-        "employee": "Sneha Reddy",
+        "connection": "91234003",
+        "employee": "Amit Patel",
         "description": "Night surcharge applied incorrectly",
         "status": "Resolved",
         "createdDate": "2026-01-15",
@@ -1309,7 +1326,7 @@
         "ticketId": "DSP-DIS-REV-003",
         "category": "Billing Error",
         "amount": "120.00",
-        "connection": "9876543211",
+        "connection": "91234001",
         "employee": "Priya Sharma",
         "description": "Tax calculation error on data overage",
         "status": "Resolved",
@@ -1443,48 +1460,48 @@
     }
   },
   "homePageSummary": {
-    "totalAmount": "7842.50",
-    "connectionCount": 15,
+    "totalAmount": "11239.75",
+    "connectionCount": 5,
     "statusDistribution": {
-      "active": 15,
-      "inactive": 10,
-      "suspended": 10
+      "active": 5,
+      "inactive": 0,
+      "suspended": 0
     },
     "connectionsTable": [
       {
-        "number": "9876543210",
-        "employee": "Rajesh Kumar",
+        "number": "91234000",
+        "employee": "Adarsh Pandey",
         "plan": "Max 999",
-        "department": "Engineering",
-        "monthlySpend": "2929.00"
+        "department": "Leadership",
+        "monthlySpend": "2396.72"
       },
       {
-        "number": "9876543211",
+        "number": "91234001",
+        "employee": "Rajesh Kumar",
+        "plan": "Plus 799",
+        "department": "Product",
+        "monthlySpend": "1778.53"
+      },
+      {
+        "number": "91234002",
         "employee": "Priya Sharma",
-        "plan": "Plus 799",
-        "department": "Sales",
-        "monthlySpend": "1841.50"
+        "plan": "Basic 599",
+        "department": "Leadership",
+        "monthlySpend": "1998.28"
       },
       {
-        "number": "9876543212",
+        "number": "91234003",
         "employee": "Amit Patel",
-        "plan": "Plus 799",
-        "department": "Engineering",
-        "monthlySpend": "1429.00"
+        "plan": "Max 999",
+        "department": "Support",
+        "monthlySpend": "2962.71"
       },
       {
-        "number": "9876543213",
-        "employee": "Sneha Reddy",
-        "plan": "Basic 599",
-        "department": "Operations",
-        "monthlySpend": "713.50"
-      },
-      {
-        "number": "9876543214",
+        "number": "91234004",
         "employee": "Vikram Singh",
-        "plan": "Basic 599",
-        "department": "Sales",
-        "monthlySpend": "929.50"
+        "plan": "Plus 799",
+        "department": "Marketing",
+        "monthlySpend": "2103.51"
       }
     ]
   },
@@ -1542,39 +1559,39 @@
   "plansTabData": {
     "currentPlans": [
       {
-        "connection": "9876543210",
-        "employee": "Rajesh Kumar",
+        "connection": "91234000",
+        "employee": "Adarsh Pandey",
         "plan": "Max 999",
         "cost": "999.00",
         "status": "Active"
       },
       {
-        "connection": "9876543211",
-        "employee": "Priya Sharma",
+        "connection": "91234001",
+        "employee": "Rajesh Kumar",
         "plan": "Plus 799",
         "cost": "799.00",
         "status": "Active"
       },
       {
-        "connection": "9876543212",
+        "connection": "91234002",
+        "employee": "Priya Sharma",
+        "plan": "Basic 599",
+        "cost": "599.00",
+        "status": "Active"
+      },
+      {
+        "connection": "91234003",
         "employee": "Amit Patel",
-        "plan": "Plus 799",
-        "cost": "799.00",
+        "plan": "Max 999",
+        "cost": "999.00",
         "status": "Active",
         "upgrade": true
       },
       {
-        "connection": "9876543213",
-        "employee": "Sneha Reddy",
-        "plan": "Basic 599",
-        "cost": "599.00",
-        "status": "Active"
-      },
-      {
-        "connection": "9876543214",
+        "connection": "91234004",
         "employee": "Vikram Singh",
-        "plan": "Basic 599",
-        "cost": "599.00",
+        "plan": "Plus 799",
+        "cost": "799.00",
         "status": "Active",
         "downgrade": true
       }
@@ -1582,14 +1599,14 @@
     "switchHistory": [
       {
         "date": "2026-02-01",
-        "connection": "9876543210",
+        "connection": "91234000",
         "from": "Plus 799",
         "to": "Max 999",
         "reason": "High data usage"
       },
       {
         "date": "2025-12-15",
-        "connection": "9876543213",
+        "connection": "91234003",
         "from": "Basic 599",
         "to": "Basic 599",
         "reason": "Plan renewal",
@@ -1599,7 +1616,7 @@
   },
   "adhocReportsData": {
     "reportsGenerated": 33,
-    "invoicesAvailable": 22,
+    "invoicesAvailable": 6,
     "usageReports": 16,
     "departmentReports": 13,
     "customReports": 12,
@@ -1607,9 +1624,9 @@
       {
         "month": "Feb 2026",
         "invoice": "INV-2026-03-0847",
-        "amount": "7842.50",
+        "amount": "11239.75",
         "status": "Unpaid",
-        "lineItems": 15
+        "lineItems": 5
       },
       {
         "month": "Jan 2026",
@@ -1675,7 +1692,7 @@
     ]
   },
   "templateOverrides": {
-    "firstInvoiceDownloadAmount": "7842.50",
+    "firstInvoiceDownloadAmount": "11239.75",
     "companyNameHtml": "Tower A, 5th Floor, Vasai Cyber City,<br>SeNctor 25A, Gurugram 122002,<br>Haryana, India",
     "companyNameInline": "Tower A, 5th Floor, DLF Cyber City, Sector 25A, Gurugram 122002, Haryana, India",
     "accountManager": "Ankit Mehra",

@@ -1,0 +1,8678 @@
+[
+  {
+    "value": "1.0",
+    "combined_lines": [
+      5
+    ],
+    "adarsh_lines": [
+      5
+    ],
+    "combined_count": 1,
+    "adarsh_count": 1
+  },
+  {
+    "value": "1.1",
+    "combined_lines": [
+      34,
+      136,
+      162
+    ],
+    "adarsh_lines": [
+      34,
+      136,
+      162
+    ],
+    "combined_count": 3,
+    "adarsh_count": 3
+  },
+  {
+    "value": "1.2",
+    "combined_lines": [
+      199,
+      199,
+      456,
+      735,
+      1151,
+      1526,
+      1807
+    ],
+    "adarsh_lines": [
+      199,
+      199,
+      456,
+      735,
+      1140,
+      1515,
+      1802
+    ],
+    "combined_count": 7,
+    "adarsh_count": 7
+  },
+  {
+    "value": "1.3",
+    "combined_lines": [
+      735
+    ],
+    "adarsh_lines": [
+      735
+    ],
+    "combined_count": 1,
+    "adarsh_count": 1
+  },
+  {
+    "value": "1.4",
+    "combined_lines": [
+      1628
+    ],
+    "adarsh_lines": [
+      1629
+    ],
+    "combined_count": 1,
+    "adarsh_count": 1
+  },
+  {
+    "value": "1.5",
+    "combined_lines": [
+      15,
+      170,
+      199,
+      199,
+      447,
+      447,
+      451,
+      451,
+      637,
+      644,
+      1628
+    ],
+    "adarsh_lines": [
+      15,
+      170,
+      199,
+      199,
+      447,
+      447,
+      451,
+      451,
+      637,
+      644,
+      1629
+    ],
+    "combined_count": 11,
+    "adarsh_count": 11
+  },
+  {
+    "value": "1.6",
+    "combined_lines": [
+      326,
+      604,
+      628,
+      637,
+      645,
+      660,
+      661,
+      689,
+      689,
+      689,
+      689,
+      717,
+      735,
+      735,
+      735,
+      1649,
+      1651,
+      1653
+    ],
+    "adarsh_lines": [
+      326,
+      604,
+      628,
+      637,
+      645,
+      660,
+      661,
+      689,
+      689,
+      689,
+      689,
+      717,
+      735,
+      735,
+      735,
+      1650,
+      1652,
+      1654
+    ],
+    "combined_count": 18,
+    "adarsh_count": 18
+  },
+  {
+    "value": "1.8",
+    "combined_lines": [
+      447,
+      447,
+      451,
+      451,
+      627,
+      628,
+      1153,
+      1628,
+      1628,
+      1647
+    ],
+    "adarsh_lines": [
+      447,
+      447,
+      451,
+      451,
+      627,
+      628,
+      1142,
+      1629,
+      1629,
+      1648
+    ],
+    "combined_count": 10,
+    "adarsh_count": 10
+  },
+  {
+    "value": "102",
+    "combined_lines": [
+      199
+    ],
+    "adarsh_lines": [
+      199
+    ],
+    "combined_count": 1,
+    "adarsh_count": 1
+  },
+  {
+    "value": "106",
+    "combined_lines": [
+      1520,
+      1520,
+      1520
+    ],
+    "adarsh_lines": [
+      1509,
+      1509,
+      1509,
+      1831,
+      1831,
+      1831
+    ],
+    "combined_count": 3,
+    "adarsh_count": 6
+  },
+  {
+    "value": "109",
+    "combined_lines": [
+      205,
+      363,
+      508,
+      692,
+      2107
+    ],
+    "adarsh_lines": [
+      205,
+      363,
+      1081,
+      1081,
+      2128
+    ],
+    "combined_count": 5,
+    "adarsh_count": 5
+  },
+  {
+    "value": "110",
+    "combined_lines": [
+      41,
+      522,
+      522
+    ],
+    "adarsh_lines": [
+      41,
+      517,
+      522,
+      522,
+      558,
+      570,
+      570,
+      735,
+      1081,
+      1081,
+      2132
+    ],
+    "combined_count": 3,
+    "adarsh_count": 11
+  },
+  {
+    "value": "111",
+    "combined_lines": [
+      205,
+      205,
+      205,
+      220,
+      363,
+      363,
+      363
+    ],
+    "adarsh_lines": [
+      205,
+      205,
+      205,
+      220,
+      363,
+      363,
+      363
+    ],
+    "combined_count": 7,
+    "adarsh_count": 7
+  },
+  {
+    "value": "112",
+    "combined_lines": [
+      1628,
+      1647
+    ],
+    "adarsh_lines": [
+      1629,
+      1648
+    ],
+    "combined_count": 2,
+    "adarsh_count": 2
+  },
+  {
+    "value": "113",
+    "combined_lines": [
+      205,
+      363
+    ],
+    "adarsh_lines": [
+      205,
+      363
+    ],
+    "combined_count": 2,
+    "adarsh_count": 2
+  },
+  {
+    "value": "116",
+    "combined_lines": [
+      205,
+      363
+    ],
+    "adarsh_lines": [
+      205,
+      363
+    ],
+    "combined_count": 2,
+    "adarsh_count": 2
+  },
+  {
+    "value": "118",
+    "combined_lines": [
+      205,
+      363
+    ],
+    "adarsh_lines": [
+      205,
+      363
+    ],
+    "combined_count": 2,
+    "adarsh_count": 2
+  },
+  {
+    "value": "119",
+    "combined_lines": [
+      205,
+      363
+    ],
+    "adarsh_lines": [
+      205,
+      363
+    ],
+    "combined_count": 2,
+    "adarsh_count": 2
+  },
+  {
+    "value": "120",
+    "combined_lines": [
+      205,
+      363,
+      1647,
+      2229,
+      2231
+    ],
+    "adarsh_lines": [
+      205,
+      363,
+      1648,
+      1705,
+      2250,
+      2252
+    ],
+    "combined_count": 5,
+    "adarsh_count": 6
+  },
+  {
+    "value": "124",
+    "combined_lines": [
+      737
+    ],
+    "adarsh_lines": [
+      737
+    ],
+    "combined_count": 1,
+    "adarsh_count": 1
+  },
+  {
+    "value": "125",
+    "combined_lines": [
+      428,
+      428
+    ],
+    "adarsh_lines": [
+      428,
+      428
+    ],
+    "combined_count": 2,
+    "adarsh_count": 2
+  },
+  {
+    "value": "128",
+    "combined_lines": [
+      205,
+      205,
+      363,
+      363
+    ],
+    "adarsh_lines": [
+      205,
+      205,
+      363,
+      363
+    ],
+    "combined_count": 4,
+    "adarsh_count": 4
+  },
+  {
+    "value": "131",
+    "combined_lines": [
+      205,
+      363
+    ],
+    "adarsh_lines": [
+      205,
+      363
+    ],
+    "combined_count": 2,
+    "adarsh_count": 2
+  },
+  {
+    "value": "132",
+    "combined_lines": [
+      199
+    ],
+    "adarsh_lines": [
+      199
+    ],
+    "combined_count": 1,
+    "adarsh_count": 1
+  },
+  {
+    "value": "134",
+    "combined_lines": [
+      689
+    ],
+    "adarsh_lines": [
+      689
+    ],
+    "combined_count": 1,
+    "adarsh_count": 1
+  },
+  {
+    "value": "136",
+    "combined_lines": [
+      205,
+      363
+    ],
+    "adarsh_lines": [
+      205,
+      363
+    ],
+    "combined_count": 2,
+    "adarsh_count": 2
+  },
+  {
+    "value": "138",
+    "combined_lines": [
+      205,
+      363
+    ],
+    "adarsh_lines": [
+      205,
+      363
+    ],
+    "combined_count": 2,
+    "adarsh_count": 2
+  },
+  {
+    "value": "139",
+    "combined_lines": [
+      205,
+      205,
+      363,
+      363
+    ],
+    "adarsh_lines": [
+      205,
+      205,
+      363,
+      363
+    ],
+    "combined_count": 4,
+    "adarsh_count": 4
+  },
+  {
+    "value": "140",
+    "combined_lines": [
+      1203
+    ],
+    "adarsh_lines": [
+      1192
+    ],
+    "combined_count": 1,
+    "adarsh_count": 1
+  },
+  {
+    "value": "142",
+    "combined_lines": [
+      205,
+      363,
+      508,
+      692,
+      1653,
+      2107
+    ],
+    "adarsh_lines": [
+      205,
+      363,
+      1654,
+      2128
+    ],
+    "combined_count": 6,
+    "adarsh_count": 4
+  },
+  {
+    "value": "143",
+    "combined_lines": [
+      205,
+      363
+    ],
+    "adarsh_lines": [
+      205,
+      363
+    ],
+    "combined_count": 2,
+    "adarsh_count": 2
+  },
+  {
+    "value": "144",
+    "combined_lines": [
+      205,
+      363
+    ],
+    "adarsh_lines": [
+      205,
+      363
+    ],
+    "combined_count": 2,
+    "adarsh_count": 2
+  },
+  {
+    "value": "148",
+    "combined_lines": [
+      205,
+      363
+    ],
+    "adarsh_lines": [
+      205,
+      363
+    ],
+    "combined_count": 2,
+    "adarsh_count": 2
+  },
+  {
+    "value": "149",
+    "combined_lines": [
+      205,
+      363,
+      638,
+      1085,
+      1685,
+      1685,
+      1709
+    ],
+    "adarsh_lines": [
+      205,
+      363,
+      638,
+      1686,
+      1686,
+      1705
+    ],
+    "combined_count": 7,
+    "adarsh_count": 6
+  },
+  {
+    "value": "150",
+    "combined_lines": [
+      689,
+      1628,
+      1871
+    ],
+    "adarsh_lines": [
+      689,
+      1629,
+      1892
+    ],
+    "combined_count": 3,
+    "adarsh_count": 3
+  },
+  {
+    "value": "153",
+    "combined_lines": [
+      199
+    ],
+    "adarsh_lines": [
+      199
+    ],
+    "combined_count": 1,
+    "adarsh_count": 1
+  },
+  {
+    "value": "156",
+    "combined_lines": [
+      205,
+      363,
+      508,
+      692,
+      1080,
+      1086,
+      1087,
+      1191,
+      1191,
+      1513,
+      1516,
+      1517,
+      1521,
+      1521,
+      2107
+    ],
+    "adarsh_lines": [
+      205,
+      363,
+      1180,
+      1180,
+      1502,
+      1505,
+      1506,
+      2128
+    ],
+    "combined_count": 15,
+    "adarsh_count": 8
+  },
+  {
+    "value": "158",
+    "combined_lines": [
+      508,
+      692,
+      1086,
+      2107
+    ],
+    "adarsh_lines": [
+      2128
+    ],
+    "combined_count": 4,
+    "adarsh_count": 1
+  },
+  {
+    "value": "159",
+    "combined_lines": [
+      199,
+      205,
+      363
+    ],
+    "adarsh_lines": [
+      199,
+      205,
+      363
+    ],
+    "combined_count": 3,
+    "adarsh_count": 3
+  },
+  {
+    "value": "160",
+    "combined_lines": [
+      737
+    ],
+    "adarsh_lines": [
+      737
+    ],
+    "combined_count": 1,
+    "adarsh_count": 1
+  },
+  {
+    "value": "161",
+    "combined_lines": [
+      205,
+      363
+    ],
+    "adarsh_lines": [
+      205,
+      363
+    ],
+    "combined_count": 2,
+    "adarsh_count": 2
+  },
+  {
+    "value": "162",
+    "combined_lines": [
+      199
+    ],
+    "adarsh_lines": [
+      199
+    ],
+    "combined_count": 1,
+    "adarsh_count": 1
+  },
+  {
+    "value": "163",
+    "combined_lines": [
+      205,
+      363
+    ],
+    "adarsh_lines": [
+      205,
+      363
+    ],
+    "combined_count": 2,
+    "adarsh_count": 2
+  },
+  {
+    "value": "167",
+    "combined_lines": [
+      205,
+      363
+    ],
+    "adarsh_lines": [
+      205,
+      363
+    ],
+    "combined_count": 2,
+    "adarsh_count": 2
+  },
+  {
+    "value": "170",
+    "combined_lines": [
+      205,
+      363
+    ],
+    "adarsh_lines": [
+      205,
+      363
+    ],
+    "combined_count": 2,
+    "adarsh_count": 2
+  },
+  {
+    "value": "176",
+    "combined_lines": [
+      205,
+      363,
+      1327,
+      1327
+    ],
+    "adarsh_lines": [
+      205,
+      363,
+      1316,
+      1316
+    ],
+    "combined_count": 4,
+    "adarsh_count": 4
+  },
+  {
+    "value": "178",
+    "combined_lines": [
+      1653
+    ],
+    "adarsh_lines": [
+      1654
+    ],
+    "combined_count": 1,
+    "adarsh_count": 1
+  },
+  {
+    "value": "179",
+    "combined_lines": [
+      205,
+      205,
+      363,
+      363,
+      747
+    ],
+    "adarsh_lines": [
+      205,
+      205,
+      363,
+      363,
+      747
+    ],
+    "combined_count": 5,
+    "adarsh_count": 5
+  },
+  {
+    "value": "180",
+    "combined_lines": [
+      193,
+      193,
+      193,
+      199,
+      199,
+      205,
+      604,
+      689,
+      1224,
+      1237
+    ],
+    "adarsh_lines": [
+      193,
+      193,
+      193,
+      199,
+      199,
+      205,
+      604,
+      689,
+      1213,
+      1226
+    ],
+    "combined_count": 10,
+    "adarsh_count": 10
+  },
+  {
+    "value": "185",
+    "combined_lines": [
+      205,
+      363
+    ],
+    "adarsh_lines": [
+      205,
+      363
+    ],
+    "combined_count": 2,
+    "adarsh_count": 2
+  },
+  {
+    "value": "186",
+    "combined_lines": [
+      689
+    ],
+    "adarsh_lines": [
+      689
+    ],
+    "combined_count": 1,
+    "adarsh_count": 1
+  },
+  {
+    "value": "188",
+    "combined_lines": [
+      205,
+      205,
+      363,
+      363
+    ],
+    "adarsh_lines": [
+      205,
+      205,
+      363,
+      363
+    ],
+    "combined_count": 4,
+    "adarsh_count": 4
+  },
+  {
+    "value": "192",
+    "combined_lines": [
+      199,
+      199
+    ],
+    "adarsh_lines": [
+      199,
+      199
+    ],
+    "combined_count": 2,
+    "adarsh_count": 2
+  },
+  {
+    "value": "197",
+    "combined_lines": [
+      579,
+      753,
+      1085,
+      1705
+    ],
+    "adarsh_lines": [
+      579,
+      753,
+      1705
+    ],
+    "combined_count": 4,
+    "adarsh_count": 3
+  },
+  {
+    "value": "198",
+    "combined_lines": [
+      508,
+      508,
+      689,
+      692,
+      692,
+      704,
+      1080,
+      1088,
+      1088,
+      1089,
+      1191,
+      1515,
+      2107,
+      2107
+    ],
+    "adarsh_lines": [
+      689,
+      704,
+      1180,
+      1504,
+      2128,
+      2128
+    ],
+    "combined_count": 14,
+    "adarsh_count": 6
+  },
+  {
+    "value": "199",
+    "combined_lines": [
+      392,
+      638
+    ],
+    "adarsh_lines": [
+      392,
+      638
+    ],
+    "combined_count": 2,
+    "adarsh_count": 2
+  },
+  {
+    "value": "2.0",
+    "combined_lines": [
+      735
+    ],
+    "adarsh_lines": [
+      735
+    ],
+    "combined_count": 1,
+    "adarsh_count": 1
+  },
+  {
+    "value": "2.1",
+    "combined_lines": [
+      1140
+    ],
+    "adarsh_lines": [
+      1129
+    ],
+    "combined_count": 1,
+    "adarsh_count": 1
+  },
+  {
+    "value": "2.3",
+    "combined_lines": [
+      661,
+      735
+    ],
+    "adarsh_lines": [
+      661,
+      735
+    ],
+    "combined_count": 2,
+    "adarsh_count": 2
+  },
+  {
+    "value": "2.4",
+    "combined_lines": [
+      199,
+      199
+    ],
+    "adarsh_lines": [
+      199,
+      199
+    ],
+    "combined_count": 2,
+    "adarsh_count": 2
+  },
+  {
+    "value": "2.5",
+    "combined_lines": [
+      10,
+      199,
+      735,
+      1350
+    ],
+    "adarsh_lines": [
+      10,
+      199,
+      735,
+      1339
+    ],
+    "combined_count": 4,
+    "adarsh_count": 4
+  },
+  {
+    "value": "2.8",
+    "combined_lines": [
+      447,
+      447,
+      451,
+      451,
+      1628
+    ],
+    "adarsh_lines": [
+      447,
+      447,
+      451,
+      451,
+      1629
+    ],
+    "combined_count": 5,
+    "adarsh_count": 5
+  },
+  {
+    "value": "200",
+    "combined_lines": [
+      17,
+      96,
+      98,
+      109,
+      109,
+      138,
+      139,
+      139,
+      199,
+      579,
+      635,
+      761,
+      1245,
+      1248,
+      1653,
+      1679,
+      1679,
+      1706,
+      1958,
+      2019,
+      2263,
+      2287,
+      2303
+    ],
+    "adarsh_lines": [
+      17,
+      96,
+      98,
+      109,
+      109,
+      138,
+      139,
+      139,
+      199,
+      579,
+      761,
+      1234,
+      1237,
+      1654,
+      1680,
+      1680,
+      1979,
+      2040,
+      2284,
+      2308,
+      2324
+    ],
+    "combined_count": 23,
+    "adarsh_count": 21
+  },
+  {
+    "value": "201",
+    "combined_lines": [
+      199,
+      205,
+      363
+    ],
+    "adarsh_lines": [
+      199,
+      205,
+      363
+    ],
+    "combined_count": 3,
+    "adarsh_count": 3
+  },
+  {
+    "value": "203",
+    "combined_lines": [
+      199
+    ],
+    "adarsh_lines": [
+      199
+    ],
+    "combined_count": 1,
+    "adarsh_count": 1
+  },
+  {
+    "value": "204",
+    "combined_lines": [
+      205,
+      363
+    ],
+    "adarsh_lines": [
+      205,
+      363
+    ],
+    "combined_count": 2,
+    "adarsh_count": 2
+  },
+  {
+    "value": "205",
+    "combined_lines": [
+      199
+    ],
+    "adarsh_lines": [
+      199
+    ],
+    "combined_count": 1,
+    "adarsh_count": 1
+  },
+  {
+    "value": "207",
+    "combined_lines": [
+      199
+    ],
+    "adarsh_lines": [
+      199
+    ],
+    "combined_count": 1,
+    "adarsh_count": 1
+  },
+  {
+    "value": "210",
+    "combined_lines": [
+      589,
+      628,
+      634,
+      684,
+      689
+    ],
+    "adarsh_lines": [
+      589,
+      628,
+      689
+    ],
+    "combined_count": 5,
+    "adarsh_count": 3
+  },
+  {
+    "value": "211",
+    "combined_lines": [
+      628,
+      634,
+      684
+    ],
+    "adarsh_lines": [
+      628
+    ],
+    "combined_count": 3,
+    "adarsh_count": 1
+  },
+  {
+    "value": "212",
+    "combined_lines": [
+      628,
+      634,
+      635,
+      684,
+      1982,
+      1989
+    ],
+    "adarsh_lines": [
+      628,
+      2003,
+      2010
+    ],
+    "combined_count": 6,
+    "adarsh_count": 3
+  },
+  {
+    "value": "213",
+    "combined_lines": [
+      628,
+      634,
+      635,
+      684,
+      1982,
+      1989
+    ],
+    "adarsh_lines": [
+      628,
+      2003,
+      2010
+    ],
+    "combined_count": 6,
+    "adarsh_count": 3
+  },
+  {
+    "value": "214",
+    "combined_lines": [
+      628,
+      634,
+      684
+    ],
+    "adarsh_lines": [
+      628
+    ],
+    "combined_count": 3,
+    "adarsh_count": 1
+  },
+  {
+    "value": "218",
+    "combined_lines": [
+      205,
+      205,
+      363,
+      363
+    ],
+    "adarsh_lines": [
+      205,
+      205,
+      363,
+      363
+    ],
+    "combined_count": 4,
+    "adarsh_count": 4
+  },
+  {
+    "value": "219",
+    "combined_lines": [
+      205,
+      363,
+      508,
+      692,
+      1089,
+      2107
+    ],
+    "adarsh_lines": [
+      205,
+      363,
+      2128
+    ],
+    "combined_count": 6,
+    "adarsh_count": 3
+  },
+  {
+    "value": "220",
+    "combined_lines": [
+      1203,
+      1238,
+      1246
+    ],
+    "adarsh_lines": [
+      1192,
+      1227,
+      1235
+    ],
+    "combined_count": 3,
+    "adarsh_count": 3
+  },
+  {
+    "value": "221",
+    "combined_lines": [
+      205,
+      363
+    ],
+    "adarsh_lines": [
+      205,
+      363
+    ],
+    "combined_count": 2,
+    "adarsh_count": 2
+  },
+  {
+    "value": "222",
+    "combined_lines": [
+      158
+    ],
+    "adarsh_lines": [
+      158
+    ],
+    "combined_count": 1,
+    "adarsh_count": 1
+  },
+  {
+    "value": "229",
+    "combined_lines": [
+      205,
+      363,
+      1085
+    ],
+    "adarsh_lines": [
+      205,
+      363
+    ],
+    "combined_count": 3,
+    "adarsh_count": 2
+  },
+  {
+    "value": "233",
+    "combined_lines": [
+      205,
+      363
+    ],
+    "adarsh_lines": [
+      205,
+      363
+    ],
+    "combined_count": 2,
+    "adarsh_count": 2
+  },
+  {
+    "value": "234",
+    "combined_lines": [
+      535,
+      536,
+      559,
+      1080,
+      2111
+    ],
+    "adarsh_lines": [
+      535
+    ],
+    "combined_count": 5,
+    "adarsh_count": 1
+  },
+  {
+    "value": "235",
+    "combined_lines": [
+      199
+    ],
+    "adarsh_lines": [
+      199,
+      1081,
+      1081
+    ],
+    "combined_count": 1,
+    "adarsh_count": 3
+  },
+  {
+    "value": "237",
+    "combined_lines": [
+      205,
+      363
+    ],
+    "adarsh_lines": [
+      205,
+      363
+    ],
+    "combined_count": 2,
+    "adarsh_count": 2
+  },
+  {
+    "value": "239",
+    "combined_lines": [
+      205,
+      363
+    ],
+    "adarsh_lines": [
+      205,
+      363
+    ],
+    "combined_count": 2,
+    "adarsh_count": 2
+  },
+  {
+    "value": "240",
+    "combined_lines": [
+      199,
+      199
+    ],
+    "adarsh_lines": [
+      199,
+      199
+    ],
+    "combined_count": 2,
+    "adarsh_count": 2
+  },
+  {
+    "value": "242",
+    "combined_lines": [
+      205,
+      363
+    ],
+    "adarsh_lines": [
+      205,
+      363
+    ],
+    "combined_count": 2,
+    "adarsh_count": 2
+  },
+  {
+    "value": "244",
+    "combined_lines": [
+      689
+    ],
+    "adarsh_lines": [
+      689
+    ],
+    "combined_count": 1,
+    "adarsh_count": 1
+  },
+  {
+    "value": "247",
+    "combined_lines": [
+      205,
+      363
+    ],
+    "adarsh_lines": [
+      205,
+      363
+    ],
+    "combined_count": 2,
+    "adarsh_count": 2
+  },
+  {
+    "value": "249",
+    "combined_lines": [
+      205,
+      363,
+      638
+    ],
+    "adarsh_lines": [
+      205,
+      363,
+      638
+    ],
+    "combined_count": 3,
+    "adarsh_count": 3
+  },
+  {
+    "value": "250",
+    "combined_lines": [
+      162,
+      739,
+      1248,
+      1259,
+      1628,
+      2109,
+      2112
+    ],
+    "adarsh_lines": [
+      162,
+      739,
+      1237,
+      1248,
+      1629,
+      2130,
+      2133
+    ],
+    "combined_count": 7,
+    "adarsh_count": 7
+  },
+  {
+    "value": "251",
+    "combined_lines": [
+      205,
+      363
+    ],
+    "adarsh_lines": [
+      205,
+      363
+    ],
+    "combined_count": 2,
+    "adarsh_count": 2
+  },
+  {
+    "value": "253",
+    "combined_lines": [
+      205,
+      205,
+      363,
+      363
+    ],
+    "adarsh_lines": [
+      205,
+      205,
+      363,
+      363
+    ],
+    "combined_count": 4,
+    "adarsh_count": 4
+  },
+  {
+    "value": "256",
+    "combined_lines": [
+      84
+    ],
+    "adarsh_lines": [
+      84
+    ],
+    "combined_count": 1,
+    "adarsh_count": 1
+  },
+  {
+    "value": "260",
+    "combined_lines": [
+      163
+    ],
+    "adarsh_lines": [
+      163
+    ],
+    "combined_count": 1,
+    "adarsh_count": 1
+  },
+  {
+    "value": "261",
+    "combined_lines": [
+      205,
+      363
+    ],
+    "adarsh_lines": [
+      205,
+      363
+    ],
+    "combined_count": 2,
+    "adarsh_count": 2
+  },
+  {
+    "value": "262",
+    "combined_lines": [
+      199
+    ],
+    "adarsh_lines": [
+      199
+    ],
+    "combined_count": 1,
+    "adarsh_count": 1
+  },
+  {
+    "value": "265",
+    "combined_lines": [
+      205,
+      363
+    ],
+    "adarsh_lines": [
+      205,
+      363
+    ],
+    "combined_count": 2,
+    "adarsh_count": 2
+  },
+  {
+    "value": "267",
+    "combined_lines": [
+      1653
+    ],
+    "adarsh_lines": [
+      1654
+    ],
+    "combined_count": 1,
+    "adarsh_count": 1
+  },
+  {
+    "value": "270",
+    "combined_lines": [
+      199,
+      199
+    ],
+    "adarsh_lines": [
+      199,
+      199
+    ],
+    "combined_count": 2,
+    "adarsh_count": 2
+  },
+  {
+    "value": "279",
+    "combined_lines": [
+      205,
+      363
+    ],
+    "adarsh_lines": [
+      205,
+      363
+    ],
+    "combined_count": 2,
+    "adarsh_count": 2
+  },
+  {
+    "value": "281",
+    "combined_lines": [
+      508,
+      692,
+      2107
+    ],
+    "adarsh_lines": [
+      2128
+    ],
+    "combined_count": 3,
+    "adarsh_count": 1
+  },
+  {
+    "value": "295",
+    "combined_lines": [
+      205,
+      363
+    ],
+    "adarsh_lines": [
+      205,
+      363
+    ],
+    "combined_count": 2,
+    "adarsh_count": 2
+  },
+  {
+    "value": "296",
+    "combined_lines": [
+      205,
+      363
+    ],
+    "adarsh_lines": [
+      205,
+      363
+    ],
+    "combined_count": 2,
+    "adarsh_count": 2
+  },
+  {
+    "value": "299",
+    "combined_lines": [
+      205,
+      363
+    ],
+    "adarsh_lines": [
+      205,
+      363
+    ],
+    "combined_count": 2,
+    "adarsh_count": 2
+  },
+  {
+    "value": "3.1",
+    "combined_lines": [
+      446,
+      454,
+      637
+    ],
+    "adarsh_lines": [
+      446,
+      454,
+      637
+    ],
+    "combined_count": 3,
+    "adarsh_count": 3
+  },
+  {
+    "value": "3.2",
+    "combined_lines": [
+      195
+    ],
+    "adarsh_lines": [
+      195
+    ],
+    "combined_count": 1,
+    "adarsh_count": 1
+  },
+  {
+    "value": "3.5",
+    "combined_lines": [
+      628,
+      2012
+    ],
+    "adarsh_lines": [
+      628,
+      2033
+    ],
+    "combined_count": 2,
+    "adarsh_count": 2
+  },
+  {
+    "value": "3.8",
+    "combined_lines": [
+      11,
+      443,
+      443,
+      735
+    ],
+    "adarsh_lines": [
+      11,
+      443,
+      443,
+      735
+    ],
+    "combined_count": 4,
+    "adarsh_count": 4
+  },
+  {
+    "value": "300",
+    "combined_lines": [
+      104,
+      704,
+      1080,
+      1080,
+      1983,
+      2007,
+      2020,
+      2024
+    ],
+    "adarsh_lines": [
+      104,
+      704,
+      1838,
+      2004,
+      2028,
+      2041,
+      2045
+    ],
+    "combined_count": 8,
+    "adarsh_count": 7
+  },
+  {
+    "value": "310",
+    "combined_lines": [
+      689
+    ],
+    "adarsh_lines": [
+      689
+    ],
+    "combined_count": 1,
+    "adarsh_count": 1
+  },
+  {
+    "value": "311",
+    "combined_lines": [
+      205,
+      205,
+      363,
+      363
+    ],
+    "adarsh_lines": [
+      205,
+      205,
+      363,
+      363
+    ],
+    "combined_count": 4,
+    "adarsh_count": 4
+  },
+  {
+    "value": "313",
+    "combined_lines": [
+      205,
+      363
+    ],
+    "adarsh_lines": [
+      205,
+      363
+    ],
+    "combined_count": 2,
+    "adarsh_count": 2
+  },
+  {
+    "value": "315",
+    "combined_lines": [
+      199
+    ],
+    "adarsh_lines": [
+      199
+    ],
+    "combined_count": 1,
+    "adarsh_count": 1
+  },
+  {
+    "value": "316",
+    "combined_lines": [
+      205,
+      363
+    ],
+    "adarsh_lines": [
+      205,
+      363
+    ],
+    "combined_count": 2,
+    "adarsh_count": 2
+  },
+  {
+    "value": "317",
+    "combined_lines": [
+      205,
+      363
+    ],
+    "adarsh_lines": [
+      205,
+      363
+    ],
+    "combined_count": 2,
+    "adarsh_count": 2
+  },
+  {
+    "value": "318",
+    "combined_lines": [
+      205,
+      363
+    ],
+    "adarsh_lines": [
+      205,
+      363
+    ],
+    "combined_count": 2,
+    "adarsh_count": 2
+  },
+  {
+    "value": "319",
+    "combined_lines": [
+      205,
+      363
+    ],
+    "adarsh_lines": [
+      205,
+      363
+    ],
+    "combined_count": 2,
+    "adarsh_count": 2
+  },
+  {
+    "value": "321",
+    "combined_lines": [
+      205,
+      363
+    ],
+    "adarsh_lines": [
+      205,
+      363
+    ],
+    "combined_count": 2,
+    "adarsh_count": 2
+  },
+  {
+    "value": "329",
+    "combined_lines": [
+      205,
+      363
+    ],
+    "adarsh_lines": [
+      205,
+      363
+    ],
+    "combined_count": 2,
+    "adarsh_count": 2
+  },
+  {
+    "value": "334",
+    "combined_lines": [
+      205,
+      363
+    ],
+    "adarsh_lines": [
+      205,
+      363
+    ],
+    "combined_count": 2,
+    "adarsh_count": 2
+  },
+  {
+    "value": "336",
+    "combined_lines": [
+      205,
+      205,
+      363,
+      363
+    ],
+    "adarsh_lines": [
+      205,
+      205,
+      363,
+      363
+    ],
+    "combined_count": 4,
+    "adarsh_count": 4
+  },
+  {
+    "value": "338",
+    "combined_lines": [
+      205,
+      363
+    ],
+    "adarsh_lines": [
+      205,
+      363
+    ],
+    "combined_count": 2,
+    "adarsh_count": 2
+  },
+  {
+    "value": "340",
+    "combined_lines": [
+      589
+    ],
+    "adarsh_lines": [
+      589
+    ],
+    "combined_count": 1,
+    "adarsh_count": 1
+  },
+  {
+    "value": "344",
+    "combined_lines": [
+      689
+    ],
+    "adarsh_lines": [
+      689
+    ],
+    "combined_count": 1,
+    "adarsh_count": 1
+  },
+  {
+    "value": "345",
+    "combined_lines": [
+      508,
+      692,
+      1084,
+      2107
+    ],
+    "adarsh_lines": [
+      2128
+    ],
+    "combined_count": 4,
+    "adarsh_count": 1
+  },
+  {
+    "value": "348",
+    "combined_lines": [
+      205,
+      205,
+      363,
+      363
+    ],
+    "adarsh_lines": [
+      205,
+      205,
+      363,
+      363
+    ],
+    "combined_count": 4,
+    "adarsh_count": 4
+  },
+  {
+    "value": "350",
+    "combined_lines": [
+      1628
+    ],
+    "adarsh_lines": [
+      1629
+    ],
+    "combined_count": 1,
+    "adarsh_count": 1
+  },
+  {
+    "value": "353",
+    "combined_lines": [
+      205,
+      363
+    ],
+    "adarsh_lines": [
+      205,
+      363
+    ],
+    "combined_count": 2,
+    "adarsh_count": 2
+  },
+  {
+    "value": "355",
+    "combined_lines": [
+      205,
+      363
+    ],
+    "adarsh_lines": [
+      205,
+      363
+    ],
+    "combined_count": 2,
+    "adarsh_count": 2
+  },
+  {
+    "value": "358",
+    "combined_lines": [
+      205,
+      363
+    ],
+    "adarsh_lines": [
+      205,
+      363
+    ],
+    "combined_count": 2,
+    "adarsh_count": 2
+  },
+  {
+    "value": "360",
+    "combined_lines": [
+      199,
+      199,
+      199,
+      199,
+      199,
+      199,
+      199,
+      689,
+      1457,
+      2262
+    ],
+    "adarsh_lines": [
+      199,
+      199,
+      199,
+      199,
+      199,
+      199,
+      199,
+      689,
+      1446,
+      2283
+    ],
+    "combined_count": 10,
+    "adarsh_count": 10
+  },
+  {
+    "value": "368",
+    "combined_lines": [
+      205,
+      363
+    ],
+    "adarsh_lines": [
+      205,
+      363
+    ],
+    "combined_count": 2,
+    "adarsh_count": 2
+  },
+  {
+    "value": "371",
+    "combined_lines": [
+      205,
+      363
+    ],
+    "adarsh_lines": [
+      205,
+      363
+    ],
+    "combined_count": 2,
+    "adarsh_count": 2
+  },
+  {
+    "value": "375",
+    "combined_lines": [
+      205,
+      363
+    ],
+    "adarsh_lines": [
+      205,
+      363
+    ],
+    "combined_count": 2,
+    "adarsh_count": 2
+  },
+  {
+    "value": "376",
+    "combined_lines": [
+      205,
+      205,
+      205,
+      363,
+      363,
+      363
+    ],
+    "adarsh_lines": [
+      205,
+      205,
+      205,
+      363,
+      363,
+      363
+    ],
+    "combined_count": 6,
+    "adarsh_count": 6
+  },
+  {
+    "value": "378",
+    "combined_lines": [
+      205,
+      363
+    ],
+    "adarsh_lines": [
+      205,
+      363
+    ],
+    "combined_count": 2,
+    "adarsh_count": 2
+  },
+  {
+    "value": "379",
+    "combined_lines": [
+      205,
+      205,
+      205,
+      205,
+      205,
+      363,
+      363,
+      363,
+      363,
+      363
+    ],
+    "adarsh_lines": [
+      205,
+      205,
+      205,
+      205,
+      205,
+      363,
+      363,
+      363,
+      363,
+      363
+    ],
+    "combined_count": 10,
+    "adarsh_count": 10
+  },
+  {
+    "value": "380",
+    "combined_lines": [
+      2302
+    ],
+    "adarsh_lines": [
+      2323
+    ],
+    "combined_count": 1,
+    "adarsh_count": 1
+  },
+  {
+    "value": "390",
+    "combined_lines": [
+      205,
+      363
+    ],
+    "adarsh_lines": [
+      205,
+      363
+    ],
+    "combined_count": 2,
+    "adarsh_count": 2
+  },
+  {
+    "value": "393",
+    "combined_lines": [
+      205,
+      205,
+      363,
+      363
+    ],
+    "adarsh_lines": [
+      205,
+      205,
+      363,
+      363
+    ],
+    "combined_count": 4,
+    "adarsh_count": 4
+  },
+  {
+    "value": "398",
+    "combined_lines": [
+      508,
+      692,
+      1084,
+      2107
+    ],
+    "adarsh_lines": [
+      2128
+    ],
+    "combined_count": 4,
+    "adarsh_count": 1
+  },
+  {
+    "value": "399",
+    "combined_lines": [
+      550,
+      635,
+      743,
+      747,
+      757,
+      757,
+      1085
+    ],
+    "adarsh_lines": [
+      743,
+      747,
+      757,
+      757
+    ],
+    "combined_count": 7,
+    "adarsh_count": 4
+  },
+  {
+    "value": "4.2",
+    "combined_lines": [
+      2012
+    ],
+    "adarsh_lines": [
+      2033
+    ],
+    "combined_count": 1,
+    "adarsh_count": 1
+  },
+  {
+    "value": "4.4",
+    "combined_lines": [
+      183,
+      188,
+      199
+    ],
+    "adarsh_lines": [
+      183,
+      188,
+      199
+    ],
+    "combined_count": 3,
+    "adarsh_count": 3
+  },
+  {
+    "value": "4.5",
+    "combined_lines": [
+      428,
+      428
+    ],
+    "adarsh_lines": [
+      428,
+      428
+    ],
+    "combined_count": 2,
+    "adarsh_count": 2
+  },
+  {
+    "value": "4.6",
+    "combined_lines": [
+      447,
+      447,
+      451,
+      451
+    ],
+    "adarsh_lines": [
+      447,
+      447,
+      451,
+      451
+    ],
+    "combined_count": 4,
+    "adarsh_count": 4
+  },
+  {
+    "value": "4.7",
+    "combined_lines": [
+      735
+    ],
+    "adarsh_lines": [
+      735
+    ],
+    "combined_count": 1,
+    "adarsh_count": 1
+  },
+  {
+    "value": "400",
+    "combined_lines": [
+      8,
+      76,
+      124,
+      199,
+      199,
+      485,
+      757,
+      1203,
+      1276,
+      1624,
+      1627,
+      1628,
+      2021,
+      2203,
+      2286
+    ],
+    "adarsh_lines": [
+      8,
+      76,
+      124,
+      199,
+      199,
+      485,
+      757,
+      1192,
+      1265,
+      1625,
+      1628,
+      1629,
+      2042,
+      2224,
+      2307
+    ],
+    "combined_count": 15,
+    "adarsh_count": 15
+  },
+  {
+    "value": "403",
+    "combined_lines": [
+      205,
+      363
+    ],
+    "adarsh_lines": [
+      205,
+      363
+    ],
+    "combined_count": 2,
+    "adarsh_count": 2
+  },
+  {
+    "value": "416",
+    "combined_lines": [
+      199
+    ],
+    "adarsh_lines": [
+      199
+    ],
+    "combined_count": 1,
+    "adarsh_count": 1
+  },
+  {
+    "value": "417",
+    "combined_lines": [
+      205,
+      363
+    ],
+    "adarsh_lines": [
+      205,
+      363
+    ],
+    "combined_count": 2,
+    "adarsh_count": 2
+  },
+  {
+    "value": "418",
+    "combined_lines": [
+      205,
+      363
+    ],
+    "adarsh_lines": [
+      205,
+      363
+    ],
+    "combined_count": 2,
+    "adarsh_count": 2
+  },
+  {
+    "value": "420",
+    "combined_lines": [
+      689,
+      2230,
+      2285
+    ],
+    "adarsh_lines": [
+      689,
+      2251,
+      2306
+    ],
+    "combined_count": 3,
+    "adarsh_count": 3
+  },
+  {
+    "value": "443",
+    "combined_lines": [
+      205,
+      363
+    ],
+    "adarsh_lines": [
+      205,
+      363
+    ],
+    "combined_count": 2,
+    "adarsh_count": 2
+  },
+  {
+    "value": "446",
+    "combined_lines": [
+      205,
+      363
+    ],
+    "adarsh_lines": [
+      205,
+      363
+    ],
+    "combined_count": 2,
+    "adarsh_count": 2
+  },
+  {
+    "value": "447",
+    "combined_lines": [
+      205,
+      363,
+      508,
+      692,
+      1085,
+      2107
+    ],
+    "adarsh_lines": [
+      205,
+      363,
+      2128
+    ],
+    "combined_count": 6,
+    "adarsh_count": 3
+  },
+  {
+    "value": "448",
+    "combined_lines": [
+      205,
+      363,
+      508,
+      692,
+      1086,
+      2107
+    ],
+    "adarsh_lines": [
+      205,
+      363,
+      2128
+    ],
+    "combined_count": 6,
+    "adarsh_count": 3
+  },
+  {
+    "value": "450",
+    "combined_lines": [
+      2287
+    ],
+    "adarsh_lines": [
+      2308
+    ],
+    "combined_count": 1,
+    "adarsh_count": 1
+  },
+  {
+    "value": "454",
+    "combined_lines": [
+      205,
+      363
+    ],
+    "adarsh_lines": [
+      205,
+      363
+    ],
+    "combined_count": 2,
+    "adarsh_count": 2
+  },
+  {
+    "value": "456",
+    "combined_lines": [
+      570,
+      737,
+      1080
+    ],
+    "adarsh_lines": [
+      737
+    ],
+    "combined_count": 3,
+    "adarsh_count": 1
+  },
+  {
+    "value": "459",
+    "combined_lines": [
+      205,
+      363
+    ],
+    "adarsh_lines": [
+      205,
+      363
+    ],
+    "combined_count": 2,
+    "adarsh_count": 2
+  },
+  {
+    "value": "460",
+    "combined_lines": [
+      205,
+      363
+    ],
+    "adarsh_lines": [
+      205,
+      363
+    ],
+    "combined_count": 2,
+    "adarsh_count": 2
+  },
+  {
+    "value": "468",
+    "combined_lines": [
+      199,
+      205,
+      363
+    ],
+    "adarsh_lines": [
+      199,
+      205,
+      363
+    ],
+    "combined_count": 3,
+    "adarsh_count": 3
+  },
+  {
+    "value": "470",
+    "combined_lines": [
+      604,
+      689
+    ],
+    "adarsh_lines": [
+      604,
+      689
+    ],
+    "combined_count": 2,
+    "adarsh_count": 2
+  },
+  {
+    "value": "475",
+    "combined_lines": [
+      205,
+      363
+    ],
+    "adarsh_lines": [
+      205,
+      363
+    ],
+    "combined_count": 2,
+    "adarsh_count": 2
+  },
+  {
+    "value": "480",
+    "combined_lines": [
+      689
+    ],
+    "adarsh_lines": [
+      689
+    ],
+    "combined_count": 1,
+    "adarsh_count": 1
+  },
+  {
+    "value": "487",
+    "combined_lines": [
+      205,
+      363
+    ],
+    "adarsh_lines": [
+      205,
+      363
+    ],
+    "combined_count": 2,
+    "adarsh_count": 2
+  },
+  {
+    "value": "489",
+    "combined_lines": [
+      205,
+      363
+    ],
+    "adarsh_lines": [
+      205,
+      363
+    ],
+    "combined_count": 2,
+    "adarsh_count": 2
+  },
+  {
+    "value": "499",
+    "combined_lines": [
+      638,
+      747
+    ],
+    "adarsh_lines": [
+      638,
+      747
+    ],
+    "combined_count": 2,
+    "adarsh_count": 2
+  },
+  {
+    "value": "5.8",
+    "combined_lines": [
+      689,
+      689,
+      689,
+      689,
+      689,
+      1140,
+      2281
+    ],
+    "adarsh_lines": [
+      689,
+      689,
+      689,
+      689,
+      689,
+      1129,
+      2302
+    ],
+    "combined_count": 7,
+    "adarsh_count": 7
+  },
+  {
+    "value": "509",
+    "combined_lines": [
+      205,
+      363
+    ],
+    "adarsh_lines": [
+      205,
+      363
+    ],
+    "combined_count": 2,
+    "adarsh_count": 2
+  },
+  {
+    "value": "510",
+    "combined_lines": [
+      205,
+      363
+    ],
+    "adarsh_lines": [
+      205,
+      363
+    ],
+    "combined_count": 2,
+    "adarsh_count": 2
+  },
+  {
+    "value": "511",
+    "combined_lines": [
+      205,
+      363
+    ],
+    "adarsh_lines": [
+      205,
+      363
+    ],
+    "combined_count": 2,
+    "adarsh_count": 2
+  },
+  {
+    "value": "516",
+    "combined_lines": [
+      199
+    ],
+    "adarsh_lines": [
+      199
+    ],
+    "combined_count": 1,
+    "adarsh_count": 1
+  },
+  {
+    "value": "526",
+    "combined_lines": [
+      205,
+      363
+    ],
+    "adarsh_lines": [
+      205,
+      363
+    ],
+    "combined_count": 2,
+    "adarsh_count": 2
+  },
+  {
+    "value": "528",
+    "combined_lines": [
+      205,
+      363
+    ],
+    "adarsh_lines": [
+      205,
+      363
+    ],
+    "combined_count": 2,
+    "adarsh_count": 2
+  },
+  {
+    "value": "533",
+    "combined_lines": [
+      205,
+      363
+    ],
+    "adarsh_lines": [
+      205,
+      363
+    ],
+    "combined_count": 2,
+    "adarsh_count": 2
+  },
+  {
+    "value": "548",
+    "combined_lines": [
+      205,
+      363
+    ],
+    "adarsh_lines": [
+      205,
+      363
+    ],
+    "combined_count": 2,
+    "adarsh_count": 2
+  },
+  {
+    "value": "551",
+    "combined_lines": [
+      205,
+      363
+    ],
+    "adarsh_lines": [
+      205,
+      363
+    ],
+    "combined_count": 2,
+    "adarsh_count": 2
+  },
+  {
+    "value": "553",
+    "combined_lines": [
+      205,
+      205,
+      363,
+      363
+    ],
+    "adarsh_lines": [
+      205,
+      205,
+      363,
+      363
+    ],
+    "combined_count": 4,
+    "adarsh_count": 4
+  },
+  {
+    "value": "556",
+    "combined_lines": [
+      428,
+      428
+    ],
+    "adarsh_lines": [
+      428,
+      428
+    ],
+    "combined_count": 2,
+    "adarsh_count": 2
+  },
+  {
+    "value": "557",
+    "combined_lines": [
+      205,
+      205,
+      363,
+      363
+    ],
+    "adarsh_lines": [
+      205,
+      205,
+      363,
+      363
+    ],
+    "combined_count": 4,
+    "adarsh_count": 4
+  },
+  {
+    "value": "569",
+    "combined_lines": [
+      205,
+      205,
+      363,
+      363
+    ],
+    "adarsh_lines": [
+      205,
+      205,
+      363,
+      363
+    ],
+    "combined_count": 4,
+    "adarsh_count": 4
+  },
+  {
+    "value": "573",
+    "combined_lines": [
+      205,
+      363
+    ],
+    "adarsh_lines": [
+      205,
+      363
+    ],
+    "combined_count": 2,
+    "adarsh_count": 2
+  },
+  {
+    "value": "577",
+    "combined_lines": [
+      205,
+      363
+    ],
+    "adarsh_lines": [
+      205,
+      363
+    ],
+    "combined_count": 2,
+    "adarsh_count": 2
+  },
+  {
+    "value": "593",
+    "combined_lines": [
+      205,
+      363
+    ],
+    "adarsh_lines": [
+      205,
+      363
+    ],
+    "combined_count": 2,
+    "adarsh_count": 2
+  },
+  {
+    "value": "599",
+    "combined_lines": [
+      508,
+      508,
+      508,
+      508,
+      570,
+      570,
+      587,
+      587,
+      634,
+      634,
+      635,
+      692,
+      692,
+      1080,
+      1080,
+      1085,
+      1090,
+      1090,
+      1091,
+      1091,
+      1092,
+      1092,
+      1093,
+      1093,
+      1628,
+      2107,
+      2107,
+      2107,
+      2107
+    ],
+    "adarsh_lines": [
+      508,
+      508,
+      570,
+      587,
+      634,
+      634,
+      634,
+      692,
+      1081,
+      1084,
+      1084,
+      1629,
+      1705,
+      2128,
+      2128,
+      2128,
+      2128
+    ],
+    "combined_count": 29,
+    "adarsh_count": 17
+  },
+  {
+    "value": "6.3",
+    "combined_lines": [
+      604,
+      604,
+      604,
+      689,
+      689,
+      689,
+      2284
+    ],
+    "adarsh_lines": [
+      604,
+      604,
+      604,
+      689,
+      689,
+      689,
+      2305
+    ],
+    "combined_count": 7,
+    "adarsh_count": 7
+  },
+  {
+    "value": "6.4",
+    "combined_lines": [
+      735
+    ],
+    "adarsh_lines": [
+      735
+    ],
+    "combined_count": 1,
+    "adarsh_count": 1
+  },
+  {
+    "value": "604",
+    "combined_lines": [
+      199
+    ],
+    "adarsh_lines": [
+      199
+    ],
+    "combined_count": 1,
+    "adarsh_count": 1
+  },
+  {
+    "value": "612",
+    "combined_lines": [
+      205,
+      363
+    ],
+    "adarsh_lines": [
+      205,
+      363
+    ],
+    "combined_count": 2,
+    "adarsh_count": 2
+  },
+  {
+    "value": "617",
+    "combined_lines": [
+      205,
+      363
+    ],
+    "adarsh_lines": [
+      205,
+      363
+    ],
+    "combined_count": 2,
+    "adarsh_count": 2
+  },
+  {
+    "value": "619",
+    "combined_lines": [
+      205,
+      363
+    ],
+    "adarsh_lines": [
+      205,
+      363
+    ],
+    "combined_count": 2,
+    "adarsh_count": 2
+  },
+  {
+    "value": "623",
+    "combined_lines": [
+      205,
+      363
+    ],
+    "adarsh_lines": [
+      205,
+      363
+    ],
+    "combined_count": 2,
+    "adarsh_count": 2
+  },
+  {
+    "value": "628",
+    "combined_lines": [
+      205,
+      363
+    ],
+    "adarsh_lines": [
+      205,
+      363
+    ],
+    "combined_count": 2,
+    "adarsh_count": 2
+  },
+  {
+    "value": "635",
+    "combined_lines": [
+      205,
+      363
+    ],
+    "adarsh_lines": [
+      205,
+      363
+    ],
+    "combined_count": 2,
+    "adarsh_count": 2
+  },
+  {
+    "value": "640",
+    "combined_lines": [
+      205,
+      363
+    ],
+    "adarsh_lines": [
+      205,
+      363
+    ],
+    "combined_count": 2,
+    "adarsh_count": 2
+  },
+  {
+    "value": "647",
+    "combined_lines": [
+      205,
+      363
+    ],
+    "adarsh_lines": [
+      205,
+      363
+    ],
+    "combined_count": 2,
+    "adarsh_count": 2
+  },
+  {
+    "value": "649",
+    "combined_lines": [
+      199,
+      205,
+      363
+    ],
+    "adarsh_lines": [
+      199,
+      205,
+      363
+    ],
+    "combined_count": 3,
+    "adarsh_count": 3
+  },
+  {
+    "value": "650",
+    "combined_lines": [
+      604,
+      689
+    ],
+    "adarsh_lines": [
+      604,
+      689
+    ],
+    "combined_count": 2,
+    "adarsh_count": 2
+  },
+  {
+    "value": "654",
+    "combined_lines": [
+      205,
+      363,
+      627,
+      627,
+      627
+    ],
+    "adarsh_lines": [
+      205,
+      363,
+      627,
+      627,
+      627
+    ],
+    "combined_count": 5,
+    "adarsh_count": 5
+  },
+  {
+    "value": "655",
+    "combined_lines": [
+      205,
+      205,
+      363,
+      363
+    ],
+    "adarsh_lines": [
+      205,
+      205,
+      363,
+      363
+    ],
+    "combined_count": 4,
+    "adarsh_count": 4
+  },
+  {
+    "value": "664",
+    "combined_lines": [
+      205,
+      363
+    ],
+    "adarsh_lines": [
+      205,
+      363
+    ],
+    "combined_count": 2,
+    "adarsh_count": 2
+  },
+  {
+    "value": "665",
+    "combined_lines": [
+      205,
+      363
+    ],
+    "adarsh_lines": [
+      205,
+      363
+    ],
+    "combined_count": 2,
+    "adarsh_count": 2
+  },
+  {
+    "value": "666",
+    "combined_lines": [
+      199,
+      348,
+      508,
+      569,
+      692,
+      741,
+      2107
+    ],
+    "adarsh_lines": [
+      199,
+      348,
+      2128
+    ],
+    "combined_count": 7,
+    "adarsh_count": 3
+  },
+  {
+    "value": "669",
+    "combined_lines": [
+      205,
+      363
+    ],
+    "adarsh_lines": [
+      205,
+      363
+    ],
+    "combined_count": 2,
+    "adarsh_count": 2
+  },
+  {
+    "value": "673",
+    "combined_lines": [
+      205,
+      363
+    ],
+    "adarsh_lines": [
+      205,
+      363
+    ],
+    "combined_count": 2,
+    "adarsh_count": 2
+  },
+  {
+    "value": "680",
+    "combined_lines": [
+      604
+    ],
+    "adarsh_lines": [
+      604
+    ],
+    "combined_count": 1,
+    "adarsh_count": 1
+  },
+  {
+    "value": "688",
+    "combined_lines": [
+      205,
+      363
+    ],
+    "adarsh_lines": [
+      205,
+      363
+    ],
+    "combined_count": 2,
+    "adarsh_count": 2
+  },
+  {
+    "value": "693",
+    "combined_lines": [
+      205,
+      363
+    ],
+    "adarsh_lines": [
+      205,
+      363
+    ],
+    "combined_count": 2,
+    "adarsh_count": 2
+  },
+  {
+    "value": "696",
+    "combined_lines": [
+      205,
+      363
+    ],
+    "adarsh_lines": [
+      205,
+      363
+    ],
+    "combined_count": 2,
+    "adarsh_count": 2
+  },
+  {
+    "value": "699",
+    "combined_lines": [
+      205,
+      205,
+      205,
+      363,
+      363,
+      363
+    ],
+    "adarsh_lines": [
+      205,
+      205,
+      205,
+      363,
+      363,
+      363
+    ],
+    "combined_count": 6,
+    "adarsh_count": 6
+  },
+  {
+    "value": "7.0",
+    "combined_lines": [
+      435,
+      435
+    ],
+    "adarsh_lines": [
+      435,
+      435
+    ],
+    "combined_count": 2,
+    "adarsh_count": 2
+  },
+  {
+    "value": "708",
+    "combined_lines": [
+      205,
+      363
+    ],
+    "adarsh_lines": [
+      205,
+      363
+    ],
+    "combined_count": 2,
+    "adarsh_count": 2
+  },
+  {
+    "value": "713",
+    "combined_lines": [
+      205,
+      205,
+      363,
+      363
+    ],
+    "adarsh_lines": [
+      205,
+      205,
+      363,
+      363
+    ],
+    "combined_count": 4,
+    "adarsh_count": 4
+  },
+  {
+    "value": "717",
+    "combined_lines": [
+      205,
+      363
+    ],
+    "adarsh_lines": [
+      205,
+      363
+    ],
+    "combined_count": 2,
+    "adarsh_count": 2
+  },
+  {
+    "value": "718",
+    "combined_lines": [
+      205,
+      363
+    ],
+    "adarsh_lines": [
+      205,
+      363
+    ],
+    "combined_count": 2,
+    "adarsh_count": 2
+  },
+  {
+    "value": "720",
+    "combined_lines": [
+      689
+    ],
+    "adarsh_lines": [
+      689
+    ],
+    "combined_count": 1,
+    "adarsh_count": 1
+  },
+  {
+    "value": "723",
+    "combined_lines": [
+      205,
+      363
+    ],
+    "adarsh_lines": [
+      205,
+      363
+    ],
+    "combined_count": 2,
+    "adarsh_count": 2
+  },
+  {
+    "value": "727",
+    "combined_lines": [
+      205,
+      363
+    ],
+    "adarsh_lines": [
+      205,
+      363
+    ],
+    "combined_count": 2,
+    "adarsh_count": 2
+  },
+  {
+    "value": "733",
+    "combined_lines": [
+      205,
+      205,
+      205,
+      363,
+      363,
+      363
+    ],
+    "adarsh_lines": [
+      205,
+      205,
+      205,
+      363,
+      363,
+      363
+    ],
+    "combined_count": 6,
+    "adarsh_count": 6
+  },
+  {
+    "value": "736",
+    "combined_lines": [
+      205,
+      363
+    ],
+    "adarsh_lines": [
+      205,
+      363
+    ],
+    "combined_count": 2,
+    "adarsh_count": 2
+  },
+  {
+    "value": "740",
+    "combined_lines": [
+      508,
+      692,
+      1084,
+      2107
+    ],
+    "adarsh_lines": [
+      2128
+    ],
+    "combined_count": 4,
+    "adarsh_count": 1
+  },
+  {
+    "value": "744",
+    "combined_lines": [
+      604
+    ],
+    "adarsh_lines": [
+      604
+    ],
+    "combined_count": 1,
+    "adarsh_count": 1
+  },
+  {
+    "value": "748",
+    "combined_lines": [
+      205,
+      363
+    ],
+    "adarsh_lines": [
+      205,
+      363
+    ],
+    "combined_count": 2,
+    "adarsh_count": 2
+  },
+  {
+    "value": "756",
+    "combined_lines": [
+      205,
+      363
+    ],
+    "adarsh_lines": [
+      205,
+      363
+    ],
+    "combined_count": 2,
+    "adarsh_count": 2
+  },
+  {
+    "value": "761",
+    "combined_lines": [
+      205,
+      363
+    ],
+    "adarsh_lines": [
+      205,
+      363
+    ],
+    "combined_count": 2,
+    "adarsh_count": 2
+  },
+  {
+    "value": "764",
+    "combined_lines": [
+      205,
+      363
+    ],
+    "adarsh_lines": [
+      205,
+      363
+    ],
+    "combined_count": 2,
+    "adarsh_count": 2
+  },
+  {
+    "value": "766",
+    "combined_lines": [
+      205,
+      363,
+      559,
+      1653
+    ],
+    "adarsh_lines": [
+      205,
+      363,
+      1654
+    ],
+    "combined_count": 4,
+    "adarsh_count": 3
+  },
+  {
+    "value": "767",
+    "combined_lines": [
+      205,
+      363
+    ],
+    "adarsh_lines": [
+      205,
+      363
+    ],
+    "combined_count": 2,
+    "adarsh_count": 2
+  },
+  {
+    "value": "773",
+    "combined_lines": [
+      205,
+      205,
+      363,
+      363
+    ],
+    "adarsh_lines": [
+      205,
+      205,
+      363,
+      363
+    ],
+    "combined_count": 4,
+    "adarsh_count": 4
+  },
+  {
+    "value": "776",
+    "combined_lines": [
+      205,
+      363
+    ],
+    "adarsh_lines": [
+      205,
+      363
+    ],
+    "combined_count": 2,
+    "adarsh_count": 2
+  },
+  {
+    "value": "777",
+    "combined_lines": [
+      205,
+      205,
+      363,
+      363
+    ],
+    "adarsh_lines": [
+      205,
+      205,
+      363,
+      363
+    ],
+    "combined_count": 4,
+    "adarsh_count": 4
+  },
+  {
+    "value": "782",
+    "combined_lines": [
+      205,
+      363
+    ],
+    "adarsh_lines": [
+      205,
+      363
+    ],
+    "combined_count": 2,
+    "adarsh_count": 2
+  },
+  {
+    "value": "788",
+    "combined_lines": [
+      199
+    ],
+    "adarsh_lines": [
+      199
+    ],
+    "combined_count": 1,
+    "adarsh_count": 1
+  },
+  {
+    "value": "793",
+    "combined_lines": [
+      205,
+      363
+    ],
+    "adarsh_lines": [
+      205,
+      363
+    ],
+    "combined_count": 2,
+    "adarsh_count": 2
+  },
+  {
+    "value": "796",
+    "combined_lines": [
+      205,
+      363
+    ],
+    "adarsh_lines": [
+      205,
+      363
+    ],
+    "combined_count": 2,
+    "adarsh_count": 2
+  },
+  {
+    "value": "8.5",
+    "combined_lines": [
+      432,
+      569
+    ],
+    "adarsh_lines": [
+      432
+    ],
+    "combined_count": 2,
+    "adarsh_count": 1
+  },
+  {
+    "value": "8.7",
+    "combined_lines": [
+      430,
+      430
+    ],
+    "adarsh_lines": [
+      430,
+      430
+    ],
+    "combined_count": 2,
+    "adarsh_count": 2
+  },
+  {
+    "value": "803",
+    "combined_lines": [
+      205,
+      363
+    ],
+    "adarsh_lines": [
+      205,
+      363
+    ],
+    "combined_count": 2,
+    "adarsh_count": 2
+  },
+  {
+    "value": "809",
+    "combined_lines": [
+      205,
+      363
+    ],
+    "adarsh_lines": [
+      205,
+      363
+    ],
+    "combined_count": 2,
+    "adarsh_count": 2
+  },
+  {
+    "value": "823",
+    "combined_lines": [
+      205,
+      205,
+      363,
+      363
+    ],
+    "adarsh_lines": [
+      205,
+      205,
+      363,
+      363
+    ],
+    "combined_count": 4,
+    "adarsh_count": 4
+  },
+  {
+    "value": "825",
+    "combined_lines": [
+      205,
+      205,
+      363,
+      363
+    ],
+    "adarsh_lines": [
+      205,
+      205,
+      363,
+      363
+    ],
+    "combined_count": 4,
+    "adarsh_count": 4
+  },
+  {
+    "value": "827",
+    "combined_lines": [
+      205,
+      363
+    ],
+    "adarsh_lines": [
+      205,
+      363
+    ],
+    "combined_count": 2,
+    "adarsh_count": 2
+  },
+  {
+    "value": "834",
+    "combined_lines": [
+      205,
+      363
+    ],
+    "adarsh_lines": [
+      205,
+      363
+    ],
+    "combined_count": 2,
+    "adarsh_count": 2
+  },
+  {
+    "value": "837",
+    "combined_lines": [
+      205,
+      363
+    ],
+    "adarsh_lines": [
+      205,
+      363
+    ],
+    "combined_count": 2,
+    "adarsh_count": 2
+  },
+  {
+    "value": "839",
+    "combined_lines": [
+      205,
+      363
+    ],
+    "adarsh_lines": [
+      205,
+      363
+    ],
+    "combined_count": 2,
+    "adarsh_count": 2
+  },
+  {
+    "value": "844",
+    "combined_lines": [
+      205,
+      363
+    ],
+    "adarsh_lines": [
+      205,
+      363
+    ],
+    "combined_count": 2,
+    "adarsh_count": 2
+  },
+  {
+    "value": "847",
+    "combined_lines": [
+      2012
+    ],
+    "adarsh_lines": [
+      2033
+    ],
+    "combined_count": 1,
+    "adarsh_count": 1
+  },
+  {
+    "value": "848",
+    "combined_lines": [
+      205,
+      363
+    ],
+    "adarsh_lines": [
+      205,
+      363
+    ],
+    "combined_count": 2,
+    "adarsh_count": 2
+  },
+  {
+    "value": "850",
+    "combined_lines": [
+      604
+    ],
+    "adarsh_lines": [
+      604
+    ],
+    "combined_count": 1,
+    "adarsh_count": 1
+  },
+  {
+    "value": "851",
+    "combined_lines": [
+      205,
+      205,
+      363,
+      363
+    ],
+    "adarsh_lines": [
+      205,
+      205,
+      363,
+      363
+    ],
+    "combined_count": 4,
+    "adarsh_count": 4
+  },
+  {
+    "value": "852",
+    "combined_lines": [
+      205,
+      363
+    ],
+    "adarsh_lines": [
+      205,
+      363
+    ],
+    "combined_count": 2,
+    "adarsh_count": 2
+  },
+  {
+    "value": "854",
+    "combined_lines": [
+      205,
+      363
+    ],
+    "adarsh_lines": [
+      205,
+      363
+    ],
+    "combined_count": 2,
+    "adarsh_count": 2
+  },
+  {
+    "value": "858",
+    "combined_lines": [
+      205,
+      363
+    ],
+    "adarsh_lines": [
+      205,
+      363
+    ],
+    "combined_count": 2,
+    "adarsh_count": 2
+  },
+  {
+    "value": "862",
+    "combined_lines": [
+      604,
+      689
+    ],
+    "adarsh_lines": [
+      604,
+      689
+    ],
+    "combined_count": 2,
+    "adarsh_count": 2
+  },
+  {
+    "value": "863",
+    "combined_lines": [
+      205,
+      363
+    ],
+    "adarsh_lines": [
+      205,
+      363
+    ],
+    "combined_count": 2,
+    "adarsh_count": 2
+  },
+  {
+    "value": "866",
+    "combined_lines": [
+      205,
+      363
+    ],
+    "adarsh_lines": [
+      205,
+      363
+    ],
+    "combined_count": 2,
+    "adarsh_count": 2
+  },
+  {
+    "value": "868",
+    "combined_lines": [
+      205,
+      363
+    ],
+    "adarsh_lines": [
+      205,
+      363
+    ],
+    "combined_count": 2,
+    "adarsh_count": 2
+  },
+  {
+    "value": "877",
+    "combined_lines": [
+      205,
+      363
+    ],
+    "adarsh_lines": [
+      205,
+      363
+    ],
+    "combined_count": 2,
+    "adarsh_count": 2
+  },
+  {
+    "value": "883",
+    "combined_lines": [
+      205,
+      363
+    ],
+    "adarsh_lines": [
+      205,
+      363
+    ],
+    "combined_count": 2,
+    "adarsh_count": 2
+  },
+  {
+    "value": "884",
+    "combined_lines": [
+      205,
+      363
+    ],
+    "adarsh_lines": [
+      205,
+      363
+    ],
+    "combined_count": 2,
+    "adarsh_count": 2
+  },
+  {
+    "value": "886",
+    "combined_lines": [
+      205,
+      363
+    ],
+    "adarsh_lines": [
+      205,
+      363
+    ],
+    "combined_count": 2,
+    "adarsh_count": 2
+  },
+  {
+    "value": "890",
+    "combined_lines": [
+      689,
+      689
+    ],
+    "adarsh_lines": [
+      689,
+      689
+    ],
+    "combined_count": 2,
+    "adarsh_count": 2
+  },
+  {
+    "value": "898",
+    "combined_lines": [
+      205,
+      363,
+      572
+    ],
+    "adarsh_lines": [
+      205,
+      363
+    ],
+    "combined_count": 3,
+    "adarsh_count": 2
+  },
+  {
+    "value": "9.3",
+    "combined_lines": [
+      459
+    ],
+    "adarsh_lines": [
+      459
+    ],
+    "combined_count": 1,
+    "adarsh_count": 1
+  },
+  {
+    "value": "900",
+    "combined_lines": [
+      8,
+      19,
+      156,
+      323,
+      347,
+      735,
+      760,
+      1327,
+      1329,
+      1331,
+      1346
+    ],
+    "adarsh_lines": [
+      8,
+      19,
+      156,
+      323,
+      347,
+      735,
+      760,
+      1316,
+      1318,
+      1320,
+      1335
+    ],
+    "combined_count": 11,
+    "adarsh_count": 11
+  },
+  {
+    "value": "913",
+    "combined_lines": [
+      205,
+      205,
+      205,
+      363,
+      363,
+      363
+    ],
+    "adarsh_lines": [
+      205,
+      205,
+      205,
+      363,
+      363,
+      363
+    ],
+    "combined_count": 6,
+    "adarsh_count": 6
+  },
+  {
+    "value": "917",
+    "combined_lines": [
+      205,
+      363
+    ],
+    "adarsh_lines": [
+      205,
+      363
+    ],
+    "combined_count": 2,
+    "adarsh_count": 2
+  },
+  {
+    "value": "923",
+    "combined_lines": [
+      205,
+      363
+    ],
+    "adarsh_lines": [
+      205,
+      363
+    ],
+    "combined_count": 2,
+    "adarsh_count": 2
+  },
+  {
+    "value": "927",
+    "combined_lines": [
+      205,
+      205,
+      205,
+      363,
+      363,
+      363
+    ],
+    "adarsh_lines": [
+      205,
+      205,
+      205,
+      363,
+      363,
+      363
+    ],
+    "combined_count": 6,
+    "adarsh_count": 6
+  },
+  {
+    "value": "936",
+    "combined_lines": [
+      205,
+      363
+    ],
+    "adarsh_lines": [
+      205,
+      363
+    ],
+    "combined_count": 2,
+    "adarsh_count": 2
+  },
+  {
+    "value": "937",
+    "combined_lines": [
+      199
+    ],
+    "adarsh_lines": [
+      199
+    ],
+    "combined_count": 1,
+    "adarsh_count": 1
+  },
+  {
+    "value": "940",
+    "combined_lines": [
+      199
+    ],
+    "adarsh_lines": [
+      199
+    ],
+    "combined_count": 1,
+    "adarsh_count": 1
+  },
+  {
+    "value": "943",
+    "combined_lines": [
+      205,
+      363
+    ],
+    "adarsh_lines": [
+      205,
+      363
+    ],
+    "combined_count": 2,
+    "adarsh_count": 2
+  },
+  {
+    "value": "948",
+    "combined_lines": [
+      205,
+      363
+    ],
+    "adarsh_lines": [
+      205,
+      363
+    ],
+    "combined_count": 2,
+    "adarsh_count": 2
+  },
+  {
+    "value": "951",
+    "combined_lines": [
+      205,
+      363
+    ],
+    "adarsh_lines": [
+      205,
+      363
+    ],
+    "combined_count": 2,
+    "adarsh_count": 2
+  },
+  {
+    "value": "957",
+    "combined_lines": [
+      205,
+      363
+    ],
+    "adarsh_lines": [
+      205,
+      363
+    ],
+    "combined_count": 2,
+    "adarsh_count": 2
+  },
+  {
+    "value": "961",
+    "combined_lines": [
+      205,
+      205,
+      363,
+      363
+    ],
+    "adarsh_lines": [
+      205,
+      205,
+      363,
+      363
+    ],
+    "combined_count": 4,
+    "adarsh_count": 4
+  },
+  {
+    "value": "969",
+    "combined_lines": [
+      205,
+      363
+    ],
+    "adarsh_lines": [
+      205,
+      363
+    ],
+    "combined_count": 2,
+    "adarsh_count": 2
+  },
+  {
+    "value": "971",
+    "combined_lines": [
+      205,
+      363
+    ],
+    "adarsh_lines": [
+      205,
+      363
+    ],
+    "combined_count": 2,
+    "adarsh_count": 2
+  },
+  {
+    "value": "973",
+    "combined_lines": [
+      205,
+      205,
+      205,
+      363,
+      363,
+      363
+    ],
+    "adarsh_lines": [
+      205,
+      205,
+      205,
+      363,
+      363,
+      363
+    ],
+    "combined_count": 6,
+    "adarsh_count": 6
+  },
+  {
+    "value": "975",
+    "combined_lines": [
+      205,
+      363
+    ],
+    "adarsh_lines": [
+      205,
+      363
+    ],
+    "combined_count": 2,
+    "adarsh_count": 2
+  },
+  {
+    "value": "979",
+    "combined_lines": [
+      205,
+      363
+    ],
+    "adarsh_lines": [
+      205,
+      363
+    ],
+    "combined_count": 2,
+    "adarsh_count": 2
+  },
+  {
+    "value": "981",
+    "combined_lines": [
+      205,
+      363
+    ],
+    "adarsh_lines": [
+      205,
+      363
+    ],
+    "combined_count": 2,
+    "adarsh_count": 2
+  },
+  {
+    "value": "983",
+    "combined_lines": [
+      205,
+      363
+    ],
+    "adarsh_lines": [
+      205,
+      363
+    ],
+    "combined_count": 2,
+    "adarsh_count": 2
+  },
+  {
+    "value": "985",
+    "combined_lines": [
+      205,
+      363
+    ],
+    "adarsh_lines": [
+      205,
+      363
+    ],
+    "combined_count": 2,
+    "adarsh_count": 2
+  },
+  {
+    "value": "986",
+    "combined_lines": [
+      205,
+      363
+    ],
+    "adarsh_lines": [
+      205,
+      363
+    ],
+    "combined_count": 2,
+    "adarsh_count": 2
+  },
+  {
+    "value": "989",
+    "combined_lines": [
+      205,
+      363
+    ],
+    "adarsh_lines": [
+      205,
+      363
+    ],
+    "combined_count": 2,
+    "adarsh_count": 2
+  },
+  {
+    "value": "991",
+    "combined_lines": [
+      205,
+      363
+    ],
+    "adarsh_lines": [
+      205,
+      363
+    ],
+    "combined_count": 2,
+    "adarsh_count": 2
+  },
+  {
+    "value": "993",
+    "combined_lines": [
+      199,
+      205,
+      363
+    ],
+    "adarsh_lines": [
+      199,
+      205,
+      363
+    ],
+    "combined_count": 3,
+    "adarsh_count": 3
+  },
+  {
+    "value": "994",
+    "combined_lines": [
+      205,
+      363
+    ],
+    "adarsh_lines": [
+      205,
+      363
+    ],
+    "combined_count": 2,
+    "adarsh_count": 2
+  },
+  {
+    "value": "996",
+    "combined_lines": [
+      205,
+      363,
+      1527
+    ],
+    "adarsh_lines": [
+      205,
+      363,
+      1516
+    ],
+    "combined_count": 3,
+    "adarsh_count": 3
+  },
+  {
+    "value": "997",
+    "combined_lines": [
+      205,
+      363
+    ],
+    "adarsh_lines": [
+      205,
+      363
+    ],
+    "combined_count": 2,
+    "adarsh_count": 2
+  },
+  {
+    "value": "0362",
+    "combined_lines": [
+      205,
+      363
+    ],
+    "adarsh_lines": [
+      205,
+      363
+    ],
+    "combined_count": 2,
+    "adarsh_count": 2
+  },
+  {
+    "value": "0447",
+    "combined_lines": [
+      670,
+      670,
+      1890
+    ],
+    "adarsh_lines": [
+      670,
+      670,
+      1911
+    ],
+    "combined_count": 3,
+    "adarsh_count": 3
+  },
+  {
+    "value": "0521",
+    "combined_lines": [
+      670,
+      670,
+      1890
+    ],
+    "adarsh_lines": [
+      670,
+      670,
+      1911
+    ],
+    "combined_count": 3,
+    "adarsh_count": 3
+  },
+  {
+    "value": "0598",
+    "combined_lines": [
+      670,
+      670,
+      1890
+    ],
+    "adarsh_lines": [
+      670,
+      670,
+      1911
+    ],
+    "combined_count": 3,
+    "adarsh_count": 3
+  },
+  {
+    "value": "06.0",
+    "combined_lines": [
+      447,
+      447,
+      447,
+      447,
+      451,
+      451,
+      451,
+      451
+    ],
+    "adarsh_lines": [
+      447,
+      447,
+      447,
+      447,
+      451,
+      451,
+      451,
+      451
+    ],
+    "combined_count": 8,
+    "adarsh_count": 8
+  },
+  {
+    "value": "0682",
+    "combined_lines": [
+      670,
+      670,
+      1890
+    ],
+    "adarsh_lines": [
+      670,
+      670,
+      1911
+    ],
+    "combined_count": 3,
+    "adarsh_count": 3
+  },
+  {
+    "value": "0753",
+    "combined_lines": [
+      670,
+      670,
+      1890
+    ],
+    "adarsh_lines": [
+      670,
+      670,
+      1911
+    ],
+    "combined_count": 3,
+    "adarsh_count": 3
+  },
+  {
+    "value": "0819",
+    "combined_lines": [
+      205,
+      363
+    ],
+    "adarsh_lines": [
+      205,
+      363
+    ],
+    "combined_count": 2,
+    "adarsh_count": 2
+  },
+  {
+    "value": "1.01",
+    "combined_lines": [
+      90
+    ],
+    "adarsh_lines": [
+      90
+    ],
+    "combined_count": 1,
+    "adarsh_count": 1
+  },
+  {
+    "value": "1.02",
+    "combined_lines": [
+      112
+    ],
+    "adarsh_lines": [
+      112
+    ],
+    "combined_count": 1,
+    "adarsh_count": 1
+  },
+  {
+    "value": "1.03",
+    "combined_lines": [
+      158
+    ],
+    "adarsh_lines": [
+      158
+    ],
+    "combined_count": 1,
+    "adarsh_count": 1
+  },
+  {
+    "value": "1.05",
+    "combined_lines": [
+      111
+    ],
+    "adarsh_lines": [
+      111
+    ],
+    "combined_count": 1,
+    "adarsh_count": 1
+  },
+  {
+    "value": "1.07",
+    "combined_lines": [
+      735
+    ],
+    "adarsh_lines": [
+      735
+    ],
+    "combined_count": 1,
+    "adarsh_count": 1
+  },
+  {
+    "value": "1.15",
+    "combined_lines": [
+      28,
+      1229,
+      1820
+    ],
+    "adarsh_lines": [
+      28,
+      1218
+    ],
+    "combined_count": 3,
+    "adarsh_count": 2
+  },
+  {
+    "value": "1.24",
+    "combined_lines": [
+      735
+    ],
+    "adarsh_lines": [
+      735
+    ],
+    "combined_count": 1,
+    "adarsh_count": 1
+  },
+  {
+    "value": "1.28",
+    "combined_lines": [
+      735
+    ],
+    "adarsh_lines": [
+      735
+    ],
+    "combined_count": 1,
+    "adarsh_count": 1
+  },
+  {
+    "value": "1.31",
+    "combined_lines": [
+      735
+    ],
+    "adarsh_lines": [
+      735
+    ],
+    "combined_count": 1,
+    "adarsh_count": 1
+  },
+  {
+    "value": "1.32",
+    "combined_lines": [
+      735
+    ],
+    "adarsh_lines": [
+      735
+    ],
+    "combined_count": 1,
+    "adarsh_count": 1
+  },
+  {
+    "value": "1.34",
+    "combined_lines": [
+      735
+    ],
+    "adarsh_lines": [
+      735
+    ],
+    "combined_count": 1,
+    "adarsh_count": 1
+  },
+  {
+    "value": "1.44",
+    "combined_lines": [
+      735
+    ],
+    "adarsh_lines": [
+      735
+    ],
+    "combined_count": 1,
+    "adarsh_count": 1
+  },
+  {
+    "value": "1.51",
+    "combined_lines": [
+      447,
+      447,
+      447,
+      447,
+      451,
+      451,
+      451,
+      451
+    ],
+    "adarsh_lines": [
+      447,
+      447,
+      447,
+      447,
+      451,
+      451,
+      451,
+      451
+    ],
+    "combined_count": 8,
+    "adarsh_count": 8
+  },
+  {
+    "value": "1.53",
+    "combined_lines": [
+      735
+    ],
+    "adarsh_lines": [
+      735
+    ],
+    "combined_count": 1,
+    "adarsh_count": 1
+  },
+  {
+    "value": "1.56",
+    "combined_lines": [
+      36,
+      100,
+      104,
+      163
+    ],
+    "adarsh_lines": [
+      36,
+      100,
+      104,
+      163
+    ],
+    "combined_count": 4,
+    "adarsh_count": 4
+  },
+  {
+    "value": "1.62",
+    "combined_lines": [
+      735
+    ],
+    "adarsh_lines": [
+      735
+    ],
+    "combined_count": 1,
+    "adarsh_count": 1
+  },
+  {
+    "value": "1.71",
+    "combined_lines": [
+      435,
+      435,
+      443,
+      443,
+      735
+    ],
+    "adarsh_lines": [
+      435,
+      435,
+      443,
+      443,
+      735
+    ],
+    "combined_count": 5,
+    "adarsh_count": 5
+  },
+  {
+    "value": "1.72",
+    "combined_lines": [
+      435
+    ],
+    "adarsh_lines": [
+      435
+    ],
+    "combined_count": 1,
+    "adarsh_count": 1
+  },
+  {
+    "value": "1.77",
+    "combined_lines": [
+      735
+    ],
+    "adarsh_lines": [
+      735
+    ],
+    "combined_count": 1,
+    "adarsh_count": 1
+  },
+  {
+    "value": "1.82",
+    "combined_lines": [
+      447,
+      447,
+      447,
+      451,
+      451,
+      451
+    ],
+    "adarsh_lines": [
+      447,
+      447,
+      447,
+      451,
+      451,
+      451
+    ],
+    "combined_count": 6,
+    "adarsh_count": 6
+  },
+  {
+    "value": "1.98",
+    "combined_lines": [
+      735
+    ],
+    "adarsh_lines": [
+      735
+    ],
+    "combined_count": 1,
+    "adarsh_count": 1
+  },
+  {
+    "value": "10.1",
+    "combined_lines": [
+      735
+    ],
+    "adarsh_lines": [
+      735
+    ],
+    "combined_count": 1,
+    "adarsh_count": 1
+  },
+  {
+    "value": "10.5",
+    "combined_lines": [
+      432
+    ],
+    "adarsh_lines": [
+      432
+    ],
+    "combined_count": 1,
+    "adarsh_count": 1
+  },
+  {
+    "value": "1000",
+    "combined_lines": [
+      199,
+      739,
+      1080,
+      1203,
+      1782,
+      1791
+    ],
+    "adarsh_lines": [
+      199,
+      739,
+      1192,
+      1777,
+      1786
+    ],
+    "combined_count": 6,
+    "adarsh_count": 5
+  },
+  {
+    "value": "1054",
+    "combined_lines": [
+      205,
+      363
+    ],
+    "adarsh_lines": [
+      205,
+      363
+    ],
+    "combined_count": 2,
+    "adarsh_count": 2
+  },
+  {
+    "value": "11.3",
+    "combined_lines": [
+      1139
+    ],
+    "adarsh_lines": [
+      1128
+    ],
+    "combined_count": 1,
+    "adarsh_count": 1
+  },
+  {
+    "value": "1125",
+    "combined_lines": [
+      199
+    ],
+    "adarsh_lines": [
+      199
+    ],
+    "combined_count": 1,
+    "adarsh_count": 1
+  },
+  {
+    "value": "1157",
+    "combined_lines": [
+      205,
+      363
+    ],
+    "adarsh_lines": [
+      205,
+      363
+    ],
+    "combined_count": 2,
+    "adarsh_count": 2
+  },
+  {
+    "value": "12.3",
+    "combined_lines": [
+      628
+    ],
+    "adarsh_lines": [
+      628
+    ],
+    "combined_count": 1,
+    "adarsh_count": 1
+  },
+  {
+    "value": "12.4",
+    "combined_lines": [
+      604,
+      604,
+      604,
+      689,
+      689,
+      689,
+      689,
+      735
+    ],
+    "adarsh_lines": [
+      604,
+      604,
+      604,
+      689,
+      689,
+      689,
+      689,
+      735
+    ],
+    "combined_count": 8,
+    "adarsh_count": 8
+  },
+  {
+    "value": "12.5",
+    "combined_lines": [
+      457
+    ],
+    "adarsh_lines": [
+      457
+    ],
+    "combined_count": 1,
+    "adarsh_count": 1
+  },
+  {
+    "value": "12.8",
+    "combined_lines": [
+      2029
+    ],
+    "adarsh_lines": [
+      2050
+    ],
+    "combined_count": 1,
+    "adarsh_count": 1
+  },
+  {
+    "value": "1200",
+    "combined_lines": [
+      1265
+    ],
+    "adarsh_lines": [
+      1254
+    ],
+    "combined_count": 1,
+    "adarsh_count": 1
+  },
+  {
+    "value": "1278",
+    "combined_lines": [
+      205,
+      363
+    ],
+    "adarsh_lines": [
+      205,
+      363
+    ],
+    "combined_count": 2,
+    "adarsh_count": 2
+  },
+  {
+    "value": "13.5",
+    "combined_lines": [
+      432
+    ],
+    "adarsh_lines": [
+      432
+    ],
+    "combined_count": 1,
+    "adarsh_count": 1
+  },
+  {
+    "value": "1499",
+    "combined_lines": [
+      757,
+      757
+    ],
+    "adarsh_lines": [
+      757,
+      757
+    ],
+    "combined_count": 2,
+    "adarsh_count": 2
+  },
+  {
+    "value": "15.3",
+    "combined_lines": [
+      436,
+      436,
+      436,
+      436,
+      436,
+      436,
+      436
+    ],
+    "adarsh_lines": [
+      436,
+      436,
+      436,
+      436,
+      436,
+      436,
+      436
+    ],
+    "combined_count": 7,
+    "adarsh_count": 7
+  },
+  {
+    "value": "15.5",
+    "combined_lines": [
+      432
+    ],
+    "adarsh_lines": [
+      432
+    ],
+    "combined_count": 1,
+    "adarsh_count": 1
+  },
+  {
+    "value": "1500",
+    "combined_lines": [
+      199,
+      649,
+      652,
+      652,
+      652,
+      652,
+      1160,
+      1771,
+      1791,
+      1832,
+      1832,
+      2310
+    ],
+    "adarsh_lines": [
+      199,
+      649,
+      652,
+      652,
+      652,
+      652,
+      1149,
+      1766,
+      1786,
+      1853,
+      1853,
+      2331
+    ],
+    "combined_count": 12,
+    "adarsh_count": 12
+  },
+  {
+    "value": "16.1",
+    "combined_lines": [
+      457
+    ],
+    "adarsh_lines": [
+      457,
+      569
+    ],
+    "combined_count": 1,
+    "adarsh_count": 2
+  },
+  {
+    "value": "1600",
+    "combined_lines": [
+      1244,
+      1437
+    ],
+    "adarsh_lines": [
+      1233,
+      1426
+    ],
+    "combined_count": 2,
+    "adarsh_count": 2
+  },
+  {
+    "value": "1621",
+    "combined_lines": [
+      145
+    ],
+    "adarsh_lines": [
+      145
+    ],
+    "combined_count": 1,
+    "adarsh_count": 1
+  },
+  {
+    "value": "17.6",
+    "combined_lines": [
+      604
+    ],
+    "adarsh_lines": [
+      604
+    ],
+    "combined_count": 1,
+    "adarsh_count": 1
+  },
+  {
+    "value": "1700",
+    "combined_lines": [
+      1642,
+      1653,
+      1653,
+      1653,
+      1653,
+      1653
+    ],
+    "adarsh_lines": [
+      1643,
+      1654,
+      1654,
+      1654,
+      1654,
+      1654
+    ],
+    "combined_count": 6,
+    "adarsh_count": 6
+  },
+  {
+    "value": "1741",
+    "combined_lines": [
+      205,
+      363
+    ],
+    "adarsh_lines": [
+      205,
+      363
+    ],
+    "combined_count": 2,
+    "adarsh_count": 2
+  },
+  {
+    "value": "1782",
+    "combined_lines": [
+      1653,
+      1653
+    ],
+    "adarsh_lines": [
+      1654,
+      1654
+    ],
+    "combined_count": 2,
+    "adarsh_count": 2
+  },
+  {
+    "value": "1800",
+    "combined_lines": [
+      1280,
+      1424
+    ],
+    "adarsh_lines": [
+      1269,
+      1413
+    ],
+    "combined_count": 2,
+    "adarsh_count": 2
+  },
+  {
+    "value": "19.4",
+    "combined_lines": [
+      447,
+      451
+    ],
+    "adarsh_lines": [
+      447,
+      451
+    ],
+    "combined_count": 2,
+    "adarsh_count": 2
+  },
+  {
+    "value": "19.5",
+    "combined_lines": [
+      689,
+      689,
+      689,
+      689,
+      2282
+    ],
+    "adarsh_lines": [
+      689,
+      689,
+      689,
+      689,
+      2303
+    ],
+    "combined_count": 5,
+    "adarsh_count": 5
+  },
+  {
+    "value": "19.8",
+    "combined_lines": [
+      604
+    ],
+    "adarsh_lines": [
+      604
+    ],
+    "combined_count": 1,
+    "adarsh_count": 1
+  },
+  {
+    "value": "2.12",
+    "combined_lines": [
+      459
+    ],
+    "adarsh_lines": [
+      459
+    ],
+    "combined_count": 1,
+    "adarsh_count": 1
+  },
+  {
+    "value": "2.15",
+    "combined_lines": [
+      735
+    ],
+    "adarsh_lines": [
+      735
+    ],
+    "combined_count": 1,
+    "adarsh_count": 1
+  },
+  {
+    "value": "2.17",
+    "combined_lines": [
+      735
+    ],
+    "adarsh_lines": [
+      735
+    ],
+    "combined_count": 1,
+    "adarsh_count": 1
+  },
+  {
+    "value": "2.25",
+    "combined_lines": [
+      199
+    ],
+    "adarsh_lines": [
+      199
+    ],
+    "combined_count": 1,
+    "adarsh_count": 1
+  },
+  {
+    "value": "2.26",
+    "combined_lines": [
+      735
+    ],
+    "adarsh_lines": [
+      735
+    ],
+    "combined_count": 1,
+    "adarsh_count": 1
+  },
+  {
+    "value": "2.45",
+    "combined_lines": [
+      735
+    ],
+    "adarsh_lines": [
+      735
+    ],
+    "combined_count": 1,
+    "adarsh_count": 1
+  },
+  {
+    "value": "2.47",
+    "combined_lines": [
+      735,
+      735
+    ],
+    "adarsh_lines": [
+      735,
+      735
+    ],
+    "combined_count": 2,
+    "adarsh_count": 2
+  },
+  {
+    "value": "2.52",
+    "combined_lines": [
+      735
+    ],
+    "adarsh_lines": [
+      735
+    ],
+    "combined_count": 1,
+    "adarsh_count": 1
+  },
+  {
+    "value": "2.55",
+    "combined_lines": [
+      199,
+      199
+    ],
+    "adarsh_lines": [
+      199,
+      199
+    ],
+    "combined_count": 2,
+    "adarsh_count": 2
+  },
+  {
+    "value": "2.65",
+    "combined_lines": [
+      735
+    ],
+    "adarsh_lines": [
+      735
+    ],
+    "combined_count": 1,
+    "adarsh_count": 1
+  },
+  {
+    "value": "2.68",
+    "combined_lines": [
+      735
+    ],
+    "adarsh_lines": [
+      735
+    ],
+    "combined_count": 1,
+    "adarsh_count": 1
+  },
+  {
+    "value": "2.75",
+    "combined_lines": [
+      199
+    ],
+    "adarsh_lines": [
+      199
+    ],
+    "combined_count": 1,
+    "adarsh_count": 1
+  },
+  {
+    "value": "2.82",
+    "combined_lines": [
+      1139
+    ],
+    "adarsh_lines": [
+      1128
+    ],
+    "combined_count": 1,
+    "adarsh_count": 1
+  },
+  {
+    "value": "2.83",
+    "combined_lines": [
+      447,
+      447,
+      447,
+      447,
+      447,
+      447,
+      451,
+      451,
+      451,
+      451,
+      451,
+      451
+    ],
+    "adarsh_lines": [
+      447,
+      447,
+      447,
+      447,
+      447,
+      447,
+      451,
+      451,
+      451,
+      451,
+      451,
+      451
+    ],
+    "combined_count": 12,
+    "adarsh_count": 12
+  },
+  {
+    "value": "2.94",
+    "combined_lines": [
+      735
+    ],
+    "adarsh_lines": [
+      735
+    ],
+    "combined_count": 1,
+    "adarsh_count": 1
+  },
+  {
+    "value": "2000",
+    "combined_lines": [
+      424,
+      1163,
+      1773,
+      1791,
+      1792,
+      1961,
+      2084
+    ],
+    "adarsh_lines": [
+      424,
+      1152,
+      1768,
+      1786,
+      1787,
+      1982,
+      2105
+    ],
+    "combined_count": 7,
+    "adarsh_count": 7
+  },
+  {
+    "value": "2023",
+    "combined_lines": [
+      197
+    ],
+    "adarsh_lines": [
+      197
+    ],
+    "combined_count": 1,
+    "adarsh_count": 1
+  },
+  {
+    "value": "2024",
+    "combined_lines": [
+      190
+    ],
+    "adarsh_lines": [
+      190
+    ],
+    "combined_count": 1,
+    "adarsh_count": 1
+  },
+  {
+    "value": "2027",
+    "combined_lines": [
+      737,
+      743
+    ],
+    "adarsh_lines": [
+      737,
+      743
+    ],
+    "combined_count": 2,
+    "adarsh_count": 2
+  },
+  {
+    "value": "2266",
+    "combined_lines": [
+      205,
+      363
+    ],
+    "adarsh_lines": [
+      205,
+      363
+    ],
+    "combined_count": 2,
+    "adarsh_count": 2
+  },
+  {
+    "value": "23.2",
+    "combined_lines": [
+      689,
+      689,
+      689,
+      689,
+      2283
+    ],
+    "adarsh_lines": [
+      689,
+      689,
+      689,
+      689,
+      2304
+    ],
+    "combined_count": 5,
+    "adarsh_count": 5
+  },
+  {
+    "value": "2307",
+    "combined_lines": [
+      205,
+      363
+    ],
+    "adarsh_lines": [
+      205,
+      363
+    ],
+    "combined_count": 2,
+    "adarsh_count": 2
+  },
+  {
+    "value": "2400",
+    "combined_lines": [
+      1244
+    ],
+    "adarsh_lines": [
+      1233
+    ],
+    "combined_count": 1,
+    "adarsh_count": 1
+  },
+  {
+    "value": "2500",
+    "combined_lines": [
+      1782,
+      1791
+    ],
+    "adarsh_lines": [
+      1777,
+      1786
+    ],
+    "combined_count": 2,
+    "adarsh_count": 2
+  },
+  {
+    "value": "26.5",
+    "combined_lines": [
+      604
+    ],
+    "adarsh_lines": [
+      604
+    ],
+    "combined_count": 1,
+    "adarsh_count": 1
+  },
+  {
+    "value": "2800",
+    "combined_lines": [
+      1280
+    ],
+    "adarsh_lines": [
+      1269
+    ],
+    "combined_count": 1,
+    "adarsh_count": 1
+  },
+  {
+    "value": "2856",
+    "combined_lines": [
+      707,
+      707
+    ],
+    "adarsh_lines": [
+      707,
+      707
+    ],
+    "combined_count": 2,
+    "adarsh_count": 2
+  },
+  {
+    "value": "3.02",
+    "combined_lines": [
+      735
+    ],
+    "adarsh_lines": [
+      735
+    ],
+    "combined_count": 1,
+    "adarsh_count": 1
+  },
+  {
+    "value": "3.05",
+    "combined_lines": [
+      735
+    ],
+    "adarsh_lines": [
+      735
+    ],
+    "combined_count": 1,
+    "adarsh_count": 1
+  },
+  {
+    "value": "3.14",
+    "combined_lines": [
+      522,
+      735
+    ],
+    "adarsh_lines": [
+      735
+    ],
+    "combined_count": 2,
+    "adarsh_count": 1
+  },
+  {
+    "value": "3.27",
+    "combined_lines": [
+      735
+    ],
+    "adarsh_lines": [
+      735
+    ],
+    "combined_count": 1,
+    "adarsh_count": 1
+  },
+  {
+    "value": "3.29",
+    "combined_lines": [
+      735,
+      735
+    ],
+    "adarsh_lines": [
+      735,
+      735
+    ],
+    "combined_count": 2,
+    "adarsh_count": 2
+  },
+  {
+    "value": "3.42",
+    "combined_lines": [
+      443
+    ],
+    "adarsh_lines": [
+      443
+    ],
+    "combined_count": 1,
+    "adarsh_count": 1
+  },
+  {
+    "value": "3.46",
+    "combined_lines": [
+      441
+    ],
+    "adarsh_lines": [
+      441
+    ],
+    "combined_count": 1,
+    "adarsh_count": 1
+  },
+  {
+    "value": "3.64",
+    "combined_lines": [
+      735
+    ],
+    "adarsh_lines": [
+      735
+    ],
+    "combined_count": 1,
+    "adarsh_count": 1
+  },
+  {
+    "value": "3.81",
+    "combined_lines": [
+      735
+    ],
+    "adarsh_lines": [
+      735
+    ],
+    "combined_count": 1,
+    "adarsh_count": 1
+  },
+  {
+    "value": "3.87",
+    "combined_lines": [
+      446,
+      454,
+      637
+    ],
+    "adarsh_lines": [
+      446,
+      454,
+      637
+    ],
+    "combined_count": 3,
+    "adarsh_count": 3
+  },
+  {
+    "value": "3000",
+    "combined_lines": [
+      205,
+      363,
+      1080,
+      1080,
+      1080,
+      1080,
+      1080,
+      1782,
+      1791,
+      2311
+    ],
+    "adarsh_lines": [
+      205,
+      363,
+      1777,
+      1786,
+      2332
+    ],
+    "combined_count": 10,
+    "adarsh_count": 5
+  },
+  {
+    "value": "3021",
+    "combined_lines": [
+      205,
+      363
+    ],
+    "adarsh_lines": [
+      205,
+      363
+    ],
+    "combined_count": 2,
+    "adarsh_count": 2
+  },
+  {
+    "value": "3115",
+    "combined_lines": [
+      205,
+      363
+    ],
+    "adarsh_lines": [
+      205,
+      363
+    ],
+    "combined_count": 2,
+    "adarsh_count": 2
+  },
+  {
+    "value": "3198",
+    "combined_lines": [
+      205,
+      363
+    ],
+    "adarsh_lines": [
+      205,
+      363
+    ],
+    "combined_count": 2,
+    "adarsh_count": 2
+  },
+  {
+    "value": "3199",
+    "combined_lines": [
+      205,
+      363
+    ],
+    "adarsh_lines": [
+      205,
+      363
+    ],
+    "combined_count": 2,
+    "adarsh_count": 2
+  },
+  {
+    "value": "3200",
+    "combined_lines": [
+      1203,
+      1461
+    ],
+    "adarsh_lines": [
+      1192,
+      1450
+    ],
+    "combined_count": 2,
+    "adarsh_count": 2
+  },
+  {
+    "value": "3210",
+    "combined_lines": [
+      724
+    ],
+    "adarsh_lines": [
+      724
+    ],
+    "combined_count": 1,
+    "adarsh_count": 1
+  },
+  {
+    "value": "3391",
+    "combined_lines": [
+      205,
+      363
+    ],
+    "adarsh_lines": [
+      205,
+      363
+    ],
+    "combined_count": 2,
+    "adarsh_count": 2
+  },
+  {
+    "value": "3500",
+    "combined_lines": [
+      1160,
+      1771,
+      1827
+    ],
+    "adarsh_lines": [
+      1149,
+      1766,
+      1848
+    ],
+    "combined_count": 3,
+    "adarsh_count": 3
+  },
+  {
+    "value": "3617",
+    "combined_lines": [
+      205,
+      363
+    ],
+    "adarsh_lines": [
+      205,
+      363
+    ],
+    "combined_count": 2,
+    "adarsh_count": 2
+  },
+  {
+    "value": "3695",
+    "combined_lines": [
+      205,
+      363
+    ],
+    "adarsh_lines": [
+      205,
+      363
+    ],
+    "combined_count": 2,
+    "adarsh_count": 2
+  },
+  {
+    "value": "3795",
+    "combined_lines": [
+      1079,
+      1079,
+      1079,
+      1079,
+      1079,
+      1079,
+      1190,
+      1519
+    ],
+    "adarsh_lines": [
+      1179,
+      1508
+    ],
+    "combined_count": 8,
+    "adarsh_count": 2
+  },
+  {
+    "value": "3836",
+    "combined_lines": [
+      205,
+      363
+    ],
+    "adarsh_lines": [
+      205,
+      363
+    ],
+    "combined_count": 2,
+    "adarsh_count": 2
+  },
+  {
+    "value": "3881",
+    "combined_lines": [
+      205,
+      363
+    ],
+    "adarsh_lines": [
+      205,
+      363
+    ],
+    "combined_count": 2,
+    "adarsh_count": 2
+  },
+  {
+    "value": "39.4",
+    "combined_lines": [
+      604
+    ],
+    "adarsh_lines": [
+      604
+    ],
+    "combined_count": 1,
+    "adarsh_count": 1
+  },
+  {
+    "value": "4.01",
+    "combined_lines": [
+      735
+    ],
+    "adarsh_lines": [
+      735
+    ],
+    "combined_count": 1,
+    "adarsh_count": 1
+  },
+  {
+    "value": "4.03",
+    "combined_lines": [
+      735
+    ],
+    "adarsh_lines": [
+      735
+    ],
+    "combined_count": 1,
+    "adarsh_count": 1
+  },
+  {
+    "value": "4.04",
+    "combined_lines": [
+      735
+    ],
+    "adarsh_lines": [
+      735
+    ],
+    "combined_count": 1,
+    "adarsh_count": 1
+  },
+  {
+    "value": "4.27",
+    "combined_lines": [
+      430
+    ],
+    "adarsh_lines": [
+      430
+    ],
+    "combined_count": 1,
+    "adarsh_count": 1
+  },
+  {
+    "value": "4.68",
+    "combined_lines": [
+      447,
+      451
+    ],
+    "adarsh_lines": [
+      447,
+      451
+    ],
+    "combined_count": 2,
+    "adarsh_count": 2
+  },
+  {
+    "value": "4000",
+    "combined_lines": [
+      1160,
+      1771
+    ],
+    "adarsh_lines": [
+      1149,
+      1766
+    ],
+    "combined_count": 2,
+    "adarsh_count": 2
+  },
+  {
+    "value": "4373",
+    "combined_lines": [
+      205,
+      363
+    ],
+    "adarsh_lines": [
+      205,
+      363
+    ],
+    "combined_count": 2,
+    "adarsh_count": 2
+  },
+  {
+    "value": "4643",
+    "combined_lines": [
+      205,
+      363
+    ],
+    "adarsh_lines": [
+      205,
+      363
+    ],
+    "combined_count": 2,
+    "adarsh_count": 2
+  },
+  {
+    "value": "47.2",
+    "combined_lines": [
+      2029
+    ],
+    "adarsh_lines": [
+      2050
+    ],
+    "combined_count": 1,
+    "adarsh_count": 1
+  },
+  {
+    "value": "48.8",
+    "combined_lines": [
+      604
+    ],
+    "adarsh_lines": [
+      604
+    ],
+    "combined_count": 1,
+    "adarsh_count": 1
+  },
+  {
+    "value": "48.9",
+    "combined_lines": [
+      570,
+      704,
+      1080
+    ],
+    "adarsh_lines": [
+      704
+    ],
+    "combined_count": 3,
+    "adarsh_count": 1
+  },
+  {
+    "value": "4823",
+    "combined_lines": [
+      205,
+      363
+    ],
+    "adarsh_lines": [
+      205,
+      363
+    ],
+    "combined_count": 2,
+    "adarsh_count": 2
+  },
+  {
+    "value": "5.15",
+    "combined_lines": [
+      430
+    ],
+    "adarsh_lines": [
+      430
+    ],
+    "combined_count": 1,
+    "adarsh_count": 1
+  },
+  {
+    "value": "5.77",
+    "combined_lines": [
+      428,
+      428
+    ],
+    "adarsh_lines": [
+      428,
+      428
+    ],
+    "combined_count": 2,
+    "adarsh_count": 2
+  },
+  {
+    "value": "5.82",
+    "combined_lines": [
+      438
+    ],
+    "adarsh_lines": [
+      438
+    ],
+    "combined_count": 1,
+    "adarsh_count": 1
+  },
+  {
+    "value": "5000",
+    "combined_lines": [
+      739
+    ],
+    "adarsh_lines": [
+      739
+    ],
+    "combined_count": 1,
+    "adarsh_count": 1
+  },
+  {
+    "value": "5008",
+    "combined_lines": [
+      205,
+      363
+    ],
+    "adarsh_lines": [
+      205,
+      363
+    ],
+    "combined_count": 2,
+    "adarsh_count": 2
+  },
+  {
+    "value": "5216",
+    "combined_lines": [
+      205,
+      363
+    ],
+    "adarsh_lines": [
+      205,
+      363
+    ],
+    "combined_count": 2,
+    "adarsh_count": 2
+  },
+  {
+    "value": "6.58",
+    "combined_lines": [
+      428,
+      428
+    ],
+    "adarsh_lines": [
+      428,
+      428
+    ],
+    "combined_count": 2,
+    "adarsh_count": 2
+  },
+  {
+    "value": "6.95",
+    "combined_lines": [
+      457
+    ],
+    "adarsh_lines": [
+      457
+    ],
+    "combined_count": 1,
+    "adarsh_count": 1
+  },
+  {
+    "value": "6119",
+    "combined_lines": [
+      205,
+      363
+    ],
+    "adarsh_lines": [
+      205,
+      363
+    ],
+    "combined_count": 2,
+    "adarsh_count": 2
+  },
+  {
+    "value": "6163",
+    "combined_lines": [
+      1521
+    ],
+    "adarsh_lines": [
+      1510,
+      1833
+    ],
+    "combined_count": 1,
+    "adarsh_count": 2
+  },
+  {
+    "value": "6400",
+    "combined_lines": [
+      199
+    ],
+    "adarsh_lines": [
+      199
+    ],
+    "combined_count": 1,
+    "adarsh_count": 1
+  },
+  {
+    "value": "6411",
+    "combined_lines": [
+      205,
+      363
+    ],
+    "adarsh_lines": [
+      205,
+      363
+    ],
+    "combined_count": 2,
+    "adarsh_count": 2
+  },
+  {
+    "value": "6474",
+    "combined_lines": [
+      689,
+      689,
+      1647,
+      1647
+    ],
+    "adarsh_lines": [
+      689,
+      689,
+      1648,
+      1648
+    ],
+    "combined_count": 4,
+    "adarsh_count": 4
+  },
+  {
+    "value": "6553",
+    "combined_lines": [
+      205,
+      363
+    ],
+    "adarsh_lines": [
+      205,
+      363
+    ],
+    "combined_count": 2,
+    "adarsh_count": 2
+  },
+  {
+    "value": "6593",
+    "combined_lines": [
+      205,
+      363
+    ],
+    "adarsh_lines": [
+      205,
+      363
+    ],
+    "combined_count": 2,
+    "adarsh_count": 2
+  },
+  {
+    "value": "66.5",
+    "combined_lines": [
+      735
+    ],
+    "adarsh_lines": [
+      735
+    ],
+    "combined_count": 1,
+    "adarsh_count": 1
+  },
+  {
+    "value": "6665",
+    "combined_lines": [
+      205,
+      363
+    ],
+    "adarsh_lines": [
+      205,
+      363
+    ],
+    "combined_count": 2,
+    "adarsh_count": 2
+  },
+  {
+    "value": "6780",
+    "combined_lines": [
+      205,
+      363
+    ],
+    "adarsh_lines": [
+      205,
+      363
+    ],
+    "combined_count": 2,
+    "adarsh_count": 2
+  },
+  {
+    "value": "6938",
+    "combined_lines": [
+      205,
+      363
+    ],
+    "adarsh_lines": [
+      205,
+      363
+    ],
+    "combined_count": 2,
+    "adarsh_count": 2
+  },
+  {
+    "value": "6991",
+    "combined_lines": [
+      205,
+      363
+    ],
+    "adarsh_lines": [
+      205,
+      363
+    ],
+    "combined_count": 2,
+    "adarsh_count": 2
+  },
+  {
+    "value": "7.07",
+    "combined_lines": [
+      435,
+      435
+    ],
+    "adarsh_lines": [
+      435,
+      435
+    ],
+    "combined_count": 2,
+    "adarsh_count": 2
+  },
+  {
+    "value": "7.54",
+    "combined_lines": [
+      435,
+      435
+    ],
+    "adarsh_lines": [
+      435,
+      435
+    ],
+    "combined_count": 2,
+    "adarsh_count": 2
+  },
+  {
+    "value": "7.75",
+    "combined_lines": [
+      446,
+      454,
+      637
+    ],
+    "adarsh_lines": [
+      446,
+      454,
+      637
+    ],
+    "combined_count": 3,
+    "adarsh_count": 3
+  },
+  {
+    "value": "72.1",
+    "combined_lines": [
+      570,
+      704,
+      1080
+    ],
+    "adarsh_lines": [
+      704
+    ],
+    "combined_count": 3,
+    "adarsh_count": 1
+  },
+  {
+    "value": "7250",
+    "combined_lines": [
+      1520,
+      1521
+    ],
+    "adarsh_lines": [
+      1510,
+      1833
+    ],
+    "combined_count": 2,
+    "adarsh_count": 2
+  },
+  {
+    "value": "7559",
+    "combined_lines": [
+      205,
+      363
+    ],
+    "adarsh_lines": [
+      205,
+      363
+    ],
+    "combined_count": 2,
+    "adarsh_count": 2
+  },
+  {
+    "value": "7757",
+    "combined_lines": [
+      205,
+      363
+    ],
+    "adarsh_lines": [
+      205,
+      363
+    ],
+    "combined_count": 2,
+    "adarsh_count": 2
+  },
+  {
+    "value": "7826",
+    "combined_lines": [
+      205,
+      363
+    ],
+    "adarsh_lines": [
+      205,
+      363
+    ],
+    "combined_count": 2,
+    "adarsh_count": 2
+  },
+  {
+    "value": "7890",
+    "combined_lines": [
+      737
+    ],
+    "adarsh_lines": [
+      737
+    ],
+    "combined_count": 1,
+    "adarsh_count": 1
+  },
+  {
+    "value": "8.26",
+    "combined_lines": [
+      438,
+      438
+    ],
+    "adarsh_lines": [
+      438,
+      438
+    ],
+    "combined_count": 2,
+    "adarsh_count": 2
+  },
+  {
+    "value": "8.91",
+    "combined_lines": [
+      438
+    ],
+    "adarsh_lines": [
+      438
+    ],
+    "combined_count": 1,
+    "adarsh_count": 1
+  },
+  {
+    "value": "8000",
+    "combined_lines": [
+      199
+    ],
+    "adarsh_lines": [
+      199
+    ],
+    "combined_count": 1,
+    "adarsh_count": 1
+  },
+  {
+    "value": "8080",
+    "combined_lines": [
+      199
+    ],
+    "adarsh_lines": [
+      199
+    ],
+    "combined_count": 1,
+    "adarsh_count": 1
+  },
+  {
+    "value": "8229",
+    "combined_lines": [
+      205,
+      363
+    ],
+    "adarsh_lines": [
+      205,
+      363
+    ],
+    "combined_count": 2,
+    "adarsh_count": 2
+  },
+  {
+    "value": "8319",
+    "combined_lines": [
+      205,
+      363
+    ],
+    "adarsh_lines": [
+      205,
+      363
+    ],
+    "combined_count": 2,
+    "adarsh_count": 2
+  },
+  {
+    "value": "8338",
+    "combined_lines": [
+      1521
+    ],
+    "adarsh_lines": [
+      1510,
+      1833
+    ],
+    "combined_count": 1,
+    "adarsh_count": 2
+  },
+  {
+    "value": "8435",
+    "combined_lines": [
+      205,
+      363
+    ],
+    "adarsh_lines": [
+      205,
+      363
+    ],
+    "combined_count": 2,
+    "adarsh_count": 2
+  },
+  {
+    "value": "8537",
+    "combined_lines": [
+      205,
+      363
+    ],
+    "adarsh_lines": [
+      205,
+      363
+    ],
+    "combined_count": 2,
+    "adarsh_count": 2
+  },
+  {
+    "value": "8722",
+    "combined_lines": [
+      2042
+    ],
+    "adarsh_lines": [
+      2063
+    ],
+    "combined_count": 1,
+    "adarsh_count": 1
+  },
+  {
+    "value": "8847",
+    "combined_lines": [
+      205,
+      363
+    ],
+    "adarsh_lines": [
+      205,
+      363
+    ],
+    "combined_count": 2,
+    "adarsh_count": 2
+  },
+  {
+    "value": "8884",
+    "combined_lines": [
+      205,
+      363
+    ],
+    "adarsh_lines": [
+      205,
+      363
+    ],
+    "combined_count": 2,
+    "adarsh_count": 2
+  },
+  {
+    "value": "9.27",
+    "combined_lines": [
+      438,
+      438
+    ],
+    "adarsh_lines": [
+      438,
+      438
+    ],
+    "combined_count": 2,
+    "adarsh_count": 2
+  },
+  {
+    "value": "9000",
+    "combined_lines": [
+      1782
+    ],
+    "adarsh_lines": [
+      1777
+    ],
+    "combined_count": 1,
+    "adarsh_count": 1
+  },
+  {
+    "value": "9199",
+    "combined_lines": [
+      205,
+      363
+    ],
+    "adarsh_lines": [
+      205,
+      363
+    ],
+    "combined_count": 2,
+    "adarsh_count": 2
+  },
+  {
+    "value": "9339",
+    "combined_lines": [
+      205,
+      363
+    ],
+    "adarsh_lines": [
+      205,
+      363
+    ],
+    "combined_count": 2,
+    "adarsh_count": 2
+  },
+  {
+    "value": "9352",
+    "combined_lines": [
+      205,
+      363
+    ],
+    "adarsh_lines": [
+      205,
+      363
+    ],
+    "combined_count": 2,
+    "adarsh_count": 2
+  },
+  {
+    "value": "9375",
+    "combined_lines": [
+      199
+    ],
+    "adarsh_lines": [
+      199
+    ],
+    "combined_count": 1,
+    "adarsh_count": 1
+  },
+  {
+    "value": "9557",
+    "combined_lines": [
+      205,
+      363
+    ],
+    "adarsh_lines": [
+      205,
+      363
+    ],
+    "combined_count": 2,
+    "adarsh_count": 2
+  },
+  {
+    "value": "9598",
+    "combined_lines": [
+      205,
+      363
+    ],
+    "adarsh_lines": [
+      205,
+      363
+    ],
+    "combined_count": 2,
+    "adarsh_count": 2
+  },
+  {
+    "value": "9654",
+    "combined_lines": [
+      387,
+      502,
+      1209,
+      2054
+    ],
+    "adarsh_lines": [
+      387,
+      502,
+      1198,
+      2075
+    ],
+    "combined_count": 4,
+    "adarsh_count": 4
+  },
+  {
+    "value": "9660",
+    "combined_lines": [
+      587,
+      1110,
+      1129,
+      1695
+    ],
+    "adarsh_lines": [
+      587,
+      1099,
+      1118,
+      1696
+    ],
+    "combined_count": 4,
+    "adarsh_count": 4
+  },
+  {
+    "value": "9693",
+    "combined_lines": [
+      205,
+      363
+    ],
+    "adarsh_lines": [
+      205,
+      363
+    ],
+    "combined_count": 2,
+    "adarsh_count": 2
+  },
+  {
+    "value": "9736",
+    "combined_lines": [
+      205,
+      363
+    ],
+    "adarsh_lines": [
+      205,
+      363
+    ],
+    "combined_count": 2,
+    "adarsh_count": 2
+  },
+  {
+    "value": "9772",
+    "combined_lines": [
+      205,
+      363
+    ],
+    "adarsh_lines": [
+      205,
+      363
+    ],
+    "combined_count": 2,
+    "adarsh_count": 2
+  },
+  {
+    "value": "9788",
+    "combined_lines": [
+      1521
+    ],
+    "adarsh_lines": [
+      1510,
+      1833
+    ],
+    "combined_count": 1,
+    "adarsh_count": 2
+  },
+  {
+    "value": "9957",
+    "combined_lines": [
+      205,
+      363
+    ],
+    "adarsh_lines": [
+      205,
+      363
+    ],
+    "combined_count": 2,
+    "adarsh_count": 2
+  },
+  {
+    "value": "9972",
+    "combined_lines": [
+      205,
+      363
+    ],
+    "adarsh_lines": [
+      205,
+      363
+    ],
+    "combined_count": 2,
+    "adarsh_count": 2
+  },
+  {
+    "value": "9978",
+    "combined_lines": [
+      205,
+      363
+    ],
+    "adarsh_lines": [
+      205,
+      363
+    ],
+    "combined_count": 2,
+    "adarsh_count": 2
+  },
+  {
+    "value": "9993",
+    "combined_lines": [
+      205,
+      363
+    ],
+    "adarsh_lines": [
+      205,
+      363
+    ],
+    "combined_count": 2,
+    "adarsh_count": 2
+  },
+  {
+    "value": "9999",
+    "combined_lines": [
+      604,
+      604,
+      627,
+      628,
+      628,
+      628,
+      661,
+      689,
+      689,
+      689,
+      689,
+      689,
+      1153,
+      1647,
+      1649,
+      1651,
+      1653,
+      2249,
+      2277
+    ],
+    "adarsh_lines": [
+      604,
+      604,
+      627,
+      628,
+      628,
+      628,
+      661,
+      689,
+      689,
+      689,
+      689,
+      689,
+      1142,
+      1648,
+      1650,
+      1652,
+      1654,
+      2270,
+      2298
+    ],
+    "combined_count": 19,
+    "adarsh_count": 19
+  },
+  {
+    "value": "0,100",
+    "combined_lines": [
+      199
+    ],
+    "adarsh_lines": [
+      199
+    ],
+    "combined_count": 1,
+    "adarsh_count": 1
+  },
+  {
+    "value": "0,180",
+    "combined_lines": [
+      199
+    ],
+    "adarsh_lines": [
+      199
+    ],
+    "combined_count": 1,
+    "adarsh_count": 1
+  },
+  {
+    "value": "0,210",
+    "combined_lines": [
+      1859
+    ],
+    "adarsh_lines": [
+      1880
+    ],
+    "combined_count": 1,
+    "adarsh_count": 1
+  },
+  {
+    "value": "0,255",
+    "combined_lines": [
+      199,
+      199,
+      199,
+      199,
+      199,
+      199
+    ],
+    "adarsh_lines": [
+      199,
+      199,
+      199,
+      199,
+      199,
+      199
+    ],
+    "combined_count": 6,
+    "adarsh_count": 6
+  },
+  {
+    "value": "0,282",
+    "combined_lines": [
+      2116
+    ],
+    "adarsh_lines": [
+      2137
+    ],
+    "combined_count": 1,
+    "adarsh_count": 1
+  },
+  {
+    "value": "03.07",
+    "combined_lines": [
+      735
+    ],
+    "adarsh_lines": [
+      735
+    ],
+    "combined_count": 1,
+    "adarsh_count": 1
+  },
+  {
+    "value": "04045",
+    "combined_lines": [
+      199
+    ],
+    "adarsh_lines": [
+      199
+    ],
+    "combined_count": 1,
+    "adarsh_count": 1
+  },
+  {
+    "value": "09.06",
+    "combined_lines": [
+      735
+    ],
+    "adarsh_lines": [
+      735
+    ],
+    "combined_count": 1,
+    "adarsh_count": 1
+  },
+  {
+    "value": "1,000",
+    "combined_lines": [
+      536,
+      559,
+      604,
+      604,
+      604,
+      604,
+      684,
+      739,
+      2111
+    ],
+    "adarsh_lines": [
+      604,
+      604,
+      604,
+      604,
+      739
+    ],
+    "combined_count": 9,
+    "adarsh_count": 5
+  },
+  {
+    "value": "1,084",
+    "combined_lines": [
+      604,
+      604
+    ],
+    "adarsh_lines": [
+      604,
+      604
+    ],
+    "combined_count": 2,
+    "adarsh_count": 2
+  },
+  {
+    "value": "1,158",
+    "combined_lines": [
+      560,
+      682
+    ],
+    "adarsh_lines": [
+      682
+    ],
+    "combined_count": 2,
+    "adarsh_count": 1
+  },
+  {
+    "value": "1,197",
+    "combined_lines": [
+      508,
+      692,
+      2107
+    ],
+    "adarsh_lines": [
+      2128
+    ],
+    "combined_count": 3,
+    "adarsh_count": 1
+  },
+  {
+    "value": "1,198",
+    "combined_lines": [
+      604
+    ],
+    "adarsh_lines": [
+      604
+    ],
+    "combined_count": 1,
+    "adarsh_count": 1
+  },
+  {
+    "value": "1,200",
+    "combined_lines": [
+      660
+    ],
+    "adarsh_lines": [
+      660
+    ],
+    "combined_count": 1,
+    "adarsh_count": 1
+  },
+  {
+    "value": "1,216",
+    "combined_lines": [
+      689
+    ],
+    "adarsh_lines": [
+      689
+    ],
+    "combined_count": 1,
+    "adarsh_count": 1
+  },
+  {
+    "value": "1,247",
+    "combined_lines": [
+      586,
+      589,
+      635,
+      635,
+      1003
+    ],
+    "adarsh_lines": [
+      589
+    ],
+    "combined_count": 5,
+    "adarsh_count": 1
+  },
+  {
+    "value": "1,307",
+    "combined_lines": [
+      627,
+      627,
+      627
+    ],
+    "adarsh_lines": [
+      627,
+      627,
+      627
+    ],
+    "combined_count": 3,
+    "adarsh_count": 3
+  },
+  {
+    "value": "1,386",
+    "combined_lines": [
+      508,
+      569,
+      692,
+      741,
+      2107
+    ],
+    "adarsh_lines": [
+      2128
+    ],
+    "combined_count": 5,
+    "adarsh_count": 1
+  },
+  {
+    "value": "1,420",
+    "combined_lines": [
+      604
+    ],
+    "adarsh_lines": [
+      604
+    ],
+    "combined_count": 1,
+    "adarsh_count": 1
+  },
+  {
+    "value": "1,450",
+    "combined_lines": [
+      762
+    ],
+    "adarsh_lines": [
+      762
+    ],
+    "combined_count": 1,
+    "adarsh_count": 1
+  },
+  {
+    "value": "1,500",
+    "combined_lines": [
+      572,
+      674,
+      684
+    ],
+    "adarsh_lines": [
+      572,
+      674
+    ],
+    "combined_count": 3,
+    "adarsh_count": 2
+  },
+  {
+    "value": "1,650",
+    "combined_lines": [
+      604
+    ],
+    "adarsh_lines": [
+      604
+    ],
+    "combined_count": 1,
+    "adarsh_count": 1
+  },
+  {
+    "value": "1,730",
+    "combined_lines": [
+      689
+    ],
+    "adarsh_lines": [
+      689
+    ],
+    "combined_count": 1,
+    "adarsh_count": 1
+  },
+  {
+    "value": "1,782",
+    "combined_lines": [
+      1653
+    ],
+    "adarsh_lines": [
+      1654
+    ],
+    "combined_count": 1,
+    "adarsh_count": 1
+  },
+  {
+    "value": "1.005",
+    "combined_lines": [
+      73
+    ],
+    "adarsh_lines": [
+      73
+    ],
+    "combined_count": 1,
+    "adarsh_count": 1
+  },
+  {
+    "value": "1.055",
+    "combined_lines": [
+      199,
+      199
+    ],
+    "adarsh_lines": [
+      199,
+      199
+    ],
+    "combined_count": 2,
+    "adarsh_count": 2
+  },
+  {
+    "value": "1.525",
+    "combined_lines": [
+      199,
+      199
+    ],
+    "adarsh_lines": [
+      199,
+      199
+    ],
+    "combined_count": 2,
+    "adarsh_count": 2
+  },
+  {
+    "value": "10000",
+    "combined_lines": [
+      739,
+      739,
+      1964
+    ],
+    "adarsh_lines": [
+      739,
+      739,
+      1985
+    ],
+    "combined_count": 3,
+    "adarsh_count": 3
+  },
+  {
+    "value": "12.01",
+    "combined_lines": [
+      425,
+      443,
+      457
+    ],
+    "adarsh_lines": [
+      425,
+      443,
+      457
+    ],
+    "combined_count": 3,
+    "adarsh_count": 3
+  },
+  {
+    "value": "12.45",
+    "combined_lines": [
+      735
+    ],
+    "adarsh_lines": [
+      735
+    ],
+    "combined_count": 1,
+    "adarsh_count": 1
+  },
+  {
+    "value": "12.92",
+    "combined_lines": [
+      199,
+      199
+    ],
+    "adarsh_lines": [
+      199,
+      199
+    ],
+    "combined_count": 2,
+    "adarsh_count": 2
+  },
+  {
+    "value": "14.08",
+    "combined_lines": [
+      457
+    ],
+    "adarsh_lines": [
+      457
+    ],
+    "combined_count": 1,
+    "adarsh_count": 1
+  },
+  {
+    "value": "14.14",
+    "combined_lines": [
+      438,
+      438
+    ],
+    "adarsh_lines": [
+      438,
+      438
+    ],
+    "combined_count": 2,
+    "adarsh_count": 2
+  },
+  {
+    "value": "15.09",
+    "combined_lines": [
+      438
+    ],
+    "adarsh_lines": [
+      438
+    ],
+    "combined_count": 1,
+    "adarsh_count": 1
+  },
+  {
+    "value": "16.65",
+    "combined_lines": [
+      444,
+      444
+    ],
+    "adarsh_lines": [
+      444,
+      444
+    ],
+    "combined_count": 2,
+    "adarsh_count": 2
+  },
+  {
+    "value": "17.77",
+    "combined_lines": [
+      438
+    ],
+    "adarsh_lines": [
+      438
+    ],
+    "combined_count": 1,
+    "adarsh_count": 1
+  },
+  {
+    "value": "18.18",
+    "combined_lines": [
+      438
+    ],
+    "adarsh_lines": [
+      438
+    ],
+    "combined_count": 1,
+    "adarsh_count": 1
+  },
+  {
+    "value": "2,000",
+    "combined_lines": [
+      627,
+      684,
+      761
+    ],
+    "adarsh_lines": [
+      627,
+      761
+    ],
+    "combined_count": 3,
+    "adarsh_count": 2
+  },
+  {
+    "value": "2,100",
+    "combined_lines": [
+      660
+    ],
+    "adarsh_lines": [
+      660
+    ],
+    "combined_count": 1,
+    "adarsh_count": 1
+  },
+  {
+    "value": "2,614",
+    "combined_lines": [
+      627,
+      627,
+      627
+    ],
+    "adarsh_lines": [
+      627,
+      627,
+      627
+    ],
+    "combined_count": 3,
+    "adarsh_count": 3
+  },
+  {
+    "value": "2,847",
+    "combined_lines": [
+      628
+    ],
+    "adarsh_lines": [
+      628
+    ],
+    "combined_count": 1,
+    "adarsh_count": 1
+  },
+  {
+    "value": "2.526",
+    "combined_lines": [
+      428,
+      428
+    ],
+    "adarsh_lines": [
+      428,
+      428
+    ],
+    "combined_count": 2,
+    "adarsh_count": 2
+  },
+  {
+    "value": "2.625",
+    "combined_lines": [
+      199
+    ],
+    "adarsh_lines": [
+      199
+    ],
+    "combined_count": 1,
+    "adarsh_count": 1
+  },
+  {
+    "value": "21.02",
+    "combined_lines": [
+      438,
+      438
+    ],
+    "adarsh_lines": [
+      438,
+      438
+    ],
+    "combined_count": 2,
+    "adarsh_count": 2
+  },
+  {
+    "value": "21.16",
+    "combined_lines": [
+      457
+    ],
+    "adarsh_lines": [
+      457
+    ],
+    "combined_count": 1,
+    "adarsh_count": 1
+  },
+  {
+    "value": "28873",
+    "combined_lines": [
+      205,
+      363
+    ],
+    "adarsh_lines": [
+      205,
+      363
+    ],
+    "combined_count": 2,
+    "adarsh_count": 2
+  },
+  {
+    "value": "3,000",
+    "combined_lines": [
+      529,
+      560,
+      684,
+      739,
+      2111
+    ],
+    "adarsh_lines": [
+      739
+    ],
+    "combined_count": 5,
+    "adarsh_count": 1
+  },
+  {
+    "value": "3,290",
+    "combined_lines": [
+      572
+    ],
+    "adarsh_lines": [
+      572
+    ],
+    "combined_count": 1,
+    "adarsh_count": 1
+  },
+  {
+    "value": "3,396",
+    "combined_lines": [
+      604,
+      604,
+      604
+    ],
+    "adarsh_lines": [
+      604,
+      604,
+      604
+    ],
+    "combined_count": 3,
+    "adarsh_count": 3
+  },
+  {
+    "value": "3,500",
+    "combined_lines": [
+      572,
+      674
+    ],
+    "adarsh_lines": [
+      572,
+      674
+    ],
+    "combined_count": 2,
+    "adarsh_count": 2
+  },
+  {
+    "value": "3,654",
+    "combined_lines": [
+      572
+    ],
+    "adarsh_lines": [
+      572
+    ],
+    "combined_count": 1,
+    "adarsh_count": 1
+  },
+  {
+    "value": "3,795",
+    "combined_lines": [
+      508,
+      569,
+      692,
+      741,
+      2107
+    ],
+    "adarsh_lines": [
+      2128
+    ],
+    "combined_count": 5,
+    "adarsh_count": 1
+  },
+  {
+    "value": "32767",
+    "combined_lines": [
+      193,
+      199
+    ],
+    "adarsh_lines": [
+      193,
+      199
+    ],
+    "combined_count": 2,
+    "adarsh_count": 2
+  },
+  {
+    "value": "32768",
+    "combined_lines": [
+      193,
+      199
+    ],
+    "adarsh_lines": [
+      193,
+      199
+    ],
+    "combined_count": 2,
+    "adarsh_count": 2
+  },
+  {
+    "value": "33.33",
+    "combined_lines": [
+      290,
+      290,
+      299,
+      299
+    ],
+    "adarsh_lines": [
+      290,
+      290,
+      299,
+      299
+    ],
+    "combined_count": 4,
+    "adarsh_count": 4
+  },
+  {
+    "value": "37961",
+    "combined_lines": [
+      205,
+      363
+    ],
+    "adarsh_lines": [
+      205,
+      363
+    ],
+    "combined_count": 2,
+    "adarsh_count": 2
+  },
+  {
+    "value": "4,000",
+    "combined_lines": [
+      572,
+      674
+    ],
+    "adarsh_lines": [
+      572,
+      674
+    ],
+    "combined_count": 2,
+    "adarsh_count": 2
+  },
+  {
+    "value": "4,310",
+    "combined_lines": [
+      739
+    ],
+    "adarsh_lines": [
+      739
+    ],
+    "combined_count": 1,
+    "adarsh_count": 1
+  },
+  {
+    "value": "45133",
+    "combined_lines": [
+      205,
+      363
+    ],
+    "adarsh_lines": [
+      205,
+      363
+    ],
+    "combined_count": 2,
+    "adarsh_count": 2
+  },
+  {
+    "value": "5,000",
+    "combined_lines": [
+      739
+    ],
+    "adarsh_lines": [
+      739
+    ],
+    "combined_count": 1,
+    "adarsh_count": 1
+  },
+  {
+    "value": "5,720",
+    "combined_lines": [
+      571,
+      689,
+      689,
+      689
+    ],
+    "adarsh_lines": [
+      571,
+      689,
+      689,
+      689
+    ],
+    "combined_count": 4,
+    "adarsh_count": 4
+  },
+  {
+    "value": "5,890",
+    "combined_lines": [
+      689,
+      689,
+      689
+    ],
+    "adarsh_lines": [
+      689,
+      689,
+      689
+    ],
+    "combined_count": 3,
+    "adarsh_count": 3
+  },
+  {
+    "value": "5.997",
+    "combined_lines": [
+      428,
+      428
+    ],
+    "adarsh_lines": [
+      428,
+      428
+    ],
+    "combined_count": 2,
+    "adarsh_count": 2
+  },
+  {
+    "value": "6,234",
+    "combined_lines": [
+      689,
+      689,
+      689,
+      689
+    ],
+    "adarsh_lines": [
+      689,
+      689,
+      689,
+      689
+    ],
+    "combined_count": 4,
+    "adarsh_count": 4
+  },
+  {
+    "value": "6,980",
+    "combined_lines": [
+      571,
+      604,
+      604,
+      604,
+      689,
+      689,
+      689,
+      689
+    ],
+    "adarsh_lines": [
+      571,
+      604,
+      604,
+      604,
+      689,
+      689,
+      689,
+      689
+    ],
+    "combined_count": 8,
+    "adarsh_count": 8
+  },
+  {
+    "value": "66.66",
+    "combined_lines": [
+      290,
+      290,
+      299,
+      299
+    ],
+    "adarsh_lines": [
+      290,
+      290,
+      299,
+      299
+    ],
+    "combined_count": 4,
+    "adarsh_count": 4
+  },
+  {
+    "value": "7,250",
+    "combined_lines": [
+      589
+    ],
+    "adarsh_lines": [
+      589
+    ],
+    "combined_count": 1,
+    "adarsh_count": 1
+  },
+  {
+    "value": "7,450",
+    "combined_lines": [
+      571,
+      604,
+      689,
+      689,
+      689,
+      689,
+      689
+    ],
+    "adarsh_lines": [
+      571,
+      604,
+      689,
+      689,
+      689,
+      689,
+      689
+    ],
+    "combined_count": 7,
+    "adarsh_count": 7
+  },
+  {
+    "value": "7,842",
+    "combined_lines": [
+      604,
+      604,
+      627,
+      627,
+      661,
+      682,
+      689,
+      689,
+      689,
+      2285
+    ],
+    "adarsh_lines": [
+      604,
+      604,
+      627,
+      627,
+      661,
+      682,
+      689,
+      689,
+      689,
+      2306
+    ],
+    "combined_count": 10,
+    "adarsh_count": 10
+  },
+  {
+    "value": "7,848",
+    "combined_lines": [
+      627
+    ],
+    "adarsh_lines": [
+      627
+    ],
+    "combined_count": 1,
+    "adarsh_count": 1
+  },
+  {
+    "value": "76333",
+    "combined_lines": [
+      205,
+      363
+    ],
+    "adarsh_lines": [
+      205,
+      363
+    ],
+    "combined_count": 2,
+    "adarsh_count": 2
+  },
+  {
+    "value": "79147",
+    "combined_lines": [
+      205,
+      363
+    ],
+    "adarsh_lines": [
+      205,
+      363
+    ],
+    "combined_count": 2,
+    "adarsh_count": 2
+  },
+  {
+    "value": "81153",
+    "combined_lines": [
+      205,
+      363
+    ],
+    "adarsh_lines": [
+      205,
+      363
+    ],
+    "combined_count": 2,
+    "adarsh_count": 2
+  },
+  {
+    "value": "81197",
+    "combined_lines": [
+      205,
+      363
+    ],
+    "adarsh_lines": [
+      205,
+      363
+    ],
+    "combined_count": 2,
+    "adarsh_count": 2
+  },
+  {
+    "value": "83.94",
+    "combined_lines": [
+      735
+    ],
+    "adarsh_lines": [
+      735
+    ],
+    "combined_count": 1,
+    "adarsh_count": 1
+  },
+  {
+    "value": "87.78",
+    "combined_lines": [
+      735
+    ],
+    "adarsh_lines": [
+      735
+    ],
+    "combined_count": 1,
+    "adarsh_count": 1
+  },
+  {
+    "value": "9,000",
+    "combined_lines": [
+      682
+    ],
+    "adarsh_lines": [
+      682
+    ],
+    "combined_count": 1,
+    "adarsh_count": 1
+  },
+  {
+    "value": "91.65",
+    "combined_lines": [
+      735
+    ],
+    "adarsh_lines": [
+      735
+    ],
+    "combined_count": 1,
+    "adarsh_count": 1
+  },
+  {
+    "value": "91391",
+    "combined_lines": [
+      205,
+      363
+    ],
+    "adarsh_lines": [
+      205,
+      363
+    ],
+    "combined_count": 2,
+    "adarsh_count": 2
+  },
+  {
+    "value": "99999",
+    "combined_lines": [
+      2032
+    ],
+    "adarsh_lines": [
+      2053
+    ],
+    "combined_count": 1,
+    "adarsh_count": 1
+  },
+  {
+    "value": "013.36",
+    "combined_lines": [
+      735
+    ],
+    "adarsh_lines": [
+      735
+    ],
+    "combined_count": 1,
+    "adarsh_count": 1
+  },
+  {
+    "value": "079487",
+    "combined_lines": [
+      733
+    ],
+    "adarsh_lines": [
+      733
+    ],
+    "combined_count": 1,
+    "adarsh_count": 1
+  },
+  {
+    "value": "10,000",
+    "combined_lines": [
+      739,
+      1964
+    ],
+    "adarsh_lines": [
+      739,
+      1985
+    ],
+    "combined_count": 2,
+    "adarsh_count": 2
+  },
+  {
+    "value": "10.089",
+    "combined_lines": [
+      514
+    ],
+    "adarsh_lines": [
+      514
+    ],
+    "combined_count": 1,
+    "adarsh_count": 1
+  },
+  {
+    "value": "111111",
+    "combined_lines": [
+      290,
+      290,
+      299,
+      299
+    ],
+    "adarsh_lines": [
+      290,
+      290,
+      299,
+      299
+    ],
+    "combined_count": 4,
+    "adarsh_count": 4
+  },
+  {
+    "value": "122002",
+    "combined_lines": [
+      487,
+      737,
+      2105
+    ],
+    "adarsh_lines": [
+      487,
+      737,
+      2126
+    ],
+    "combined_count": 3,
+    "adarsh_count": 3
+  },
+  {
+    "value": "14,289",
+    "combined_lines": [
+      2116,
+      2116
+    ],
+    "adarsh_lines": [
+      2137,
+      2137
+    ],
+    "combined_count": 2,
+    "adarsh_count": 2
+  },
+  {
+    "value": "14,290",
+    "combined_lines": [
+      1871
+    ],
+    "adarsh_lines": [
+      1892
+    ],
+    "combined_count": 1,
+    "adarsh_count": 1
+  },
+  {
+    "value": "141.50",
+    "combined_lines": [
+      1092,
+      1093
+    ],
+    "adarsh_lines": [
+      1084
+    ],
+    "combined_count": 2,
+    "adarsh_count": 1
+  },
+  {
+    "value": "191970",
+    "combined_lines": [
+      199
+    ],
+    "adarsh_lines": [
+      199
+    ],
+    "combined_count": 1,
+    "adarsh_count": 1
+  },
+  {
+    "value": "219.00",
+    "combined_lines": [
+      1088
+    ],
+    "adarsh_lines": [
+      1084
+    ],
+    "combined_count": 1,
+    "adarsh_count": 1
+  },
+  {
+    "value": "25,000",
+    "combined_lines": [
+      737
+    ],
+    "adarsh_lines": [
+      737
+    ],
+    "combined_count": 1,
+    "adarsh_count": 1
+  },
+  {
+    "value": "27,154",
+    "combined_lines": [
+      1520,
+      1520,
+      1520
+    ],
+    "adarsh_lines": [
+      1509,
+      1509,
+      1509,
+      1831,
+      1831,
+      1831
+    ],
+    "combined_count": 3,
+    "adarsh_count": 6
+  },
+  {
+    "value": "280.50",
+    "combined_lines": [
+      1086,
+      1087
+    ],
+    "adarsh_lines": [
+      1084
+    ],
+    "combined_count": 2,
+    "adarsh_count": 1
+  },
+  {
+    "value": "32,196",
+    "combined_lines": [
+      1866
+    ],
+    "adarsh_lines": [
+      1887
+    ],
+    "combined_count": 1,
+    "adarsh_count": 1
+  },
+  {
+    "value": "34,197",
+    "combined_lines": [
+      1894
+    ],
+    "adarsh_lines": [
+      1915
+    ],
+    "combined_count": 1,
+    "adarsh_count": 1
+  },
+  {
+    "value": "400014",
+    "combined_lines": [
+      749
+    ],
+    "adarsh_lines": [
+      749
+    ],
+    "combined_count": 1,
+    "adarsh_count": 1
+  },
+  {
+    "value": "400051",
+    "combined_lines": [
+      749
+    ],
+    "adarsh_lines": [
+      749
+    ],
+    "combined_count": 1,
+    "adarsh_count": 1
+  },
+  {
+    "value": "400053",
+    "combined_lines": [
+      749
+    ],
+    "adarsh_lines": [
+      749
+    ],
+    "combined_count": 1,
+    "adarsh_count": 1
+  },
+  {
+    "value": "447.00",
+    "combined_lines": [
+      1084
+    ],
+    "adarsh_lines": [
+      1084
+    ],
+    "combined_count": 1,
+    "adarsh_count": 1
+  },
+  {
+    "value": "504350",
+    "combined_lines": [
+      205,
+      363
+    ],
+    "adarsh_lines": [
+      205,
+      363
+    ],
+    "combined_count": 2,
+    "adarsh_count": 2
+  },
+  {
+    "value": "63,779",
+    "combined_lines": [
+      739
+    ],
+    "adarsh_lines": [
+      739
+    ],
+    "combined_count": 1,
+    "adarsh_count": 1
+  },
+  {
+    "value": "663399",
+    "combined_lines": [
+      199
+    ],
+    "adarsh_lines": [
+      199
+    ],
+    "combined_count": 1,
+    "adarsh_count": 1
+  },
+  {
+    "value": "696043",
+    "combined_lines": [
+      205,
+      363
+    ],
+    "adarsh_lines": [
+      205,
+      363
+    ],
+    "combined_count": 2,
+    "adarsh_count": 2
+  },
+  {
+    "value": "696969",
+    "combined_lines": [
+      199,
+      199
+    ],
+    "adarsh_lines": [
+      199,
+      199
+    ],
+    "combined_count": 2,
+    "adarsh_count": 2
+  },
+  {
+    "value": "7.5625",
+    "combined_lines": [
+      199
+    ],
+    "adarsh_lines": [
+      199
+    ],
+    "combined_count": 1,
+    "adarsh_count": 1
+  },
+  {
+    "value": "708090",
+    "combined_lines": [
+      199,
+      199
+    ],
+    "adarsh_lines": [
+      199,
+      199
+    ],
+    "combined_count": 2,
+    "adarsh_count": 2
+  },
+  {
+    "value": "71,161",
+    "combined_lines": [
+      295
+    ],
+    "adarsh_lines": [
+      295
+    ],
+    "combined_count": 1,
+    "adarsh_count": 1
+  },
+  {
+    "value": "713.50",
+    "combined_lines": [
+      508,
+      587,
+      692,
+      1090,
+      2107
+    ],
+    "adarsh_lines": [
+      2128
+    ],
+    "combined_count": 5,
+    "adarsh_count": 1
+  },
+  {
+    "value": "778899",
+    "combined_lines": [
+      199,
+      199
+    ],
+    "adarsh_lines": [
+      199,
+      199
+    ],
+    "combined_count": 2,
+    "adarsh_count": 2
+  },
+  {
+    "value": "800000",
+    "combined_lines": [
+      199
+    ],
+    "adarsh_lines": [
+      199
+    ],
+    "combined_count": 1,
+    "adarsh_count": 1
+  },
+  {
+    "value": "800080",
+    "combined_lines": [
+      199
+    ],
+    "adarsh_lines": [
+      199
+    ],
+    "combined_count": 1,
+    "adarsh_count": 1
+  },
+  {
+    "value": "808000",
+    "combined_lines": [
+      199
+    ],
+    "adarsh_lines": [
+      199
+    ],
+    "combined_count": 1,
+    "adarsh_count": 1
+  },
+  {
+    "value": "808080",
+    "combined_lines": [
+      199,
+      199
+    ],
+    "adarsh_lines": [
+      199,
+      199
+    ],
+    "combined_count": 2,
+    "adarsh_count": 2
+  },
+  {
+    "value": "898.50",
+    "combined_lines": [
+      674
+    ],
+    "adarsh_lines": [
+      572,
+      674
+    ],
+    "combined_count": 1,
+    "adarsh_count": 2
+  },
+  {
+    "value": "90,270",
+    "combined_lines": [
+      199
+    ],
+    "adarsh_lines": [
+      199
+    ],
+    "combined_count": 1,
+    "adarsh_count": 1
+  },
+  {
+    "value": "929.50",
+    "combined_lines": [
+      508,
+      587,
+      692,
+      1092,
+      2107
+    ],
+    "adarsh_lines": [
+      2128
+    ],
+    "combined_count": 5,
+    "adarsh_count": 1
+  },
+  {
+    "value": "957802",
+    "combined_lines": [
+      205,
+      363
+    ],
+    "adarsh_lines": [
+      205,
+      363
+    ],
+    "combined_count": 2,
+    "adarsh_count": 2
+  },
+  {
+    "value": "984375",
+    "combined_lines": [
+      199
+    ],
+    "adarsh_lines": [
+      199
+    ],
+    "combined_count": 1,
+    "adarsh_count": 1
+  },
+  {
+    "value": "990000",
+    "combined_lines": [
+      114
+    ],
+    "adarsh_lines": [
+      114
+    ],
+    "combined_count": 1,
+    "adarsh_count": 1
+  },
+  {
+    "value": "999999",
+    "combined_lines": [
+      1965
+    ],
+    "adarsh_lines": [
+      1986
+    ],
+    "combined_count": 1,
+    "adarsh_count": 1
+  },
+  {
+    "value": "0031308",
+    "combined_lines": [
+      199
+    ],
+    "adarsh_lines": [
+      199
+    ],
+    "combined_count": 1,
+    "adarsh_count": 1
+  },
+  {
+    "value": "1.70158",
+    "combined_lines": [
+      199,
+      199,
+      199
+    ],
+    "adarsh_lines": [
+      199,
+      199,
+      199
+    ],
+    "combined_count": 3,
+    "adarsh_count": 3
+  },
+  {
+    "value": "180,290",
+    "combined_lines": [
+      1871
+    ],
+    "adarsh_lines": [
+      1892
+    ],
+    "combined_count": 1,
+    "adarsh_count": 1
+  },
+  {
+    "value": "245,158",
+    "combined_lines": [
+      1494
+    ],
+    "adarsh_lines": [
+      1483
+    ],
+    "combined_count": 1,
+    "adarsh_count": 1
+  },
+  {
+    "value": "255,255",
+    "combined_lines": [
+      199
+    ],
+    "adarsh_lines": [
+      199
+    ],
+    "combined_count": 1,
+    "adarsh_count": 1
+  },
+  {
+    "value": "4445520",
+    "combined_lines": [
+      205,
+      363
+    ],
+    "adarsh_lines": [
+      205,
+      363
+    ],
+    "combined_count": 2,
+    "adarsh_count": 2
+  },
+  {
+    "value": "666,119",
+    "combined_lines": [
+      1190,
+      1519
+    ],
+    "adarsh_lines": [
+      1179,
+      1508
+    ],
+    "combined_count": 2,
+    "adarsh_count": 2
+  },
+  {
+    "value": "799,138",
+    "combined_lines": [
+      1190,
+      1519
+    ],
+    "adarsh_lines": [
+      1179,
+      1508
+    ],
+    "combined_count": 2,
+    "adarsh_count": 2
+  },
+  {
+    "value": "1,429.00",
+    "combined_lines": [
+      508,
+      587,
+      692,
+      2107
+    ],
+    "adarsh_lines": [
+      2128
+    ],
+    "combined_count": 4,
+    "adarsh_count": 1
+  },
+  {
+    "value": "1,841.50",
+    "combined_lines": [
+      508,
+      587,
+      692,
+      2107
+    ],
+    "adarsh_lines": [
+      2128
+    ],
+    "combined_count": 4,
+    "adarsh_count": 1
+  },
+  {
+    "value": "2,929.00",
+    "combined_lines": [
+      508,
+      587,
+      692,
+      2107
+    ],
+    "adarsh_lines": [
+      2128
+    ],
+    "combined_count": 4,
+    "adarsh_count": 1
+  },
+  {
+    "value": "3,290.00",
+    "combined_lines": [
+      674
+    ],
+    "adarsh_lines": [
+      674
+    ],
+    "combined_count": 1,
+    "adarsh_count": 1
+  },
+  {
+    "value": "3,654.00",
+    "combined_lines": [
+      674
+    ],
+    "adarsh_lines": [
+      674
+    ],
+    "combined_count": 1,
+    "adarsh_count": 1
+  },
+  {
+    "value": "5,720.00",
+    "combined_lines": [
+      670,
+      670,
+      1890
+    ],
+    "adarsh_lines": [
+      670,
+      670,
+      1911
+    ],
+    "combined_count": 3,
+    "adarsh_count": 3
+  },
+  {
+    "value": "5,890.00",
+    "combined_lines": [
+      670,
+      670,
+      1890
+    ],
+    "adarsh_lines": [
+      670,
+      670,
+      1911
+    ],
+    "combined_count": 3,
+    "adarsh_count": 3
+  },
+  {
+    "value": "6,234.00",
+    "combined_lines": [
+      670,
+      670,
+      1890
+    ],
+    "adarsh_lines": [
+      670,
+      670,
+      1911
+    ],
+    "combined_count": 3,
+    "adarsh_count": 3
+  },
+  {
+    "value": "6,980.00",
+    "combined_lines": [
+      670,
+      670,
+      1890
+    ],
+    "adarsh_lines": [
+      670,
+      670,
+      1911
+    ],
+    "combined_count": 3,
+    "adarsh_count": 3
+  },
+  {
+    "value": "7,450.00",
+    "combined_lines": [
+      670,
+      670,
+      1890
+    ],
+    "adarsh_lines": [
+      670,
+      670,
+      1911
+    ],
+    "combined_count": 3,
+    "adarsh_count": 3
+  },
+  {
+    "value": "012345678",
+    "combined_lines": [
+      199
+    ],
+    "adarsh_lines": [
+      199
+    ],
+    "combined_count": 1,
+    "adarsh_count": 1
+  },
+  {
+    "value": "59,130,246",
+    "combined_lines": [
+      90,
+      147,
+      177,
+      1494,
+      1815
+    ],
+    "adarsh_lines": [
+      90,
+      147,
+      177,
+      1483,
+      1810
+    ],
+    "combined_count": 5,
+    "adarsh_count": 5
+  },
+  {
+    "value": "153,153,153",
+    "combined_lines": [
+      2116
+    ],
+    "adarsh_lines": [
+      2137
+    ],
+    "combined_count": 1,
+    "adarsh_count": 1
+  },
+  {
+    "value": "200,200,200",
+    "combined_lines": [
+      1866
+    ],
+    "adarsh_lines": [
+      1887
+    ],
+    "combined_count": 1,
+    "adarsh_count": 1
+  },
+  {
+    "value": "245,245,245",
+    "combined_lines": [
+      1883,
+      1909,
+      1921,
+      2116
+    ],
+    "adarsh_lines": [
+      1904,
+      1930,
+      1942,
+      2137
+    ],
+    "combined_count": 4,
+    "adarsh_count": 4
+  },
+  {
+    "value": "252,252,252",
+    "combined_lines": [
+      1883,
+      1894,
+      1909,
+      1921,
+      1942
+    ],
+    "adarsh_lines": [
+      1904,
+      1915,
+      1930,
+      1942,
+      1963
+    ],
+    "combined_count": 5,
+    "adarsh_count": 5
+  },
+  {
+    "value": "254,242,242",
+    "combined_lines": [
+      2107
+    ],
+    "adarsh_lines": [
+      2128
+    ],
+    "combined_count": 1,
+    "adarsh_count": 1
+  }
+]
