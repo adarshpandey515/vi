@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vi Enterprise Billing - JSON Dynamic</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/jspdf@2.5.2/dist/jspdf.umd.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jspdf-autotable@3.8.4/dist/jspdf.plugin.autotable.min.js"></script>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{--red:#e60000;--red-dark:#b30000;--red-light:#fef2f2;--bg:#fafafa;--card:#fff;--fg:#1a1a1a;--muted:#6b7280;--muted-bg:#f3f4f6;--border:#c9cdd3;--blue:#3b82f6;--blue-light:#eff6ff;--green:#22c55e;--green-light:#f0fdf4;--orange:#f59e0b;--orange-light:#fffbeb;--purple:#8b5cf6;--purple-light:#f5f3ff;--teal:#14b8a6;--shadow:0 1px 3px rgba(0,0,0,.08);--shadow-md:0 4px 6px -1px rgba(0,0,0,.1);--shadow-lg:0 10px 25px -5px rgba(0,0,0,.15);--radius:8px}
+body{font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;background:var(--bg);color:var(--fg);font-size:14px;line-height:1.5;overflow-x:hidden}
+/*Scroll progress bar*/
+.scroll-prog{position:fixed;top:0;left:0;height:3px;background:linear-gradient(90deg,var(--red),var(--orange),var(--red));z-index:200;width:0;transition:width .1s linear}
+.header{height:56px;background:linear-gradient(135deg,var(--red),var(--red-dark));display:flex;align-items:center;padding:0 16px;gap:12px;position:sticky;top:0;z-index:100;box-shadow:0 2px 12px rgba(230,0,0,.3)}
+.header .logo{font-size:24px;font-weight:900;color:#fff;letter-spacing:-.5px}
+.header .divider{width:1px;height:24px;background:rgba(255,255,255,.3)}
+.header .title{color:#fff;font-size:14px;font-weight:600}
+.header .spacer{flex:1}
+.hbtn{background:rgba(255,255,255,.1);border:none;color:#fff;padding:6px 12px;border-radius:6px;font-size:12px;font-weight:500;cursor:pointer;font-family:inherit;display:flex;align-items:center;gap:4px;transition:all .25s ease}
+.hbtn:hover{background:rgba(255,255,255,.25);transform:translateY(-1px)}
+.main{padding:24px;max-width:1200px;margin:0 auto}
+.card{background:var(--card);border:1px solid var(--border);box-shadow:var(--shadow);margin-bottom:16px;padding:20px;border-radius:var(--radius);transition:all .3s ease}
+.card:hover{box-shadow:var(--shadow-lg);transform:translateY(-2px)}
+.card-h{font-size:18px;font-weight:700;margin-bottom:16px;padding-bottom:12px;border-bottom:2px solid var(--border);display:flex;align-items:center;gap:8px}
+.grid{display:grid;gap:16px}.g2{grid-template-columns:1fr 1fr}.g3{grid-template-columns:1fr 1fr 1fr}.g4{grid-template-columns:repeat(4,1fr)}
+@media(max-width:768px){.g2,.g3,.g4{grid-template-columns:1fr}}
+.badge{display:inline-flex;align-items:center;padding:4px 12px;border-radius:20px;font-size:12px;font-weight:600;border:1px solid var(--border)}
+.badge.red{background:var(--red-light);color:var(--red);border-color:#fca5a5}
+.badge.green{background:var(--green-light);color:var(--green);border-color:#86efac}
+table{width:100%;border-collapse:collapse;background:#fff;font-size:13px}
+th{text-align:left;padding:12px;font-weight:600;font-size:12px;color:var(--muted);border-bottom:2px solid var(--border);background:var(--muted-bg);text-transform:uppercase;letter-spacing:.03em}
+td{padding:12px;border-bottom:1px solid var(--border)}
+tr:hover{background:#fafafa}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:6px;padding:10px 20px;border-radius:6px;font-size:13px;font-weight:500;cursor:pointer;border:1px solid var(--border);background:#fff;color:var(--fg);font-family:inherit;transition:all .25s}
+.btn:hover{background:var(--muted-bg);transform:translateY(-1px);box-shadow:var(--shadow-md)}
+.btn.pri{background:linear-gradient(135deg,var(--red),var(--red-dark));color:#fff;border-color:var(--red)}
+.btn.pri:hover{box-shadow:0 4px 16px rgba(230,0,0,.4)}
+.stat-box{background:var(--muted-bg);padding:16px;border-radius:var(--radius);text-align:center}
+.stat-box .label{font-size:12px;color:var(--muted);margin-bottom:8px}
+.stat-box .value{font-size:24px;font-weight:700;color:var(--red)}
+.amount{color:var(--red);font-weight:700;font-size:18px}
+h1{font-size:20px;font-weight:700;margin-bottom:12px}
+h2{font-size:16px;font-weight:600;margin-bottom:12px;margin-top:24px}
+.loading{text-align:center;padding:40px;color:var(--muted)}
+.error{background:#fff5f5;color:#c53030;padding:16px;border-radius:var(--radius);border-left:4px solid #c53030;margin-bottom:16px}
+</style>
+</head>
+<body>
+<div class="scroll-prog" id="scrollProg"></div>
+
+<!-- Header -->
+<div class="header">
+  <div class="logo" id="headerLogo">Vi</div>
+  <div class="divider"></div>
+  <div class="title" id="headerTitle">Enterprise Portal</div>
+  <div class="spacer"></div>
+  <div class="hbtn" onclick="exportPDF()">📥 Export PDF</div>
+</div>
+
+<!-- Main Content -->
+<div class="main">
+  <div id="content">
+    <div class="loading">Loading user data...</div>
+  </div>
+</div>
+
+<script>
+// Load JSON data and render page
+async function loadAndRender() {
+  try {
+    // Fetch the JSON data
+    const response = await fetch('user_data_sample.json');
+    if (!response.ok) throw new Error('Failed to load JSON');
+    
+    const data = await response.json();
+    renderPage(data);
+  } catch (error) {
+    document.getElementById('content').innerHTML = `<div class="error">⚠️ Error: ${error.message}</div>`;
+  }
+}
+
+function renderPage(data) {
+  const u = data.user;
+  const a = data.account;
+  const b = data.billing;
+  const c = data.charges;
+  const s = data.services || [];
+  const ug = data.usage || {};
+  
+  let html = `
+    <!-- Company Info Card -->
+    <div class="card">
+      <div class="card-h">Company Information</div>
+      <div class="grid g2">
+        <div>
+          <p class="label" style="font-size:11px;color:var(--muted);margin-bottom:4px">COMPANY NAME</p>
+          <p style="font-size:16px;font-weight:700">${u.company}</p>
+          <p style="font-size:12px;color:var(--muted);margin-top:8px">${u.address}</p>
+        </div>
+        <div>
+          <p class="label" style="font-size:11px;color:var(--muted);margin-bottom:4px">CONTACT DETAILS</p>
+          <p>📧 ${u.contact.email}</p>
+          <p>📱 ${u.contact.phone}</p>
+          <p>🌐 ${u.contact.website}</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Account Overview -->
+    <div class="card">
+      <div class="card-h">Account Overview</div>
+      <div class="grid g4">
+        <div class="stat-box">
+          <div class="label">Account Number</div>
+          <div class="value" style="font-size:16px">${a.accountNumber}</div>
+        </div>
+        <div class="stat-box">
+          <div class="label">Category</div>
+          <div class="value" style="font-size:16px">${a.accountCategory}</div>
+        </div>
+        <div class="stat-box">
+          <div class="label">Account Manager</div>
+          <div class="value" style="font-size:14px">${a.accountManager}</div>
+        </div>
+        <div class="stat-box">
+          <div class="label">Status</div>
+          <div><span class="badge green" style="margin-top:4px">${a.status}</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Billing Summary -->
+    <div class="card">
+      <div class="card-h">Billing Summary</div>
+      <div class="grid g2">
+        <div>
+          <table>
+            <tr style="background:var(--muted-bg)"><td style="font-weight:600">Bill Details</td><td></td></tr>
+            <tr><td>Bill Number</td><td><strong>${b.billNumber}</strong></td></tr>
+            <tr><td>Billing Period</td><td>${b.billPeriod.startDate} to ${b.billPeriod.endDate}</td></tr>
+            <tr><td>Generated Date</td><td>${data.documentMetadata.generatedAt.split('T')[0]}</td></tr>
+            <tr><td>Due Date</td><td><strong class="amount">${b.dueDate}</strong></td></tr>
+          </table>
+        </div>
+        <div>
+          <div style="background:var(--red-light);padding:24px;border-radius:var(--radius);text-align:center">
+            <p style="font-size:12px;color:var(--muted);margin-bottom:8px">TOTAL AMOUNT DUE</p>
+            <p class="amount" style="font-size:32px">${b.currencySymbol}${c.totalAmount}</p>
+            <button class="btn pri" style="width:100%;margin-top:16px" onclick="payNow()">Pay Now</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Services Breakdown -->
+    <div class="card">
+      <div class="card-h">Services & Charges</div>
+      <table>
+        <thead>
+          <tr>
+            <th>Service</th>
+            <th>Quantity</th>
+            <th>Unit Price</th>
+            <th>Total Price</th>
+            <th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          ${s.map(srv => `
+            <tr>
+              <td><strong>${srv.serviceName}</strong></td>
+              <td>${srv.quantity} ${srv.unit || ''}</td>
+              <td>${b.currencySymbol}${srv.unitPrice}</td>
+              <td><strong>${b.currencySymbol}${srv.totalPrice}</strong></td>
+              <td>${srv.description}</td>
+            </tr>
+          `).join('')}
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Charges Breakdown -->
+    <div class="card">
+      <div class="card-h">Charges & Taxes</div>
+      <div class="grid g2">
+        <table>
+          <tr><td>Subtotal</td><td>${b.currencySymbol}${c.subtotal}</td></tr>
+          <tr><td>GST (${c.taxes.gst.rate})</td><td>+ ${b.currencySymbol}${c.taxes.gst.amount}</td></tr>
+          <tr><td>Loyalty Discount (${c.discounts.loyaltyDiscount.rate})</td><td style="color:var(--green)">${c.discounts.loyaltyDiscount.amount}</td></tr>
+          <tr><td>Previous Balance</td><td>${b.currencySymbol}${c.previousBalance}</td></tr>
+          <tr style="background:var(--muted-bg);font-weight:700"><td>Total Due</td><td class="amount">${b.currencySymbol}${c.totalAmount}</td></tr>
+        </table>
+      </div>
+    </div>
+
+    <!-- Usage Details -->
+    <div class="card">
+      <div class="card-h">Usage Summary</div>
+      <div class="grid g4">
+        <div class="stat-box">
+          <div class="label">Voice Minutes</div>
+          <div class="value">${ug.voiceMinutes?.toLocaleString() || '0'}</div>
+        </div>
+        <div class="stat-box">
+          <div class="label">SMS Count</div>
+          <div class="value">${ug.smsCount?.toLocaleString() || '0'}</div>
+        </div>
+        <div class="stat-box">
+          <div class="label">Data Used</div>
+          <div class="value">${ug.dataUsage?.amount || '0'} ${ug.dataUsage?.unit || 'GB'}</div>
+        </div>
+        <div class="stat-box">
+          <div class="label">Roaming Min</div>
+          <div class="value">${ug.roamingMinutes?.toLocaleString() || '0'}</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Payment Methods -->
+    <div class="card">
+      <div class="card-h">Payment Information</div>
+      <div class="grid g2">
+        <div>
+          <p style="font-weight:600;margin-bottom:12px">Available Payment Methods</p>
+          ${data.paymentMethods.map(pm => `<p style="padding:8px;background:var(--muted-bg);border-radius:4px;margin-bottom:8px">✓ ${pm}</p>`).join('')}
+        </div>
+        <div>
+          <p style="font-weight:600;margin-bottom:12px">Bank Details</p>
+          <table style="margin-top:0">
+            <tr><td>Account</td><td>${data.paymentDetails.bankAccount}</td></tr>
+            <tr><td>Bank</td><td>${data.paymentDetails.bankName}</td></tr>
+            <tr><td>IFSC</td><td>${data.paymentDetails.ifscCode}</td></tr>
+            <tr><td>UPI</td><td>${data.paymentDetails.upiId}</td></tr>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bill Includes -->
+    <div class="card">
+      <div class="card-h">What's Included</div>
+      <div>
+        ${data.billIncludes.map(item => `<p style="padding:10px 0;border-bottom:1px solid var(--border)">✅ ${item}</p>`).join('')}
+      </div>
+    </div>
+
+    <!-- App Links -->
+    <div class="card">
+      <div class="card-h">Quick Links</div>
+      <div class="grid g2">
+        <div>
+          <p style="font-weight:600;margin-bottom:12px">Download App</p>
+          <p style="margin-bottom:8px"><a href="${data.appLinks.playStoreURL}" target="_blank" class="btn">📱 Google Play</a></p>
+          <p><a href="${data.appLinks.appStoreURL}" target="_blank" class="btn">🍎 App Store</a></p>
+        </div>
+        <div>
+          <p style="font-weight:600;margin-bottom:12px">Deep Links (Copy)</p>
+          <p style="padding:8px;background:var(--muted-bg);border-radius:4px;margin-bottom:8px;cursor:pointer" onclick="copyText('${data.appLinks.deepLink1}')">
+            <code style="font-size:11px">${data.appLinks.deepLink1}</code>
+          </p>
+          <p style="padding:8px;background:var(--muted-bg);border-radius:4px;cursor:pointer" onclick="copyText('${data.appLinks.deepLink2}')">
+            <code style="font-size:11px">${data.appLinks.deepLink2}</code>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div style="text-align:center;margin-top:40px;padding:20px;border-top:2px solid var(--border)">
+      <p style="color:var(--muted);margin-bottom:8px">Terms & conditions apply. Interest rates may vary as per bank policy.</p>
+      <p style="color:var(--muted);font-size:12px">For more details, visit ${u.contact.website} or call ${u.contact.phone}</p>
+    </div>
+  `;
+  
+  document.getElementById('content').innerHTML = html;
+  updateScrollProgress();
+}
+
+function copyText(text) {
+  navigator.clipboard.writeText(text).then(() => {
+    alert('Copied: ' + text);
+  });
+}
+
+function payNow() {
+  alert('Redirecting to payment gateway...');
+}
+
+function exportPDF() {
+  alert('PDF export functionality will be implemented');
+}
+
+function updateScrollProgress() {
+  window.addEventListener('scroll', () => {
+    const scrollTop = document.documentElement.scrollTop;
+    const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+    const scrolled = (scrollTop / docHeight) * 100;
+    document.getElementById('scrollProg').style.width = scrolled + '%';
+  });
+}
+
+// Load on page load
+window.addEventListener('DOMContentLoaded', loadAndRender);
+</script>
+</body>
+</html>

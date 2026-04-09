@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Interactive Designer - Logs</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" />
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js"></script>
+
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+    }
+
+    .container {
+      max-width: 95% !important;
+    }
+
+    .table-responsive {
+      max-height: 70vh;
+      overflow: auto;
+      border-radius: 6px;
+    }
+
+    #pageTable thead th {
+      position: sticky;
+      top: 0;
+      background: #fff;
+      z-index: 2;
+      white-space: nowrap;
+      cursor: pointer;
+      user-select: none;
+    }
+
+    .pagination {
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    /* When there are many pages, prevent the pagination from breaking the layout */
+    #pagination {
+      gap: 4px;
+    }
+
+    #pagination .page-link {
+      min-width: 38px;
+      text-align: center;
+    }
+
+    .logs-toolbar {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: end;
+      gap: 12px;
+      padding: 10px 0;
+    }
+
+    .summary-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 6px 10px;
+      border: 1px solid #e5e5e5;
+      border-radius: 999px;
+      background: #fafafa;
+      font-size: 13px;
+      white-space: nowrap;
+    }
+
+    .summary-pill strong {
+      font-weight: 700;
+    }
+
+    .truncate {
+      display: inline-block;
+      max-width: 100%;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      vertical-align: bottom;
+    }
+
+    .status-success {
+      color: #155724;
+      background: #d4edda;
+      border: 1px solid #c3e6cb;
+      padding: 2px 8px;
+      border-radius: 12px;
+      font-size: 12px;
+      display: inline-block;
+    }
+
+    .status-failure {
+      color: #721c24;
+      background: #f8d7da;
+      border: 1px solid #f5c6cb;
+      padding: 2px 8px;
+      border-radius: 12px;
+      font-size: 12px;
+      display: inline-block;
+    }
+
+    #loadingOverlay {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: rgba(255, 255, 255, 0.75);
+      z-index: 1050;
+    }
+
+    #loadingOverlay .spinner-border {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    .btn i {
+      margin-right: 5px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container mt-4">
+    <div class="card border-0">
+      <div class="card-body p-0">
+        <div class="row align-items-center" style="width: 100%; padding: 10px 0px; margin-left: 0px">
+          <div class="col-lg-6">
+            <h2>API Logs Details</h2>
+          </div>
+          <div class="col-lg-6 text-right">
+            <button type="button" class="btn btn-secondary mr-2" onclick="goBack()">
+              <i class="fa fa-arrow-left"></i> Back to Home
+            </button>
+
+            <button type="button" class="btn btn-success" onclick="downloadExcel()">
+              <i class="fa fa-file-excel-o"></i> Download Excel
+            </button>
+          </div>
+
+          <div class="col-lg-12 mt-3">
+            <div class="row">
+              <div class="col-lg-3">
+                <label for="startDate">Start Date:</label>
+                <input type="date" class="form-control" id="startDate" name="startDate">
+              </div>
+              <div class="col-lg-3">
+                <label for="endDate">To Date:</label>
+                <input type="date" class="form-control" id="endDate" name="endDate">
+              </div>
+              <div class="col-lg-3">
+                <label for="resultFilter">Result:</label>
+                <select class="form-control" id="resultFilter" onchange="applyFilters()">
+                  <option value="ALL">All</option>
+                  <option value="SUCCESS">SUCCESS</option>
+                  <option value="FAILURE">FAILURE</option>
+                </select>
+              </div>
+              <div class="col-lg-3 mt-4">
+                <button type="button" class="btn btn-primary mt-2" onclick="reset()">Reset</button>
+                <button type="button" class="btn btn-primary mt-2" onclick="submit()">Submit</button>
+              </div>
+            </div>
+
+            <div class="logs-toolbar mt-3">
+              <div style="min-width: 260px; flex: 1;">
+                <label for="searchInput">Search (Message / Template ID):</label>
+                <input type="text" class="form-control" id="searchInput" placeholder="Type to search…" />
+              </div>
+              <div style="width: 160px;">
+                <label for="pageSize">Rows per page:</label>
+                <select id="pageSize" class="form-control">
+                  <option value="10" selected>10</option>
+                  <option value="25">25</option>
+                  <option value="50">50</option>
+                  <option value="100">100</option>
+                </select>
+              </div>
+              <div class="summary-pill" title="Filtered logs count">
+                Total: <strong id="summaryTotal">0</strong>
+              </div>
+              <div class="summary-pill" title="Success count">
+                Success: <strong id="summarySuccess">0</strong>
+              </div>
+              <div class="summary-pill" title="Failure count">
+                Failure: <strong id="summaryFailure">0</strong>
+              </div>
+              <div class="summary-pill" title="Last fetch time">
+                Last updated: <strong id="summaryUpdated">—</strong>
+              </div>
+            </div>
+
+            <div id="errorBanner" class="alert alert-danger mt-3" style="display:none;">
+              Failed to load logs. <button class="btn btn-sm btn-danger ml-2" onclick="retryFetch()">Retry</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="table-responsive">
+        <table class="table table-bordered mb-0" id="pageTable">
+          <thead>
+          <tr>
+            <th data-sort="serial" style="cursor: default;">Serial Number</th>
+            <th data-sort="message">Message</th>
+            <th data-sort="sendRequestTime">Send Request Time</th>
+            <th data-sort="outputResponseTime">Output Response Time</th>
+            <th data-sort="result">Result</th>
+            <th data-sort="user_id">Template ID</th>
+          </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+
+      <div class="d-flex justify-content-between align-items-center mt-2 flex-wrap" style="gap: 10px;">
+        <div class="text-muted" id="showingInfo">Showing 0–0 of 0</div>
+      </div>
+      <nav>
+        <ul class="pagination" id="pagination"></ul>
+      </nav>
+    </div>
+  </div>
+
+  <div id="loadingOverlay">
+    <div class="spinner-border text-primary" role="status" aria-label="Loading">
+      <span class="sr-only">Loading...</span>
+    </div>
+  </div>
+
+  <script>
+    let allpage = [];
+    let filteredLogs = [];
+    const apiUrl = `http://103.75.226.215:8081/api/getErrorLogs`;
+    let logsPerPage = 10;
+    let currentPage = 1;
+    let sortKey = 'sendRequestTime';
+    let sortDir = 'desc'; // 'asc' | 'desc'
+    let lastFetchUrl = apiUrl;
+    let searchTimer = null;
+
+    function setLoading(isLoading) {
+      const overlay = document.getElementById('loadingOverlay');
+      if (!overlay) return;
+      overlay.style.display = isLoading ? 'block' : 'none';
+    }
+
+    function setErrorVisible(isVisible) {
+      const banner = document.getElementById('errorBanner');
+      if (!banner) return;
+      banner.style.display = isVisible ? 'block' : 'none';
+    }
+
+    function formatDate(dateStr) {
+      if (!dateStr) return '';
+      return dayjs(dateStr).format('DD-MM-YYYY hh:mm A');
+    }
+
+    function safeStr(val) {
+      return (val == null) ? '' : String(val);
+    }
+
+    function updateSummary() {
+      const total = filteredLogs.length;
+      const success = filteredLogs.filter(l => l.result === 'SUCCESS').length;
+      const failure = filteredLogs.filter(l => l.result === 'FAILURE').length;
+
+      const totalEl = document.getElementById('summaryTotal');
+      const succEl = document.getElementById('summarySuccess');
+      const failEl = document.getElementById('summaryFailure');
+      if (totalEl) totalEl.textContent = String(total);
+      if (succEl) succEl.textContent = String(success);
+      if (failEl) failEl.textContent = String(failure);
+    }
+
+    function updateShowingInfo() {
+      const info = document.getElementById('showingInfo');
+      if (!info) return;
+      const total = filteredLogs.length;
+      if (!total) {
+        info.textContent = 'Showing 0–0 of 0';
+        return;
+      }
+      const startIndex = (currentPage - 1) * logsPerPage;
+      const endIndex = Math.min(total, startIndex + logsPerPage);
+      info.textContent = `Showing ${startIndex + 1}–${endIndex} of ${total}`;
+    }
+
+    function compareValues(a, b) {
+      if (a == null && b == null) return 0;
+      if (a == null) return -1;
+      if (b == null) return 1;
+      if (typeof a === 'number' && typeof b === 'number') return a - b;
+      return String(a).localeCompare(String(b));
+    }
+
+    function applySort(logs) {
+      const dirMul = sortDir === 'asc' ? 1 : -1;
+      const sorted = [...logs];
+      sorted.sort((x, y) => {
+        if (sortKey === 'sendRequestTime' || sortKey === 'outputResponseTime') {
+          const dx = x[sortKey] ? new Date(x[sortKey]).getTime() : 0;
+          const dy = y[sortKey] ? new Date(y[sortKey]).getTime() : 0;
+          return (dx - dy) * dirMul;
+        }
+        return compareValues(x[sortKey], y[sortKey]) * dirMul;
+      });
+      return sorted;
+    }
+
+    function populateTable() {
+      const tbody = document.querySelector("#pageTable tbody");
+      tbody.innerHTML = "";
+
+      const startIndex = (currentPage - 1) * logsPerPage;
+      const paginatedLogs = filteredLogs.slice(startIndex, startIndex + logsPerPage);
+
+      paginatedLogs.forEach((item, index) => {
+        const sendTime = formatDate(item.sendRequestTime);
+        const outputTime = formatDate(item.outputResponseTime);
+        const serialNo = startIndex + index + 1;
+
+        const row = document.createElement("tr");
+        const msg = safeStr(item.message);
+        const result = safeStr(item.result);
+        const resultBadge = result === 'SUCCESS'
+          ? `<span class="status-success">SUCCESS</span>`
+          : (result === 'FAILURE' ? `<span class="status-failure">FAILURE</span>` : result);
+
+        row.innerHTML = `
+          <td>${serialNo}</td>
+          <td>
+            <span class="truncate" title="${msg.replace(/"/g, '&quot;')}">${msg}</span>
+          </td>
+          <td>${sendTime}</td>
+          <td>${outputTime}</td>
+          <td>${resultBadge}</td>
+          <td>${safeStr(item.user_id)}</td>
+        `;
+        tbody.appendChild(row);
+      });
+
+      renderPagination();
+      updateShowingInfo();
+    }
+
+    function renderPagination() {
+      const totalPages = Math.max(1, Math.ceil(filteredLogs.length / logsPerPage));
+      currentPage = Math.min(Math.max(currentPage, 1), totalPages);
+      const pagination = document.getElementById("pagination");
+      pagination.innerHTML = "";
+
+      const createPageItem = ({ label, page, disabled = false, active = false, isEllipsis = false }) => {
+        const li = document.createElement("li");
+        li.className = `page-item ${disabled ? "disabled" : ""} ${active ? "active" : ""}`.trim();
+
+        if (isEllipsis) {
+          li.innerHTML = `<span class="page-link">…</span>`;
+          return li;
+        }
+
+        const a = document.createElement("a");
+        a.className = "page-link";
+        a.href = "#";
+        a.textContent = String(label);
+        a.addEventListener("click", (e) => {
+          e.preventDefault();
+          if (disabled) return;
+          currentPage = page;
+          populateTable();
+        });
+        li.appendChild(a);
+        return li;
+      };
+
+      const addNav = () => {
+        pagination.appendChild(createPageItem({ label: "«", page: 1, disabled: currentPage === 1 }));
+        pagination.appendChild(createPageItem({ label: "‹", page: currentPage - 1, disabled: currentPage === 1 }));
+      };
+
+      const addTailNav = () => {
+        pagination.appendChild(createPageItem({ label: "›", page: currentPage + 1, disabled: currentPage === totalPages }));
+        pagination.appendChild(createPageItem({ label: "»", page: totalPages, disabled: currentPage === totalPages }));
+      };
+
+      addNav();
+
+      // Windowed pagination to avoid rendering hundreds of page buttons.
+      const maxVisible = 7; // includes first/last but not nav buttons
+      if (totalPages <= maxVisible) {
+        for (let p = 1; p <= totalPages; p++) {
+          pagination.appendChild(createPageItem({ label: p, page: p, active: p === currentPage }));
+        }
+      } else {
+        const firstPage = 1;
+        const lastPage = totalPages;
+        const windowSize = 2;
+        const left = Math.max(2, currentPage - windowSize);
+        const right = Math.min(totalPages - 1, currentPage + windowSize);
+
+        pagination.appendChild(createPageItem({ label: firstPage, page: firstPage, active: currentPage === firstPage }));
+
+        if (left > 2) {
+          pagination.appendChild(createPageItem({ isEllipsis: true }));
+        }
+
+        for (let p = left; p <= right; p++) {
+          pagination.appendChild(createPageItem({ label: p, page: p, active: p === currentPage }));
+        }
+
+        if (right < totalPages - 1) {
+          pagination.appendChild(createPageItem({ isEllipsis: true }));
+        }
+
+        pagination.appendChild(createPageItem({ label: lastPage, page: lastPage, active: currentPage === lastPage }));
+      }
+
+      addTailNav();
+    }
+
+    function applyFilters() {
+      const resultFilter = document.getElementById("resultFilter").value;
+      const query = safeStr(document.getElementById("searchInput")?.value).trim().toLowerCase();
+
+      if (resultFilter === "ALL") {
+        filteredLogs = [...allpage];
+      } else {
+        filteredLogs = allpage.filter(item => item.result === resultFilter);
+      }
+
+      if (query) {
+        filteredLogs = filteredLogs.filter(item => {
+          const msg = safeStr(item.message).toLowerCase();
+          const tid = safeStr(item.user_id).toLowerCase();
+          return msg.includes(query) || tid.includes(query);
+        });
+      }
+
+      filteredLogs = applySort(filteredLogs);
+
+      currentPage = 1;
+      updateSummary();
+      populateTable();
+    }
+
+    function downloadExcel() {
+      if (filteredLogs.length === 0) {
+        alert("No logs to download");
+        return;
+      }
+
+      const data = filteredLogs.map((item, index) => ({
+        "Sr. No": index + 1,
+        "Error Message": item.message || "",
+        "Send Request Time": formatDate(item.sendRequestTime),
+        "Output Response Time": formatDate(item.outputResponseTime),
+        "Result": item.result || "",
+        "Template ID": item.user_id || ""
+      }));
+
+      const ws = XLSX.utils.json_to_sheet(data);
+      const wb = XLSX.utils.book_new();
+      XLSX.utils.book_append_sheet(wb, ws, "Logs");
+      XLSX.writeFile(wb, "Logs.xlsx");
+    }
+
+    function fetchLogs(url = apiUrl) {
+      lastFetchUrl = url;
+      setErrorVisible(false);
+      setLoading(true);
+      fetch(url)
+        .then(response => response.json())
+        .then(data => {
+          allpage = data.sort((a, b) => new Date(b.sendRequestTime) - new Date(a.sendRequestTime));
+          filteredLogs = [...allpage];
+          const updatedEl = document.getElementById('summaryUpdated');
+          if (updatedEl) updatedEl.textContent = dayjs().format('DD-MM-YYYY hh:mm A');
+          applyFilters();
+        })
+        .catch(error => {
+          console.error("Error:", error);
+          setErrorVisible(true);
+        })
+        .finally(() => setLoading(false));
+    }
+
+    function retryFetch() {
+      fetchLogs(lastFetchUrl || apiUrl);
+    }
+
+    function submit() {
+      const startDate = document.getElementById("startDate").value;
+      const endDate = document.getElementById("endDate").value;
+
+      if (!startDate || !endDate) {
+        alert("Please select both start and end date");
+        return;
+      }
+
+      const apiUrl2 = `${apiUrl}?startDate=${startDate}&endDate=${endDate}`;
+      fetchLogs(apiUrl2);
+    }
+
+    function reset() {
+      document.getElementById("startDate").value = '';
+      document.getElementById("endDate").value = '';
+      document.getElementById("resultFilter").value = 'ALL';
+      const s = document.getElementById("searchInput");
+      if (s) s.value = '';
+      fetchLogs();
+    }
+
+    // ✅ Back button function
+    function goBack() {
+      window.location.href = "index.html";
+    }
+
+    // Initial load: set date inputs to today and fetch only today's logs
+    (function initialLoad() {
+      const today = dayjs().format('YYYY-MM-DD');
+      const startInput = document.getElementById("startDate");
+      const endInput = document.getElementById("endDate");
+      if (startInput) startInput.value = today;
+      if (endInput) endInput.value = today;
+      const todayUrl = `${apiUrl}?startDate=${today}&endDate=${today}`;
+      const search = document.getElementById('searchInput');
+      if (search) {
+        search.addEventListener('input', () => {
+          if (searchTimer) clearTimeout(searchTimer);
+          searchTimer = setTimeout(() => applyFilters(), 250);
+        });
+      }
+
+      const pageSize = document.getElementById('pageSize');
+      if (pageSize) {
+        pageSize.addEventListener('change', () => {
+          const v = parseInt(pageSize.value, 10);
+          logsPerPage = Number.isFinite(v) && v > 0 ? v : 10;
+          currentPage = 1;
+          populateTable();
+        });
+      }
+
+      // Click-to-sort on headers.
+      const headerRow = document.querySelector('#pageTable thead');
+      if (headerRow) {
+        headerRow.addEventListener('click', (e) => {
+          const th = e.target && e.target.closest ? e.target.closest('th[data-sort]') : null;
+          if (!th) return;
+          const key = th.getAttribute('data-sort');
+          if (!key || key === 'serial') return;
+          if (sortKey === key) sortDir = sortDir === 'asc' ? 'desc' : 'asc';
+          else { sortKey = key; sortDir = 'asc'; }
+          filteredLogs = applySort(filteredLogs);
+          currentPage = 1;
+          populateTable();
+        });
+      }
+
+      fetchLogs(todayUrl);
+    })();
+  </script>
+</body>
+
+</html>

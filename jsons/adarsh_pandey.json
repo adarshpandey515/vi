@@ -1,0 +1,467 @@
+{
+  "accountSummary": {
+    "accountNumber": "ENT-99341022",
+    "accountName": "Adarsh Pandey",
+    "companyName": "Adarsh Pandey Enterprises Ltd.",
+    "accountCategory": "ENTERPRISE",
+    "totalConnections": 5,
+    "accountStatus": "Active"
+  },
+  "currentBilling": {
+    "invoiceNumber": "INV-2026-07-99341022",
+    "billPeriod": {
+      "startDate": "01/02/2026",
+      "endDate": "28/02/2026"
+    },
+    "generatedDate": "17/03/2026",
+    "dueDate": "15/03/2026",
+    "daysRemaining": 4,
+    "lateFeeIfNotPaid": "63.00",
+    "currencySymbol": "Rs.",
+    "totalDue": "7269.49",
+    "status": "Unpaid"
+  },
+  "dashboardStatistics": {
+    "monthlySpend": "7919",
+    "averageSpend": "9541",
+    "monthlyBudget": "9427.38",
+    "budgetUtilization": "84%",
+    "remainingBudget": "1508.38",
+    "savingsOpportunity": "1344.15",
+    "activeConnections": 5,
+    "inactiveConnections": 0,
+    "totalInvoices": 11,
+    "paidInvoices": 13,
+    "unpaidInvoices": 3
+  },
+  "billBreakdown": {
+    "basePlans": "3123.00",
+    "dataOverage": "392.00",
+    "roaming": "2190.00",
+    "vasServices": "563.00",
+    "subtotal": "6268.00",
+    "taxes": {
+      "gst": {
+        "rate": "12%",
+        "amount": "752.16"
+      }
+    },
+    "previousBalance": "0.00",
+    "totalCharges": "7020.16",
+    "adjustments": "249.33",
+    "finalTotal": "7269.49"
+  },
+  "connections": [
+    {
+      "phoneNumber": "91234000",
+      "employeeName": "Adarsh Pandey",
+      "department": "Leadership",
+      "costCenter": "CC-706-01",
+      "isPrimary": true,
+      "plan": {
+        "name": "Max",
+        "code": "Max 999",
+        "baseCost": "999"
+      },
+      "monthlySpend": "2538.76",
+      "monthlyLimit": "2647",
+      "limitUtilization": "96%",
+      "status": "Active",
+      "usage": {
+        "data": {
+          "used": 65.56,
+          "limit": 100,
+          "unit": "GB",
+          "utilization": "66%"
+        },
+        "calls": {
+          "used": 787,
+          "unit": "minutes"
+        },
+        "sms": {
+          "used": 172,
+          "unit": "messages"
+        },
+        "roaming": {
+          "used": 5944,
+          "unit": "minutes"
+        }
+      },
+      "charges": {
+        "planCost": "999",
+        "dataOverage": "437.49",
+        "roaming": "290.92",
+        "vas": "275.47",
+        "tax": "393.84"
+      },
+      "paymentStatus": "On-time",
+      "paymentHistory": {
+        "onTimePercentage": 100,
+        "averageDelayDays": "9.26",
+        "delaysInLast12Months": 0
+      },
+      "collectionRiskScore": 33,
+      "collectionPriority": "LOW",
+      "lateFeesAccumulated": "0.00",
+      "alerts": {
+        "activeAlerts": 2,
+        "billingAlerts": [],
+        "usageAlerts": [],
+        "serviceAlerts": []
+      }
+    },
+    {
+      "phoneNumber": "91234001",
+      "employeeName": "Rajesh Kumar",
+      "department": "Product",
+      "costCenter": "CC-735-02",
+      "isPrimary": false,
+      "plan": {
+        "name": "Plus",
+        "code": "Plus 799",
+        "baseCost": "799"
+      },
+      "monthlySpend": "1154.99",
+      "monthlyLimit": "2864",
+      "limitUtilization": "40%",
+      "status": "Active",
+      "usage": {
+        "data": {
+          "used": 76.75,
+          "limit": 75,
+          "unit": "GB",
+          "utilization": "102%"
+        },
+        "calls": {
+          "used": 1455,
+          "unit": "minutes"
+        },
+        "sms": {
+          "used": 165,
+          "unit": "messages"
+        },
+        "roaming": {
+          "used": 5167,
+          "unit": "minutes"
+        }
+      },
+      "charges": {
+        "planCost": "799",
+        "dataOverage": "24.74",
+        "roaming": "185.42",
+        "vas": "315.65",
+        "tax": "453.72"
+      },
+      "paymentStatus": "Delayed",
+      "paymentHistory": {
+        "onTimePercentage": 4,
+        "averageDelayDays": "3.89",
+        "delaysInLast12Months": 8
+      },
+      "collectionRiskScore": 70,
+      "collectionPriority": "MEDIUM",
+      "lateFeesAccumulated": "83.93",
+      "alerts": {
+        "activeAlerts": 3,
+        "billingAlerts": [],
+        "usageAlerts": [],
+        "serviceAlerts": []
+      }
+    },
+    {
+      "phoneNumber": "91234002",
+      "employeeName": "Priya Sharma",
+      "department": "Leadership",
+      "costCenter": "CC-274-03",
+      "isPrimary": false,
+      "plan": {
+        "name": "Basic",
+        "code": "Basic 599",
+        "baseCost": "599"
+      },
+      "monthlySpend": "2082.66",
+      "monthlyLimit": "2590",
+      "limitUtilization": "80%",
+      "status": "Active",
+      "usage": {
+        "data": {
+          "used": 56.7,
+          "limit": 50,
+          "unit": "GB",
+          "utilization": "113%"
+        },
+        "calls": {
+          "used": 2054,
+          "unit": "minutes"
+        },
+        "sms": {
+          "used": 99,
+          "unit": "messages"
+        },
+        "roaming": {
+          "used": 3710,
+          "unit": "minutes"
+        }
+      },
+      "charges": {
+        "planCost": "599",
+        "dataOverage": "156.74",
+        "roaming": "487.50",
+        "vas": "316.80",
+        "tax": "438.24"
+      },
+      "paymentStatus": "Occasional Delay",
+      "paymentHistory": {
+        "onTimePercentage": 64,
+        "averageDelayDays": "0.78",
+        "delaysInLast12Months": 3
+      },
+      "collectionRiskScore": 72,
+      "collectionPriority": "MEDIUM",
+      "lateFeesAccumulated": "81.16",
+      "alerts": {
+        "activeAlerts": 0,
+        "billingAlerts": [],
+        "usageAlerts": [],
+        "serviceAlerts": []
+      }
+    },
+    {
+      "phoneNumber": "91234003",
+      "employeeName": "Amit Patel",
+      "department": "Support",
+      "costCenter": "CC-580-04",
+      "isPrimary": false,
+      "plan": {
+        "name": "Max",
+        "code": "Max 999",
+        "baseCost": "999"
+      },
+      "monthlySpend": "1739.46",
+      "monthlyLimit": "2425",
+      "limitUtilization": "72%",
+      "status": "Active",
+      "usage": {
+        "data": {
+          "used": 42.39,
+          "limit": 100,
+          "unit": "GB",
+          "utilization": "42%"
+        },
+        "calls": {
+          "used": 2373,
+          "unit": "minutes"
+        },
+        "sms": {
+          "used": 225,
+          "unit": "messages"
+        },
+        "roaming": {
+          "used": 3234,
+          "unit": "minutes"
+        }
+      },
+      "charges": {
+        "planCost": "999",
+        "dataOverage": "477.22",
+        "roaming": "711.24",
+        "vas": "466.53",
+        "tax": "308.72"
+      },
+      "paymentStatus": "On-time",
+      "paymentHistory": {
+        "onTimePercentage": 100,
+        "averageDelayDays": "13.23",
+        "delaysInLast12Months": 0
+      },
+      "collectionRiskScore": 28,
+      "collectionPriority": "LOW",
+      "lateFeesAccumulated": "0.00",
+      "alerts": {
+        "activeAlerts": 0,
+        "billingAlerts": [],
+        "usageAlerts": [],
+        "serviceAlerts": []
+      }
+    },
+    {
+      "phoneNumber": "91234004",
+      "employeeName": "Vikram Singh",
+      "department": "Marketing",
+      "costCenter": "CC-759-05",
+      "isPrimary": false,
+      "plan": {
+        "name": "Plus",
+        "code": "Plus 799",
+        "baseCost": "799"
+      },
+      "monthlySpend": "1274.08",
+      "monthlyLimit": "3002",
+      "limitUtilization": "42%",
+      "status": "Active",
+      "usage": {
+        "data": {
+          "used": 51.32,
+          "limit": 75,
+          "unit": "GB",
+          "utilization": "68%"
+        },
+        "calls": {
+          "used": 1338,
+          "unit": "minutes"
+        },
+        "sms": {
+          "used": 58,
+          "unit": "messages"
+        },
+        "roaming": {
+          "used": 3115,
+          "unit": "minutes"
+        }
+      },
+      "charges": {
+        "planCost": "799",
+        "dataOverage": "274.43",
+        "roaming": "562.84",
+        "vas": "257.01",
+        "tax": "210.23"
+      },
+      "paymentStatus": "On-time",
+      "paymentHistory": {
+        "onTimePercentage": 76,
+        "averageDelayDays": "8.30",
+        "delaysInLast12Months": 2
+      },
+      "collectionRiskScore": 63,
+      "collectionPriority": "MEDIUM",
+      "lateFeesAccumulated": "139.74",
+      "alerts": {
+        "activeAlerts": 1,
+        "billingAlerts": [],
+        "usageAlerts": [],
+        "serviceAlerts": []
+      }
+    }
+  ],
+  "voiceAndSmsMetrics": {
+    "summary": {
+      "totalCallsUsed": 8007,
+      "totalCallsLimit": 15000,
+      "callsUtilization": "53%",
+      "totalSmsUsed": 719,
+      "totalSmsLimit": 2600,
+      "smsUtilization": "28%"
+    },
+    "connectionBreakdown": [
+      {
+        "phoneNumber": "91234000",
+        "employeeName": "Adarsh Pandey",
+        "callsUsed": 787,
+        "callsLimit": 3000,
+        "callUtilization": "26%",
+        "smsUsed": 172,
+        "smsLimit": 172,
+        "smsUtilization": "100%"
+      },
+      {
+        "phoneNumber": "91234001",
+        "employeeName": "Rajesh Kumar",
+        "callsUsed": 1455,
+        "callsLimit": 3000,
+        "callUtilization": "49%",
+        "smsUsed": 165,
+        "smsLimit": 165,
+        "smsUtilization": "100%"
+      },
+      {
+        "phoneNumber": "91234002",
+        "employeeName": "Priya Sharma",
+        "callsUsed": 2054,
+        "callsLimit": 3000,
+        "callUtilization": "68%",
+        "smsUsed": 99,
+        "smsLimit": 99,
+        "smsUtilization": "100%"
+      },
+      {
+        "phoneNumber": "91234003",
+        "employeeName": "Amit Patel",
+        "callsUsed": 2373,
+        "callsLimit": 3000,
+        "callUtilization": "79%",
+        "smsUsed": 225,
+        "smsLimit": 225,
+        "smsUtilization": "100%"
+      },
+      {
+        "phoneNumber": "91234004",
+        "employeeName": "Vikram Singh",
+        "callsUsed": 1338,
+        "callsLimit": 3000,
+        "callUtilization": "45%",
+        "smsUsed": 58,
+        "smsLimit": 58,
+        "smsUtilization": "100%"
+      }
+    ],
+    "alerts": []
+  },
+  "historicalMonthlyData": {
+    "months": [
+      "Sep",
+      "Oct",
+      "Nov",
+      "Dec",
+      "Jan",
+      "Feb"
+    ],
+    "totals": [
+      7225,
+      7250,
+      6509,
+      6700,
+      5849,
+      7269
+    ],
+    "plans": [
+      3487,
+      3338,
+      3447,
+      3864,
+      4000,
+      3123
+    ],
+    "usage": [
+      370,
+      443,
+      330,
+      313,
+      599,
+      392
+    ],
+    "addOns": [
+      778,
+      794,
+      516,
+      856,
+      756,
+      563
+    ],
+    "roaming": [
+      806,
+      1015,
+      896,
+      1286,
+      724,
+      2190
+    ],
+    "taxes": [
+      935,
+      959,
+      1272,
+      1236,
+      1252,
+      752
+    ]
+  }
+}

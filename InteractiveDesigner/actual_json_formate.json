@@ -1,0 +1,3822 @@
+{
+  "english": {
+    "audioLink": "https://www.w3schools.com/html/horse.mp3",
+    "summery": "2000, 3000, 4000, Insert Your text here, sample data loading",
+    "data1": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?",
+    "data2": "मराठी ही इंडो-युरोपीय भाषाकुलातील एक भाषा आहे. भारतातील प्रमुख २२ भाषांपैकी मराठी एक आहे. महाराष्ट्र आणि गोवा ह्या राज्यांची मराठी ही अधिकृत राजभाषा आहे. मराठी मातृभाषा असणार्‍या लोकसंख्येनुसार मराठी ही जगातील पंधरावी व भारतातील चौथी भाषा आहे.",
+    "loans": "loans data",
+    "Invesment": "https://media.geeksforgeeks.org/wp-content/uploads/20240405170952/Architecture-of-the-Appium-Framework-1.png",
+    "contact us": "kotak.png",
+    "videoLink": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.istockphoto.com%2Fstock-photos%2Fnature-and-landscapes&psig=AOvVaw06kWXmJZRuKP8xq3RM7ZC9&ust=1760162801442000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCOC9stj7mJADFQAAAAAdAAAAABAE",
+    "SA": [
+      "Chinmay",
+      "Vishal",
+      "Durgesh"
+    ],
+    "analytics_pie": {
+      "series": [
+        {
+          "data": [
+            {
+              "name": "Saving",
+              "y": 1.2
+            },
+            {
+              "name": "Current",
+              "y": 5.4
+            },
+            {
+              "name": "Recurring Deposit",
+              "y": 15.6
+            },
+            {
+              "name": "Term Deposit",
+              "y": 70.8
+            },
+            {
+              "name": "Weath",
+              "y": 6.9
+            },
+            {
+              "name": "Credit Card",
+              "y": 0.9
+            }
+          ]
+        }
+      ]
+    },
+    "pie_chart": {
+      "chart": {
+        "type": "pie",
+        "width": 600,
+        "spacingRight": 150
+      },
+      "legend": {
+        "verticalAlign": "top",
+        "align": "center",
+        "layout": "horizontal"
+      },
+      "series": [
+        {
+          "data": [
+            {
+              "name": "Saving",
+              "y": 1.2,
+              "color": "#FF5733"
+            },
+            {
+              "name": "Current",
+              "y": 5.4,
+              "color": "#33FF57"
+            },
+            {
+              "name": "Recurring Deposit",
+              "y": 15.6,
+              "color": "#3357FF"
+            },
+            {
+              "name": "Term Deposit",
+              "y": 70.8,
+              "color": "#FF33A1"
+            },
+            {
+              "name": "Weath",
+              "y": 6.9,
+              "color": "#FFC300"
+            },
+            {
+              "name": "Credit Card",
+              "y": 0.9,
+              "color": "#8E44AD"
+            }
+          ]
+        }
+      ]
+    },
+    "bar_chart": {
+      "xAxis": {
+        "categories": [
+          "Africa",
+          "America",
+          "Asia",
+          "Europe",
+          "Oceania"
+        ]
+      },
+      "series": [
+        {
+          "name": "Year 1990",
+          "data": [
+            631,
+            727,
+            3202,
+            721,
+            26
+          ]
+        },
+        {
+          "name": "Year 2000",
+          "data": [
+            814,
+            841,
+            3714,
+            726,
+            31
+          ]
+        },
+        {
+          "name": "Year 2010",
+          "data": [
+            1044,
+            944,
+            4170,
+            735,
+            40
+          ]
+        },
+        {
+          "name": "Year 2018",
+          "data": [
+            1276,
+            1007,
+            4561,
+            746,
+            42
+          ]
+        }
+      ]
+    },
+    "line_chart": {
+      "series": [
+        {
+          "name": "Installation & Developers",
+          "data": [
+            43934,
+            48656,
+            65165,
+            81827,
+            112143,
+            142383,
+            171533,
+            165174,
+            155157,
+            161454,
+            154610
+          ]
+        },
+        {
+          "name": "Manufacturing",
+          "data": [
+            24916,
+            37941,
+            29742,
+            29851,
+            32490,
+            30282,
+            38121,
+            36885,
+            33726,
+            34243,
+            31050
+          ]
+        },
+        {
+          "name": "Sales & Distribution",
+          "data": [
+            11744,
+            30000,
+            16005,
+            19771,
+            20185,
+            24377,
+            32147,
+            30912,
+            29243,
+            29213,
+            25663
+          ]
+        },
+        {
+          "name": "Operations & Maintenance",
+          "data": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            11164,
+            11218,
+            10077
+          ]
+        },
+        {
+          "name": "Other",
+          "data": [
+            21908,
+            5548,
+            8105,
+            11248,
+            8989,
+            11816,
+            18274,
+            17300,
+            13053,
+            11906,
+            10073
+          ]
+        }
+      ]
+    },
+    "column_chart": {
+      "xAxis": {
+        "categories": [
+          "Africa",
+          "America",
+          "Asia",
+          "Europe",
+          "Oceania"
+        ]
+      },
+      "series": [
+        {
+          "name": "Year 1990",
+          "data": [
+            631,
+            727,
+            3202,
+            721,
+            26
+          ]
+        },
+        {
+          "name": "Year 2000",
+          "data": [
+            814,
+            841,
+            3714,
+            726,
+            31
+          ]
+        },
+        {
+          "name": "Year 2010",
+          "data": [
+            1044,
+            944,
+            4170,
+            735,
+            40
+          ]
+        },
+        {
+          "name": "Year 2018",
+          "data": [
+            1276,
+            1007,
+            4561,
+            746,
+            42
+          ]
+        }
+      ]
+    },
+    "stacked_column": {
+      "xAxis": {
+        "categories": [
+          "Arsenal",
+          "Chelsea",
+          "Liverpool",
+          "Manchester United"
+        ]
+      },
+      "series": [
+        {
+          "name": "BPL",
+          "data": [
+            3,
+            5,
+            1,
+            13
+          ]
+        },
+        {
+          "name": "FA Cup",
+          "data": [
+            14,
+            8,
+            8,
+            12
+          ]
+        },
+        {
+          "name": "CL",
+          "data": [
+            0,
+            2,
+            6,
+            3
+          ]
+        }
+      ]
+    },
+    "stacked_bar": {
+      "xAxis": {
+        "categories": [
+          "2020/21",
+          "2019/20",
+          "2018/19",
+          "2017/18",
+          "2016/17"
+        ]
+      },
+      "series": [
+        {
+          "name": "Cristiano Ronaldo",
+          "data": [
+            4,
+            4,
+            6,
+            15,
+            12
+          ]
+        },
+        {
+          "name": "Lionel Messi",
+          "data": [
+            5,
+            3,
+            12,
+            6,
+            11
+          ]
+        },
+        {
+          "name": "Robert Lewandowski",
+          "data": [
+            5,
+            15,
+            8,
+            5,
+            8
+          ]
+        }
+      ]
+    },
+    "drilldown_bar_chart": {
+      "series": [
+        {
+          "name": "Browsers",
+          "colorByPoint": true,
+          "data": [
+            {
+              "name": "Chrome",
+              "y": 61.04,
+              "drilldown": "Chrome"
+            },
+            {
+              "name": "Safari",
+              "y": 9.47,
+              "drilldown": "Safari"
+            },
+            {
+              "name": "Edge",
+              "y": 9.32,
+              "drilldown": "Edge"
+            },
+            {
+              "name": "Firefox",
+              "y": 8.15,
+              "drilldown": "Firefox"
+            },
+            {
+              "name": "Other",
+              "y": 11.02,
+              "drilldown": null
+            }
+          ]
+        }
+      ],
+      "drilldown": {
+        "series": [
+          {
+            "name": "Chrome",
+            "id": "Chrome",
+            "data": [
+              [
+                "v97.0",
+                36.89
+              ],
+              [
+                "v96.0",
+                18.16
+              ],
+              [
+                "v95.0",
+                0.54
+              ],
+              [
+                "v94.0",
+                0.7
+              ],
+              [
+                "v93.0",
+                0.8
+              ],
+              [
+                "v92.0",
+                0.41
+              ],
+              [
+                "v91.0",
+                0.31
+              ],
+              [
+                "v90.0",
+                0.13
+              ],
+              [
+                "v89.0",
+                0.14
+              ],
+              [
+                "v88.0",
+                0.1
+              ],
+              [
+                "v87.0",
+                0.35
+              ],
+              [
+                "v86.0",
+                0.17
+              ],
+              [
+                "v85.0",
+                0.18
+              ],
+              [
+                "v84.0",
+                0.17
+              ],
+              [
+                "v83.0",
+                0.21
+              ],
+              [
+                "v81.0",
+                0.1
+              ],
+              [
+                "v80.0",
+                0.16
+              ],
+              [
+                "v79.0",
+                0.43
+              ],
+              [
+                "v78.0",
+                0.11
+              ],
+              [
+                "v76.0",
+                0.16
+              ],
+              [
+                "v75.0",
+                0.15
+              ],
+              [
+                "v72.0",
+                0.14
+              ],
+              [
+                "v70.0",
+                0.11
+              ],
+              [
+                "v69.0",
+                0.13
+              ],
+              [
+                "v56.0",
+                0.12
+              ],
+              [
+                "v49.0",
+                0.17
+              ]
+            ]
+          },
+          {
+            "name": "Safari",
+            "id": "Safari",
+            "data": [
+              [
+                "v15.3",
+                0.1
+              ],
+              [
+                "v15.2",
+                2.01
+              ],
+              [
+                "v15.1",
+                2.29
+              ],
+              [
+                "v15.0",
+                0.49
+              ],
+              [
+                "v14.1",
+                2.48
+              ],
+              [
+                "v14.0",
+                0.64
+              ],
+              [
+                "v13.1",
+                1.17
+              ],
+              [
+                "v13.0",
+                0.13
+              ],
+              [
+                "v12.1",
+                0.16
+              ]
+            ]
+          },
+          {
+            "name": "Edge",
+            "id": "Edge",
+            "data": [
+              [
+                "v97",
+                6.62
+              ],
+              [
+                "v96",
+                2.55
+              ],
+              [
+                "v95",
+                0.15
+              ]
+            ]
+          },
+          {
+            "name": "Firefox",
+            "id": "Firefox",
+            "data": [
+              [
+                "v96.0",
+                4.17
+              ],
+              [
+                "v95.0",
+                3.33
+              ],
+              [
+                "v94.0",
+                0.11
+              ],
+              [
+                "v91.0",
+                0.23
+              ],
+              [
+                "v78.0",
+                0.16
+              ],
+              [
+                "v52.0",
+                0.15
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    "drilldown_pie_chart": {
+      "series": [
+        {
+          "name": "Browsers",
+          "colorByPoint": true,
+          "data": [
+            {
+              "name": "Chrome",
+              "y": 61.04,
+              "drilldown": "Chrome"
+            },
+            {
+              "name": "Safari",
+              "y": 9.47,
+              "drilldown": "Safari"
+            },
+            {
+              "name": "Edge",
+              "y": 9.32,
+              "drilldown": "Edge"
+            },
+            {
+              "name": "Firefox",
+              "y": 8.15,
+              "drilldown": "Firefox"
+            },
+            {
+              "name": "Other",
+              "y": 11.02,
+              "drilldown": null
+            }
+          ]
+        }
+      ],
+      "drilldown": {
+        "series": [
+          {
+            "name": "Chrome",
+            "id": "Chrome",
+            "data": [
+              [
+                "v97.0",
+                36.89
+              ],
+              [
+                "v96.0",
+                18.16
+              ],
+              [
+                "v95.0",
+                0.54
+              ],
+              [
+                "v94.0",
+                0.7
+              ],
+              [
+                "v93.0",
+                0.8
+              ],
+              [
+                "v92.0",
+                0.41
+              ],
+              [
+                "v91.0",
+                0.31
+              ],
+              [
+                "v90.0",
+                0.13
+              ],
+              [
+                "v89.0",
+                0.14
+              ],
+              [
+                "v88.0",
+                0.1
+              ],
+              [
+                "v87.0",
+                0.35
+              ],
+              [
+                "v86.0",
+                0.17
+              ],
+              [
+                "v85.0",
+                0.18
+              ],
+              [
+                "v84.0",
+                0.17
+              ],
+              [
+                "v83.0",
+                0.21
+              ],
+              [
+                "v81.0",
+                0.1
+              ],
+              [
+                "v80.0",
+                0.16
+              ],
+              [
+                "v79.0",
+                0.43
+              ],
+              [
+                "v78.0",
+                0.11
+              ],
+              [
+                "v76.0",
+                0.16
+              ],
+              [
+                "v75.0",
+                0.15
+              ],
+              [
+                "v72.0",
+                0.14
+              ],
+              [
+                "v70.0",
+                0.11
+              ],
+              [
+                "v69.0",
+                0.13
+              ],
+              [
+                "v56.0",
+                0.12
+              ],
+              [
+                "v49.0",
+                0.17
+              ]
+            ]
+          },
+          {
+            "name": "Safari",
+            "id": "Safari",
+            "data": [
+              [
+                "v15.3",
+                0.1
+              ],
+              [
+                "v15.2",
+                2.01
+              ],
+              [
+                "v15.1",
+                2.29
+              ],
+              [
+                "v15.0",
+                0.49
+              ],
+              [
+                "v14.1",
+                2.48
+              ],
+              [
+                "v14.0",
+                0.64
+              ],
+              [
+                "v13.1",
+                1.17
+              ],
+              [
+                "v13.0",
+                0.13
+              ],
+              [
+                "v12.1",
+                0.16
+              ]
+            ]
+          },
+          {
+            "name": "Edge",
+            "id": "Edge",
+            "data": [
+              [
+                "v97",
+                6.62
+              ],
+              [
+                "v96",
+                2.55
+              ],
+              [
+                "v95",
+                0.15
+              ]
+            ]
+          },
+          {
+            "name": "Firefox",
+            "id": "Firefox",
+            "data": [
+              [
+                "v96.0",
+                4.17
+              ],
+              [
+                "v95.0",
+                3.33
+              ],
+              [
+                "v94.0",
+                0.11
+              ],
+              [
+                "v91.0",
+                0.23
+              ],
+              [
+                "v78.0",
+                0.16
+              ],
+              [
+                "v52.0",
+                0.15
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    "drilldown_line_chart": {
+      "series": [
+        {
+          "name": "Things",
+          "colorByPoint": true,
+          "data": [
+            {
+              "name": "Animals",
+              "y": 5,
+              "drilldown": "animals"
+            },
+            {
+              "name": "Fruits",
+              "y": 2,
+              "drilldown": "fruits"
+            },
+            {
+              "name": "Cars",
+              "y": 4,
+              "drilldown": "cars"
+            }
+          ]
+        },
+        {
+          "name": "vehicles",
+          "colorByPoint": true,
+          "data": [
+            {
+              "name": "Vehicle 1",
+              "y": 25,
+              "drilldown": "vehicle1"
+            },
+            {
+              "name": "Vehicle 2",
+              "y": 25,
+              "drilldown": "vehicle2"
+            },
+            {
+              "name": "Vehicle 3",
+              "y": 45,
+              "drilldown": "vehicle3"
+            }
+          ]
+        }
+      ],
+      "drilldown": {
+        "series": [
+          {
+            "id": "animals",
+            "data": [
+              [
+                "Cats",
+                4
+              ],
+              [
+                "Dogs",
+                2
+              ],
+              [
+                "Cows",
+                1
+              ],
+              [
+                "Sheep",
+                2
+              ],
+              [
+                "Pigs",
+                1
+              ]
+            ]
+          },
+          {
+            "id": "fruits",
+            "data": [
+              [
+                "Apples",
+                4
+              ],
+              [
+                "Oranges",
+                2
+              ]
+            ]
+          },
+          {
+            "id": "cars",
+            "data": [
+              [
+                "Toyota",
+                4
+              ],
+              [
+                "Opel",
+                2
+              ],
+              [
+                "Volkswagen",
+                2
+              ]
+            ]
+          },
+          {
+            "id": "vehicle1",
+            "data": [
+              [
+                "Toyota",
+                4
+              ],
+              [
+                "Opel",
+                2
+              ],
+              [
+                "Volkswagen",
+                2
+              ]
+            ]
+          },
+          {
+            "id": "vehicle2",
+            "data": [
+              [
+                "Toyota",
+                12
+              ],
+              [
+                "Opel",
+                12
+              ],
+              [
+                "Volkswagen",
+                2
+              ]
+            ]
+          },
+          {
+            "id": "vehicle3",
+            "data": [
+              [
+                "Toyota",
+                5
+              ],
+              [
+                "Opel",
+                4
+              ],
+              [
+                "Volkswagen",
+                1
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    "crosstabTable1": {
+      "type": "crosstab",
+      "structure": {
+        "columnHeaderLevels": 2,
+        "rowHeaderLevels": 2
+      },
+      "columnHeaders": [
+        [
+          {
+            "value": "",
+            "colspan": 2,
+            "rowspan": 2
+          },
+          {
+            "value": "merged column header 1",
+            "colspan": 2,
+            "rowspan": 1
+          },
+          {
+            "value": "merged column header 2",
+            "colspan": 3,
+            "rowspan": 1
+          },
+          {
+            "value": "merged column header 3",
+            "colspan": 1,
+            "rowspan": 2
+          }
+        ],
+        [
+          {
+            "value": "column header 1",
+            "colspan": 1
+          },
+          {
+            "value": "column header 2",
+            "colspan": 1
+          },
+          {
+            "value": "column header 3",
+            "colspan": 1
+          },
+          {
+            "value": "column header 4",
+            "colspan": 1
+          },
+          {
+            "value": "column header 5",
+            "colspan": 1
+          }
+        ]
+      ],
+      "rows": [
+        {
+          "rowHeaders": [
+            {
+              "value": "merged row header 1",
+              "rowspan": 2,
+              "level": 0
+            },
+            {
+              "value": "row header 1",
+              "rowspan": 1,
+              "level": 1
+            }
+          ],
+          "cells": [
+            "sample row 1 column 1",
+            "sample row 1 column 2",
+            "sample row 1 column 3",
+            "sample row 1 column 4",
+            "sample row 1 column 5",
+            "sample row 1 column 6"
+          ]
+        },
+        {
+          "rowHeaders": [
+            {
+              "value": "row header 2",
+              "rowspan": 1,
+              "level": 1
+            }
+          ],
+          "cells": [
+            "sample row 2 column 1",
+            "sample row 2 column 2",
+            "sample row 2 column 3",
+            "sample row 2 column 4",
+            "sample row 2 column 5",
+            "sample row 2 column 6"
+          ]
+        },
+        {
+          "rowHeaders": [
+            {
+              "value": "merged row header 1",
+              "rowspan": 1,
+              "level": 0
+            },
+            {
+              "value": "row header 3",
+              "rowspan": 1,
+              "level": 1
+            }
+          ],
+          "cells": [
+            "sample row 3 column 1",
+            "sample row 3 column 2",
+            "sample row 3 column 3",
+            "sample row 3 column 4",
+            "sample row 3 column 5",
+            "sample row 3 column 6"
+          ]
+        },
+        {
+          "rowHeaders": [
+            {
+              "value": "merged row header 2",
+              "rowspan": 2,
+              "level": 0
+            },
+            {
+              "value": "row header 4",
+              "rowspan": 1,
+              "level": 1
+            }
+          ],
+          "cells": [
+            "sample row 4 column 1",
+            "sample row 4 column 2",
+            "sample row 4 column 3",
+            "sample row 4 column 4",
+            "sample row 4 column 5",
+            "sample row 4 column 6"
+          ]
+        },
+        {
+          "rowHeaders": [
+            {
+              "value": "row header 5",
+              "rowspan": 1,
+              "level": 1
+            }
+          ],
+          "cells": [
+            "sample row 5 column 1",
+            "sample row 5 column 2",
+            "sample row 5 column 3",
+            "sample row 5 column 4",
+            "sample row 5 column 5",
+            "sample row 5 column 6"
+          ]
+        },
+        {
+          "rowHeaders": [
+            {
+              "value": "merged row header 3",
+              "rowspan": 1,
+              "level": 0
+            },
+            {
+              "value": "row header 6",
+              "rowspan": 1,
+              "level": 1
+            }
+          ],
+          "cells": [
+            "sample row 6 column 1",
+            "sample row 6 column 2",
+            "sample row 6 column 3",
+            "sample row 6 column 4",
+            "sample row 6 column 5",
+            "sample row 6 column 6"
+          ]
+        }
+      ]
+    },
+    "crosstabTable2": {
+      "type": "crosstab",
+      "structure": {
+        "columnHeaderLevels": 3,
+        "rowHeaderLevels": 3
+      },
+      "columnHeaders": [
+        [
+          {
+            "value": "",
+            "colspan": 3,
+            "rowspan": 3
+          },
+          {
+            "value": "2023",
+            "colspan": 4,
+            "rowspan": 1
+          },
+          {
+            "value": "2024",
+            "colspan": 2,
+            "rowspan": 1
+          }
+        ],
+        [
+          {
+            "value": "Q1",
+            "colspan": 2,
+            "rowspan": 1
+          },
+          {
+            "value": "Q2",
+            "colspan": 2,
+            "rowspan": 1
+          },
+          {
+            "value": "Q1",
+            "colspan": 2,
+            "rowspan": 1
+          }
+        ],
+        [
+          {
+            "value": "Target",
+            "colspan": 1
+          },
+          {
+            "value": "Actual",
+            "colspan": 1
+          },
+          {
+            "value": "Target",
+            "colspan": 1
+          },
+          {
+            "value": "Actual",
+            "colspan": 1
+          },
+          {
+            "value": "Target",
+            "colspan": 1
+          },
+          {
+            "value": "Actual",
+            "colspan": 1
+          }
+        ]
+      ],
+      "rows": [
+        {
+          "rowHeaders": [
+            {
+              "value": "North America",
+              "rowspan": 6,
+              "level": 0
+            },
+            {
+              "value": "Electronics",
+              "rowspan": 3,
+              "level": 1
+            },
+            {
+              "value": "Laptops",
+              "rowspan": 1,
+              "level": 2
+            }
+          ],
+          "cells": [
+            1000,
+            1050,
+            1100,
+            1080,
+            1200,
+            1250
+          ]
+        },
+        {
+          "rowHeaders": [
+            {
+              "value": "Phones",
+              "rowspan": 1,
+              "level": 2
+            }
+          ],
+          "cells": [
+            800,
+            820,
+            850,
+            870,
+            900,
+            920
+          ]
+        },
+        {
+          "rowHeaders": [
+            {
+              "value": "Tablets",
+              "rowspan": 1,
+              "level": 2
+            }
+          ],
+          "cells": [
+            500,
+            480,
+            520,
+            540,
+            550,
+            560
+          ]
+        },
+        {
+          "rowHeaders": [
+            {
+              "value": "Furniture",
+              "rowspan": 3,
+              "level": 1
+            },
+            {
+              "value": "Desks",
+              "rowspan": 1,
+              "level": 2
+            }
+          ],
+          "cells": [
+            300,
+            310,
+            320,
+            315,
+            330,
+            340
+          ]
+        },
+        {
+          "rowHeaders": [
+            {
+              "value": "Chairs",
+              "rowspan": 1,
+              "level": 2
+            }
+          ],
+          "cells": [
+            400,
+            420,
+            440,
+            450,
+            460,
+            470
+          ]
+        },
+        {
+          "rowHeaders": [
+            {
+              "value": "Cabinets",
+              "rowspan": 1,
+              "level": 2
+            }
+          ],
+          "cells": [
+            200,
+            195,
+            210,
+            215,
+            220,
+            225
+          ]
+        },
+        {
+          "rowHeaders": [
+            {
+              "value": "Europe",
+              "rowspan": 4,
+              "level": 0
+            },
+            {
+              "value": "Electronics",
+              "rowspan": 2,
+              "level": 1
+            },
+            {
+              "value": "Laptops",
+              "rowspan": 1,
+              "level": 2
+            }
+          ],
+          "cells": [
+            900,
+            920,
+            950,
+            970,
+            1000,
+            1020
+          ]
+        },
+        {
+          "rowHeaders": [
+            {
+              "value": "Phones",
+              "rowspan": 1,
+              "level": 2
+            }
+          ],
+          "cells": [
+            700,
+            710,
+            730,
+            750,
+            780,
+            800
+          ]
+        },
+        {
+          "rowHeaders": [
+            {
+              "value": "Furniture",
+              "rowspan": 2,
+              "level": 1
+            },
+            {
+              "value": "Desks",
+              "rowspan": 1,
+              "level": 2
+            }
+          ],
+          "cells": [
+            250,
+            260,
+            270,
+            275,
+            290,
+            295
+          ]
+        },
+        {
+          "rowHeaders": [
+            {
+              "value": "Chairs",
+              "rowspan": 1,
+              "level": 2
+            }
+          ],
+          "cells": [
+            350,
+            360,
+            370,
+            380,
+            390,
+            400
+          ]
+        }
+      ]
+    },
+    "crosstabTable3": {
+      "type": "crosstab",
+      "structure": {
+        "columnHeaderLevels": 2,
+        "rowHeaderLevels": 2
+      },
+      "columnHeaders": [
+        [
+          {
+            "value": "",
+            "colspan": 2,
+            "rowspan": 2
+          },
+          {
+            "value": "Semester 1",
+            "colspan": 3,
+            "rowspan": 1
+          },
+          {
+            "value": "Semester 2",
+            "colspan": 3,
+            "rowspan": 1
+          }
+        ],
+        [
+          {
+            "value": "Math",
+            "colspan": 1
+          },
+          {
+            "value": "Science",
+            "colspan": 1
+          },
+          {
+            "value": "English",
+            "colspan": 1
+          },
+          {
+            "value": "Math",
+            "colspan": 1
+          },
+          {
+            "value": "Science",
+            "colspan": 1
+          },
+          {
+            "value": "English",
+            "colspan": 1
+          }
+        ]
+      ],
+      "rows": [
+        {
+          "rowHeaders": [
+            {
+              "value": "Grade 10",
+              "rowspan": 3,
+              "level": 0
+            },
+            {
+              "value": "Class A",
+              "rowspan": 1,
+              "level": 1
+            }
+          ],
+          "cells": [
+            85,
+            88,
+            82,
+            87,
+            90,
+            84
+          ]
+        },
+        {
+          "rowHeaders": [
+            {
+              "value": "Class B",
+              "rowspan": 1,
+              "level": 1
+            }
+          ],
+          "cells": [
+            82,
+            85,
+            80,
+            84,
+            87,
+            82
+          ]
+        },
+        {
+          "rowHeaders": [
+            {
+              "value": "Class C",
+              "rowspan": 1,
+              "level": 1
+            }
+          ],
+          "cells": [
+            78,
+            80,
+            76,
+            80,
+            82,
+            78
+          ]
+        },
+        {
+          "rowHeaders": [
+            {
+              "value": "Grade 11",
+              "rowspan": 2,
+              "level": 0
+            },
+            {
+              "value": "Class A",
+              "rowspan": 1,
+              "level": 1
+            }
+          ],
+          "cells": [
+            88,
+            90,
+            86,
+            90,
+            92,
+            88
+          ]
+        },
+        {
+          "rowHeaders": [
+            {
+              "value": "Class B",
+              "rowspan": 1,
+              "level": 1
+            }
+          ],
+          "cells": [
+            84,
+            86,
+            82,
+            86,
+            88,
+            84
+          ]
+        }
+      ]
+    },
+    "crosstabTable4": {
+      "type": "crosstab",
+      "structure": {
+        "columnHeaderLevels": 2,
+        "rowHeaderLevels": 3
+      },
+      "columnHeaders": [
+        [
+          {
+            "value": "Week 1",
+            "colspan": 3,
+            "rowspan": 1
+          },
+          {
+            "value": "Week 2",
+            "colspan": 3,
+            "rowspan": 1
+          }
+        ],
+        [
+          {
+            "value": "Morning",
+            "colspan": 1
+          },
+          {
+            "value": "Evening",
+            "colspan": 1
+          },
+          {
+            "value": "Night",
+            "colspan": 1
+          },
+          {
+            "value": "Morning",
+            "colspan": 1
+          },
+          {
+            "value": "Evening",
+            "colspan": 1
+          },
+          {
+            "value": "Night",
+            "colspan": 1
+          }
+        ]
+      ],
+      "rows": [
+        {
+          "rowHeaders": [
+            {
+              "value": "Plant A",
+              "rowspan": 4,
+              "level": 0
+            },
+            {
+              "value": "Production Line 1",
+              "rowspan": 2,
+              "level": 1
+            },
+            {
+              "value": "Product X",
+              "rowspan": 1,
+              "level": 2
+            }
+          ],
+          "cells": [
+            450,
+            440,
+            430,
+            460,
+            455,
+            445
+          ]
+        },
+        {
+          "rowHeaders": [
+            {
+              "value": "Product Y",
+              "rowspan": 1,
+              "level": 2
+            }
+          ],
+          "cells": [
+            320,
+            310,
+            300,
+            330,
+            325,
+            315
+          ]
+        },
+        {
+          "rowHeaders": [
+            {
+              "value": "Production Line 2",
+              "rowspan": 2,
+              "level": 1
+            },
+            {
+              "value": "Product X",
+              "rowspan": 1,
+              "level": 2
+            }
+          ],
+          "cells": [
+            480,
+            470,
+            460,
+            490,
+            485,
+            475
+          ]
+        },
+        {
+          "rowHeaders": [
+            {
+              "value": "Product Z",
+              "rowspan": 1,
+              "level": 2
+            }
+          ],
+          "cells": [
+            280,
+            275,
+            270,
+            290,
+            285,
+            280
+          ]
+        },
+        {
+          "rowHeaders": [
+            {
+              "value": "Plant B",
+              "rowspan": 2,
+              "level": 0
+            },
+            {
+              "value": "Production Line 1",
+              "rowspan": 2,
+              "level": 1
+            },
+            {
+              "value": "Product X",
+              "rowspan": 1,
+              "level": 2
+            }
+          ],
+          "cells": [
+            420,
+            415,
+            410,
+            430,
+            425,
+            420
+          ]
+        },
+        {
+          "rowHeaders": [
+            {
+              "value": "Product Y",
+              "rowspan": 1,
+              "level": 2
+            }
+          ],
+          "cells": [
+            300,
+            295,
+            290,
+            310,
+            305,
+            300
+          ]
+        }
+      ]
+    },
+    "crosstabTable5": {
+      "type": "crosstab",
+      "structure": {
+        "columnHeaderLevels": 2,
+        "rowHeaderLevels": 2
+      },
+      "columnHeaders": [
+        [
+          {
+            "value": "",
+            "colspan": 2,
+            "rowspan": 2
+          },
+          {
+            "value": "FY 2023",
+            "colspan": 4,
+            "rowspan": 1
+          },
+          {
+            "value": "Total",
+            "colspan": 1,
+            "rowspan": 2
+          }
+        ],
+        [
+          {
+            "value": "Q1",
+            "colspan": 1
+          },
+          {
+            "value": "Q2",
+            "colspan": 1
+          },
+          {
+            "value": "Q3",
+            "colspan": 1
+          },
+          {
+            "value": "Q4",
+            "colspan": 1
+          }
+        ]
+      ],
+      "rows": [
+        {
+          "rowHeaders": [
+            {
+              "value": "Revenue",
+              "rowspan": 3,
+              "level": 0
+            },
+            {
+              "value": "Product Sales",
+              "rowspan": 1,
+              "level": 1
+            }
+          ],
+          "cells": [
+            150000,
+            165000,
+            180000,
+            195000,
+            690000
+          ]
+        },
+        {
+          "rowHeaders": [
+            {
+              "value": "Service Sales",
+              "rowspan": 1,
+              "level": 1
+            }
+          ],
+          "cells": [
+            45000,
+            50000,
+            55000,
+            60000,
+            210000
+          ]
+        },
+        {
+          "rowHeaders": [
+            {
+              "value": "Other Income",
+              "rowspan": 1,
+              "level": 1
+            }
+          ],
+          "cells": [
+            5000,
+            5500,
+            6000,
+            6500,
+            23000
+          ]
+        },
+        {
+          "rowHeaders": [
+            {
+              "value": "Expenses",
+              "rowspan": 2,
+              "level": 0
+            },
+            {
+              "value": "Operating Costs",
+              "rowspan": 1,
+              "level": 1
+            }
+          ],
+          "cells": [
+            80000,
+            85000,
+            90000,
+            95000,
+            350000
+          ]
+        },
+        {
+          "rowHeaders": [
+            {
+              "value": "Marketing",
+              "rowspan": 1,
+              "level": 1
+            }
+          ],
+          "cells": [
+            20000,
+            22000,
+            24000,
+            26000,
+            92000
+          ]
+        },
+        {
+          "rowHeaders": [
+            {
+              "value": "Net Profit",
+              "rowspan": 1,
+              "level": 0
+            }
+          ],
+          "cells": [
+            100000,
+            113500,
+            127000,
+            140500,
+            481000
+          ]
+        }
+      ]
+    },
+    "table1": {
+      "heading": {
+        "AccountType": "Account Type",
+        "Currency": "Currency",
+        "Amount": "Amount"
+      },
+      "data": [
+        {
+          "AccountType": "Savings",
+          "Currency": "GBP",
+          "Amount": "1771.42"
+        },
+        {
+          "AccountType": "Current",
+          "Currency": "GBP",
+          "Amount": "7830.00"
+        },
+        {
+          "AccountType": "Recurring Deposite",
+          "Currency": "GBP",
+          "Amount": "22730.11"
+        },
+        {
+          "AccountType": "Term Deposite",
+          "Currency": "GBP",
+          "Amount": "103000.00"
+        },
+        {
+          "AccountType": "Wealth",
+          "Currency": "GBP",
+          "Amount": "10000.00"
+        },
+        {
+          "AccountType": "Credit Card",
+          "Currency": "GBP",
+          "Amount": "98.00"
+        }
+      ]
+    },
+    "transactions1Tbl": {
+      "heading": {
+        "Date": "Date",
+        "Type": "Type",
+        "Narration": "Narration",
+        "FCY_GBP": "FCY(GBP)",
+        "CurrentRate": "Currentt Rate",
+        "LCY_GBP": "LCY(GBP)"
+      },
+      "caption": "Caption Text Here",
+      "footer": {
+        "Date": "12-08-2023",
+        "Type": "CR",
+        "Narration": "NEFT",
+        "FCY_GBP": "88",
+        "CurrentRate": "12",
+        "LCY_GBP": "33"
+      },
+      "data": [
+        {
+          "Date": "3-APR-15",
+          "Type": "CR",
+          "Narration": "NET TXN: IIFL IIFL3557346",
+          "FCY_GBP": "1666.67",
+          "CurrentRate": "1.062",
+          "LCY_GBP": "1"
+        },
+        {
+          "Date": "1-APR-15",
+          "Type": "CR",
+          "Narration": "NEFT: 10204083732 -THE GREATER Bank of New York",
+          "FCY_GBP": "0.38",
+          "CurrentRate": "1.473",
+          "LCY_GBP": "2"
+        },
+        {
+          "Date": "1-APR-15",
+          "Type": "DR",
+          "Narration": "NET TXN: FUNDS TRF FROM 000490700001137",
+          "FCY_GBP": "-5017.56",
+          "CurrentRate": "1.560",
+          "LCY_GBP": "3"
+        },
+        {
+          "Date": "31-MAR-15",
+          "Type": "CR",
+          "Narration": "NET TXN: IIFL IIFL3557346",
+          "FCY_GBP": "7.37",
+          "CurrentRate": "1.062",
+          "LCY_GBP": "4"
+        },
+        {
+          "Date": "31-MAR-15",
+          "Type": "DR",
+          "Narration": "NET TXN: IIFL IIFL3557346",
+          "FCY_GBP": "-1151.91",
+          "CurrentRate": "1.062",
+          "LCY_GBP": "5"
+        },
+        {
+          "Date": "31-MAR-15",
+          "Type": "DR",
+          "Narration": "LD1508340249",
+          "FCY_GBP": "7.37",
+          "CurrentRate": "1.062",
+          "LCY_GBP": "6"
+        },
+        {
+          "Date": "24-MAR-15",
+          "Type": "DR",
+          "Narration": "PCI:0500010827:1000156311283:ODEL PLC-459050",
+          "FCY_GBP": "-30.64",
+          "CurrentRate": "1.473",
+          "LCY_GBP": "7"
+        },
+        {
+          "Date": "24-MAR-15",
+          "Type": "CR",
+          "Narration": "PCD:0500010827:9993715077628:COTTON COLL-085222",
+          "FCY_GBP": "1696.21",
+          "CurrentRate": "1.473",
+          "LCY_GBP": "8"
+        },
+        {
+          "Date": "24-MAR-15",
+          "Type": "DR",
+          "Narration": "NET TXN: RENT FOR FEB 2013",
+          "FCY_GBP": "-296.46",
+          "CurrentRate": "1.473",
+          "LCY_GBP": "9"
+        },
+        {
+          "Date": "1-APR-15",
+          "Type": "CR",
+          "Narration": "NEFT: 10204083732 -THE GREATER Bank of New York",
+          "FCY_GBP": "0.38",
+          "CurrentRate": "1.473",
+          "LCY_GBP": "10"
+        },
+        {
+          "Date": "1-APR-15",
+          "Type": "DR",
+          "Narration": "NET TXN: FUNDS TRF FROM 000490700001137",
+          "FCY_GBP": "-5017.56",
+          "CurrentRate": "1.560",
+          "LCY_GBP": "11"
+        },
+        {
+          "Date": "31-MAR-15",
+          "Type": "CR",
+          "Narration": "NET TXN: IIFL IIFL3557346",
+          "FCY_GBP": "7.37",
+          "CurrentRate": "1.062",
+          "LCY_GBP": "12"
+        },
+        {
+          "Date": "31-MAR-15",
+          "Type": "DR",
+          "Narration": "NET TXN: IIFL IIFL3557346",
+          "FCY_GBP": "-1151.91",
+          "CurrentRate": "1.062",
+          "LCY_GBP": "13"
+        },
+        {
+          "Date": "31-MAR-15",
+          "Type": "DR",
+          "Narration": "LD1508340249",
+          "FCY_GBP": "7.37",
+          "CurrentRate": "1.062",
+          "LCY_GBP": "14"
+        },
+        {
+          "Date": "24-MAR-15",
+          "Type": "DR",
+          "Narration": "PCI:0500010827:1000156311283:ODEL PLC-459050",
+          "FCY_GBP": "-30.64",
+          "CurrentRate": "1.473",
+          "LCY_GBP": "15"
+        },
+        {
+          "Date": "24-MAR-15",
+          "Type": "CR",
+          "Narration": "PCD:0500010827:9993715077628:COTTON COLL-085222",
+          "FCY_GBP": "1696.21",
+          "CurrentRate": "1.473",
+          "LCY_GBP": "16"
+        },
+        {
+          "Date": "24-MAR-15",
+          "Type": "DR",
+          "Narration": "NET TXN: RENT FOR FEB 2013",
+          "FCY_GBP": "-296.46",
+          "CurrentRate": "1.473",
+          "LCY_GBP": "17"
+        },
+        {
+          "Date": "1-APR-15",
+          "Type": "CR",
+          "Narration": "NEFT: 10204083732 -THE GREATER Bank of New York",
+          "FCY_GBP": "0.38",
+          "CurrentRate": "1.473",
+          "LCY_GBP": "18"
+        },
+        {
+          "Date": "1-APR-15",
+          "Type": "DR",
+          "Narration": "NET TXN: FUNDS TRF FROM 000490700001137",
+          "FCY_GBP": "-5017.56",
+          "CurrentRate": "1.560",
+          "LCY_GBP": "19"
+        },
+        {
+          "Date": "31-MAR-15",
+          "Type": "CR",
+          "Narration": "NET TXN: IIFL IIFL3557346",
+          "FCY_GBP": "7.37",
+          "CurrentRate": "1.062",
+          "LCY_GBP": "20"
+        },
+        {
+          "Date": "31-MAR-15",
+          "Type": "DR",
+          "Narration": "NET TXN: IIFL IIFL3557346",
+          "FCY_GBP": "-1151.91",
+          "CurrentRate": "1.062",
+          "LCY_GBP": "21"
+        },
+        {
+          "Date": "31-MAR-15",
+          "Type": "DR",
+          "Narration": "LD1508340249",
+          "FCY_GBP": "7.37",
+          "CurrentRate": "1.062",
+          "LCY_GBP": "22"
+        },
+        {
+          "Date": "24-MAR-15",
+          "Type": "DR",
+          "Narration": "PCI:0500010827:1000156311283:ODEL PLC-459050",
+          "FCY_GBP": "-30.64",
+          "CurrentRate": "1.473",
+          "LCY_GBP": "23"
+        },
+        {
+          "Date": "24-MAR-15",
+          "Type": "CR",
+          "Narration": "PCD:0500010827:9993715077628:COTTON COLL-085222",
+          "FCY_GBP": "1696.21",
+          "CurrentRate": "1.473",
+          "LCY_GBP": "24"
+        },
+        {
+          "Date": "24-MAR-15",
+          "Type": "DR",
+          "Narration": "NET TXN: RENT FOR FEB 2013",
+          "FCY_GBP": "-296.46",
+          "CurrentRate": "1.473",
+          "LCY_GBP": "25"
+        }
+      ]
+    },
+    "dematTable1": {
+      "heading": {
+        "Account_No": "Account No",
+        "Installment_Amount_GBP": "Installment Amount(GBP)",
+        "Deposit_Start_Date": "Deposit Start Date",
+        "Tenure_Month": "Tenure(Month)",
+        "Intrest_Rate": "Intrest Rate",
+        "Maturity_Amount_GBP": "Maturity Amount(GBP)",
+        "Installment_Paid": "Installment Paid",
+        "Current_Balance_GBP": "Current Balance(GBP)"
+      },
+      "data": [
+        {
+          "Account_No": "0118196000210",
+          "Installment_Amount_GBP": "2500.00",
+          "Deposit_Start_Date": "12-JUN-15",
+          "Tenure_Month": "36",
+          "Intrest_Rate": "3.05%",
+          "Maturity_Amount_GBP": "93888.62",
+          "Installment_Paid": "9",
+          "Current_Balance_GBP": "22730.11"
+        }
+      ]
+    },
+    "dematTable2": {
+      "heading": {
+        "Installment_Number": "Installment Number",
+        "Installment_Due_Date": "Installment Due Date",
+        "Amount_Paid_GBP": "Amount Paid(GBP)",
+        "Running_Balance_GBP": "Running Balance(GBP)"
+      },
+      "data": [
+        {
+          "Installment_Number": "9",
+          "Installment_Due_Date": "12-MAR-16",
+          "Amount_Paid_GBP": "2500.00",
+          "Running_Balance_GBP": "22730.11"
+        },
+        {
+          "Installment_Number": "8",
+          "Installment_Due_Date": "12-FEB-16",
+          "Amount_Paid_GBP": "2500.00",
+          "Running_Balance_GBP": "20178.82"
+        },
+        {
+          "Installment_Number": "7",
+          "Installment_Due_Date": "12-JAN-16",
+          "Amount_Paid_GBP": "2500.00",
+          "Running_Balance_GBP": "17634.00"
+        },
+        {
+          "Installment_Number": "6",
+          "Installment_Due_Date": "12-DEC-15",
+          "Amount_Paid_GBP": "2500.00",
+          "Running_Balance_GBP": "15095.64"
+        },
+        {
+          "Installment_Number": "5",
+          "Installment_Due_Date": "12-NOV-15",
+          "Amount_Paid_GBP": "2500.00",
+          "Running_Balance_GBP": "12563.70"
+        }
+      ]
+    }
+  },
+  "hindi": {
+    "SA": [
+      {
+        "name": "विशाल",
+        "surname": "मिश्रा",
+        "address": "मुंबई"
+      },
+      {
+        "name": "सुमित",
+        "surname": "मिश्रा",
+        "address": "मुंबई"
+      }
+    ],
+    "pie_chart": {
+      "series": [
+        {
+          "data": [
+            {
+              "name": "Saving",
+              "y": 1.2
+            },
+            {
+              "name": "Current",
+              "y": 5.4
+            },
+            {
+              "name": "Recurring Deposit",
+              "y": 15.6
+            },
+            {
+              "name": "Term Deposit",
+              "y": 70.8
+            },
+            {
+              "name": "Weath",
+              "y": 6.9
+            },
+            {
+              "name": "Credit Card",
+              "y": 0.9
+            }
+          ]
+        }
+      ]
+    },
+    "bar_chart": {
+      "xAxis": {
+        "categories": [
+          "Africa",
+          "America",
+          "Asia",
+          "Europe",
+          "Oceania"
+        ]
+      },
+      "series": [
+        {
+          "name": "Year 1990",
+          "data": [
+            631,
+            727,
+            3202,
+            721,
+            26
+          ]
+        },
+        {
+          "name": "Year 2000",
+          "data": [
+            814,
+            841,
+            3714,
+            726,
+            31
+          ]
+        },
+        {
+          "name": "Year 2010",
+          "data": [
+            1044,
+            944,
+            4170,
+            735,
+            40
+          ]
+        },
+        {
+          "name": "Year 2018",
+          "data": [
+            1276,
+            1007,
+            4561,
+            746,
+            42
+          ]
+        }
+      ]
+    },
+    "line_chart": {
+      "series": [
+        {
+          "name": "Installation & Developers",
+          "data": [
+            43934,
+            48656,
+            65165,
+            81827,
+            112143,
+            142383,
+            171533,
+            165174,
+            155157,
+            161454,
+            154610
+          ]
+        },
+        {
+          "name": "Manufacturing",
+          "data": [
+            24916,
+            37941,
+            29742,
+            29851,
+            32490,
+            30282,
+            38121,
+            36885,
+            33726,
+            34243,
+            31050
+          ]
+        },
+        {
+          "name": "Sales & Distribution",
+          "data": [
+            11744,
+            30000,
+            16005,
+            19771,
+            20185,
+            24377,
+            32147,
+            30912,
+            29243,
+            29213,
+            25663
+          ]
+        },
+        {
+          "name": "Operations & Maintenance",
+          "data": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            11164,
+            11218,
+            10077
+          ]
+        },
+        {
+          "name": "Other",
+          "data": [
+            21908,
+            5548,
+            8105,
+            11248,
+            8989,
+            11816,
+            18274,
+            17300,
+            13053,
+            11906,
+            10073
+          ]
+        }
+      ]
+    },
+    "column_chart": {
+      "xAxis": {
+        "categories": [
+          "Africa",
+          "America",
+          "Asia",
+          "Europe",
+          "Oceania"
+        ]
+      },
+      "series": [
+        {
+          "name": "Year 1990",
+          "data": [
+            631,
+            727,
+            3202,
+            721,
+            26
+          ]
+        },
+        {
+          "name": "Year 2000",
+          "data": [
+            814,
+            841,
+            3714,
+            726,
+            31
+          ]
+        },
+        {
+          "name": "Year 2010",
+          "data": [
+            1044,
+            944,
+            4170,
+            735,
+            40
+          ]
+        },
+        {
+          "name": "Year 2018",
+          "data": [
+            1276,
+            1007,
+            4561,
+            746,
+            42
+          ]
+        }
+      ]
+    },
+    "stacked_column": {
+      "xAxis": {
+        "categories": [
+          "Arsenal",
+          "Chelsea",
+          "Liverpool",
+          "Manchester United"
+        ]
+      },
+      "series": [
+        {
+          "name": "BPL",
+          "data": [
+            3,
+            5,
+            1,
+            13
+          ]
+        },
+        {
+          "name": "FA Cup",
+          "data": [
+            14,
+            8,
+            8,
+            12
+          ]
+        },
+        {
+          "name": "CL",
+          "data": [
+            0,
+            2,
+            6,
+            3
+          ]
+        }
+      ]
+    },
+    "stacked_bar": {
+      "xAxis": {
+        "categories": [
+          "2020/21",
+          "2019/20",
+          "2018/19",
+          "2017/18",
+          "2016/17"
+        ]
+      },
+      "series": [
+        {
+          "name": "Cristiano Ronaldo",
+          "data": [
+            4,
+            4,
+            6,
+            15,
+            12
+          ]
+        },
+        {
+          "name": "Lionel Messi",
+          "data": [
+            5,
+            3,
+            12,
+            6,
+            11
+          ]
+        },
+        {
+          "name": "Robert Lewandowski",
+          "data": [
+            5,
+            15,
+            8,
+            5,
+            8
+          ]
+        }
+      ]
+    },
+    "drilldown_bar_chart": {
+      "series": [
+        {
+          "name": "Browsers",
+          "colorByPoint": true,
+          "data": [
+            {
+              "name": "Chrome",
+              "y": 61.04,
+              "drilldown": "Chrome"
+            },
+            {
+              "name": "Safari",
+              "y": 9.47,
+              "drilldown": "Safari"
+            },
+            {
+              "name": "Edge",
+              "y": 9.32,
+              "drilldown": "Edge"
+            },
+            {
+              "name": "Firefox",
+              "y": 8.15,
+              "drilldown": "Firefox"
+            },
+            {
+              "name": "Other",
+              "y": 11.02,
+              "drilldown": null
+            }
+          ]
+        }
+      ],
+      "drilldown": {
+        "series": [
+          {
+            "name": "Chrome",
+            "id": "Chrome",
+            "data": [
+              [
+                "v97.0",
+                36.89
+              ],
+              [
+                "v96.0",
+                18.16
+              ],
+              [
+                "v95.0",
+                0.54
+              ],
+              [
+                "v94.0",
+                0.7
+              ],
+              [
+                "v93.0",
+                0.8
+              ],
+              [
+                "v92.0",
+                0.41
+              ],
+              [
+                "v91.0",
+                0.31
+              ],
+              [
+                "v90.0",
+                0.13
+              ],
+              [
+                "v89.0",
+                0.14
+              ],
+              [
+                "v88.0",
+                0.1
+              ],
+              [
+                "v87.0",
+                0.35
+              ],
+              [
+                "v86.0",
+                0.17
+              ],
+              [
+                "v85.0",
+                0.18
+              ],
+              [
+                "v84.0",
+                0.17
+              ],
+              [
+                "v83.0",
+                0.21
+              ],
+              [
+                "v81.0",
+                0.1
+              ],
+              [
+                "v80.0",
+                0.16
+              ],
+              [
+                "v79.0",
+                0.43
+              ],
+              [
+                "v78.0",
+                0.11
+              ],
+              [
+                "v76.0",
+                0.16
+              ],
+              [
+                "v75.0",
+                0.15
+              ],
+              [
+                "v72.0",
+                0.14
+              ],
+              [
+                "v70.0",
+                0.11
+              ],
+              [
+                "v69.0",
+                0.13
+              ],
+              [
+                "v56.0",
+                0.12
+              ],
+              [
+                "v49.0",
+                0.17
+              ]
+            ]
+          },
+          {
+            "name": "Safari",
+            "id": "Safari",
+            "data": [
+              [
+                "v15.3",
+                0.1
+              ],
+              [
+                "v15.2",
+                2.01
+              ],
+              [
+                "v15.1",
+                2.29
+              ],
+              [
+                "v15.0",
+                0.49
+              ],
+              [
+                "v14.1",
+                2.48
+              ],
+              [
+                "v14.0",
+                0.64
+              ],
+              [
+                "v13.1",
+                1.17
+              ],
+              [
+                "v13.0",
+                0.13
+              ],
+              [
+                "v12.1",
+                0.16
+              ]
+            ]
+          },
+          {
+            "name": "Edge",
+            "id": "Edge",
+            "data": [
+              [
+                "v97",
+                6.62
+              ],
+              [
+                "v96",
+                2.55
+              ],
+              [
+                "v95",
+                0.15
+              ]
+            ]
+          },
+          {
+            "name": "Firefox",
+            "id": "Firefox",
+            "data": [
+              [
+                "v96.0",
+                4.17
+              ],
+              [
+                "v95.0",
+                3.33
+              ],
+              [
+                "v94.0",
+                0.11
+              ],
+              [
+                "v91.0",
+                0.23
+              ],
+              [
+                "v78.0",
+                0.16
+              ],
+              [
+                "v52.0",
+                0.15
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    "drilldown_pie_chart": {
+      "series": [
+        {
+          "name": "Browsers",
+          "colorByPoint": true,
+          "data": [
+            {
+              "name": "Chrome",
+              "y": 61.04,
+              "drilldown": "Chrome"
+            },
+            {
+              "name": "Safari",
+              "y": 9.47,
+              "drilldown": "Safari"
+            },
+            {
+              "name": "Edge",
+              "y": 9.32,
+              "drilldown": "Edge"
+            },
+            {
+              "name": "Firefox",
+              "y": 8.15,
+              "drilldown": "Firefox"
+            },
+            {
+              "name": "Other",
+              "y": 11.02,
+              "drilldown": null
+            }
+          ]
+        }
+      ],
+      "drilldown": {
+        "series": [
+          {
+            "name": "Chrome",
+            "id": "Chrome",
+            "data": [
+              [
+                "v97.0",
+                36.89
+              ],
+              [
+                "v96.0",
+                18.16
+              ],
+              [
+                "v95.0",
+                0.54
+              ],
+              [
+                "v94.0",
+                0.7
+              ],
+              [
+                "v93.0",
+                0.8
+              ],
+              [
+                "v92.0",
+                0.41
+              ],
+              [
+                "v91.0",
+                0.31
+              ],
+              [
+                "v90.0",
+                0.13
+              ],
+              [
+                "v89.0",
+                0.14
+              ],
+              [
+                "v88.0",
+                0.1
+              ],
+              [
+                "v87.0",
+                0.35
+              ],
+              [
+                "v86.0",
+                0.17
+              ],
+              [
+                "v85.0",
+                0.18
+              ],
+              [
+                "v84.0",
+                0.17
+              ],
+              [
+                "v83.0",
+                0.21
+              ],
+              [
+                "v81.0",
+                0.1
+              ],
+              [
+                "v80.0",
+                0.16
+              ],
+              [
+                "v79.0",
+                0.43
+              ],
+              [
+                "v78.0",
+                0.11
+              ],
+              [
+                "v76.0",
+                0.16
+              ],
+              [
+                "v75.0",
+                0.15
+              ],
+              [
+                "v72.0",
+                0.14
+              ],
+              [
+                "v70.0",
+                0.11
+              ],
+              [
+                "v69.0",
+                0.13
+              ],
+              [
+                "v56.0",
+                0.12
+              ],
+              [
+                "v49.0",
+                0.17
+              ]
+            ]
+          },
+          {
+            "name": "Safari",
+            "id": "Safari",
+            "data": [
+              [
+                "v15.3",
+                0.1
+              ],
+              [
+                "v15.2",
+                2.01
+              ],
+              [
+                "v15.1",
+                2.29
+              ],
+              [
+                "v15.0",
+                0.49
+              ],
+              [
+                "v14.1",
+                2.48
+              ],
+              [
+                "v14.0",
+                0.64
+              ],
+              [
+                "v13.1",
+                1.17
+              ],
+              [
+                "v13.0",
+                0.13
+              ],
+              [
+                "v12.1",
+                0.16
+              ]
+            ]
+          },
+          {
+            "name": "Edge",
+            "id": "Edge",
+            "data": [
+              [
+                "v97",
+                6.62
+              ],
+              [
+                "v96",
+                2.55
+              ],
+              [
+                "v95",
+                0.15
+              ]
+            ]
+          },
+          {
+            "name": "Firefox",
+            "id": "Firefox",
+            "data": [
+              [
+                "v96.0",
+                4.17
+              ],
+              [
+                "v95.0",
+                3.33
+              ],
+              [
+                "v94.0",
+                0.11
+              ],
+              [
+                "v91.0",
+                0.23
+              ],
+              [
+                "v78.0",
+                0.16
+              ],
+              [
+                "v52.0",
+                0.15
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    "drilldown_line_chart": {
+      "series": [
+        {
+          "name": "Things",
+          "colorByPoint": true,
+          "data": [
+            {
+              "name": "Animals",
+              "y": 5,
+              "drilldown": "animals"
+            },
+            {
+              "name": "Fruits",
+              "y": 2,
+              "drilldown": "fruits"
+            },
+            {
+              "name": "Cars",
+              "y": 4,
+              "drilldown": "cars"
+            }
+          ]
+        },
+        {
+          "name": "vehicles",
+          "colorByPoint": true,
+          "data": [
+            {
+              "name": "Vehicle 1",
+              "y": 25,
+              "drilldown": "vehicle1"
+            },
+            {
+              "name": "Vehicle 2",
+              "y": 25,
+              "drilldown": "vehicle2"
+            },
+            {
+              "name": "Vehicle 3",
+              "y": 45,
+              "drilldown": "vehicle3"
+            }
+          ]
+        }
+      ],
+      "drilldown": {
+        "series": [
+          {
+            "id": "animals",
+            "data": [
+              [
+                "Cats",
+                4
+              ],
+              [
+                "Dogs",
+                2
+              ],
+              [
+                "Cows",
+                1
+              ],
+              [
+                "Sheep",
+                2
+              ],
+              [
+                "Pigs",
+                1
+              ]
+            ]
+          },
+          {
+            "id": "fruits",
+            "data": [
+              [
+                "Apples",
+                4
+              ],
+              [
+                "Oranges",
+                2
+              ]
+            ]
+          },
+          {
+            "id": "cars",
+            "data": [
+              [
+                "Toyota",
+                4
+              ],
+              [
+                "Opel",
+                2
+              ],
+              [
+                "Volkswagen",
+                2
+              ]
+            ]
+          },
+          {
+            "id": "vehicle1",
+            "data": [
+              [
+                "Toyota",
+                4
+              ],
+              [
+                "Opel",
+                2
+              ],
+              [
+                "Volkswagen",
+                2
+              ]
+            ]
+          },
+          {
+            "id": "vehicle2",
+            "data": [
+              [
+                "Toyota",
+                12
+              ],
+              [
+                "Opel",
+                12
+              ],
+              [
+                "Volkswagen",
+                2
+              ]
+            ]
+          },
+          {
+            "id": "vehicle3",
+            "data": [
+              [
+                "Toyota",
+                5
+              ],
+              [
+                "Opel",
+                4
+              ],
+              [
+                "Volkswagen",
+                1
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    "testtable1": {
+      "heading": {
+        "AccountType": "Account Type",
+        "Currency": "Currency",
+        "Amount": "Amount"
+      },
+      "data": [
+        {
+          "AccountType": "Savings",
+          "Currency": "GBP",
+          "Amount": "1725.45"
+        },
+        {
+          "AccountType": "Savings",
+          "Currency": "GBP",
+          "Amount": "2430.10"
+        },
+        {
+          "AccountType": "Savings",
+          "Currency": "USD",
+          "Amount": "1950.75"
+        },
+        {
+          "AccountType": "Savings",
+          "Currency": "EUR",
+          "Amount": "2100.30"
+        },
+        {
+          "AccountType": "Current",
+          "Currency": "GBP",
+          "Amount": "8200.00"
+        },
+        {
+          "AccountType": "Current",
+          "Currency": "USD",
+          "Amount": "5250.55"
+        },
+        {
+          "AccountType": "Current",
+          "Currency": "EUR",
+          "Amount": "6100.10"
+        },
+        {
+          "AccountType": "Current",
+          "Currency": "GBP",
+          "Amount": "4750.25"
+        },
+        {
+          "AccountType": "Recurring Deposit",
+          "Currency": "GBP",
+          "Amount": "22100.50"
+        },
+        {
+          "AccountType": "Recurring Deposit",
+          "Currency": "GBP",
+          "Amount": "30350.20"
+        },
+        {
+          "AccountType": "Recurring Deposit",
+          "Currency": "USD",
+          "Amount": "18750.75"
+        },
+        {
+          "AccountType": "Term Deposit",
+          "Currency": "GBP",
+          "Amount": "101500.00"
+        },
+        {
+          "AccountType": "Term Deposit",
+          "Currency": "USD",
+          "Amount": "50500.25"
+        },
+        {
+          "AccountType": "Term Deposit",
+          "Currency": "EUR",
+          "Amount": "66200.10"
+        },
+        {
+          "AccountType": "Term Deposit",
+          "Currency": "GBP",
+          "Amount": "89000.00"
+        },
+        {
+          "AccountType": "Wealth",
+          "Currency": "GBP",
+          "Amount": "9700.00"
+        },
+        {
+          "AccountType": "Wealth",
+          "Currency": "USD",
+          "Amount": "11350.45"
+        },
+        {
+          "AccountType": "Wealth",
+          "Currency": "EUR",
+          "Amount": "9400.25"
+        },
+        {
+          "AccountType": "Credit Card",
+          "Currency": "GBP",
+          "Amount": "125.80"
+        },
+        {
+          "AccountType": "Credit Card",
+          "Currency": "USD",
+          "Amount": "98.00"
+        },
+        {
+          "AccountType": "Credit Card",
+          "Currency": "EUR",
+          "Amount": "155.40"
+        },
+        {
+          "AccountType": "Credit Card",
+          "Currency": "GBP",
+          "Amount": "210.60"
+        },
+        {
+          "AccountType": "Loan",
+          "Currency": "GBP",
+          "Amount": "45200.00"
+        },
+        {
+          "AccountType": "Loan",
+          "Currency": "USD",
+          "Amount": "37850.90"
+        },
+        {
+          "AccountType": "Loan",
+          "Currency": "EUR",
+          "Amount": "40100.00"
+        },
+        {
+          "AccountType": "Mortgage",
+          "Currency": "GBP",
+          "Amount": "225000.00"
+        },
+        {
+          "AccountType": "Mortgage",
+          "Currency": "USD",
+          "Amount": "180000.50"
+        },
+        {
+          "AccountType": "Mortgage",
+          "Currency": "EUR",
+          "Amount": "199500.00"
+        },
+        {
+          "AccountType": "Investment",
+          "Currency": "GBP",
+          "Amount": "15500.00"
+        },
+        {
+          "AccountType": "Investment",
+          "Currency": "USD",
+          "Amount": "14450.75"
+        },
+        {
+          "AccountType": "Investment",
+          "Currency": "EUR",
+          "Amount": "16780.30"
+        }
+      ]
+    },
+    "testtable2": {
+      "heading": {
+        "AccountHolder": "Account Holder",
+        "AccountType": "Account Type",
+        "Currency": "Currency",
+        "Amount": "Amount"
+      },
+      "options": {
+        "mode": "scatter",
+        "scatterFields": [
+          "AccountType",
+          "Currency",
+          "AccountHolder"
+        ]
+      },
+      "data": [
+        {
+          "AccountHolder": "acc holder 2",
+          "AccountType": "Investment",
+          "Currency": "USD",
+          "Amount": "14450.75"
+        },
+        {
+          "AccountHolder": "acc holder 3",
+          "AccountType": "Savings",
+          "Currency": "GBP",
+          "Amount": "1725.45"
+        },
+        {
+          "AccountHolder": "acc holder 1",
+          "AccountType": "Mortgage",
+          "Currency": "EUR",
+          "Amount": "199500.00"
+        },
+        {
+          "AccountHolder": "acc holder 2",
+          "AccountType": "Credit Card",
+          "Currency": "EUR",
+          "Amount": "155.40"
+        },
+        {
+          "AccountHolder": "acc holder 3",
+          "AccountType": "Loan",
+          "Currency": "GBP",
+          "Amount": "45200.00"
+        },
+        {
+          "AccountHolder": "acc holder 1",
+          "AccountType": "Savings",
+          "Currency": "EUR",
+          "Amount": "2100.30"
+        },
+        {
+          "AccountHolder": "acc holder 3",
+          "AccountType": "Term Deposit",
+          "Currency": "USD",
+          "Amount": "50500.25"
+        },
+        {
+          "AccountHolder": "acc holder 1",
+          "AccountType": "Investment",
+          "Currency": "GBP",
+          "Amount": "15500.00"
+        },
+        {
+          "AccountHolder": "acc holder 3",
+          "AccountType": "Current",
+          "Currency": "GBP",
+          "Amount": "8200.00"
+        },
+        {
+          "AccountHolder": "acc holder 2",
+          "AccountType": "Savings",
+          "Currency": "USD",
+          "Amount": "1950.75"
+        },
+        {
+          "AccountHolder": "acc holder 1",
+          "AccountType": "Credit Card",
+          "Currency": "GBP",
+          "Amount": "210.60"
+        },
+        {
+          "AccountHolder": "acc holder 3",
+          "AccountType": "Mortgage",
+          "Currency": "GBP",
+          "Amount": "225000.00"
+        },
+        {
+          "AccountHolder": "acc holder 2",
+          "AccountType": "Term Deposit",
+          "Currency": "EUR",
+          "Amount": "66200.10"
+        },
+        {
+          "AccountHolder": "acc holder 1",
+          "AccountType": "Wealth",
+          "Currency": "USD",
+          "Amount": "11350.45"
+        },
+        {
+          "AccountHolder": "acc holder 3",
+          "AccountType": "Loan",
+          "Currency": "USD",
+          "Amount": "37850.90"
+        },
+        {
+          "AccountHolder": "acc holder 2",
+          "AccountType": "Recurring Deposit",
+          "Currency": "GBP",
+          "Amount": "22100.50"
+        },
+        {
+          "AccountHolder": "acc holder 1",
+          "AccountType": "Credit Card",
+          "Currency": "EUR",
+          "Amount": "155.40"
+        },
+        {
+          "AccountHolder": "acc holder 2",
+          "AccountType": "Investment",
+          "Currency": "EUR",
+          "Amount": "16780.30"
+        },
+        {
+          "AccountHolder": "acc holder 3",
+          "AccountType": "Savings",
+          "Currency": "EUR",
+          "Amount": "2100.30"
+        },
+        {
+          "AccountHolder": "acc holder 1",
+          "AccountType": "Current",
+          "Currency": "USD",
+          "Amount": "5250.55"
+        },
+        {
+          "AccountHolder": "acc holder 3",
+          "AccountType": "Term Deposit",
+          "Currency": "GBP",
+          "Amount": "89000.00"
+        },
+        {
+          "AccountHolder": "acc holder 2",
+          "AccountType": "Wealth",
+          "Currency": "GBP",
+          "Amount": "9700.00"
+        },
+        {
+          "AccountHolder": "acc holder 3",
+          "AccountType": "Investment",
+          "Currency": "USD",
+          "Amount": "14450.75"
+        },
+        {
+          "AccountHolder": "acc holder 1",
+          "AccountType": "Savings",
+          "Currency": "USD",
+          "Amount": "1950.75"
+        },
+        {
+          "AccountHolder": "acc holder 2",
+          "AccountType": "Mortgage",
+          "Currency": "USD",
+          "Amount": "180000.50"
+        },
+        {
+          "AccountHolder": "acc holder 3",
+          "AccountType": "Loan",
+          "Currency": "EUR",
+          "Amount": "40100.00"
+        },
+        {
+          "AccountHolder": "acc holder 1",
+          "AccountType": "Term Deposit",
+          "Currency": "USD",
+          "Amount": "50500.25"
+        },
+        {
+          "AccountHolder": "acc holder 2",
+          "AccountType": "Credit Card",
+          "Currency": "GBP",
+          "Amount": "125.80"
+        },
+        {
+          "AccountHolder": "acc holder 1",
+          "AccountType": "Investment",
+          "Currency": "EUR",
+          "Amount": "16780.30"
+        },
+        {
+          "AccountHolder": "acc holder 3",
+          "AccountType": "Recurring Deposit",
+          "Currency": "USD",
+          "Amount": "18750.75"
+        },
+        {
+          "AccountHolder": "acc holder 2",
+          "AccountType": "Savings",
+          "Currency": "GBP",
+          "Amount": "2430.10"
+        },
+        {
+          "AccountHolder": "acc holder 1",
+          "AccountType": "Wealth",
+          "Currency": "EUR",
+          "Amount": "9400.25"
+        },
+        {
+          "AccountHolder": "acc holder 3",
+          "AccountType": "Term Deposit",
+          "Currency": "GBP",
+          "Amount": "101500.00"
+        },
+        {
+          "AccountHolder": "acc holder 2",
+          "AccountType": "Current",
+          "Currency": "USD",
+          "Amount": "5250.55"
+        },
+        {
+          "AccountHolder": "acc holder 1",
+          "AccountType": "Loan",
+          "Currency": "EUR",
+          "Amount": "40100.00"
+        },
+        {
+          "AccountHolder": "acc holder 3",
+          "AccountType": "Credit Card",
+          "Currency": "USD",
+          "Amount": "98.00"
+        },
+        {
+          "AccountHolder": "acc holder 2",
+          "AccountType": "Term Deposit",
+          "Currency": "GBP",
+          "Amount": "89000.00"
+        },
+        {
+          "AccountHolder": "acc holder 1",
+          "AccountType": "Savings",
+          "Currency": "GBP",
+          "Amount": "1725.45"
+        },
+        {
+          "AccountHolder": "acc holder 3",
+          "AccountType": "Mortgage",
+          "Currency": "EUR",
+          "Amount": "199500.00"
+        },
+        {
+          "AccountHolder": "acc holder 2",
+          "AccountType": "Investment",
+          "Currency": "GBP",
+          "Amount": "15500.00"
+        },
+        {
+          "AccountHolder": "acc holder 1",
+          "AccountType": "Recurring Deposit",
+          "Currency": "GBP",
+          "Amount": "30350.20"
+        },
+        {
+          "AccountHolder": "acc holder 3",
+          "AccountType": "Wealth",
+          "Currency": "EUR",
+          "Amount": "9400.25"
+        },
+        {
+          "AccountHolder": "acc holder 2",
+          "AccountType": "Term Deposit",
+          "Currency": "USD",
+          "Amount": "50500.25"
+        },
+        {
+          "AccountHolder": "acc holder 1",
+          "AccountType": "Current",
+          "Currency": "GBP",
+          "Amount": "4750.25"
+        },
+        {
+          "AccountHolder": "acc holder 3",
+          "AccountType": "Savings",
+          "Currency": "USD",
+          "Amount": "1950.75"
+        },
+        {
+          "AccountHolder": "acc holder 2",
+          "AccountType": "Loan",
+          "Currency": "EUR",
+          "Amount": "40100.00"
+        },
+        {
+          "AccountHolder": "acc holder 1",
+          "AccountType": "Credit Card",
+          "Currency": "USD",
+          "Amount": "98.00"
+        },
+        {
+          "AccountHolder": "acc holder 3",
+          "AccountType": "Investment",
+          "Currency": "EUR",
+          "Amount": "16780.30"
+        }
+      ]
+    },
+    "transactions1Tbl": {
+      "heading": {
+        "Date": "Date",
+        "Type": "Type",
+        "Narration": "Narration",
+        "FCY_GBP": "FCY(GBP)",
+        "CurrentRate": "Currentt Rate",
+        "LCY_GBP": "LCY(GBP)"
+      },
+      "data": [
+        {
+          "Date": "3-APR-15",
+          "Type": "CR",
+          "Narration": "NET TXN: IIFL IIFL3557346",
+          "FCY_GBP": "1666.67",
+          "CurrentRate": "1.062",
+          "LCY_GBP": "1771.42"
+        },
+        {
+          "Date": "1-APR-15",
+          "Type": "CR",
+          "Narration": "NEFT: 10204083732 -THE GREATER Bank of New York",
+          "FCY_GBP": "0.38",
+          "CurrentRate": "1.473",
+          "LCY_GBP": "0.56"
+        },
+        {
+          "Date": "1-APR-15",
+          "Type": "DR",
+          "Narration": "NET TXN: FUNDS TRF FROM 000490700001137",
+          "FCY_GBP": "-5017.56",
+          "CurrentRate": "1.560",
+          "LCY_GBP": "-7830.89"
+        },
+        {
+          "Date": "31-MAR-15",
+          "Type": "CR",
+          "Narration": "NET TXN: IIFL IIFL3557346",
+          "FCY_GBP": "7.37",
+          "CurrentRate": "1.062",
+          "LCY_GBP": "7.83"
+        },
+        {
+          "Date": "31-MAR-15",
+          "Type": "DR",
+          "Narration": "NET TXN: IIFL IIFL3557346",
+          "FCY_GBP": "-1151.91",
+          "CurrentRate": "1.062",
+          "LCY_GBP": "-1224.31"
+        },
+        {
+          "Date": "31-MAR-15",
+          "Type": "DR",
+          "Narration": "LD1508340249",
+          "FCY_GBP": "7.37",
+          "CurrentRate": "1.062",
+          "LCY_GBP": "-1224.31"
+        },
+        {
+          "Date": "24-MAR-15",
+          "Type": "DR",
+          "Narration": "PCI:0500010827:1000156311283:ODEL PLC-459050",
+          "FCY_GBP": "-30.64",
+          "CurrentRate": "1.473",
+          "LCY_GBP": "-45.15"
+        },
+        {
+          "Date": "24-MAR-15",
+          "Type": "CR",
+          "Narration": "PCD:0500010827:9993715077628:COTTON COLL-085222",
+          "FCY_GBP": "1696.21",
+          "CurrentRate": "1.473",
+          "LCY_GBP": "2500.03"
+        },
+        {
+          "Date": "24-MAR-15",
+          "Type": "DR",
+          "Narration": "NET TXN: RENT FOR FEB 2013",
+          "FCY_GBP": "-296.46",
+          "CurrentRate": "1.473",
+          "LCY_GBP": "-436.87"
+        }
+      ]
+    },
+    "dematTable1": {
+      "heading": {
+        "Account_No": "Account No",
+        "Installment_Amount_GBP": "Installment Amount(GBP)",
+        "Deposit_Start_Date": "Deposit Start Date",
+        "Tenure_Month": "Tenure(Month)",
+        "Intrest_Rate": "Intrest Rate",
+        "Maturity_Amount_GBP": "Maturity Amount(GBP)",
+        "Installment_Paid": "Installment Paid",
+        "Current_Balance_GBP": "Current Balance(GBP)"
+      },
+      "data": [
+        {
+          "Account_No": "0118196000210",
+          "Installment_Amount_GBP": "2500.00",
+          "Deposit_Start_Date": "12-JUN-15",
+          "Tenure_Month": "36",
+          "Intrest_Rate": "3.05%",
+          "Maturity_Amount_GBP": "93888.62",
+          "Installment_Paid": "9",
+          "Current_Balance_GBP": "22730.11"
+        }
+      ]
+    },
+    "dematTable2": {
+      "heading": {
+        "Installment_Number": "किश्त संख्या",
+        "Installment_Due_Date": "किस्त देय तिथि",
+        "Amount_Paid_GBP": "भुगतान की गई राशि (जीबीपी)",
+        "Running_Balance_GBP": "रनिंग बैलेंस (जीबीपी)"
+      },
+      "data": [
+        {
+          "Installment_Number": "9",
+          "Installment_Due_Date": "12-MAR-16",
+          "Amount_Paid_GBP": "2500.00",
+          "Running_Balance_GBP": "22730.11"
+        },
+        {
+          "Installment_Number": "8",
+          "Installment_Due_Date": "12-FEB-16",
+          "Amount_Paid_GBP": "2500.00",
+          "Running_Balance_GBP": "20178.82"
+        },
+        {
+          "Installment_Number": "7",
+          "Installment_Due_Date": "12-JAN-16",
+          "Amount_Paid_GBP": "2500.00",
+          "Running_Balance_GBP": "17634.00"
+        },
+        {
+          "Installment_Number": "6",
+          "Installment_Due_Date": "12-DEC-15",
+          "Amount_Paid_GBP": "2500.00",
+          "Running_Balance_GBP": "15095.64"
+        },
+        {
+          "Installment_Number": "5",
+          "Installment_Due_Date": "12-NOV-15",
+          "Amount_Paid_GBP": "2500.00",
+          "Running_Balance_GBP": "12563.70"
+        }
+      ]
+    }
+  }
+}

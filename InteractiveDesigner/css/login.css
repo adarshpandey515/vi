@@ -1,0 +1,44 @@
+ body{
+    overflow-x: hidden;
+    padding-right: 0!important;
+ } 
+ .content-wrapper{ 
+    width: 100%;
+    flex-grow: 1;
+    background: #f4f5f7!important ;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: row;
+ }
+ .auth-form-light{
+    background: #fff;
+ }
+ .brand-logo{
+    text-align: center;
+ }
+ .btn-primary{
+    background-color: #ba316b!important;
+    border: none!important;
+    font-weight: bold !important;
+    padding: 10px 30px !important;
+ }
+ h4{
+    font-size: 1.125rem !important;
+    font-family: Roboto!important;
+ }
+ h6{
+    font-size: .9375rem !important;
+    font-family: Roboto!important;
+ } 
+ .form-control{
+    background: #f9f9fa!important;
+    border: 2px solid #f9f9fa!important;
+    box-sizing: border-box!important;
+    border-radius: 8px!important;
+    font-size: .9375rem !important;
+    min-height: 3.175rem !important;
+ }
+ .form-control:focus{
+    box-shadow: none !important;
+ }
+ 

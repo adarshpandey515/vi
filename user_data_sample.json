@@ -1,0 +1,1208 @@
+{
+  "accountSummary": {
+    "accountNumber": "EpT-88234571",
+    "accountCategory": "ENTERPRISE",
+    "totalConnections": 5,
+    "accountStatus": "Active"
+  },
+  "currentBilling": {
+    "invoiceNumber": "INV-2026-03-0847",
+    "billPeriod": {
+      "startDate": "01/02/2026",
+      "endDate": "28/02/2026"
+    },
+    "generatedDate": "20/03/2026",
+    "dueDate": "15/03/2026",
+    "daysRemaining": 3,
+    "lateFeeIfNotPaid": "50.00",
+    "currencySymbol": "Rs.",
+    "totalDue": "7842.50",
+    "status": "Unpaid"
+  },
+  "dashboardStatistics": {
+    "monthlySpend": "7842.50",
+    "averageSpend": "6853.20",
+    "monthlyBudget": "9000.00",
+    "budgetUtilization": "87%",
+    "remainingBudget": "1157.50",
+    "savingsOpportunity": "1247.00",
+    "activeConnections": 5,
+    "inactiveConnections": 0,
+    "totalInvoices": 6,
+    "paidInvoices": 5,
+    "unpaidInvoices": 1
+  },
+  "billBreakdown": {
+    "basePlans": "3795.00",
+    "dataOverage": "799.00",
+    "roaming": "1386.00",
+    "vasServices": "666.00",
+    "subtotal": "6646.00",
+    "taxes": {
+      "gst": {
+        "rate": "12%",
+        "amount": "797.52"
+      }
+    },
+    "previousBalance": "0.00",
+    "totalCharges": "7443.52",
+    "adjustments": "398.98",
+    "finalTotal": "7842.50"
+  },
+  "connections": [
+    {
+      "phoneNumber": "9876543210",
+      "employeeName": "Rajesh Kumar",
+      "department": "Engineering",
+      "costCenter": "CC-ENG-01",
+      "isPrimary": true,
+      "plan": {
+        "name": "Max",
+        "code": "Max 999",
+        "baseCost": "999.00"
+      },
+      "monthlySpend": "2929.00",
+      "monthlyLimit": "3000.00",
+      "limitUtilization": "98%",
+      "status": "Active",
+      "usage": {
+        "data": {
+          "used": 67.3,
+          "limit": 100,
+          "unit": "GB",
+          "utilization": "67%"
+        },
+        "calls": {
+          "used": 1842,
+          "unit": "minutes"
+        },
+        "sms": {
+          "used": 0,
+          "unit": "messages"
+        },
+        "roaming": {
+          "used": 5000,
+          "unit": "minutes"
+        }
+      },
+      "charges": {
+        "planCost": "999.00",
+        "dataOverage": "345.00",
+        "roaming": "740.00",
+        "vas": "398.00",
+        "tax": "447.00"
+      },
+      "paymentStatus": "On-time",
+      "paymentHistory": {
+        "onTimePercentage": 98,
+        "averageDelayDays": 0.5,
+        "delaysInLast12Months": 1
+      },
+      "collectionRiskScore": 30,
+      "collectionPriority": "LOW",
+      "lateFeesAccumulated": "0.00",
+      "alerts": {
+        "activeAlerts": 1,
+        "billingAlerts": [],
+        "usageAlerts": [
+          {
+            "type": "International Roaming Active",
+            "location": "Singapore roaming detected",
+            "recommendation": "Roaming pack saves Rs.100",
+            "severity": "MEDIUM",
+            "timestamp": "3h ago"
+          }
+        ],
+        "serviceAlerts": []
+      }
+    },
+    {
+      "phoneNumber": "9876543211",
+      "employeeName": "Priya Sharma",
+      "department": "Sales",
+      "costCenter": "CC-SAL-01",
+      "isPrimary": false,
+      "plan": {
+        "name": "Plus",
+        "code": "Plus 799",
+        "baseCost": "799.00"
+      },
+      "monthlySpend": "1841.50",
+      "monthlyLimit": "2500.00",
+      "limitUtilization": "74%",
+      "status": "Active",
+      "usage": {
+        "data": {
+          "used": 45.2,
+          "limit": 75,
+          "unit": "GB",
+          "utilization": "60%"
+        },
+        "calls": {
+          "used": 987,
+          "unit": "minutes"
+        },
+        "sms": {
+          "used": 120,
+          "unit": "messages"
+        },
+        "roaming": {
+          "used": 2100,
+          "unit": "minutes"
+        }
+      },
+      "paymentStatus": "On-time",
+      "paymentHistory": {
+        "onTimePercentage": 100,
+        "averageDelayDays": 0,
+        "delaysInLast12Months": 0
+      },
+      "collectionRiskScore": 30,
+      "collectionPriority": "LOW",
+      "alerts": {
+        "activeAlerts": 0,
+        "billingAlerts": [],
+        "usageAlerts": [],
+        "serviceAlerts": []
+      }
+    },
+    {
+      "phoneNumber": "9876543212",
+      "employeeName": "Amit Patel",
+      "department": "Engineering",
+      "costCenter": "CC-ENG-01",
+      "isPrimary": false,
+      "plan": {
+        "name": "Plus",
+        "code": "Plus 799",
+        "baseCost": "799.00"
+      },
+      "monthlySpend": "1429.00",
+      "monthlyLimit": "2000.00",
+      "limitUtilization": "71%",
+      "status": "Active",
+      "usage": {
+        "data": {
+          "used": 72.1,
+          "limit": 75,
+          "unit": "GB",
+          "utilization": "96%"
+        },
+        "calls": {
+          "used": 2345,
+          "unit": "minutes"
+        },
+        "sms": {
+          "used": 180,
+          "unit": "messages"
+        },
+        "roaming": {
+          "used": 1200,
+          "unit": "minutes"
+        }
+      },
+      "outstandingAmount": "2847.00",
+      "paymentStatus": "Delayed",
+      "paymentHistory": {
+        "onTimePercentage": 52,
+        "averageDelayDays": 12.3,
+        "delaysInLast12Months": 5
+      },
+      "collectionRiskScore": 90,
+      "collectionPriority": "HIGH",
+      "lateFeesAccumulated": "250.00",
+      "alerts": {
+        "activeAlerts": 2,
+        "billingAlerts": [
+          {
+            "type": "Outstanding Balance",
+            "amount": "2847.00",
+            "lastPaymentDaysOverdue": 14,
+            "severity": "HIGH",
+            "actionRequired": true
+          }
+        ],
+        "usageAlerts": [
+          {
+            "type": "Data Usage Critical",
+            "current": "72.1 GB",
+            "limit": "75 GB",
+            "utilization": "96%",
+            "recommendation": "Consider data booster or plan upgrade",
+            "severity": "HIGH",
+            "timestamp": "30m ago"
+          }
+        ],
+        "serviceAlerts": [
+          {
+            "type": "Service Request",
+            "srId": "SR-2856",
+            "description": "SIM replacement dispatched",
+            "status": "In Transit",
+            "expectedDelivery": "2026-03-22"
+          }
+        ]
+      }
+    },
+    {
+      "phoneNumber": "9876543213",
+      "employeeName": "Sneha Reddy",
+      "department": "Operations",
+      "costCenter": "CC-OPS-01",
+      "isPrimary": false,
+      "plan": {
+        "name": "Basic",
+        "code": "Basic 599",
+        "baseCost": "599.00"
+      },
+      "monthlySpend": "713.50",
+      "monthlyLimit": "1000.00",
+      "limitUtilization": "71%",
+      "status": "Active",
+      "usage": {
+        "data": {
+          "used": 23.5,
+          "limit": 50,
+          "unit": "GB",
+          "utilization": "47%"
+        },
+        "calls": {
+          "used": 456,
+          "unit": "minutes"
+        },
+        "sms": {
+          "used": 0,
+          "unit": "messages"
+        }
+      },
+      "paymentStatus": "Autopay Active",
+      "paymentHistory": {
+        "onTimePercentage": 96,
+        "averageDelayDays": 0,
+        "delaysInLast12Months": 0
+      },
+      "collectionRiskScore": 30,
+      "collectionPriority": "LOW",
+      "alerts": {
+        "activeAlerts": 0,
+        "billingAlerts": [],
+        "usageAlerts": [],
+        "serviceAlerts": []
+      }
+    },
+    {
+      "phoneNumber": "9876543214",
+      "employeeName": "Vikram Singh",
+      "department": "Sales",
+      "costCenter": "CC-SAL-02",
+      "isPrimary": false,
+      "plan": {
+        "name": "Basic",
+        "code": "Basic 599",
+        "baseCost": "599.00"
+      },
+      "monthlySpend": "929.50",
+      "monthlyLimit": "1500.00",
+      "limitUtilization": "62%",
+      "status": "Active",
+      "usage": {
+        "data": {
+          "used": 48.9,
+          "limit": 50,
+          "unit": "GB",
+          "utilization": "98%"
+        },
+        "calls": {
+          "used": 1876,
+          "unit": "minutes"
+        },
+        "sms": {
+          "used": 198,
+          "unit": "messages"
+        }
+      },
+      "paymentStatus": "Occasional Delay",
+      "paymentHistory": {
+        "onTimePercentage": 78,
+        "averageDelayDays": 3.5,
+        "delaysInLast12Months": 2
+      },
+      "collectionRiskScore": 60,
+      "collectionPriority": "MEDIUM",
+      "alerts": {
+        "activeAlerts": 2,
+        "billingAlerts": [],
+        "usageAlerts": [
+          {
+            "type": "Data Usage Critical",
+            "current": "48.9 GB",
+            "limit": "50 GB",
+            "utilization": "98%",
+            "recommendation": "Auto data-booster recommended",
+            "severity": "HIGH",
+            "timestamp": "1h ago"
+          },
+          {
+            "type": "SMS Usage Threshold",
+            "current": "198 messages",
+            "limit": "300 messages",
+            "utilization": "66%",
+            "recommendation": "Approaching threshold",
+            "severity": "MEDIUM",
+            "timestamp": "6h ago"
+          }
+        ],
+        "serviceAlerts": []
+      }
+    }
+  ],
+  "reportSummary": {
+    "totalInvoicesGenerated": 12,
+    "usageReports": 6,
+    "departmentReports": 3,
+    "customReports": 2,
+    "invoicesAvailable": [
+      {
+        "month": "Feb 2026",
+        "invoiceNumber": "INV-2026-03-0847",
+        "amount": "7842.50",
+        "status": "Unpaid",
+        "lineItems": 5
+      },
+      {
+        "month": "Jan 2026",
+        "invoiceNumber": "INV-2026-02-0753",
+        "amount": "6980.00",
+        "status": "Paid"
+      },
+      {
+        "month": "Dec 2025",
+        "invoiceNumber": "INV-2026-01-0682",
+        "amount": "5720.00",
+        "status": "Paid"
+      }
+    ]
+  },
+  "paymentInformation": {
+    "bankDetails": {
+      "accountNumber": "XXXXXXXXX0847",
+      "bankName": "HDFC Bank",
+      "ifscCode": "HDFC0000001",
+      "upiId": "globeconsultancy@hdfc"
+    },
+    "lastPaymentDate": "01/02/2026",
+    "lastPaymentAmount": "7500.00",
+    "nextPaymentDue": "15/03/2026",
+    "emiOptions": [
+      {
+        "period": "3 months",
+        "monthlyAmount": "2614.00",
+        "interestRate": "0%",
+        "totalCost": "7842.50"
+      },
+      {
+        "period": "6 months",
+        "monthlyAmount": "1307.00",
+        "interestRate": "0%",
+        "totalCost": "7842.50"
+      },
+      {
+        "period": "12 months",
+        "monthlyAmount": "654.00",
+        "interestRate": "5%",
+        "totalCost": "7848.00"
+      }
+    ]
+  },
+  "planRecommendations": {
+    "currentPlanStatus": "Enterprise Plus 799",
+    "aiRecommendations": [
+      {
+        "actionType": "Upgrade",
+        "line": "9876543212",
+        "employee": "Amit Patel",
+        "fromPlan": "Plus 799",
+        "toPlan": "Max 999",
+        "reason": "96% average data usage across enterprise",
+        "monthlySavings": "60.00",
+        "priority": "HIGH"
+      }
+    ],
+    "savingsOpportunity": "1247.00",
+    "availablePlanUpgrades": ["Max 999", "Premium 1099"],
+    "availablePlanDowngrades": ["Basic 599", "Lite 399"]
+  },
+  "predictiveAnalytics": {
+    "delinquencyRisk": {
+      "currentRiskLevel": "Low",
+      "riskScore": 11,
+      "riskPercentage": "11%",
+      "probability": "Low delinquency risk",
+      "onTimePaymentPercentage": 94,
+      "averageDelayDays": 2.3,
+      "outstandingAmount": "0.00",
+      "creditScore": "A+ (Excellent)"
+    },
+    "collectionsPriority": {
+      "lowRisk": 3,
+      "mediumRisk": 1,
+      "highRisk": 1
+    },
+    "spendForecast": {
+      "currentMonth": "7842.50",
+      "forecastedNext3Months": ["7600.00", "7450.00", "8100.00"],
+      "trendAnalysis": "Stable with seasonal variation"
+    },
+    "budgetAlerts": {
+      "remaining": "1157.50",
+      "percentageRemaining": "13%",
+      "warningLevel": "Caution - 87% utilized",
+      "autoAlert": true
+    }
+  },
+  "expenseManagement": {
+    "monthlyBudgetTracking": {
+      "total": "9000.00",
+      "spent": "7842.50",
+      "utilization": "87%",
+      "remaining": "1157.50"
+    },
+    "departmentBreakdown": [
+      {
+        "department": "Engineering",
+        "lines": 2,
+        "spend": "3654.00",
+        "budget": "4000.00",
+        "utilization": "91%"
+      },
+      {
+        "department": "Sales",
+        "lines": 2,
+        "spend": "3290.00",
+        "budget": "3500.00",
+        "utilization": "94%"
+      },
+      {
+        "department": "Operations",
+        "lines": 1,
+        "spend": "898.50",
+        "budget": "1500.00",
+        "utilization": "60%"
+      }
+    ],
+    "costCenterAssignments": {
+      "CC-ENG-01": "3654.00",
+      "CC-SAL-01": "1841.50",
+      "CC-SAL-02": "929.50",
+      "CC-OPS-01": "713.50"
+    }
+  },
+  "customerSupport": {
+    "complaintsSummary": {
+      "openTickets": 1,
+      "inProgressTickets": 1,
+      "resolvedTickets": 1,
+      "totalTickets": 3
+    },
+    "complaints": [
+      {
+        "ticketId": "DSP-001",
+        "complaint": "ISD Call charge",
+        "amount": "197.00",
+        "status": "Open",
+        "createdDate": "2026-03-18"
+      },
+      {
+        "ticketId": "DSP-002",
+        "complaint": "Data Booster auto-renewal",
+        "amount": "200.00",
+        "status": "In Progress",
+        "createdDate": "2026-03-15",
+        "underInvestigation": true
+      },
+      {
+        "ticketId": "DSP-003",
+        "complaint": "Night surcharge",
+        "amount": "89.00",
+        "status": "Resolved",
+        "createdDate": "2026-03-10",
+        "resolution": "Rs.89 credited back"
+      }
+    ]
+  },
+  "alertsSummary": {
+    "totalAlerts": 12,
+    "billingAlerts": 3,
+    "usageAlerts": 5,
+    "planServiceAlerts": 1,
+    "serviceRequests": 2,
+    "simActivationAlerts": 1
+  },
+  "billingAlerts": [
+    {
+      "type": "Payment Due Reminder",
+      "amount": "7842.50",
+      "dueDate": "2026-03-15",
+      "daysRemaining": 3,
+      "severity": "HIGH",
+      "timestamp": "2h ago",
+      "read": false
+    },
+    {
+      "type": "Bill Generated",
+      "invoiceNumber": "INV-2026-03-0847",
+      "month": "February 2026",
+      "severity": "INFO",
+      "timestamp": "1d ago",
+      "read": false
+    },
+    {
+      "type": "Auto-Debit Scheduled",
+      "amount": "7842.50",
+      "bankAccount": "HDFC",
+      "debitDate": "2026-03-15",
+      "severity": "INFO",
+      "timestamp": "2d ago",
+      "read": false
+    }
+  ],
+  "usageAlerts": [
+    {
+      "connection": "9876543212",
+      "employee": "Amit Patel",
+      "alertType": "Data Usage",
+      "current": {
+        "used": 72.1,
+        "limit": 75,
+        "utilization": "96%"
+      },
+      "severity": "HIGH",
+      "recommendation": "Consider data booster or plan upgrade",
+      "timestamp": "30m ago",
+      "autoRecommendation": "Data booster recommended"
+    },
+    {
+      "connection": "9876543214",
+      "employee": "Vikram Singh",
+      "alertType": "Data Usage",
+      "current": {
+        "used": 48.9,
+        "limit": 50,
+        "utilization": "98%"
+      },
+      "severity": "HIGH",
+      "recommendation": "Auto data-booster recommended",
+      "timestamp": "1h ago"
+    },
+    {
+      "connection": "9876543210",
+      "employee": "Rajesh Kumar",
+      "alertType": "International Roaming",
+      "location": "Singapore",
+      "severity": "MEDIUM",
+      "recommendation": "Roaming pack saves Rs.100",
+      "timestamp": "3h ago"
+    },
+    {
+      "connection": "9876543214",
+      "employee": "Vikram Singh",
+      "alertType": "SMS Usage",
+      "current": {
+        "used": 198,
+        "limit": 300,
+        "utilization": "66%"
+      },
+      "severity": "MEDIUM",
+      "recommendation": "Approaching threshold",
+      "timestamp": "6h ago"
+    },
+    {
+      "connection": "All Lines",
+      "alertType": "Call Usage",
+      "current": {
+        "utilization": "61%"
+      },
+      "severity": "LOW",
+      "recommendation": "Normal usage patterns",
+      "timestamp": "1d ago"
+    }
+  ],
+  "planServiceAlerts": [
+    {
+      "type": "Plan Expiry",
+      "plan": "Enterprise Plus 799",
+      "renewalDaysRemaining": 15,
+      "applicableToAllLines": true,
+      "severity": "MEDIUM",
+      "actionRequired": true
+    },
+    {
+      "type": "Service Request Update",
+      "srId": "SR-2856",
+      "description": "SIM replacement for 9876543212",
+      "status": "Dispatched",
+      "connection": "9876543212",
+      "employee": "Amit Patel",
+      "updatedDate": "2026-03-20"
+    }
+  ],
+  "alertsConfiguration": {
+    "paymentReminders": {
+      "enabled": true,
+      "frequency": "3 days, 1 day, and on due date",
+      "reminderDate": "2026-03-15"
+    },
+    "billingAlerts": {
+      "paymentReminder": true,
+      "billGenerated": true,
+      "autoDebitScheduled": true,
+      "anomalyDetection": true,
+      "exceedWarning": true,
+      "restrictedToSignatory": true
+    },
+    "usageAlerts": {
+      "dataUsageThreshold": true,
+      "callUsageThreshold": true,
+      "smsUsageThreshold": true,
+      "roamingDetection": true,
+      "overageNotification": true
+    },
+    "planAlerts": {
+      "planExpiryNotification": false,
+      "renewalReminder": true,
+      "daysBeforeRenewal": [30, 7]
+    },
+    "anomalyDetection": {
+      "billingAnomalyDetection": true,
+      "unusualSpendPattern": true,
+      "chargeSpikes": true
+    },
+    "notificationChannels": [
+      "Email",
+      "SMS",
+      "Push Notification",
+      "In-App"
+    ]
+  },
+  "historicalMonthlyData": {
+    "months": ["Sep", "Oct", "Nov", "Dec", "Jan", "Feb"],
+    "totals": [5890, 6234, 5720, 7450, 6980, 7842],
+    "plans": [3795, 3795, 3795, 3795, 3795, 3795],
+    "usage": [312, 425, 198, 580, 467, 498],
+    "addOns": [547, 512, 398, 647, 620, 647],
+    "roaming": [245, 480, 320, 1245, 980, 1245],
+    "taxes": [991, 1022, 1009, 1183, 1118, 1258]
+  },
+  "billBreakdownByConnection": [
+    {
+      "phoneNumber": "9876543210",
+      "employeeName": "Rajesh Kumar",
+      "department": "Engineering",
+      "riskScore": 8,
+      "voiceAndSmsUsage": {
+        "callsUsed": 1842,
+        "callsLimit": 3000,
+        "callUtilization": "61%",
+        "smsUsed": 234,
+        "smsLimit": 1000,
+        "smsUtilization": "23%"
+      },
+      "lineItems": [
+        {"description": "Max 999 (9876543210)", "category": "Plan Rental", "amount": "999.00"},
+        {"description": "Overage 1.5GB @50/GB", "category": "Data Overage", "amount": "75.00"},
+        {"description": "Night data surcharge", "category": "Data Overage", "amount": "41.00"},
+        {"description": "Singapore (3 days)", "category": "Intl Roaming", "amount": "599.00"},
+        {"description": "ISD Calls - 45 min", "category": "Intl Roaming", "amount": "197.00"},
+        {"description": "Data roaming 0.8GB", "category": "Data Overage", "amount": "229.00"},
+        {"description": "Amazon Prime", "category": "Add-Ons", "amount": "149.00"},
+        {"description": "Samsung Galaxy S25 EMI 8/24", "category": "Device EMI", "amount": "399.00"},
+        {"description": "GST allocation", "category": "Taxes", "amount": "447.00"}
+      ],
+      "subtotal": "2929.00"
+    },
+    {
+      "phoneNumber": "9876543211",
+      "employeeName": "Priya Sharma",
+      "department": "Sales",
+      "riskScore": 15,
+      "voiceAndSmsUsage": {
+        "callsUsed": 987,
+        "callsLimit": 3000,
+        "callUtilization": "33%",
+        "smsUsed": 156,
+        "smsLimit": 500,
+        "smsUtilization": "31%"
+      },
+      "lineItems": [
+        {"description": "Plus 799 (9876543211)", "category": "Plan Rental", "amount": "799.00"},
+        {"description": "Overage 1.6GB @50/GB", "category": "Data Overage", "amount": "80.00"},
+        {"description": "Night data surcharge", "category": "Data Overage", "amount": "28.00"},
+        {"description": "Dubai (2 days)", "category": "Intl Roaming", "amount": "449.00"},
+        {"description": "Data roaming 0.5GB", "category": "Data Overage", "amount": "50.00"},
+        {"description": "Security Suite", "category": "Add-Ons", "amount": "156.00"},
+        {"description": "GST allocation", "category": "Taxes", "amount": "280.50"}
+      ],
+      "subtotal": "1841.50"
+    },
+    {
+      "phoneNumber": "9876543212",
+      "employeeName": "Amit Patel",
+      "department": "Engineering",
+      "riskScore": 72,
+      "voiceAndSmsUsage": {
+        "callsUsed": 2345,
+        "callsLimit": 3000,
+        "callUtilization": "78%",
+        "smsUsed": 89,
+        "smsLimit": 500,
+        "smsUtilization": "18%"
+      },
+      "lineItems": [
+        {"description": "Plus 799 (9876543212)", "category": "Plan Rental", "amount": "799.00"},
+        {"description": "Overage 2.0GB @50/GB", "category": "Data Overage", "amount": "100.00"},
+        {"description": "Night data surcharge", "category": "Data Overage", "amount": "48.00"},
+        {"description": "ISD Calls - 30 min", "category": "Intl Roaming", "amount": "198.00"},
+        {"description": "Data roaming 1.0GB", "category": "Data Overage", "amount": "50.00"},
+        {"description": "Cloud Lite", "category": "Add-Ons", "amount": "15.00"},
+        {"description": "GST allocation", "category": "Taxes", "amount": "219.00"}
+      ],
+      "subtotal": "1429.00"
+    },
+    {
+      "phoneNumber": "9876543213",
+      "employeeName": "Sneha Reddy",
+      "department": "Operations",
+      "riskScore": 5,
+      "voiceAndSmsUsage": {
+        "callsUsed": 456,
+        "callsLimit": 3000,
+        "callUtilization": "15%",
+        "smsUsed": 67,
+        "smsLimit": 300,
+        "smsUtilization": "22%"
+      },
+      "lineItems": [
+        {"description": "Basic 599 (9876543213)", "category": "Plan Rental", "amount": "599.00"},
+        {"description": "Insurance", "category": "Add-Ons", "amount": "6.00"},
+        {"description": "GST allocation", "category": "Taxes", "amount": "108.50"}
+      ],
+      "subtotal": "713.50"
+    },
+    {
+      "phoneNumber": "9876543214",
+      "employeeName": "Vikram Singh",
+      "department": "Sales",
+      "riskScore": 45,
+      "voiceAndSmsUsage": {
+        "callsUsed": 1123,
+        "callsLimit": 3000,
+        "callUtilization": "37%",
+        "smsUsed": 198,
+        "smsLimit": 300,
+        "smsUtilization": "66%"
+      },
+      "lineItems": [
+        {"description": "Basic 599 (9876543214)", "category": "Plan Rental", "amount": "599.00"},
+        {"description": "Overage 1.0GB @50/GB", "category": "Data Overage", "amount": "50.00"},
+        {"description": "Night data surcharge", "category": "Data Overage", "amount": "48.00"},
+        {"description": "VPN + Tools", "category": "Add-Ons", "amount": "91.00"},
+        {"description": "GST allocation", "category": "Taxes", "amount": "141.50"}
+      ],
+      "subtotal": "929.50"
+    }
+  ],
+  "voiceAndSmsMetrics": {
+    "summary": {
+      "totalCallsUsed": 6753,
+      "totalCallsLimit": 15000,
+      "callsUtilization": "45%",
+      "totalSmsUsed": 744,
+      "totalSmsLimit": 2600,
+      "smsUtilization": "29%"
+    },
+    "connectionBreakdown": [
+      {
+        "phoneNumber": "9876543210",
+        "employeeName": "Rajesh Kumar",
+        "calls": {
+          "used": 1842,
+          "limit": 3000,
+          "utilization": 61,
+          "status": "HIGH_USAGE"
+        },
+        "sms": {
+          "used": 234,
+          "limit": 1000,
+          "utilization": 23,
+          "status": "NORMAL"
+        }
+      },
+      {
+        "phoneNumber": "9876543211",
+        "employeeName": "Priya Sharma",
+        "calls": {
+          "used": 987,
+          "limit": 3000,
+          "utilization": 33,
+          "status": "NORMAL"
+        },
+        "sms": {
+          "used": 156,
+          "limit": 500,
+          "utilization": 31,
+          "status": "NORMAL"
+        }
+      },
+      {
+        "phoneNumber": "9876543212",
+        "employeeName": "Amit Patel",
+        "calls": {
+          "used": 2345,
+          "limit": 3000,
+          "utilization": 78,
+          "status": "VERY_HIGH_USAGE"
+        },
+        "sms": {
+          "used": 89,
+          "limit": 500,
+          "utilization": 18,
+          "status": "NORMAL"
+        }
+      },
+      {
+        "phoneNumber": "9876543213",
+        "employeeName": "Sneha Reddy",
+        "calls": {
+          "used": 456,
+          "limit": 3000,
+          "utilization": 15,
+          "status": "LOW_USAGE"
+        },
+        "sms": {
+          "used": 67,
+          "limit": 300,
+          "utilization": 22,
+          "status": "NORMAL"
+        }
+      },
+      {
+        "phoneNumber": "9876543214",
+        "employeeName": "Vikram Singh",
+        "calls": {
+          "used": 1123,
+          "limit": 3000,
+          "utilization": 37,
+          "status": "NORMAL"
+        },
+        "sms": {
+          "used": 198,
+          "limit": 300,
+          "utilization": 66,
+          "status": "HIGH_USAGE"
+        }
+      }
+    ],
+    "alerts": [
+      {
+        "type": "HIGH_VOICE_USAGE",
+        "connection": "9876543212",
+        "employee": "Amit Patel",
+        "message": "Call usage at 78% of limit (2,345/3,000 minutes)",
+        "severity": "HIGH",
+        "recommendation": "Consider higher plan or add-on pack"
+      },
+      {
+        "type": "HIGH_SMS_USAGE",
+        "connection": "9876543214",
+        "employee": "Vikram Singh",
+        "message": "SMS usage at 66% of limit (198/300 messages)",
+        "severity": "MEDIUM",
+        "recommendation": "Monitor SMS activity"
+      }
+    ]
+  },
+  "billInsights": {
+    "anomalies": [
+      {
+        "type": "alert",
+        "title": "Roaming Charges Spike",
+        "description": "International roaming charges are Rs.1420 this month (~42% increase). Lines: 9876543210, 9876543211. Consider an annual IR pack to save ~40%.",
+        "impact": "+Rs.1420",
+        "severity": "HIGH",
+        "dataPoint": "Rajesh: Singapore, Priya: Dubai"
+      },
+      {
+        "type": "warning",
+        "title": "Data Overage Trending Up",
+        "description": "Data overage charges increased by Rs.299 compared to January. 3 lines exceeding 60% of limit.",
+        "impact": "+Rs.299",
+        "severity": "MEDIUM",
+        "recommendation": "Consider data optimization or upgrades"
+      }
+    ],
+    "quickInsights": [
+      {
+        "category": "Data Usage",
+        "insight": "67% average data utilization. Amit and Vikram at 96-98%.",
+        "action": "Plan upgrade recommended for high users"
+      },
+      {
+        "category": "Cost Optimization",
+        "insight": "Duplicate subscription detected: Amazon Prime on Rajesh's line.",
+        "action": "Recommend family sharing to save Rs.149/month"
+      },
+      {
+        "category": "Payment Pattern",
+        "insight": "Amit Patel (9876543212) consistently delayed. 5 late payments in 12 months.",
+        "action": "High collection priority - outstanding Rs.2,847"
+      }
+    ],
+    "chargeExplanations": [
+      {
+        "charge": "International Roaming",
+        "breakdown": "Rajesh: Singapore trip (Rs.599) + ISD calls (Rs.197). Priya: Dubai conference (Rs.449).",
+        "totalAmount": "1420.00",
+        "recommendation": "IR packs could reduce by 40%"
+      },
+      {
+        "charge": "Data Overage",
+        "breakdown": "Amit: 2.0GB overage, Vikram: 1.0GB overage, Rajesh: 1.5GB total.",
+        "totalAmount": "599.00",
+        "recommendation": "Higher plans needed for Amit & Vikram"
+      }
+    ]
+  },
+  "scenarioModeling": {
+    "scenarios": [
+      {
+        "name": "Current",
+        "description": "Current billing with all existing plans",
+        "billAmount": "7250.00",
+        "monthlyAmount": "7250.00"
+      },
+      {
+        "name": "If +20% Data",
+        "description": "Increase data usage by 20% due to increased team activities",
+        "billAmount": "8338.00",
+        "monthlyAmount": "8338.00",
+        "impact": "+Rs.1,088"
+      },
+      {
+        "name": "If Roaming Trip",
+        "description": "Add international roaming for 2 employees for month-long travel",
+        "billAmount": "9788.00",
+        "monthlyAmount": "9788.00",
+        "impact": "+Rs.2,538"
+      },
+      {
+        "name": "Optimized",
+        "description": "Upgrade Amit to Max plan, activate IR pack",
+        "billAmount": "6163.00",
+        "monthlyAmount": "6163.00",
+        "impact": "-Rs.1,087 (monthly savings)",
+        "recommendation": "RECOMMENDED"
+      }
+    ]
+  },
+  "forecastData": {
+    "historicalMonths": ["Sep", "Oct", "Nov", "Dec", "Jan", "Feb"],
+    "actualBills": [5890, 6234, 5720, 7450, 6980, 7842],
+    "forecastMonths": ["Mar*", "Apr*", "May*"],
+    "forecastBills": [7250, 7100, 6900],
+    "upperConfidence": [7800, 7700, 7500],
+    "lowerConfidence": [6700, 6500, 6300],
+    "trendAnalysis": "Stable with seasonal variation",
+    "forecastAccuracy": "92%"
+  },
+  "disputeTrackerData": {
+    "summary": {
+      "activeDisputes": 2,
+      "pendingDisputes": 1,
+      "resolvedDisputes": 3,
+      "slaCompliance": "98%"
+    },
+    "disputes": [
+      {
+        "ticketId": "DSP-DIS-001",
+        "category": "Billing Error",
+        "amount": "197.00",
+        "connection": "9876543210",
+        "employee": "Rajesh Kumar",
+        "description": "Wi-Fi calling charges disputed",
+        "status": "Active",
+        "createdDate": "2026-03-01",
+        "daysOpen": 19,
+        "priority": "HIGH",
+        "lastUpdate": "2026-03-20",
+        "expectedResolution": "2026-03-28"
+      },
+      {
+        "ticketId": "DSP-DIS-002",
+        "category": "Data Overage",
+        "amount": "75.00",
+        "connection": "9876543212",
+        "employee": "Amit Patel",
+        "description": "Expected data limit not clearly communicated",
+        "status": "Active",
+        "createdDate": "2026-03-15",
+        "daysOpen": 5,
+        "priority": "MEDIUM",
+        "lastUpdate": "2026-03-20"
+      },
+      {
+        "ticketId": "DSP-DIS-003",
+        "category": "Roaming",
+        "amount": "599.00",
+        "connection": "9876543210",
+        "employee": "Rajesh Kumar",
+        "description": "Singapore roaming charges higher than quoted",
+        "status": "Pending",
+        "createdDate": "2026-03-18",
+        "daysOpen": 2,
+        "priority": "HIGH",
+        "investigation": "Comparing rates with competitors"
+      },
+      {
+        "ticketId": "DSP-DIS-REV-001",
+        "category": "VAS/Subscription",
+        "amount": "149.00",
+        "connection": "9876543210",
+        "employee": "Rajesh Kumar",
+        "description": "Duplicate Amazon Prime charge",
+        "status": "Resolved",
+        "createdDate": "2026-02-01",
+        "resolvedDate": "2026-02-15",
+        "resolution": "Refund of Rs.149 processed, duplicate subscription removed",
+        "resolutionTime": "14 days"
+      },
+      {
+        "ticketId": "DSP-DIS-REV-002",
+        "category": "Night Surcharge",
+        "amount": "89.00",
+        "connection": "9876543213",
+        "employee": "Sneha Reddy",
+        "description": "Night surcharge applied incorrectly",
+        "status": "Resolved",
+        "createdDate": "2026-01-15",
+        "resolvedDate": "2026-01-25",
+        "resolution": "Rs.89 credited back",
+        "resolutionTime": "10 days"
+      },
+      {
+        "ticketId": "DSP-DIS-REV-003",
+        "category": "Billing Error",
+        "amount": "120.00",
+        "connection": "9876543211",
+        "employee": "Priya Sharma",
+        "description": "Tax calculation error on data overage",
+        "status": "Resolved",
+        "createdDate": "2026-12-01",
+        "resolvedDate": "2026-12-15",
+        "resolution": "Tax adjustment of Rs.120 credited",
+        "resolutionTime": "14 days"
+      }
+    ]
+  },
+  "dailyUsageData": {
+    "data": [3.2, 3.5, 3.1, 3.8, 4.2, 4.5, 5.1, 5.3, 4.9, 4.7, 4.2, 4.0, 3.9, 3.6, 4.4, 4.8, 5.2, 5.5, 5.8, 5.9, 6.1, 6.3, 6.5, 6.7, 6.4, 6.2, 5.9, 5.7],
+    "dates": ["1st", "2nd", "3rd", "4th", "5th", "6th", "7th", "8th", "9th", "10th", "11th", "12th", "13th", "14th", "15th", "16th", "17th", "18th", "19th", "20th", "21st", "22nd", "23rd", "24th", "25th", "26th", "27th", "28th"],
+    "month": "February 2026",
+    "averageDaily": "4.8 GB",
+    "peakDay": "24th (6.7 GB)",
+    "lowestDay": "1st (3.1 GB)"
+  },
+  "comparisonTrendsData": {
+    "thisMonth": {
+      "amount": 7842,
+      "change": "+12.4%",
+      "previousMonth": 6980,
+      "breakdown": {
+        "planRental": {"current": 3795, "previous": 3396, "change": "+399"},
+        "dataOverage": {"current": 1198, "previous": 1000, "change": "+198 (+19.8%)"},
+        "roaming": {"current": 1420, "previous": 1000, "change": "+420 (+42%)"},
+        "vasServices": {"current": 744, "previous": 500, "change": "+244 (+48.8%)"},
+        "taxes": {"current": 1084, "previous": 1084, "change": "0%"}
+      }
+    },
+    "lastMonth": {
+      "amount": 6980,
+      "change": "-6.3%",
+      "previousMonth": 7450,
+      "breakdown": {
+        "roaming": {"current": 1000, "previous": 1650, "decrease": "-39.4%"},
+        "vasServices": {"current": 500, "previous": 680, "decrease": "-26.5%"},
+        "dataOverage": {"current": 1000, "previous": 850, "increase": "+17.6%"}
+      }
+    }
+  },
+  "homePageSummary": {
+    "totalAmount": "7842.50",
+    "connectionCount": 5,
+    "statusDistribution": {
+      "active": 5,
+      "inactive": 0,
+      "suspended": 0
+    },
+    "connectionsTable": [
+      {"number": "9876543210", "employee": "Rajesh Kumar", "plan": "Max 999", "department": "Engineering", "monthlySpend": "2929.00"},
+      {"number": "9876543211", "employee": "Priya Sharma", "plan": "Plus 799", "department": "Sales", "monthlySpend": "1841.50"},
+      {"number": "9876543212", "employee": "Amit Patel", "plan": "Plus 799", "department": "Engineering", "monthlySpend": "1429.00"},
+      {"number": "9876543213", "employee": "Sneha Reddy", "plan": "Basic 599", "department": "Operations", "monthlySpend": "713.50"},
+      {"number": "9876543214", "employee": "Vikram Singh", "plan": "Basic 599", "department": "Sales", "monthlySpend": "929.50"}
+    ]
+  },
+  "paymentsTabData": {
+    "paymentHistory": [
+      {"date": "01/02/2026", "amount": "7500.00", "method": "UPI", "status": "Success", "txnId": "VBP76079487"},
+      {"date": "01/01/2026", "amount": "6980.00", "method": "NetBanking", "status": "Success", "txnId": "VBP75234589"},
+      {"date": "01/12/2025", "amount": "5720.00", "method": "E-NACH", "status": "Success", "txnId": "VBP74123456"},
+      {"date": "01/11/2025", "amount": "7450.00", "method": "UPI", "status": "Success", "txnId": "VBP73891234"},
+      {"date": "06/10/2025", "amount": "6234.00", "method": "Card", "status": "Delayed", "delaydaysAfterDue": 5}
+    ],
+    "upcomingPayments": [
+      {"dueDate": "2026-04-15", "amount": "8100.00", "status": "Due in 26 days"},
+      {"dueDate": "2026-05-15", "amount": "7850.00", "status": "Due in 56 days"}
+    ]
+  },
+  "plansTabData": {
+    "currentPlans": [
+      {"connection": "9876543210", "employee": "Rajesh Kumar", "plan": "Max 999", "cost": "999.00", "status": "Active"},
+      {"connection": "9876543211", "employee": "Priya Sharma", "plan": "Plus 799", "cost": "799.00", "status": "Active"},
+      {"connection": "9876543212", "employee": "Amit Patel", "plan": "Plus 799", "cost": "799.00", "status": "Active", "upgrade": true},
+      {"connection": "9876543213", "employee": "Sneha Reddy", "plan": "Basic 599", "cost": "599.00", "status": "Active"},
+      {"connection": "9876543214", "employee": "Vikram Singh", "plan": "Basic 599", "cost": "599.00", "status": "Active", "downgrade": true}
+    ],
+    "switchHistory": [
+      {"date": "2026-02-01", "connection": "9876543210", "from": "Plus 799", "to": "Max 999", "reason": "High data usage"},
+      {"date": "2025-12-15", "connection": "9876543213", "from": "Basic 599", "to": "Basic 599", "reason": "Plan renewal", "savingsApplied": "Rs.100"}
+    ]
+  },
+  "adhocReportsData": {
+    "reportsGenerated": 23,
+    "invoicesAvailable": 12,
+    "usageReports": 6,
+    "departmentReports": 3,
+    "customReports": 2,
+    "invoiceHistory": [
+      {"month": "Feb 2026", "invoice": "INV-2026-03-0847", "amount": "7842.50", "status": "Unpaid", "lineItems": 5},
+      {"month": "Jan 2026", "invoice": "INV-2026-02-0753", "amount": "6980.00", "status": "Paid", "lineItems": 5},
+      {"month": "Dec 2025", "invoice": "INV-2026-01-0682", "amount": "5720.00", "status": "Paid", "lineItems": 5},
+      {"month": "Nov 2025", "invoice": "INV-2025-12-0598", "amount": "7450.00", "status": "Paid", "lineItems": 5},
+      {"month": "Oct 2025", "invoice": "INV-2025-11-0521", "amount": "6234.00", "status": "Paid", "lineItems": 5},
+      {"month": "Sep 2025", "invoice": "INV-2025-10-0447", "amount": "5890.00", "status": "Paid", "lineItems": 5}
+    ],
+    "departmentSpend": [
+      {"department": "Engineering", "lines": 2, "spend": "3654.00", "budget": "4000.00", "utilization": "91%", "trend": "increasing"},
+      {"department": "Sales", "lines": 2, "spend": "3290.00", "budget": "3500.00", "utilization": "94%", "trend": "stable"},
+      {"department": "Operations", "lines": 1, "spend": "898.50", "budget": "1500.00", "utilization": "60%", "trend": "decreasing"}
+    ]
+  },
+  "documentMetadata": {
+    "documentType": "Enterprise Billing Statement",
+    "dataVersion": "1.0",
+    "generatedAt": "2026-03-20T10:30:00Z",
+    "validFrom": "2026-02-01",
+    "validUntil": "2026-03-15",
+    "lastUpdated": "2026-03-20"
+  }
+}

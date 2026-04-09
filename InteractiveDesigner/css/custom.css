@@ -1,0 +1,68 @@
+.gjs-one-bg {
+  background-color: #472e90;
+}
+.gjs-one-color {
+  color: #472e90;
+}
+.gjs-one-color-h:hover {
+  color: #472e90;
+}
+.gjs-two-bg {
+  background-color: #b9a5a6;
+}
+.gjs-two-color {
+  color: #fff;
+}
+.gjs-two-color-h:hover {
+  color: #fff;
+}
+.gjs-three-bg {
+  background-color: #804f7b;
+}
+.gjs-three-color {
+  color: #804f7b;
+}
+.gjs-three-color-h:hover {
+  color: #804f7b;
+}
+.gjs-four-bg {
+  background-color: #d97aa6;
+}
+.gjs-four-color {
+  color: #d97aa6;
+}
+.gjs-four-color-h:hover {
+  color: #d97aa6;
+} 
+.new-table-form label{
+  min-width: 160px;
+  display: inline-block;
+}
+.new-table-form .form-control{
+  margin-bottom: 10px;
+}
+table tbody td{
+  min-width: 30px;
+}
+.table thead th{
+  border-bottom: 1px solid #dee2e6 !important;
+}
+.add-new-font-url{
+  width: 100%;
+  min-height: 65px;
+} 
+
+
+.slide {
+  position: relative;
+  padding: 10px;
+  margin: 10px 0;
+  background-color: #f4f4f4;
+  border: 1px solid #ccc;
+}
+.slide-content {
+  font-size: 18px;
+  color: #333;
+  text-align: center;
+  line-height: normal;
+}

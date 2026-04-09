@@ -1,0 +1,1080 @@
+{
+	"CUSTOMER": {
+		"CUSTOMER_NAME": "John Khenedy",
+		"ADDRESS": "Flat No 2345, ABCD Apartment,",
+		"ADDRESS2": "SECTOR 45, ADBNHFSLJIGHEVDBS",
+		"ADDRESS3": "Banglore",
+		"ADDRESS4": "Karnataka",
+		"ADDRESS5": "597234",
+		"STATEMENT_PERIOD": "MONTHLY",
+		"STATEMENT_DATE": "01 NOV 2023 TO 30 NOV 2023",
+		"CUSTOMER_ID": "2208204403",
+		"EMAIL_ID": "John.Khenedy@ujjivanbank.com",
+		"CONTACTNO": "9989378234",
+		"BRANCH_ID": "KORAMANGALA",
+		"BRANCH_ADDRESS": "NO. 428, ",
+		"BRANCH_ADDRESS2": "GROUND FLOOR, 6TH BLOCK KORAMANGALA,",
+		"BRANCH_ADDRESS3": " 80 FEET ROAD ",
+		"BRANCH_ADDRESS4": "BANGA K0001 ",
+		"BRANCH_ADDRESS5": "560095",
+		"JOINT_ACCOUNT_HOLDER": "Jacob Khenedy",
+		"PAN_ID": "AIYXXXX26J",
+		"NOMINEE": "",
+		"MODEOFOPERATION": "SELF",
+		"VIDEO_URL": "https://www.youtube.com/embed/Amqeawx_Rwg?si=ep0VBnsNIO9s1GyH",
+		"ACCOUNT_SUMMARY": [
+			{
+				"ACCOUNT": "Savings",
+				"CURRENCY": "INR",
+				"AMOUNT": "1,87,410.41",
+				"TYPE": "Last Transaction"
+			},
+			{
+				"ACCOUNT": "Deposits",
+				"CURRENCY": "INR",
+				"AMOUNT": "2,39,777.00",
+				"TYPE": "Balance"
+			},
+			{
+				"ACCOUNT": "STAFF HOME LOAN",
+				"CURRENCY": "INR",
+				"AMOUNT": "15,71,064.00",
+				"TYPE": "Balance"
+			},
+			{
+				"ACCOUNT": "STAFF HOME LOAN",
+				"CURRENCY": "INR",
+				"AMOUNT": "15,71,064.00",
+				"TYPE": "Balance"
+			},
+			{
+				"ACCOUNT": "STAFF NEW  TWO WHEELER LOAN",
+				"CURRENCY": "INR",
+				"AMOUNT": "15,71,064.00",
+				"TYPE": "Balance"
+			},
+			{
+				"ACCOUNT": "STAFF HOME TOP UP LOAN",
+				"CURRENCY": "INR",
+				"AMOUNT": "4,04,242.00",
+				"TYPE": "Balance"
+			},
+			{
+				"ACCOUNT": "STAFF HOME TOP UP LOAN",
+				"CURRENCY": "INR",
+				"AMOUNT": "4,04,242.00",
+				"TYPE": "Balance"
+			},
+			{
+				"ACCOUNT": "MSME SEMI FORMAL LAP BANKING PROGRAMME",
+				"CURRENCY": "INR",
+				"AMOUNT": "15,71,064.00",
+				"TYPE": "Balance"
+			}
+		],
+		"CHART_SUMMARY": [
+			{
+				"name": "Savings",
+				"y": 187410.41,
+				"color": "#ECAE3B"
+			},
+			{
+				"name": "Deposits",
+				"y": 239777.0,
+				"color": "#076162"
+			},
+			{
+				"name": "Loans",
+				"y": 8259562.0,
+				"color": "#f78f35"
+			}
+		],
+		"SASUMMARY": {
+			"SA": [
+				{
+					"ACCOUNTNO": "Consolidated",
+					"ACCOUNTNO_MASK": "Consolidated",
+					"CURRENCY": "INR",
+					"SA_MOP": "",
+					"AVGBALANCE": "1,67,120.74",
+					"OPENINGBALANCE": "93,909.92",
+					"TOTALRECEIPTS": "8,21,544.00",
+					"TOTALSPENDS": "7,54,710.00",
+					"CLOSINGBALANCE": "1,87,410.41",
+					"ITEMIZEDDATASA": [],
+					"ANALYTICS_CHART": [
+						{
+							"name": "Total Receipts",
+							"y": 821544.0,
+							"color": "#ECAE3B"
+						},
+						{
+							"name": "Total Spend",
+							"y": 754710.0,
+							"color": "#076162"
+						}
+					],
+					"DEBITCARD":[]
+				},
+				{
+					"ACCOUNTNO": "2208811005005257",
+					"ACCOUNTNO_MASK": "XXXXXXXXXXX05257",
+					"CURRENCY": "INR",
+					"SA_MOP": "Jointly",
+					"AVGBALANCE": "1,58,816.61",
+					"OPENINGBALANCE": "23,676.23",
+					"TOTALRECEIPTS": "7,69,839.00",
+					"TOTALSPENDS": "6,98,398.00",
+					"CLOSINGBALANCE": "1,80,641.24",
+					"ITEMIZEDDATASA": [
+						{
+							"DATE_FORMAT": "2023-11-01",
+							"DATE": "01-NOV-23",
+							"TYPE": "SBA",
+							"DESC": "OPENING BALANCE",
+							"ICON": "MISC",
+							"CREDIT": "0.00",
+							"DEBIT": "0.00",
+							"BALANCE": "23,676.23"
+						},
+						{
+							"DATE_FORMAT": "2023-11-01",
+							"DATE": "01-NOV-23",
+							"TYPE": "SBA",
+							"DESC": "UPI/DR/367153942500/PYTM/paytm",
+							"ICON": "UPI",
+							"CREDIT": "0.00",
+							"DEBIT": "1,112.00",
+							"BALANCE": "22,564.23"
+						},
+						{
+							"DATE_FORMAT": "2023-11-02",
+							"DATE": "02-NOV-23",
+							"TYPE": "SBA",
+							"DESC": "UPI/DR/330641522937/YESB/APOLL",
+							"ICON": "UPI",
+							"CREDIT": "0.00",
+							"DEBIT": "1,052.95",
+							"BALANCE": "21,511.28"
+						},
+						{
+							"DATE_FORMAT": "2023-11-03",
+							"DATE": "03-NOV-23",
+							"TYPE": "SBA",
+							"DESC": "NEFT Cr EMPLOYEE PROVIDENT FUN",
+							"ICON": "NEFT",
+							"CREDIT": "50,000.00",
+							"DEBIT": "0.00",
+							"BALANCE": "71,511.28"
+						},
+						{
+							"DATE_FORMAT": "2023-11-04",
+							"DATE": "04-NOV-23",
+							"TYPE": "SBA",
+							"DESC": "UPI/DR/330833751849/ICIC/98861",
+							"ICON": "UPI",
+							"CREDIT": "0.00",
+							"DEBIT": "1,727.00",
+							"BALANCE": "69,784.28"
+						},
+						{
+							"DATE_FORMAT": "2023-11-04",
+							"DATE": "04-NOV-23",
+							"TYPE": "SBA",
+							"DESC": "UPI/CR/330825364707/ICIC/98861",
+							"ICON": "UPI",
+							"CREDIT": "1,727.00",
+							"DEBIT": "0.00",
+							"BALANCE": "71,511.28"
+						},
+						{
+							"DATE_FORMAT": "2023-11-05",
+							"DATE": "05-NOV-23",
+							"TYPE": "SBA",
+							"DESC": "UPI/DR/330919968839/ICIC/DMart",
+							"ICON": "UPI",
+							"CREDIT": "0.00",
+							"DEBIT": "3,685.22",
+							"BALANCE": "67,826.06"
+						},
+						{
+							"DATE_FORMAT": "2023-11-05",
+							"DATE": "05-NOV-23",
+							"TYPE": "SBA",
+							"DESC": "UPI/DR/330924641426/SBIN/95350",
+							"ICON": "UPI",
+							"CREDIT": "0.00",
+							"DEBIT": "11,000.00",
+							"BALANCE": "56,826.06"
+						},
+						{
+							"DATE_FORMAT": "2023-11-05",
+							"DATE": "05-NOV-23",
+							"TYPE": "SBA",
+							"DESC": "UPI/DR/330966507603/PYTM/add-m",
+							"ICON": "UPI",
+							"CREDIT": "0.00",
+							"DEBIT": "167.00",
+							"BALANCE": "56,659.06"
+						},
+						{
+							"DATE_FORMAT": "2023-11-06",
+							"DATE": "06-NOV-23",
+							"TYPE": "SBA",
+							"DESC": "UPI/DR/331050804800/PYTM/paytm",
+							"ICON": "UPI",
+							"CREDIT": "0.00",
+							"DEBIT": "2,229.00",
+							"BALANCE": "54,430.06"
+						},
+						{
+							"DATE_FORMAT": "2023-11-06",
+							"DATE": "06-NOV-23",
+							"TYPE": "SBA",
+							"DESC": "UPI/DR/331043839669/YESB/MYNTR",
+							"ICON": "UPI",
+							"CREDIT": "0.00",
+							"DEBIT": "2,935.00",
+							"BALANCE": "51,495.06"
+						},
+						{
+							"DATE_FORMAT": "2023-11-08",
+							"DATE": "08-NOV-23",
+							"TYPE": "SBA",
+							"DESC": "UPI/DR/331226570703/UTIB/amazo",
+							"ICON": "UPI",
+							"CREDIT": "0.00",
+							"DEBIT": "1,699.00",
+							"BALANCE": "49,796.06"
+						},
+						{
+							"DATE_FORMAT": "2023-11-08",
+							"DATE": "08-NOV-23",
+							"TYPE": "SBA",
+							"DESC": "UPI/DR/331247113609/YESB/BHARA",
+							"ICON": "UPI",
+							"CREDIT": "0.00",
+							"DEBIT": "1,500.00",
+							"BALANCE": "48,296.06"
+						},
+						{
+							"DATE_FORMAT": "2023-11-09",
+							"DATE": "09-NOV-23",
+							"TYPE": "SBA",
+							"DESC": "UPI/DR/367935054652/YESB/Q1642",
+							"ICON": "UPI",
+							"CREDIT": "0.00",
+							"DEBIT": "200.00",
+							"BALANCE": "48,096.06"
+						},
+						{
+							"DATE_FORMAT": "2023-11-21",
+							"DATE": "21-NOV-23",
+							"TYPE": "SBA",
+							"DESC": "UPI/DR/369152092720/PYTM/paytm",
+							"ICON": "UPI",
+							"CREDIT": "0.00",
+							"DEBIT": "4,336.86",
+							"BALANCE": "53,484.23"
+						},
+						{
+							"DATE_FORMAT": "2023-11-24",
+							"DATE": "24-NOV-23",
+							"TYPE": "SBA",
+							"DESC": "UPI/DR/369432923888/YESB/Q1705",
+							"ICON": "UPI",
+							"CREDIT": "0.00",
+							"DEBIT": "130.00",
+							"BALANCE": "53,354.23"
+						},
+						{
+							"DATE_FORMAT": "2023-11-25",
+							"DATE": "25-NOV-23",
+							"TYPE": "SBA",
+							"DESC": "UPI/CR/332971289949/HDFC/99001",
+							"ICON": "UPI",
+							"CREDIT": "1,699.00",
+							"DEBIT": "0.00",
+							"BALANCE": "1,27,928.23"
+						},
+						{
+							"DATE_FORMAT": "2023-11-26",
+							"DATE": "26-NOV-23",
+							"TYPE": "SBA",
+							"DESC": "UPI/DR/333030975123/YESB/Q0032",
+							"ICON": "UPI",
+							"CREDIT": "0.00",
+							"DEBIT": "50.00",
+							"BALANCE": "1,24,194.23"
+						},
+						{
+							"DATE_FORMAT": "2023-11-27",
+							"DATE": "27-NOV-23",
+							"TYPE": "SBA",
+							"DESC": "UPI/DR/333135297159/YESB/Q9085",
+							"ICON": "UPI",
+							"CREDIT": "0.00",
+							"DEBIT": "100.00",
+							"BALANCE": "1,24,094.23"
+						},
+						{
+							"DATE_FORMAT": "2023-11-28",
+							"DATE": "28-NOV-23",
+							"TYPE": "SBA",
+							"DESC": "UPI/DR/333226937808/FDRL/BHARA",
+							"ICON": "UPI",
+							"CREDIT": "0.00",
+							"DEBIT": "35.00",
+							"BALANCE": "1,24,059.23"
+						},
+						{
+							"DATE_FORMAT": "2023-11-29",
+							"DATE": "29-NOV-23",
+							"TYPE": "SBA",
+							"DESC": "UPI/DR/369935708490/CNRB/hrama",
+							"ICON": "UPI",
+							"CREDIT": "0.00",
+							"DEBIT": "50.00",
+							"BALANCE": "1,24,009.23"
+						}
+					],
+					"ANALYTICS_CHART": [
+						{
+							"name": "Total Receipts",
+							"y": 769839.0,
+							"color": "#ECAE3B"
+						},
+						{
+							"name": "Total Spend",
+							"y": 698398.0,
+							"color": "#076162"
+						}
+					],
+					"DEBITCARD":[
+						{
+							"CARDTYPE" : "RuPay Platinum",
+							"BIN_NUMBER": "817553",
+							"CARD_NUMBER" : "1234  56XX  XXXX  0987",
+							"CARD_NAME": "JOHN KHENEDY",
+							"DEBITTRANSACTION":[
+								{
+									"TRANSACTION_ACTIVITY" :"ATM WDL ATM CASH 41142 BANGALORE",
+									"TRANSACTION_AMOUNT": "3,100.0"
+								},
+								{
+									"TRANSACTION_ACTIVITY" :"ATM WDL ATM CASH 80 FEET ROAD",
+									"TRANSACTION_AMOUNT": "4,800.0"
+								},
+								{
+									"TRANSACTION_ACTIVITY" :"ATM WDL ATM CASH 41142 BANGALORE",
+									"TRANSACTION_AMOUNT": "6,000.0"
+								},
+								{
+									"TRANSACTION_ACTIVITY" :"ATM WDL ATM CASH 80 FEET ROAD",
+									"TRANSACTION_AMOUNT": "9,000.0"
+								},
+								{
+									"TRANSACTION_ACTIVITY" :"ATM WDL ATM CASH 41142 BANGALORE",
+									"TRANSACTION_AMOUNT": "7,000.0"
+								}
+							]
+						},
+						{
+							"CARDTYPE" : "RuPay Select",
+							"BIN_NUMBER": "817554",
+							"CARD_NUMBER" : "1234  56XX  XXXX  6453",
+							"CARD_NAME": "JOHN KHENEDY",
+							"DEBITTRANSACTION":[
+								{
+									"TRANSACTION_ACTIVITY" :"ATM WDL ATM CASH 41142 BANGALORE",
+									"TRANSACTION_AMOUNT": "3,100.0"
+								},
+								{
+									"TRANSACTION_ACTIVITY" :"ATM WDL ATM CASH 80 FEET ROAD",
+									"TRANSACTION_AMOUNT": "4,800.0"
+								},
+								{
+									"TRANSACTION_ACTIVITY" :"ATM WDL ATM CASH 41142 BANGALORE",
+									"TRANSACTION_AMOUNT": "6,000.0"
+								},
+								{
+									"TRANSACTION_ACTIVITY" :"ATM WDL ATM CASH 80 FEET ROAD",
+									"TRANSACTION_AMOUNT": "9,000.0"
+								},
+								{
+									"TRANSACTION_ACTIVITY" :"ATM WDL ATM CASH 41142 BANGALORE",
+									"TRANSACTION_AMOUNT": "7,000.0"
+								}
+							]
+
+						}
+					]
+				},
+				{
+					"ACCOUNTNO": "2208811001005257",
+					"ACCOUNTNO_MASK": "XXXXXXXXXXX05257",
+					"CURRENCY": "INR",
+					"SA_MOP": "Jointly",
+					"AVGBALANCE": "0.00",
+					"OPENINGBALANCE": "11.22",
+					"TOTALRECEIPTS": "0.00",
+					"TOTALSPENDS": "0.00",
+					"CLOSINGBALANCE": "0.00",
+					"ITEMIZEDDATASA": [
+						{
+							"DATE_FORMAT": "2023-11-01",
+							"DATE": "01-NOV-23",
+							"TYPE": "SBA",
+							"DESC": "OPENING BALANCE",
+							"ICON": "MISC",
+							"CREDIT": "0.00",
+							"DEBIT": "0.00",
+							"BALANCE": "23,676.23"
+						},
+						{
+							"DATE_FORMAT": "2023-11-01",
+							"DATE": "01-NOV-23",
+							"TYPE": "SBA",
+							"DESC": "UPI/DR/367153942500/PYTM/paytm",
+							"ICON": "UPI",
+							"CREDIT": "0.00",
+							"DEBIT": "1,112.00",
+							"BALANCE": "22,564.23"
+						},
+						{
+							"DATE_FORMAT": "2023-11-02",
+							"DATE": "02-NOV-23",
+							"TYPE": "SBA",
+							"DESC": "UPI/DR/330641522937/YESB/APOLL",
+							"ICON": "UPI",
+							"CREDIT": "0.00",
+							"DEBIT": "1,052.95",
+							"BALANCE": "21,511.28"
+						},
+						{
+							"DATE_FORMAT": "2023-11-03",
+							"DATE": "03-NOV-23",
+							"TYPE": "SBA",
+							"DESC": "NEFT Cr EMPLOYEE PROVIDENT FUN",
+							"ICON": "NEFT",
+							"CREDIT": "50,000.00",
+							"DEBIT": "0.00",
+							"BALANCE": "71,511.28"
+						},
+						{
+							"DATE_FORMAT": "2023-11-04",
+							"DATE": "04-NOV-23",
+							"TYPE": "SBA",
+							"DESC": "UPI/DR/330833751849/ICIC/98861",
+							"ICON": "UPI",
+							"CREDIT": "0.00",
+							"DEBIT": "1,727.00",
+							"BALANCE": "69,784.28"
+						},
+						{
+							"DATE_FORMAT": "2023-11-04",
+							"DATE": "04-NOV-23",
+							"TYPE": "SBA",
+							"DESC": "UPI/CR/330825364707/ICIC/98861",
+							"ICON": "UPI",
+							"CREDIT": "1,727.00",
+							"DEBIT": "0.00",
+							"BALANCE": "71,511.28"
+						},
+						{
+							"DATE_FORMAT": "2023-11-05",
+							"DATE": "05-NOV-23",
+							"TYPE": "SBA",
+							"DESC": "UPI/DR/330919968839/ICIC/DMart",
+							"ICON": "UPI",
+							"CREDIT": "0.00",
+							"DEBIT": "3,685.22",
+							"BALANCE": "67,826.06"
+						},
+						{
+							"DATE_FORMAT": "2023-11-05",
+							"DATE": "05-NOV-23",
+							"TYPE": "SBA",
+							"DESC": "UPI/DR/330924641426/SBIN/95350",
+							"ICON": "UPI",
+							"CREDIT": "0.00",
+							"DEBIT": "11,000.00",
+							"BALANCE": "56,826.06"
+						},
+						{
+							"DATE_FORMAT": "2023-11-05",
+							"DATE": "05-NOV-23",
+							"TYPE": "SBA",
+							"DESC": "UPI/DR/330966507603/PYTM/add-m",
+							"ICON": "UPI",
+							"CREDIT": "0.00",
+							"DEBIT": "167.00",
+							"BALANCE": "56,659.06"
+						},
+						{
+							"DATE_FORMAT": "2023-11-06",
+							"DATE": "06-NOV-23",
+							"TYPE": "SBA",
+							"DESC": "UPI/DR/331050804800/PYTM/paytm",
+							"ICON": "UPI",
+							"CREDIT": "0.00",
+							"DEBIT": "2,229.00",
+							"BALANCE": "54,430.06"
+						},
+						{
+							"DATE_FORMAT": "2023-11-06",
+							"DATE": "06-NOV-23",
+							"TYPE": "SBA",
+							"DESC": "UPI/DR/331043839669/YESB/MYNTR",
+							"ICON": "UPI",
+							"CREDIT": "0.00",
+							"DEBIT": "2,935.00",
+							"BALANCE": "51,495.06"
+						},
+						{
+							"DATE_FORMAT": "2023-11-08",
+							"DATE": "08-NOV-23",
+							"TYPE": "SBA",
+							"DESC": "UPI/DR/331226570703/UTIB/amazo",
+							"ICON": "UPI",
+							"CREDIT": "0.00",
+							"DEBIT": "1,699.00",
+							"BALANCE": "49,796.06"
+						},
+						{
+							"DATE_FORMAT": "2023-11-08",
+							"DATE": "08-NOV-23",
+							"TYPE": "SBA",
+							"DESC": "UPI/DR/331247113609/YESB/BHARA",
+							"ICON": "UPI",
+							"CREDIT": "0.00",
+							"DEBIT": "1,500.00",
+							"BALANCE": "48,296.06"
+						},
+						{
+							"DATE_FORMAT": "2023-11-09",
+							"DATE": "09-NOV-23",
+							"TYPE": "SBA",
+							"DESC": "UPI/DR/367935054652/YESB/Q1642",
+							"ICON": "UPI",
+							"CREDIT": "0.00",
+							"DEBIT": "200.00",
+							"BALANCE": "48,096.06"
+						},
+						{
+							"DATE_FORMAT": "2023-11-21",
+							"DATE": "21-NOV-23",
+							"TYPE": "SBA",
+							"DESC": "UPI/DR/369152092720/PYTM/paytm",
+							"ICON": "UPI",
+							"CREDIT": "0.00",
+							"DEBIT": "4,336.86",
+							"BALANCE": "53,484.23"
+						},
+						{
+							"DATE_FORMAT": "2023-11-24",
+							"DATE": "24-NOV-23",
+							"TYPE": "SBA",
+							"DESC": "UPI/DR/369432923888/YESB/Q1705",
+							"ICON": "UPI",
+							"CREDIT": "0.00",
+							"DEBIT": "130.00",
+							"BALANCE": "53,354.23"
+						},
+						{
+							"DATE_FORMAT": "2023-11-25",
+							"DATE": "25-NOV-23",
+							"TYPE": "SBA",
+							"DESC": "UPI/CR/332971289949/HDFC/99001",
+							"ICON": "UPI",
+							"CREDIT": "1,699.00",
+							"DEBIT": "0.00",
+							"BALANCE": "1,27,928.23"
+						},
+						{
+							"DATE_FORMAT": "2023-11-26",
+							"DATE": "26-NOV-23",
+							"TYPE": "SBA",
+							"DESC": "UPI/DR/333030975123/YESB/Q0032",
+							"ICON": "UPI",
+							"CREDIT": "0.00",
+							"DEBIT": "50.00",
+							"BALANCE": "1,24,194.23"
+						},
+						{
+							"DATE_FORMAT": "2023-11-27",
+							"DATE": "27-NOV-23",
+							"TYPE": "SBA",
+							"DESC": "UPI/DR/333135297159/YESB/Q9085",
+							"ICON": "UPI",
+							"CREDIT": "0.00",
+							"DEBIT": "100.00",
+							"BALANCE": "1,24,094.23"
+						},
+						{
+							"DATE_FORMAT": "2023-11-28",
+							"DATE": "28-NOV-23",
+							"TYPE": "SBA",
+							"DESC": "UPI/DR/333226937808/FDRL/BHARA",
+							"ICON": "UPI",
+							"CREDIT": "0.00",
+							"DEBIT": "35.00",
+							"BALANCE": "1,24,059.23"
+						},
+						{
+							"DATE_FORMAT": "2023-11-29",
+							"DATE": "29-NOV-23",
+							"TYPE": "SBA",
+							"DESC": "UPI/DR/369935708490/CNRB/hrama",
+							"ICON": "UPI",
+							"CREDIT": "0.00",
+							"DEBIT": "50.00",
+							"BALANCE": "1,24,009.23"
+						}
+					],
+					"ANALYTICS_CHART": [],
+					"DEBITCARD":[
+						{
+							"CARDTYPE" : "RuPay Select",
+							"BIN_NUMBER": "817554",
+							"CARD_NUMBER" : "1234  56XX  XXXX  6453",
+							"CARD_NAME": "JOHN KHENEDY",
+							"DEBITTRANSACTION":[
+								{
+									"TRANSACTION_ACTIVITY" :"ATM WDL ATM CASH 41142 BANGALORE",
+									"TRANSACTION_AMOUNT": "3,100.0"
+								},
+								{
+									"TRANSACTION_ACTIVITY" :"ATM WDL ATM CASH 80 FEET ROAD",
+									"TRANSACTION_AMOUNT": "4,800.0"
+								},
+								{
+									"TRANSACTION_ACTIVITY" :"ATM WDL ATM CASH 41142 BANGALORE",
+									"TRANSACTION_AMOUNT": "6,000.0"
+								},
+								{
+									"TRANSACTION_ACTIVITY" :"ATM WDL ATM CASH 80 FEET ROAD",
+									"TRANSACTION_AMOUNT": "9,000.0"
+								},
+								{
+									"TRANSACTION_ACTIVITY" :"ATM WDL ATM CASH 41142 BANGALORE",
+									"TRANSACTION_AMOUNT": "7,000.0"
+								}
+							]
+
+						}
+					]
+				},
+				{
+					"ACCOUNTNO": "2208811006005257",
+					"ACCOUNTNO_MASK": "XXXXXXXXXXX05257",
+					"CURRENCY": "INR",
+					"SA_MOP": "Jointly",
+					"AVGBALANCE": "8,304.13",
+					"OPENINGBALANCE": "70,222.47",
+					"TOTALRECEIPTS": "51,705.00",
+					"TOTALSPENDS": "56,312.00",
+					"CLOSINGBALANCE": "6,769.17",
+					"ITEMIZEDDATASA": [
+						{
+							"DATE_FORMAT": "2023-11-01",
+							"DATE": "01-NOV-23",
+							"TYPE": "SBA",
+							"DESC": "OPENING BALANCE",
+							"ICON": "MISC",
+							"CREDIT": "0.00",
+							"DEBIT": "0.00",
+							"BALANCE": "23,676.23"
+						},
+						{
+							"DATE_FORMAT": "2023-11-01",
+							"DATE": "01-NOV-23",
+							"TYPE": "SBA",
+							"DESC": "UPI/DR/367153942500/PYTM/paytm",
+							"ICON": "UPI",
+							"CREDIT": "0.00",
+							"DEBIT": "1,112.00",
+							"BALANCE": "22,564.23"
+						},
+						{
+							"DATE_FORMAT": "2023-11-02",
+							"DATE": "02-NOV-23",
+							"TYPE": "SBA",
+							"DESC": "UPI/DR/330641522937/YESB/APOLL",
+							"ICON": "UPI",
+							"CREDIT": "0.00",
+							"DEBIT": "1,052.95",
+							"BALANCE": "21,511.28"
+						},
+						{
+							"DATE_FORMAT": "2023-11-03",
+							"DATE": "03-NOV-23",
+							"TYPE": "SBA",
+							"DESC": "NEFT Cr EMPLOYEE PROVIDENT FUN",
+							"ICON": "NEFT",
+							"CREDIT": "50,000.00",
+							"DEBIT": "0.00",
+							"BALANCE": "71,511.28"
+						},
+						{
+							"DATE_FORMAT": "2023-11-04",
+							"DATE": "04-NOV-23",
+							"TYPE": "SBA",
+							"DESC": "UPI/DR/330833751849/ICIC/98861",
+							"ICON": "UPI",
+							"CREDIT": "0.00",
+							"DEBIT": "1,727.00",
+							"BALANCE": "69,784.28"
+						},
+						{
+							"DATE_FORMAT": "2023-11-04",
+							"DATE": "04-NOV-23",
+							"TYPE": "SBA",
+							"DESC": "UPI/CR/330825364707/ICIC/98861",
+							"ICON": "UPI",
+							"CREDIT": "1,727.00",
+							"DEBIT": "0.00",
+							"BALANCE": "71,511.28"
+						},
+						{
+							"DATE_FORMAT": "2023-11-05",
+							"DATE": "05-NOV-23",
+							"TYPE": "SBA",
+							"DESC": "UPI/DR/330919968839/ICIC/DMart",
+							"ICON": "UPI",
+							"CREDIT": "0.00",
+							"DEBIT": "3,685.22",
+							"BALANCE": "67,826.06"
+						},
+						{
+							"DATE_FORMAT": "2023-11-05",
+							"DATE": "05-NOV-23",
+							"TYPE": "SBA",
+							"DESC": "UPI/DR/330924641426/SBIN/95350",
+							"ICON": "UPI",
+							"CREDIT": "0.00",
+							"DEBIT": "11,000.00",
+							"BALANCE": "56,826.06"
+						},
+						{
+							"DATE_FORMAT": "2023-11-05",
+							"DATE": "05-NOV-23",
+							"TYPE": "SBA",
+							"DESC": "UPI/DR/330966507603/PYTM/add-m",
+							"ICON": "UPI",
+							"CREDIT": "0.00",
+							"DEBIT": "167.00",
+							"BALANCE": "56,659.06"
+						},
+						{
+							"DATE_FORMAT": "2023-11-06",
+							"DATE": "06-NOV-23",
+							"TYPE": "SBA",
+							"DESC": "UPI/DR/331050804800/PYTM/paytm",
+							"ICON": "UPI",
+							"CREDIT": "0.00",
+							"DEBIT": "2,229.00",
+							"BALANCE": "54,430.06"
+						},
+						{
+							"DATE_FORMAT": "2023-11-06",
+							"DATE": "06-NOV-23",
+							"TYPE": "SBA",
+							"DESC": "UPI/DR/331043839669/YESB/MYNTR",
+							"ICON": "UPI",
+							"CREDIT": "0.00",
+							"DEBIT": "2,935.00",
+							"BALANCE": "51,495.06"
+						},
+						{
+							"DATE_FORMAT": "2023-11-08",
+							"DATE": "08-NOV-23",
+							"TYPE": "SBA",
+							"DESC": "UPI/DR/331226570703/UTIB/amazo",
+							"ICON": "UPI",
+							"CREDIT": "0.00",
+							"DEBIT": "1,699.00",
+							"BALANCE": "49,796.06"
+						},
+						{
+							"DATE_FORMAT": "2023-11-08",
+							"DATE": "08-NOV-23",
+							"TYPE": "SBA",
+							"DESC": "UPI/DR/331247113609/YESB/BHARA",
+							"ICON": "UPI",
+							"CREDIT": "0.00",
+							"DEBIT": "1,500.00",
+							"BALANCE": "48,296.06"
+						},
+						{
+							"DATE_FORMAT": "2023-11-09",
+							"DATE": "09-NOV-23",
+							"TYPE": "SBA",
+							"DESC": "UPI/DR/367935054652/YESB/Q1642",
+							"ICON": "UPI",
+							"CREDIT": "0.00",
+							"DEBIT": "200.00",
+							"BALANCE": "48,096.06"
+						},
+						{
+							"DATE_FORMAT": "2023-11-21",
+							"DATE": "21-NOV-23",
+							"TYPE": "SBA",
+							"DESC": "UPI/DR/369152092720/PYTM/paytm",
+							"ICON": "UPI",
+							"CREDIT": "0.00",
+							"DEBIT": "4,336.86",
+							"BALANCE": "53,484.23"
+						},
+						{
+							"DATE_FORMAT": "2023-11-24",
+							"DATE": "24-NOV-23",
+							"TYPE": "SBA",
+							"DESC": "UPI/DR/369432923888/YESB/Q1705",
+							"ICON": "UPI",
+							"CREDIT": "0.00",
+							"DEBIT": "130.00",
+							"BALANCE": "53,354.23"
+						},
+						{
+							"DATE_FORMAT": "2023-11-25",
+							"DATE": "25-NOV-23",
+							"TYPE": "SBA",
+							"DESC": "UPI/CR/332971289949/HDFC/99001",
+							"ICON": "UPI",
+							"CREDIT": "1,699.00",
+							"DEBIT": "0.00",
+							"BALANCE": "1,27,928.23"
+						},
+						{
+							"DATE_FORMAT": "2023-11-26",
+							"DATE": "26-NOV-23",
+							"TYPE": "SBA",
+							"DESC": "UPI/DR/333030975123/YESB/Q0032",
+							"ICON": "UPI",
+							"CREDIT": "0.00",
+							"DEBIT": "50.00",
+							"BALANCE": "1,24,194.23"
+						},
+						{
+							"DATE_FORMAT": "2023-11-27",
+							"DATE": "27-NOV-23",
+							"TYPE": "SBA",
+							"DESC": "UPI/DR/333135297159/YESB/Q9085",
+							"ICON": "UPI",
+							"CREDIT": "0.00",
+							"DEBIT": "100.00",
+							"BALANCE": "1,24,094.23"
+						},
+						{
+							"DATE_FORMAT": "2023-11-28",
+							"DATE": "28-NOV-23",
+							"TYPE": "SBA",
+							"DESC": "UPI/DR/333226937808/FDRL/BHARA",
+							"ICON": "UPI",
+							"CREDIT": "0.00",
+							"DEBIT": "35.00",
+							"BALANCE": "1,24,059.23"
+						},
+						{
+							"DATE_FORMAT": "2023-11-29",
+							"DATE": "29-NOV-23",
+							"TYPE": "SBA",
+							"DESC": "UPI/DR/369935708490/CNRB/hrama",
+							"ICON": "UPI",
+							"CREDIT": "0.00",
+							"DEBIT": "50.00",
+							"BALANCE": "1,24,009.23"
+						}
+					],
+					"ANALYTICS_CHART": [
+						{
+							"name": "Total Receipts",
+							"y": 51705.0,
+							"color": "#ECAE3B"
+						},
+						{
+							"name": "Total Spend",
+							"y": 56312.0,
+							"color": "#076162"
+						}
+					],
+					"DEBITCARD":[
+						{
+							"CARDTYPE" : "RuPay Classic",
+							"BIN_NUMBER": "817554",
+							"CARD_NUMBER" : "1234  56XX  XXXX  1234",
+							"CARD_NAME": "JOHN KHENEDY",
+							"DEBITTRANSACTION":[
+								{
+									"TRANSACTION_ACTIVITY" :"ATM WDL ATM CASH 41142 BANGALORE",
+									"TRANSACTION_AMOUNT": "3,100.0"
+								},
+								{
+									"TRANSACTION_ACTIVITY" :"ATM WDL ATM CASH 80 FEET ROAD",
+									"TRANSACTION_AMOUNT": "4,800.0"
+								},
+								{
+									"TRANSACTION_ACTIVITY" :"ATM WDL ATM CASH 41142 BANGALORE",
+									"TRANSACTION_AMOUNT": "6,000.0"
+								},
+								{
+									"TRANSACTION_ACTIVITY" :"ATM WDL ATM CASH 80 FEET ROAD",
+									"TRANSACTION_AMOUNT": "9,000.0"
+								},
+								{
+									"TRANSACTION_ACTIVITY" :"ATM WDL ATM CASH 41142 BANGALORE",
+									"TRANSACTION_AMOUNT": "7,000.0"
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		"FIXEDDEPOSIT_SUMMARY": [
+			{
+				"FD_ACCOUNTNO": "22XXXXXXXXXX6786",
+				"FD_ACCOUNTNO_MASK": "XXXXXXXXXXXX6786",
+				"FD_OPENINGDATE": "09-SEP-23",
+				"SCHEMEDESC": "CUMULATIVE - QUARTERLY",
+				"FD_DEPOSITPERIODMONTHS": "19",
+				"FD_YIELD": "97.86",
+				"FD_DEPOSITDATE": "09-SEP-23",
+				"FD_DEPOSITAMOUNT": "1,00,000.00",
+				"FD_MATURITYAMOUNT": "1,14,179.00",
+				"FD_MATURITYDATE": "22-MAR-25",
+				"FD_INTERESTRATE": "8.75",
+				"FD_INTERESTPAYOUT": "QUARTERLY",
+				"FD_MONTH_END_BALANCE": "1,02,182.00"
+			},
+			{
+				"FD_ACCOUNTNO": "22XXXXXXXXXX7344",
+				"FD_ACCOUNTNO_MASK": "XXXXXXXXXXXX7344",
+				"FD_OPENINGDATE": "05-DEC-23",
+				"SCHEMEDESC": "CUMULATIVE - QUARTERLY",
+				"FD_DEPOSITPERIODMONTHS": "12",
+				"FD_YIELD": "100.00",
+				"FD_DEPOSITDATE": "05-DEC-23",
+				"FD_DEPOSITAMOUNT": "1,00,000.00",
+				"FD_MATURITYAMOUNT": "1,09,043.00",
+				"FD_MATURITYDATE": "05-DEC-24",
+				"FD_INTERESTRATE": "8.75",
+				"FD_INTERESTPAYOUT": "QUARTERLY",
+				"FD_MONTH_END_BALANCE": "1,00,000.00"
+			},
+			{
+				"FD_ACCOUNTNO": "22XXXXXXXXXX7586",
+				"FD_ACCOUNTNO_MASK": "XXXXXXXXXXXX7586",
+				"FD_OPENINGDATE": "08-JAN-24",
+				"SCHEMEDESC": "CUMULATIVE - QUARTERLY",
+				"FD_DEPOSITPERIODMONTHS": "12",
+				"FD_YIELD": "100.00",
+				"FD_DEPOSITDATE": "08-JAN-24",
+				"FD_DEPOSITAMOUNT": "50,000.00",
+				"FD_MATURITYAMOUNT": "54,521.00",
+				"FD_MATURITYDATE": "08-JAN-25",
+				"FD_INTERESTRATE": "8.75",
+				"FD_INTERESTPAYOUT": "QUARTERLY",
+				"FD_MONTH_END_BALANCE": "50,000.00"
+			},
+			{
+				"FD_ACCOUNTNO": "22XXXXXXXXXX7518",
+				"FD_ACCOUNTNO_MASK": "XXXXXXXXXXXX7518",
+				"FD_OPENINGDATE": "01-JAN-24",
+				"SCHEMEDESC": "CUMULATIVE - QUARTERLY",
+				"FD_DEPOSITPERIODMONTHS": "12",
+				"FD_YIELD": "100.00",
+				"FD_DEPOSITDATE": "01-JAN-24",
+				"FD_DEPOSITAMOUNT": "4,00,000.00",
+				"FD_MATURITYAMOUNT": "4,36,165.00",
+				"FD_MATURITYDATE": "01-JAN-25",
+				"FD_INTERESTRATE": "8.75",
+				"FD_INTERESTPAYOUT": "QUARTERLY",
+				"FD_MONTH_END_BALANCE": "4,00,000.00"
+			}
+		],
+		"RECURRINGDEPOSIT_SUMMARY": [],
+		"LOAN_SUMMARY": {
+			"LOANS": [
+				[
+					{
+						"LOANACCOUNTNO": "11XXXXXXXXXX0046",
+						"LOANACCOUNTNO_MASK": "XXXXXXXXXXXX0046",
+						"DISBURSEMENTDATE": "30-OCT-23",
+						"LIMIT_UTILIZED": "2,00,000.00",
+						"LIMIT_SANCTION_DATE": "30-OCT-23",
+						"LIMIT_EXP_DATE": "30-OCT-28",
+						"DISBURSED_AMOUNT": "2,00,000.00",
+						"LOANTENURE": "60",
+						"EMI_AMOUNT": "0.00",
+						"NO_OF_EMI_PAID": "6",
+						"NEXT_DUE_DATE": "01-JUN-24",
+						"REPAYMENT_MODE": "E",
+						"OSP": "1,86,837.00",
+						"SCHEME_TYPE": "LAA",
+						"PRODUCT": "ALLIED ACTIVITIES TL",
+						"BUSINESS_VERTICALS": "IL",
+						"OD_AMOUNT": "0.00"
+					}
+				]
+			]
+		},
+		"OVERDRAFT_SUMMARY": [
+			{
+				"OD_DETAILS": "KISAN PRAGATI CARD",
+				"OD_ACCOUNTNO": "11XXXXXXXXXX0009",
+				"OD_ACCOUNTNO_MASK": "XXXXXXXXXXXX0009",
+				"OD_ACCOUNT_OPENING_DATE": "30-OCT-23",
+				"OD_SANCTION_LIMIT": "5,00,000.00",
+				"OD_LIMIT_EXP_DATE": "29-OCT-24",
+				"OD_OUTSTANDINGBALANCE": "-4,95,358.00",
+				"OD_AVAILABLE_UTILISATION_BALANCE": "4,642.00",
+				"OD_TOTALCREDITS": "0.00",
+				"OD_TOTALDEBITS": "33,204.00",
+				"OD_INTERESTCHARGEDLASTMONTH": "33,204.00",
+				"OD_TOTAL_INTEREST_DUE_AMOUNT": "33,204.00"
+			}
+		],
+		"BANNERS_LINKS": {
+			"GLANCE_BANNER1_IMG": "./img/SS_Comprehensive%20Banking%20Solutions.jpg",
+			"GLANCE_BANNER1_LINK": "https://www.ujjivansfb.in",
+			"GLANCE_BANNER2_IMG": "./img/SS_Maxima%201.jpg",
+			"GLANCE_BANNER2_LINK": "https://www.ujjivansfb.in/personal/maxima-savings-account",
+			"SA_BANNER1_IMG": "./img/SS_Debit%20Card%20Offers.jpg",
+			"SA_BANNER1_LINK": "https://www.rupay.co.in/rupay-festive-carnival",
+			"SA_BANNER2_IMG": "",
+			"SA_BANNER2_LINK": "",
+			"DEPOSIT_BANNER_IMG": "./img/SS_DFD.jpg",
+			"DEPOSIT_BANNER_LINK": "https://www.ujjivansfb.in/personal/personal-deposits/digital-fixed-deposits",
+			"LOAN_BANNER1_IMG": "./img/SS_Home%20Loan.jpg",
+			"LOAN_BANNER1_LINK": "https://www.ujjivansfb.in/personal/borrow/personal-home-loans",
+			"LOAN_BANNER2_IMG": "./img/SS_VL.jpg",
+			"LOAN_BANNER2_LINK": "https://www.ujjivansfb.in/personal/borrow/personal-vehicle-loans",
+			"LOAN_CALCULATOR_BANNER1_IMG": "",
+			"LOAN_CALCULATOR_BANNER1_LINK": "",
+			"LOAN_CALCULATOR_BANNER2_IMG": "",
+			"LOAN_CALCULATOR_BANNER2_LINK": "",
+			"PROD_OFFER_LEFT_BANNER1_IMG": "./img/SS_Mobile%20Banking.jpg",
+			"PROD_OFFER_LEFT_BANNER1_LINK": "https://www.ujjivansfb.in/personal/borrow/personal-home-loans",
+			"PROD_OFFER_LEFT_BANNER2_IMG": "./img/SS_IB.jpg",
+			"PROD_OFFER_LEFT_BANNER2_LINK": "https://www.ujjivansfb.in/personal/personal-net-banking",
+			"PROD_OFFER_RIGHT_BANNER1_IMG": "./img/SS_Maxima%202.jpg",
+			"PROD_OFFER_RIGHT_BANNER1_LINK": "https://www.ujjivansfb.in/personal/maxima-savings-account",
+			"PROD_OFFER_RIGHT_BANNER2_IMG": "./img/SS_Garima.jpg",
+			"PROD_OFFER_RIGHT_BANNER2_LINK": "https://www.ujjivansfb.in/personal/savings-account/garima-savings-account"
+		},
+		"SOCIAL_ICONS_LINKS": {
+			"FB_IMG": "./img/fb1.png",
+			"FB_LINK": "https://www.facebook.com/UjjivanSmallFinanceBankLimited",
+			"TW_IMG": "./img/twitter1.png",
+			"TW_LINK": "https://twitter.com/UjjivanBank",
+			"YTB_IMG": "./img/yt1.png",
+			"YTB_LINK": "https://www.youtube.com/channel/UCGxpBfqmy-rO5LfOX6dkDMQ",
+			"INSTA_IMG": "./img/insta1.png",
+			"INSTA_LINK": "https://www.instagram.com/ujjivanbank",
+			"LIN_IMG": "./img/linkedin1.png",
+			"LIN_LINK": "https://www.linkedin.com/company/ujjivanbank"
+		}
+	}
+}

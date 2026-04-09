@@ -1,0 +1,290 @@
+{  
+   "english":{
+     "audioLink":"https://www.w3schools.com/html/horse.mp3", 
+     "content":"Content goes here content goes here", 
+     "content1":["Test Data content1", "Test Data content2"],
+     "videoLink":"",
+      "SA":[
+         {
+            "name":"Vishal",
+            "surname":"Mishra",
+            "address":"Mumbai"
+         },
+         {
+            "name":"Sumit",
+            "surname":"Mishra",
+            "address":"Mumbai"
+         }
+      ],    
+       "transactions1Tbl":{ 
+          "heading": {
+          "Date":"Date",
+          "Type":"Type",
+          "Narration":"Narration",
+          "FCY_GBP":"FCY(GBP)",
+          "CurrentRate":"Currentt Rate",
+          "LCY_GBP":"LCY(GBP)" 
+       },
+       "caption": "Caption Text Here",
+       "footer": {
+        "Date":"12-08-2023",
+        "Type":"CR",
+        "Narration":"NEFT",
+        "FCY_GBP":"88",
+        "CurrentRate":"12",
+        "LCY_GBP":"33" 
+     },
+       "data":[
+          {
+             "Date":"3-APR-15",
+             "Type":"CR",
+             "Narration":"NET TXN: IIFL IIFL3557346",
+             "FCY_GBP":"1666.67",
+             "CurrentRate":"1.062",
+             "LCY_GBP":"1"
+          },
+          {
+             "Date":"1-APR-15",
+             "Type":"CR",
+             "Narration":"NEFT: 10204083732 -THE GREATER Bank of New York",
+             "FCY_GBP":"0.38",
+             "CurrentRate":"1.473",
+             "LCY_GBP":"2"
+          },
+          {
+             "Date":"1-APR-15",
+             "Type":"DR",
+             "Narration":"NET TXN: FUNDS TRF FROM 000490700001137",
+             "FCY_GBP":"-5017.56",
+             "CurrentRate":"1.560",
+             "LCY_GBP":"3"
+          },
+          {
+             "Date":"31-MAR-15",
+             "Type":"CR",
+             "Narration":"NET TXN: IIFL IIFL3557346",
+             "FCY_GBP":"7.37",
+             "CurrentRate":"1.062",
+             "LCY_GBP":"4"
+          },
+          {
+             "Date":"31-MAR-15",
+             "Type":"DR",
+             "Narration":"NET TXN: IIFL IIFL3557346",
+             "FCY_GBP":"-1151.91",
+             "CurrentRate":"1.062",
+             "LCY_GBP":"5"
+          },
+          {
+             "Date":"31-MAR-15",
+             "Type":"DR",
+             "Narration":"LD1508340249",
+             "FCY_GBP":"7.37",
+             "CurrentRate":"1.062",
+             "LCY_GBP":"6"
+          },
+          {
+             "Date":"24-MAR-15",
+             "Type":"DR",
+             "Narration":"PCI:0500010827:1000156311283:ODEL PLC-459050",
+             "FCY_GBP":"-30.64",
+             "CurrentRate":"1.473",
+             "LCY_GBP":"7"
+          },
+          {
+             "Date":"24-MAR-15",
+             "Type":"CR",
+             "Narration":"PCD:0500010827:9993715077628:COTTON COLL-085222",
+             "FCY_GBP":"1696.21",
+             "CurrentRate":"1.473",
+             "LCY_GBP":"8"
+          },
+          {
+             "Date":"24-MAR-15",
+             "Type":"DR",
+             "Narration":"NET TXN: RENT FOR FEB 2013",
+             "FCY_GBP":"-296.46",
+             "CurrentRate":"1.473",
+             "LCY_GBP":"9"
+          },
+          {
+             "Date":"1-APR-15",
+             "Type":"CR",
+             "Narration":"NEFT: 10204083732 -THE GREATER Bank of New York",
+             "FCY_GBP":"0.38",
+             "CurrentRate":"1.473",
+             "LCY_GBP":"10"
+          },
+          {
+             "Date":"1-APR-15",
+             "Type":"DR",
+             "Narration":"NET TXN: FUNDS TRF FROM 000490700001137",
+             "FCY_GBP":"-5017.56",
+             "CurrentRate":"1.560",
+             "LCY_GBP":"11"
+          },
+          {
+             "Date":"31-MAR-15",
+             "Type":"CR",
+             "Narration":"NET TXN: IIFL IIFL3557346",
+             "FCY_GBP":"7.37",
+             "CurrentRate":"1.062",
+             "LCY_GBP":"12"
+          },
+          {
+             "Date":"31-MAR-15",
+             "Type":"DR",
+             "Narration":"NET TXN: IIFL IIFL3557346",
+             "FCY_GBP":"-1151.91",
+             "CurrentRate":"1.062",
+             "LCY_GBP":"13"
+          },
+          {
+             "Date":"31-MAR-15",
+             "Type":"DR",
+             "Narration":"LD1508340249",
+             "FCY_GBP":"7.37",
+             "CurrentRate":"1.062",
+             "LCY_GBP":"14"
+          },
+          {
+             "Date":"24-MAR-15",
+             "Type":"DR",
+             "Narration":"PCI:0500010827:1000156311283:ODEL PLC-459050",
+             "FCY_GBP":"-30.64",
+             "CurrentRate":"1.473",
+             "LCY_GBP":"15"
+          },
+          {
+             "Date":"24-MAR-15",
+             "Type":"CR",
+             "Narration":"PCD:0500010827:9993715077628:COTTON COLL-085222",
+             "FCY_GBP":"1696.21",
+             "CurrentRate":"1.473",
+             "LCY_GBP":"16"
+          },
+          {
+             "Date":"24-MAR-15",
+             "Type":"DR",
+             "Narration":"NET TXN: RENT FOR FEB 2013",
+             "FCY_GBP":"-296.46",
+             "CurrentRate":"1.473",
+             "LCY_GBP":"17"
+          },
+          {
+             "Date":"1-APR-15",
+             "Type":"CR",
+             "Narration":"NEFT: 10204083732 -THE GREATER Bank of New York",
+             "FCY_GBP":"0.38",
+             "CurrentRate":"1.473",
+             "LCY_GBP":"18"
+          },
+          {
+             "Date":"1-APR-15",
+             "Type":"DR",
+             "Narration":"NET TXN: FUNDS TRF FROM 000490700001137",
+             "FCY_GBP":"-5017.56",
+             "CurrentRate":"1.560",
+             "LCY_GBP":"19"
+          },
+          {
+             "Date":"31-MAR-15",
+             "Type":"CR",
+             "Narration":"NET TXN: IIFL IIFL3557346",
+             "FCY_GBP":"7.37",
+             "CurrentRate":"1.062",
+             "LCY_GBP":"20"
+          },
+          {
+             "Date":"31-MAR-15",
+             "Type":"DR",
+             "Narration":"NET TXN: IIFL IIFL3557346",
+             "FCY_GBP":"-1151.91",
+             "CurrentRate":"1.062",
+             "LCY_GBP":"21"
+          },
+          {
+             "Date":"31-MAR-15",
+             "Type":"DR",
+             "Narration":"LD1508340249",
+             "FCY_GBP":"7.37",
+             "CurrentRate":"1.062",
+             "LCY_GBP":"22"
+          },
+          {
+             "Date":"24-MAR-15",
+             "Type":"DR",
+             "Narration":"PCI:0500010827:1000156311283:ODEL PLC-459050",
+             "FCY_GBP":"-30.64",
+             "CurrentRate":"1.473",
+             "LCY_GBP":"23"
+          },
+          {
+             "Date":"24-MAR-15",
+             "Type":"CR",
+             "Narration":"PCD:0500010827:9993715077628:COTTON COLL-085222",
+             "FCY_GBP":"1696.21",
+             "CurrentRate":"1.473",
+             "LCY_GBP":"24"
+          },
+          {
+             "Date":"24-MAR-15",
+             "Type":"DR",
+             "Narration":"NET TXN: RENT FOR FEB 2013",
+             "FCY_GBP":"-296.46",
+             "CurrentRate":"1.473",
+             "LCY_GBP":"25"
+          }
+       ]
+       },
+      "mobile":"8989898989"   
+   },
+   "hindi":{
+      "SA":[
+         {
+            "name":"विशाल",
+            "surname":"मिश्रा",
+            "address":"मुंबई"
+         },
+         {
+            "name":"सुमित",
+            "surname":"मिश्रा",
+            "address":"मुंबई"
+         }
+      ],    
+      "table1":{
+         "heading":{
+            "AccountType":"Account Type",
+            "Currency":"Currency",
+            "Amount":"Amount"
+         }, 
+         "data":[
+            {
+            "AccountType":"Savings",
+            "Currency":"GBP",
+            "Amount":"1771.42"
+         }, {
+         "AccountType":"Current",
+         "Currency":"GBP",
+         "Amount":"7830.00"
+      }, {
+         "AccountType":"Recurring Deposite",
+         "Currency":"GBP",
+         "Amount":"22730.11"
+      }, {
+         "AccountType":"Term Deposite",
+         "Currency":"GBP",
+         "Amount":"103000.00"
+      }, {
+         "AccountType":"Wealth",
+         "Currency":"GBP",
+         "Amount":"10000.00"
+      }, {
+         "AccountType":"Credit Card",
+         "Currency":"GBP",
+         "Amount":"98.00"
+      }] 
+      } ,
+      "mobile":"8989898989"
+   }
+}
