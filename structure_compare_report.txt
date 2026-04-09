@@ -6,26 +6,33 @@ PAGES_OUTPUT=15 -> page-1,page-2,page-3,page-4,page-5,page-6,page-7,page-8,page-
 TAG_BALANCE_METRICS
 divOpenTemplate=1122
 divCloseTemplate=1120
-divOpenOutput=1121
-divCloseOutput=1119
+divOpenOutput=1048
+divCloseOutput=1046
 tableOpenTemplate=13
 tableCloseTemplate=13
 tableOpenOutput=13
 tableCloseOutput=13
 trOpenTemplate=83
 trCloseTemplate=83
-trOpenOutput=83
-trCloseOutput=83
+trOpenOutput=87
+trCloseOutput=87
 tdOpenTemplate=381
 tdCloseTemplate=381
-tdOpenOutput=381
-tdCloseOutput=381
+tdOpenOutput=398
+tdCloseOutput=398
 
-MISSING_IDS_IN_OUTPUT=2
+MISSING_IDS_IN_OUTPUT=8
   - rec-amit
   - rec-sneha
+  - spend-detail-popup
+  - spend-jan-popup
+  - spend-dec-popup
+  - spend-nov-popup
+  - spend-oct-popup
+  - '+popupId+'
 
-EXTRA_IDS_IN_OUTPUT=1
+EXTRA_IDS_IN_OUTPUT=2
+  + report-charge-table-body
   + rec-0
 
 DUPLICATE_IDS_IN_OUTPUT=4

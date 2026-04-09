@@ -81,10 +81,14 @@ function decodeCp1252Utf8IfBetter(value) {
     }
 
     const mapped = CP1252_UNICODE_TO_BYTE.get(cp);
-    if (mapped === undefined) {
-      return input;
+    if (mapped !== undefined) {
+      bytes.push(mapped);
+      continue;
     }
-    bytes.push(mapped);
+
+    // Preserve genuine Unicode characters by appending their UTF-8 bytes.
+    const utf8 = Buffer.from(ch, 'utf8');
+    for (const b of utf8) bytes.push(b);
   }
 
   const decoded = Buffer.from(bytes).toString('utf8');
@@ -430,6 +434,11 @@ function replaceHeaderFields(html, data) {
     ['Add-Ons', toNumber(data.billBreakdown && data.billBreakdown.vasServices, 0)],
     ['Taxes (18%)', toNumber(data.billBreakdown && data.billBreakdown.taxes && data.billBreakdown.taxes.gst && data.billBreakdown.taxes.gst.amount, 0)],
   ];
+  const jsonPlanCharge = toNumber(chargeRows[0][1], 0);
+  const jsonDataCharge = toNumber(chargeRows[1][1], 0);
+  const jsonRoamingCharge = toNumber(chargeRows[2][1], 0);
+  const jsonAddOnCharge = toNumber(chargeRows[3][1], 0);
+  const jsonTaxCharge = toNumber(chargeRows[4][1], 0);
   const chargeTotal = canonicalTotalDue || chargeRows.reduce((sum, row) => sum + row[1], 0);
   const expenseBudgetRaw = toNumber(
     (data.dashboardStatistics && data.dashboardStatistics.monthlyBudget)
@@ -469,6 +478,81 @@ function replaceHeaderFields(html, data) {
   const serviceReqCount = Math.max(0, Math.round(toNumber(alertsSummary.serviceRequests, 0)));
   const simActivationAlertsCount = Math.max(0, Math.round(toNumber(alertsSummary.simActivationAlerts, 0)));
   const alertsStatsHtml = `<div class="grid g5" style="margin-bottom:16px" id="alerts-stats"><div class="card bl-red" style="text-align:center"><div class="card-b"><div style="color:var(--red);margin-bottom:4px"><span class="ic ic-xl"><svg><use href="#i-receipt"/></svg></span></div><p style="font-size:24px" class="fb">${billingAlertsCount}</p><p class="xs mt up">Billing</p></div></div><div class="card bl-blue" style="text-align:center"><div class="card-b"><div style="color:var(--blue);margin-bottom:4px"><span class="ic ic-xl"><svg><use href="#i-chart"/></svg></span></div><p style="font-size:24px" class="fb">${usageAlertsCount}</p><p class="xs mt up">Usage</p></div></div><div class="card bl-orange" style="text-align:center"><div class="card-b"><div style="color:var(--orange);margin-bottom:4px"><span class="ic ic-xl"><svg><use href="#i-package"/></svg></span></div><p style="font-size:24px" class="fb">${planServiceAlertsCount}</p><p class="xs mt up">Plan Expiry</p></div></div><div class="card bl-purple" style="text-align:center"><div class="card-b"><div style="color:var(--purple);margin-bottom:4px"><span class="ic ic-xl"><svg><use href="#i-headphones"/></svg></span></div><p style="font-size:24px" class="fb">${serviceReqCount}</p><p class="xs mt up">Service Req</p></div></div><div class="card bl-green" style="text-align:center"><div class="card-b"><div style="color:var(--green);margin-bottom:4px"><span class="ic ic-xl"><svg><use href="#i-phone"/></svg></span></div><p style="font-size:24px" class="fb">${simActivationAlertsCount}</p><p class="xs mt up">SIM Activation</p></div></div></div>`;
+  const usageAlertsList = Array.isArray(data.usageAlerts) ? data.usageAlerts : [];
+  const usageAlertsHtml = usageAlertsList.slice(0, 5).map((a) => {
+    const severity = String(a.severity || 'LOW').toUpperCase();
+    const sevClass = severity === 'HIGH' ? 'red' : (severity === 'MEDIUM' ? 'orange' : 'green');
+    const alertType = String(a.alertType || 'Usage');
+    const employee = String(a.employee || (a.connection || 'All Lines'));
+    const connection = String(a.connection || 'All Lines');
+    const util = a.current && a.current.utilization ? ` ${a.current.utilization}` : '';
+    const used = a.current && Number.isFinite(toNumber(a.current.used, NaN)) ? `${toNumber(a.current.used, 0)}` : '';
+    const limit = a.current && Number.isFinite(toNumber(a.current.limit, NaN)) ? `${toNumber(a.current.limit, 0)}` : '';
+    const usageText = used && limit ? `${used} of ${limit}` : '';
+    const title = alertType === 'Data Usage'
+      ? `Data${util} - ${employee} (${connection})`
+      : `${alertType}${util ? ` ${util}` : ''} - ${employee}`;
+    const recommendation = String(a.recommendation || a.autoRecommendation || 'Review usage trend');
+    const line2 = usageText ? `${usageText}. ${recommendation}` : recommendation;
+    const ts = String(a.timestamp || 'recent');
+    return `<div style="padding:10px;border-bottom:1px solid var(--border);display:flex;align-items:center;gap:10px;cursor:pointer" onclick="switchTab(2);showToast('Navigating to Usage tab...')"><span class="badge ${sevClass}" style="min-width:40px;text-align:center">${severity}</span><div style="flex:1"><p class="fs sm">${title}</p><p class="xs mt">${line2}</p></div><span class="xs mt">${ts}</span></div>`;
+  }).join('');
+
+  const complaintsSummary = (data.customerSupport && data.customerSupport.complaintsSummary) || {};
+  const complaintOpen = Math.max(0, Math.round(toNumber(complaintsSummary.openTickets, 0)));
+  const complaintInProgress = Math.max(0, Math.round(toNumber(complaintsSummary.inProgressTickets, 0)));
+  const complaintResolved = Math.max(0, Math.round(toNumber(complaintsSummary.resolvedTickets, 0)));
+  const complaints = (data.customerSupport && Array.isArray(data.customerSupport.complaints)) ? data.customerSupport.complaints : [];
+  const complaintsRowsHtml = complaints.map((c) => {
+    const id = String(c.ticketId || 'DSP-NA');
+    const desc = String(c.complaint || c.description || 'Issue');
+    const amount = `Rs.${formatINR(c.amount || 0).replace(/\.00$/, '')}`;
+    const status = String(c.status || 'Open');
+    const statusLower = status.toLowerCase();
+    const statusClass = statusLower.includes('resolved') ? 'green' : (statusLower.includes('progress') ? 'orange' : 'red');
+    return `<tr class="ck" onclick="showToast('${id}: ${escapeJsSingleQuoted(desc)}')"><td class="fs tb">${id}</td><td>${desc}</td><td>${amount}</td><td><span class="badge ${statusClass}">${status}</span></td></tr>`;
+  }).join('');
+
+  const aiInsightsText = (() => {
+    const quickInsights = data.aiInsights && Array.isArray(data.aiInsights.quickInsights)
+      ? data.aiInsights.quickInsights
+      : [];
+    if (quickInsights.length) {
+      const fromJson = quickInsights.slice(0, 4).map((q) => {
+        const cat = String(q.category || 'Insight');
+        const insight = String(q.insight || '').trim();
+        return `${cat}: ${insight}`;
+      }).filter(Boolean);
+      if (fromJson.length) return fromJson;
+    }
+    const rows = [];
+    const topUsage = usageConnections
+      .map((c) => ({ name: String(c.employeeName || 'Line'), num: String(c.phoneNumber || ''), u: toNumber(c.usage && c.usage.data && c.usage.data.utilization, toNumber(String(c.usage && c.usage.data && c.usage.data.utilization || '').replace('%', ''), 0)) }))
+      .sort((a, b) => b.u - a.u);
+    if (topUsage[0]) rows.push(`Anomaly: Highest data utilization ${topUsage[0].u}% on ...${topUsage[0].num.slice(-3)}`);
+    rows.push(`Savings: Rs.${formatINR(savingsRaw).replace(/\.00$/, '')}/mo possible`);
+    const under = usageConnections.filter((c) => toNumber(String(c.usage && c.usage.data && c.usage.data.utilization || '').replace('%', ''), 0) < 50).length;
+    rows.push(`Underutilized: ${under} line${under === 1 ? '' : 's'} <50% data`);
+    const aiNextBill = Math.round(toNumber(
+      data.predictiveAnalytics
+      && data.predictiveAnalytics.spendForecast
+      && Array.isArray(data.predictiveAnalytics.spendForecast.forecastedNext3Months)
+      && data.predictiveAnalytics.spendForecast.forecastedNext3Months[0],
+      canonicalTotalDue,
+    ));
+    rows.push(`Forecast: Next bill Rs.${formatINR(aiNextBill).replace(/\.00$/, '')}`);
+    return rows.slice(0, 4);
+  })();
+  const aiInsightRows = aiInsightsText.map((txt, idx) => `<div style="padding:8px 0;border-bottom:1px solid var(--border);cursor:pointer" onclick="switchTab(${idx === 0 ? 8 : idx === 1 ? 10 : idx === 2 ? 2 : 12})"><p class="fs">${txt}</p></div>`).join('');
+
+  const scenarioExamplesSource = (data.scenarioModeling && Array.isArray(data.scenarioModeling.scenarios))
+    ? data.scenarioModeling.scenarios
+    : [];
+  const scenarioExamplesHtml = scenarioExamplesSource.slice(0, 2).map((s) => {
+    const n = String(s.name || 'Scenario');
+    const v = toNumber(s.billAmount || s.monthlyAmount, chargeTotal);
+    return `"${n}" -> Estimated impact: Rs.${formatINR(v).replace(/\.00$/, '')}`;
+  }).join(' | ');
   const chargeTableBody = `${chargeRows.map(([label, amount]) => `<tr><td>${label}</td><td>Rs.${formatINR(amount)}</td><td>${chargeTotal > 0 ? ((amount / chargeTotal) * 100).toFixed(1) : '0.0'}%</td></tr>`).join('')}<tr class="tot"><td>Total</td><td>Rs.${formatINR(chargeTotal)}</td><td>100%</td></tr>`;
   const chargeTableBodyHtml = `<tbody id="report-charge-table-body">${chargeTableBody}</tbody>`;
   const monthDetailRows = [
@@ -798,7 +882,7 @@ function replaceHeaderFields(html, data) {
   if(!risks.length){
     return '<div style="padding:10px;background:var(--muted-bg);border-radius:6px" class="sm">No risk data for selected scope.</div>';
   }
-  var summary='<div style="padding:10px;background:#f8fafc;border-radius:6px;margin-bottom:10px;font-size:12px;color:#555"><strong>${riskLevel} Risk (${riskPct})</strong> | Score: ${riskScore} | On-time: ${onTimePct}% | Avg delay: ${avgDelayDays} days | Outstanding: Rs.'+${Math.round(outstandingAmt)}.toLocaleString('en-IN')+'</div>';
+  var summary='<div style="padding:10px;background:#f8fafc;border-radius:6px;margin-bottom:10px;font-size:12px;color:#555"><strong>${riskLevel} Risk (${riskPct})</strong> | Score: ${riskScore} | On-time: ${onTimePct}% | Avg delay: ${avgDelayDays} days | Outstanding: Rs.'+(${Math.round(outstandingAmt)}).toLocaleString('en-IN')+'</div>';
   var body=risks.map(function(r){
     var c=r.risk>70?'red':r.risk>45?'orange':'green';
     var label=r.risk>70?'High Risk':(r.risk>45?'Medium Risk':'Low Risk');
@@ -874,13 +958,27 @@ function replaceHeaderFields(html, data) {
   output = output.replace(/(<p style="font-size:24px" class="fb">)[0-9]+%(<\/p><p class="xs mt up">Utilization<\/p>)/g, `$1${expenseUtilizationRaw}%$2`);
   output = output.replace(/(<p style="font-size:24px" class="fb">)Rs\.[0-9,]+(?:\.[0-9]{2})?(<\/p><p class="xs mt up">Remaining<\/p>)/g, `$1Rs.${formatINR(expenseRemainingRaw).replace(/\.00$/, '')}$2`);
   output = output.replace(/<div class="card bl-purple"><div class="card-h"><h3><span class="ic ic-lg"><svg><use href="#i-trending"\/><\/svg><\/span> Monthly Spend Analytics<\/h3><\/div><div class="card-b" style="position:relative">[\s\S]*?<\/div><\/div>\s*<\/div>\s*<div class="card"><div class="card-h"><h3>Employee-Wise Billing Usage Report<\/h3>/, `${monthlySpendCardHtml}</div>\n\n<div class="card"><div class="card-h"><h3>Employee-Wise Billing Usage Report</h3>`);
-  output = output.replace(/<div class="card bl-purple">[\s\S]*?(?=<div class="card"><div class="card-h"><h3>Employee-Wise Billing Usage Report<\/h3>)/, monthlySpendCardHtml);
   output = output.replace(/(<p style="font-size:24px" class="fb">)[0-9]+(<\/p><p class="xs mt up">Billing<\/p>)/g, `$1${billingAlertsCount}$2`);
   output = output.replace(/(<p style="font-size:24px" class="fb">)[0-9]+(<\/p><p class="xs mt up">Usage<\/p>)/g, `$1${usageAlertsCount}$2`);
   output = output.replace(/(<p style="font-size:24px" class="fb">)[0-9]+(<\/p><p class="xs mt up">Plan Expiry<\/p>)/g, `$1${planServiceAlertsCount}$2`);
   output = output.replace(/(<p style="font-size:24px" class="fb">)[0-9]+(<\/p><p class="xs mt up">Service Req<\/p>)/g, `$1${serviceReqCount}$2`);
   output = output.replace(/(<p style="font-size:24px" class="fb">)[0-9]+(<\/p><p class="xs mt up">SIM Activation<\/p>)/g, `$1${simActivationAlertsCount}$2`);
   output = output.replace(/<div class="grid g5" style="margin-bottom:16px" id="alerts-stats">[\s\S]*?(?=<div class="card bl-red"><div class="card-h"><h3><span class="ic ic-lg"><svg><use href="#i-bell"\/><\/svg><\/span> Billing Alerts)/, alertsStatsHtml);
+  output = output.replace(/<div class="card bl-blue"><div class="card-h"><h3><span class="ic ic-lg"><svg><use href="#i-chart"\/><\/svg><\/span> Usage Alerts<\/h3>[\s\S]*?<\/div><\/div>\s*<div class="grid g2">/, `<div class="card bl-blue"><div class="card-h"><h3><span class="ic ic-lg"><svg><use href="#i-chart"/></svg></span> Usage Alerts</h3><span class="badge blue">${usageAlertsList.length} Active</span></div><div class="card-b">${usageAlertsHtml}</div></div>\n<div class="grid g2">`);
+  output = output.replace(/<div class="grid g3" style="margin-bottom:16px">[\s\S]*?<\/div><\/div><\/div>/, `<div class="grid g3" style="margin-bottom:16px"><div class="card bl-red" style="text-align:center"><div class="card-b"><p style="font-size:28px" class="fb" style="color:var(--red)">${complaintOpen}</p><p class="xs mt up">Open</p></div></div><div class="card bl-orange" style="text-align:center"><div class="card-b"><p style="font-size:28px" class="fb" style="color:var(--orange)">${complaintInProgress}</p><p class="xs mt up">In Progress</p></div></div><div class="card bl-green" style="text-align:center"><div class="card-b"><p style="font-size:28px" class="fb" style="color:var(--green)">${complaintResolved}</p><p class="xs mt up">Resolved</p></div></div></div>`);
+  output = output.replace(/<div class="card"><div class="card-h"><h3>Complaint Status<\/h3><button class="btn pri s" onclick="openModal\('new-complaint-modal'\)">\+ New<\/button><\/div><div style="padding:0"><table><thead><tr><th>Ticket<\/th><th>Charge<\/th><th>Amount<\/th><th>Status<\/th><\/tr><\/thead><tbody>[\s\S]*?<\/tbody><\/table><\/div><\/div>/, `<div class="card"><div class="card-h"><h3>Complaint Status</h3><button class="btn pri s" onclick="openModal('new-complaint-modal')">+ New</button></div><div style="padding:0"><table><thead><tr><th>Ticket</th><th>Charge</th><th>Amount</th><th>Status</th></tr></thead><tbody>${complaintsRowsHtml}</tbody></table></div></div>`);
+  output = output.replace(/<div class="card bl-purple"><div class="card-h"><h3>AI Intelligence <span class="badge purple">[0-9]+ Insights<\/span><\/h3><\/div><div class="card-b sm">[\s\S]*?<\/div><\/div><\/div>\s*<h3 style="font-size:14px;margin:16px 0 8px" class="fs">Quick Actions<\/h3>/, `<div class="card bl-purple"><div class="card-h"><h3>AI Intelligence <span class="badge purple">4 Insights</span></h3></div><div class="card-b sm">${aiInsightRows}</div></div></div>\n<h3 style="font-size:14px;margin:16px 0 8px" class="fs">Quick Actions</h3>`);
+  output = output.replace(/<div class="card bl-teal"><div class="card-h"><h3>Scenario Modeling <span class="badge teal">Advanced<\/span><\/h3><\/div><div class="card-b">[\s\S]*?<div style="margin-top:12px;padding:10px;background:#f0fdfa;border-radius:6px;border-left:3px solid #14b8a6"><p style="font-size:12px;color:#555"><strong>Scenario Examples:<\/strong>[\s\S]*?<\/p><\/div><\/div><\/div>/, `<div class="card bl-teal"><div class="card-h"><h3>Scenario Modeling <span class="badge teal">Advanced</span></h3></div><div class="card-b"><p style="font-size:13px;color:#555;line-height:1.6;margin-bottom:12px"><strong>What-If Analysis:</strong> Scenario modeling is now JSON-driven for this account. Each scenario label and amount is rendered from input data in real time.</p><div style="display:flex;gap:8px;flex-wrap:wrap;margin-bottom:12px"><span class="badge blue">📊 Cost Impact Analysis</span><span class="badge green">📈 ROI Projections</span><span class="badge orange">⚡ Break-Even Calculator</span><span class="badge purple">🔄 Multi-Variable Simulation</span></div><div style="height:200px;position:relative"><canvas id="chartScenario"></canvas></div><div style="margin-top:12px;padding:10px;background:#f0fdfa;border-radius:6px;border-left:3px solid #14b8a6"><p style="font-size:12px;color:#555"><strong>Scenario Examples:</strong> ${scenarioExamplesHtml}</p></div></div></div>`);
+  if (aiInsightsText.length >= 4) {
+    output = output.replace(/Anomaly: Data spike 340% on \.\.\.210/g, aiInsightsText[0]);
+    output = output.replace(/Savings: Rs\.[0-9,]+(?:\.[0-9]{2})?\/mo possible/g, aiInsightsText[1]);
+    output = output.replace(/Underutilized: [0-9]+ lines? <50% data/g, aiInsightsText[2]);
+    output = output.replace(/Forecast: Next bill Rs\.[0-9,]+(?:\.[0-9]{2})?/g, aiInsightsText[3]);
+  }
+  output = output.replace(/'Current':'[^']*'/, `'Current':${jsString(`Current scenario from JSON-based enterprise baseline for ${lineCount} lines and present charges.`)}`);
+  output = output.replace(/'If \+20% Data':'[^']*'/, `'If +20% Data':${jsString('JSON scenario applies a 20% data-demand surge and recomputes projected monthly billing impact.')}`);
+  output = output.replace(/'If Roaming Trip':'[^']*'/, `'If Roaming Trip':${jsString('JSON scenario models roaming-heavy periods and updates expected monthly spend and risk.')}`);
+  output = output.replace(/'If Plan Optimization':'[^']*'/, `'If Plan Optimization':${jsString('JSON scenario models optimized plan mix and expected reduction in overage/roaming leakage.')}`);
   output = output.replace(/(Active Lines<\/p><p class="fs" style="font-size:14px">)\d+ of \d+(<\/p>)/g, `$1${lineCount} of ${lineCount}$2`);
   output = output.replace(/<span class="badge purple">4 '\+t\.insights<\/span>/g, `<span class="badge purple">${aiInsightsCount} '+t.insights</span>`);
   output = output.replace(/Save Rs\.1,247/g, `Save Rs.${formatINR(savingsRaw).replace(/\.00$/, '')}`);
@@ -949,9 +1047,16 @@ function replaceHeaderFields(html, data) {
   output = output.replace(/var allDisputes=\[[\s\S]*?\];/, `var allDisputes=${allDisputesJs};`);
   output = output.replace(/var ratio=totalAmt\/[0-9]+(?:\.[0-9]+)?;/g, `var ratio=totalAmt/${ratioBaseTotal};`);
   output = output.replace(/mc\('chartChargeDonut',\{type:'doughnut',data:\{labels:\['Plan','Data','Roaming','Add-Ons','Taxes'\],datasets:\[\{data:\[totalPlan,totalData,totalRoaming,totalVas,totalTax\][\s\S]*?\}\}\}\);/, `mc('chartChargeDonut',{type:'doughnut',data:{labels:['Plan','Data','Roaming','Add-Ons','Taxes'],datasets:[{data:[totalPlan,totalData,totalRoaming,totalVas,totalTax],backgroundColor:['#c62828','#f57f17','#0d47a1','#6a1b9a','#546e7a'],borderWidth:2,borderColor:'#fff'}]},options:{responsive:true,maintainAspectRatio:false,animation:{animateRotate:true,duration:800},plugins:{legend:{position:'right',labels:{font:{size:11,family:'Inter',weight:'500'}}}}}});\n  var chargeBody=document.getElementById('report-charge-table-body');\n  if(chargeBody){\n    var fmtAmt=function(v){return Number(v).toLocaleString('en-IN',{minimumFractionDigits:2,maximumFractionDigits:2});};\n    var rows=[\n      ['Plan Rental',totalPlan],\n      ['Data Overage',totalData],\n      ['Intl Roaming',totalRoaming],\n      ['Add-Ons',totalVas],\n      ['Taxes (18%)',totalTax]\n    ];\n    chargeBody.innerHTML=rows.map(function(r){var pct=totalAmt>0?((r[1]/totalAmt)*100).toFixed(1):'0.0';return '<tr><td>'+r[0]+'</td><td>Rs.'+fmtAmt(r[1])+'</td><td>'+pct+'%</td></tr>';}).join('')+'<tr class="tot"><td>Total</td><td>Rs.'+fmtAmt(totalAmt)+'</td><td>100%</td></tr>';\n  }`);
+  output = output.replace(/mc\('chartChargeDonut',\{type:'doughnut',data:\{labels:\['Plan','Data','Roaming','Add-Ons','Taxes'\],datasets:\[\{data:\[[0-9.,\s]+\]/g, `mc('chartChargeDonut',{type:'doughnut',data:{labels:['Plan','Data','Roaming','Add-Ons','Taxes'],datasets:[{data:[${jsonPlanCharge.toFixed(2)},${jsonDataCharge.toFixed(2)},${jsonRoamingCharge.toFixed(2)},${jsonAddOnCharge.toFixed(2)},${jsonTaxCharge.toFixed(2)}]`);
   output = output.replace(/mc\('chartForecast',\{type:'line',data:\{labels:\[[\s\S]*?\}\}\}\);/g, forecastChartScript);
   output = output.replace(/mc\('chartScenario',\{type:'bar',data:\{labels:\[[\s\S]*?\}\}\}\);/g, scenarioChartScript);
   output = output.replace(/var fAmt=Math\.round\(totalAmt\*0\.92\);[\s\S]*?mc\('chartScenario',\{type:'bar',data:\{labels:\[[\s\S]*?\}\}\}\);/, forecastFilterScript);
+
+  // Fallback patch: keep scenario chart JSON-driven by removing legacy hardcoded overrides.
+  output = output.replace(/if\(scenarioVals\.length>0\)scenarioVals\[0\]=Math\.round\(totalAmt\);\s*if\(scenarioVals\.length>1\)scenarioVals\[1\]=Math\.round\(totalAmt\+\(totalData\*0\.2\)\);\s*if\(scenarioVals\.length>2\)scenarioVals\[2\]=Math\.round\(totalAmt\+Math\.max\(300,totalRoaming\*0\.5\)\);\s*if\(scenarioVals\.length>3\)scenarioVals\[3\]=Math\.round\(Math\.max\(totalAmt\*0\.65,totalAmt-\(totalData\*0\.25\+totalVas\*0\.3\+totalRoaming\*0\.15\)\)\);/g, `if(scenarioVals.length>0&&currentFilter===0){\n    scenarioVals=scenarioBaseValues.slice();\n  }`);
+
+  // Fallback patch: in filter mode, use JSON billBreakdown for the all-connections donut/table.
+  output = output.replace(/\/\* PAGE 3: Reports[^\n]*\n\s*mc\('chartChargeDonut',\{type:'doughnut',data:\{labels:\['Plan','Data','Roaming','Add-Ons','Taxes'\],datasets:\[\{data:\[totalPlan,totalData,totalRoaming,totalVas,totalTax\][\s\S]*?\}\}\}\);/, `/* PAGE 3: Reports — update charge donut */\n  var jsonChargeVals=[${jsonPlanCharge.toFixed(2)},${jsonDataCharge.toFixed(2)},${jsonRoamingCharge.toFixed(2)},${jsonAddOnCharge.toFixed(2)},${jsonTaxCharge.toFixed(2)}];\n  var donutVals=currentFilter===0?jsonChargeVals:[totalPlan,totalData,totalRoaming,totalVas,totalTax];\n  var donutTotal=donutVals.reduce(function(s,v){return s+Number(v||0)},0);\n  mc('chartChargeDonut',{type:'doughnut',data:{labels:['Plan','Data','Roaming','Add-Ons','Taxes'],datasets:[{data:donutVals,backgroundColor:['#c62828','#f57f17','#0d47a1','#6a1b9a','#546e7a'],borderWidth:2,borderColor:'#fff'}]},options:{responsive:true,maintainAspectRatio:false,animation:{animateRotate:true,duration:800},plugins:{legend:{position:'right',labels:{font:{size:11,family:'Inter',weight:'500'}}}}}});`);
 
   output = output.replace(/function buildPredCards\(filtered\)\{[\s\S]*?\n\}\n\n\/\* Build Predictive risk \*\//, `${predCardsFunction}\n\n/* Build Predictive risk */`);
   output = output.replace(/function buildPredRisk\(filtered\)\{[\s\S]*?\n\}\n\n\/\* Build Predictive budget \*\//, `${predRiskFunction}\n\n/* Build Predictive budget */`);
