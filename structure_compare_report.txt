@@ -14,12 +14,12 @@ tableOpenOutput=13
 tableCloseOutput=13
 trOpenTemplate=83
 trCloseTemplate=83
-trOpenOutput=87
-trCloseOutput=87
+trOpenOutput=88
+trCloseOutput=88
 tdOpenTemplate=381
 tdCloseTemplate=381
-tdOpenOutput=398
-tdCloseOutput=398
+tdOpenOutput=402
+tdCloseOutput=402
 
 MISSING_IDS_IN_OUTPUT=8
   - rec-amit

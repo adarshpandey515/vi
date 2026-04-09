@@ -513,6 +513,49 @@ function replaceHeaderFields(html, data) {
     return `<tr class="ck" onclick="showToast('${id}: ${escapeJsSingleQuoted(desc)}')"><td class="fs tb">${id}</td><td>${desc}</td><td>${amount}</td><td><span class="badge ${statusClass}">${status}</span></td></tr>`;
   }).join('');
 
+  const usageAlertsByConn = new Map();
+  usageAlertsList.forEach((a) => {
+    const k = String(a.connection || '');
+    if (!k || /all lines/i.test(k)) return;
+    usageAlertsByConn.set(k, (usageAlertsByConn.get(k) || 0) + 1);
+  });
+  const planAlertsList = Array.isArray(data.planServiceAlerts) ? data.planServiceAlerts : [];
+  const planAlertsByConn = new Map();
+  planAlertsList.forEach((a) => {
+    const k = String(a.connection || '');
+    if (!k) return;
+    planAlertsByConn.set(k, (planAlertsByConn.get(k) || 0) + 1);
+  });
+  const connWeights = connections.map((c) => Math.max(1, Math.round(toNumber(c.alerts && c.alerts.activeAlerts, 1))));
+  const weightSum = connWeights.reduce((s, v) => s + v, 0) || 1;
+  const allocateByWeight = (total) => {
+    const raw = connections.map((_c, i) => (total * connWeights[i]) / weightSum);
+    const floor = raw.map((v) => Math.floor(v));
+    let rem = Math.max(0, total - floor.reduce((s, v) => s + v, 0));
+    const order = raw.map((v, i) => ({ i, frac: v - floor[i] })).sort((a, b) => b.frac - a.frac);
+    for (let j = 0; j < rem; j += 1) floor[order[j % Math.max(1, order.length)].i] += 1;
+    return floor;
+  };
+  const billingAlloc = allocateByWeight(billingAlertsCount);
+  const serviceAlloc = allocateByWeight(serviceReqCount);
+  const simAlloc = allocateByWeight(simActivationAlertsCount);
+  const alertsByConnLiteral = `{${connections.map((c, i) => {
+    const n = String(c.phoneNumber || '');
+    return `${jsString(n)}:{billing:${billingAlloc[i] || 0},usage:${usageAlertsByConn.get(n) || 0},plan:${planAlertsByConn.get(n) || 0},service:${serviceAlloc[i] || 0},sim:${simAlloc[i] || 0}}`;
+  }).join(',')}}`;
+
+  const supportTicketsSrc = (data.disputeTrackerData && Array.isArray(data.disputeTrackerData.disputes))
+    ? data.disputeTrackerData.disputes
+    : complaints;
+  const supportTicketsLiteral = `[${supportTicketsSrc.map((d, idx) => {
+    const id = String(d.ticketId || `DSP-${idx + 1}`);
+    const charge = String(d.category || d.complaint || d.description || 'Billing Issue');
+    const amount = toNumber(d.amount, 0).toFixed(2);
+    const status = String(d.status || 'Open');
+    const conn = String(d.connection || '');
+    return `{id:${jsString(id)},charge:${jsString(charge)},amount:${amount},status:${jsString(status)},conn:${jsString(conn)}}`;
+  }).join(',')}]`;
+
   const aiInsightsText = (() => {
     const quickInsights = data.aiInsights && Array.isArray(data.aiInsights.quickInsights)
       ? data.aiInsights.quickInsights
@@ -979,6 +1022,28 @@ function replaceHeaderFields(html, data) {
   output = output.replace(/'If \+20% Data':'[^']*'/, `'If +20% Data':${jsString('JSON scenario applies a 20% data-demand surge and recomputes projected monthly billing impact.')}`);
   output = output.replace(/'If Roaming Trip':'[^']*'/, `'If Roaming Trip':${jsString('JSON scenario models roaming-heavy periods and updates expected monthly spend and risk.')}`);
   output = output.replace(/'If Plan Optimization':'[^']*'/, `'If Plan Optimization':${jsString('JSON scenario models optimized plan mix and expected reduction in overage/roaming leakage.')}`);
+  output = output.replace(/var st=String\(t\.status\|\|'Open'\);var sl=st\.toLowerCase\(\);\s*var cl=sl\.indexOf\('resolved'\)>=0\?'green':\(sl\.indexOf\('progress'\)>=0\|\|sl\.indexOf\('review'\)>=0\|\|sl\.indexOf\('pending'\)>=0\?'orange':'red'\);/g, "var raw=String(t.status||'Open');var sl=raw.toLowerCase();\n      var st=sl.indexOf('resolved')>=0?'Resolved':((sl.indexOf('progress')>=0||sl.indexOf('review')>=0||sl.indexOf('pending')>=0)?'In Progress':'Open');\n      var cl=st==='Resolved'?'green':(st==='In Progress'?'orange':'red');");
+  output = output.replace(/\/\* PAGE 5: Dashboard \*\//, `/* PAGE 4: Customer Support */
+  var supportTicketsAll=${supportTicketsLiteral};
+  var supportFiltered=currentFilter===0?supportTicketsAll:supportTicketsAll.filter(function(t){return filtered.some(function(c){return c.num===t.conn})});
+  var sOpen=supportFiltered.filter(function(t){var x=String(t.status||'').toLowerCase();return x.indexOf('open')>=0||x.indexOf('active')>=0}).length;
+  var sInProg=supportFiltered.filter(function(t){var x=String(t.status||'').toLowerCase();return x.indexOf('progress')>=0||x.indexOf('review')>=0||x.indexOf('pending')>=0}).length;
+  var sResolved=supportFiltered.filter(function(t){return String(t.status||'').toLowerCase().indexOf('resolved')>=0}).length;
+  var sCards=document.querySelectorAll('#page-4 .grid.g3 .card .card-b .fb');
+  if(sCards&&sCards.length>=3){sCards[0].textContent=String(sOpen);sCards[1].textContent=String(sInProg);sCards[2].textContent=String(sResolved);}
+  var csBody=document.querySelector('#page-4 .card table tbody');
+  if(csBody){
+    var rows=(supportFiltered.length?supportFiltered:[{id:'NA',charge:'No complaints',amount:0,status:'Resolved',conn:''}]).map(function(t){
+      var raw=String(t.status||'Open');var sl=raw.toLowerCase();
+      var st=sl.indexOf('resolved')>=0?'Resolved':((sl.indexOf('progress')>=0||sl.indexOf('review')>=0||sl.indexOf('pending')>=0)?'In Progress':'Open');
+      var cl=st==='Resolved'?'green':(st==='In Progress'?'orange':'red');
+      var cls=cl==='green'?'tg':'tb';
+      return '<tr class="ck" onclick="showToast(\\''+String(t.id).replace(/'/g,'')+': '+String(t.charge).replace(/'/g,'')+'\\')"><td class="fs '+cls+'">'+t.id+'</td><td>'+t.charge+'</td><td>Rs.'+Number(t.amount||0).toLocaleString('en-IN',{maximumFractionDigits:2})+'</td><td><span class="badge '+cl+'">'+st+'</span></td></tr>';
+    }).join('');
+    csBody.innerHTML=rows;
+  }
+
+  /* PAGE 5: Dashboard */`);
   output = output.replace(/(Active Lines<\/p><p class="fs" style="font-size:14px">)\d+ of \d+(<\/p>)/g, `$1${lineCount} of ${lineCount}$2`);
   output = output.replace(/<span class="badge purple">4 '\+t\.insights<\/span>/g, `<span class="badge purple">${aiInsightsCount} '+t.insights</span>`);
   output = output.replace(/Save Rs\.1,247/g, `Save Rs.${formatINR(savingsRaw).replace(/\.00$/, '')}`);
@@ -1045,6 +1110,21 @@ function replaceHeaderFields(html, data) {
   output = output.replace(/<tbody id="expense-employee-table">[\s\S]*?<\/tbody>/, `<tbody id="expense-employee-table">${employeeRows}${employeeTotalRow}</tbody>`);
   output = output.replace(/<div class="card bl-blue"><div class="card-b c" id="dispute-summary">[\s\S]*?<\/div><\/div>/, `<div class="card bl-blue"><div class="card-b c" id="dispute-summary">${disputeSummaryHtml}</div></div>`);
   output = output.replace(/var allDisputes=\[[\s\S]*?\];/, `var allDisputes=${allDisputesJs};`);
+  output = output.replace(/\/\* PAGE 15: Alerts \*\/[\s\S]*?\/\* Update charts with filtered data \*\//, `/* PAGE 15: Alerts */
+  var alertStats=document.getElementById('alerts-stats');
+  if(alertStats){
+    var alertsByConn=${alertsByConnLiteral};
+    var sumBy=function(k){return filtered.reduce(function(s,c){var x=alertsByConn[c.num]||{};return s+Number(x[k]||0)},0)};
+    var aBilling=i===0?${billingAlertsCount}:sumBy('billing');
+    var aUsage=i===0?${usageAlertsCount}:sumBy('usage');
+    var aPlan=i===0?${planServiceAlertsCount}:sumBy('plan');
+    var aSvc=i===0?${serviceReqCount}:sumBy('service');
+    var aSim=i===0?${simActivationAlertsCount}:sumBy('sim');
+    var aStats=[{t:aBilling,l:'Billing',c:'red',icon:'i-receipt'},{t:aUsage,l:'Usage',c:'blue',icon:'i-chart'},{t:aPlan,l:'Plan Expiry',c:'orange',icon:'i-package'},{t:aSvc,l:'Service Req',c:'purple',icon:'i-headphones'},{t:aSim,l:'SIM Activation',c:'green',icon:'i-phone'}];
+    alertStats.innerHTML=aStats.map(function(s){return '<div class="card bl-'+s.c+'" style="text-align:center"><div class="card-b"><div style="color:var(--'+s.c+');margin-bottom:4px"><span class="ic ic-xl"><svg><use href="#'+s.icon+'"/></svg></span></div><p style="font-size:24px" class="fb">'+s.t+'</p><p class="xs mt up">'+s.l+'</p></div></div>'}).join('');
+  }
+
+  /* Update charts with filtered data */`);
   output = output.replace(/var ratio=totalAmt\/[0-9]+(?:\.[0-9]+)?;/g, `var ratio=totalAmt/${ratioBaseTotal};`);
   output = output.replace(/mc\('chartChargeDonut',\{type:'doughnut',data:\{labels:\['Plan','Data','Roaming','Add-Ons','Taxes'\],datasets:\[\{data:\[totalPlan,totalData,totalRoaming,totalVas,totalTax\][\s\S]*?\}\}\}\);/, `mc('chartChargeDonut',{type:'doughnut',data:{labels:['Plan','Data','Roaming','Add-Ons','Taxes'],datasets:[{data:[totalPlan,totalData,totalRoaming,totalVas,totalTax],backgroundColor:['#c62828','#f57f17','#0d47a1','#6a1b9a','#546e7a'],borderWidth:2,borderColor:'#fff'}]},options:{responsive:true,maintainAspectRatio:false,animation:{animateRotate:true,duration:800},plugins:{legend:{position:'right',labels:{font:{size:11,family:'Inter',weight:'500'}}}}}});\n  var chargeBody=document.getElementById('report-charge-table-body');\n  if(chargeBody){\n    var fmtAmt=function(v){return Number(v).toLocaleString('en-IN',{minimumFractionDigits:2,maximumFractionDigits:2});};\n    var rows=[\n      ['Plan Rental',totalPlan],\n      ['Data Overage',totalData],\n      ['Intl Roaming',totalRoaming],\n      ['Add-Ons',totalVas],\n      ['Taxes (18%)',totalTax]\n    ];\n    chargeBody.innerHTML=rows.map(function(r){var pct=totalAmt>0?((r[1]/totalAmt)*100).toFixed(1):'0.0';return '<tr><td>'+r[0]+'</td><td>Rs.'+fmtAmt(r[1])+'</td><td>'+pct+'%</td></tr>';}).join('')+'<tr class="tot"><td>Total</td><td>Rs.'+fmtAmt(totalAmt)+'</td><td>100%</td></tr>';\n  }`);
   output = output.replace(/mc\('chartChargeDonut',\{type:'doughnut',data:\{labels:\['Plan','Data','Roaming','Add-Ons','Taxes'\],datasets:\[\{data:\[[0-9.,\s]+\]/g, `mc('chartChargeDonut',{type:'doughnut',data:{labels:['Plan','Data','Roaming','Add-Ons','Taxes'],datasets:[{data:[${jsonPlanCharge.toFixed(2)},${jsonDataCharge.toFixed(2)},${jsonRoamingCharge.toFixed(2)},${jsonAddOnCharge.toFixed(2)},${jsonTaxCharge.toFixed(2)}]`);
