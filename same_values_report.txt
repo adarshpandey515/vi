@@ -1,0 +1,130 @@
+Regex Common-Value Report (updated)
+Template: Vi_Enterprise_Combined.html
+Output  : html/adarsh_pandey.html
+
+## ACCOUNT_ID
+Common unique values: 0
+
+## INVOICE_ID
+Common unique values: 5
+- INV-2026-02-0753 | tpl:3 out:3
+- INV-2026-01-0682 | tpl:3 out:3
+- INV-2025-12-0598 | tpl:3 out:3
+- INV-2025-11-0521 | tpl:3 out:3
+- INV-2025-10-0447 | tpl:3 out:3
+
+## RUPEE_AMOUNT
+Common unique values: 122
+- Rs.799 | tpl:15 out:13
+- Rs.7,842 | tpl:10 out:10
+- Rs.599 | tpl:11 out:9
+- Rs.6,980 | tpl:8 out:8
+- Rs.999 | tpl:5 out:7
+- Rs.0 | tpl:10 out:7
+- Rs.7,450 | tpl:7 out:7
+- Rs.200 | tpl:7 out:6
+- Rs.198 | tpl:7 out:5
+- Rs.1,000 | tpl:5 out:5
+- Rs.5,720 | tpl:4 out:4
+- Rs.500 | tpl:4 out:4
+- Rs.6,234 | tpl:4 out:4
+- Rs.2,929.00 | tpl:4 out:3
+- Rs.1,841.50 | tpl:4 out:3
+- Rs.1,429.00 | tpl:4 out:3
+- Rs.6 | tpl:4 out:3
+- Rs.713.50 | tpl:4 out:3
+- Rs.142 | tpl:4 out:3
+- Rs.929.50 | tpl:4 out:3
+- Rs.3,795 | tpl:5 out:3
+- Rs.1,386 | tpl:5 out:3
+- Rs.666 | tpl:5 out:3
+- Rs.1,500 | tpl:3 out:3
+- Rs.3,396 | tpl:3 out:3
+- Rs.50 | tpl:3 out:3
+- Rs.2,614 | tpl:3 out:3
+- Rs.1,307 | tpl:3 out:3
+- Rs.654 | tpl:3 out:3
+- Rs.2,000 | tpl:3 out:3
+- Rs.149 | tpl:3 out:3
+- Rs.5,890 | tpl:3 out:3
+- Rs.7,842.50 | tpl:26 out:2
+- Rs.345 | tpl:3 out:2
+- Rs.740 | tpl:3 out:2
+- Rs.398 | tpl:3 out:2
+- Rs.447 | tpl:3 out:2
+- Rs.158 | tpl:3 out:2
+- Rs.448 | tpl:3 out:2
+- Rs.156 | tpl:3 out:2
+- Rs.281 | tpl:3 out:2
+- Rs.15 | tpl:3 out:2
+- Rs.219 | tpl:3 out:2
+- Rs.109 | tpl:3 out:2
+- Rs.98 | tpl:3 out:2
+- Rs.91 | tpl:3 out:2
+- Rs.1,197 | tpl:3 out:2
+- Rs.399 | tpl:3 out:2
+- Rs.4,000 | tpl:2 out:2
+- Rs.3,500 | tpl:2 out:2
+- Rs.197 | tpl:2 out:2
+- Rs.89 | tpl:2 out:2
+- Rs.862 | tpl:2 out:2
+- Rs.1,084 | tpl:2 out:2
+- Rs.470 | tpl:2 out:2
+- Rs.650 | tpl:2 out:2
+- Rs.180 | tpl:2 out:2
+- Rs.499 | tpl:2 out:2
+- Rs.898.50 | tpl:1 out:2
+- Rs.3,000 | tpl:2 out:2
+
+## PHONE_LONG
+Common unique values: 5
+- 9876543210 | tpl:23 out:16
+- 9876543212 | tpl:17 out:12
+- 9876543211 | tpl:16 out:11
+- 9876543213 | tpl:14 out:9
+- 9876543214 | tpl:14 out:9
+
+## PHONE_SHORT
+Common unique values: 0
+
+## DATE_SHORT
+Common unique values: 8
+- 15 Mar 2026 | tpl:5 out:5
+- 28 Feb 2026 | tpl:2 out:2
+- 01 Feb 2026 | tpl:1 out:1
+- 03 Jan 2026 | tpl:1 out:1
+- 01 Dec 2025 | tpl:1 out:1
+- 31 Mar 2027 | tpl:1 out:1
+- 01 Mar 2026 | tpl:1 out:1
+- 31 Mar 2026 | tpl:1 out:1
+
+## DATE_LONG
+Common unique values: 9
+- 15 Mar 2026 | tpl:5 out:5
+- 28 Feb 2026 | tpl:2 out:2
+- 01 Feb 2026 | tpl:1 out:1
+- 03 Jan 2026 | tpl:1 out:1
+- 01 Dec 2025 | tpl:1 out:1
+- 31 Mar 2027 | tpl:1 out:1
+- 01 Mar 2026 | tpl:1 out:1
+- 31 Mar 2026 | tpl:1 out:1
+- 15 March 2026 | tpl:1 out:1
+
+## EMAIL
+Common unique values: 0
+
+## COMPANY_WORDS
+Common unique values: 2
+- Enterprise | tpl:57 out:50
+- Services | tpl:19 out:8
+
+## Critical Literal Check
+- Globe Consultancy Services Ltd. | tpl:true out:false
+- Globe Consultancy Services Limited | tpl:true out:false
+- Globe Enterprise | tpl:true out:false
+- Tower B, 5th Floor, DLF Cyber City,<br>Sector 25A, Gurugram 122002,<br>Haryana, India | tpl:true out:false
+- Tower B, 5th Floor, DLF Cyber City, Sector 25A, Gurugram 122002, Haryana, India | tpl:true out:false
+- ENT-88234571 | tpl:true out:false
+- INV-2026-03-ENT-0847 | tpl:true out:false
+- INV-2026-03-0847 | tpl:true out:false
+- Rs.7,842.50 | tpl:true out:true

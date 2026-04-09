@@ -1,0 +1,30 @@
+--- template-page-10
++++ output-page-10
+@@ -33,7 +33,7 @@
+ td 
+ td 
+ td 
+-span class=lt
++span class=lt b
+ tr 
+ td 
+ td 
+@@ -47,16 +47,13 @@
+ td 
+ td 
+ td 
+-span class=lt
++span class=lt b
+ div class=card bl-green
+ div class=card-h
+ h3 
+ span class=badge green
+ div id=plan-recs class=card-b
+-div id=rec-amit
+-p class=fs sm
+-p class=xs mt
+-div id=rec-sneha
++div id=rec-0
+ p class=fs sm
+ p class=xs mt
+ button class=btn grn

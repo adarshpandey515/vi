@@ -1,0 +1,11 @@
+--- template-page-3
++++ output-page-3
+@@ -152,7 +152,7 @@
+ td 
+ td 
+ td 
+-span class=badge orange
++span class=badge red
+ tr 
+ td 
+ td 

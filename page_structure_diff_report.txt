@@ -1,0 +1,29 @@
+PAGE_STRUCTURE_DIFF_REPORT
+pages_template=16 pages_output=16
+page-0: same
+page-1: same
+page-2: same
+page-3: DIFFERENT md5_template=90fc3e67a076996744738d370d668f36 md5_output=e29a770c7efb1f7e36d2de5819c45147
+  len_template=1319 len_output=1316
+page-4: same
+page-5: same
+page-6: same
+page-7: same
+page-8: same
+page-9: same
+page-10: DIFFERENT md5_template=991934aa0884bd1280228ac237239bed md5_output=394f63173c070aadc93dae6141fa9b65
+  len_template=1245 len_output=1201
+page-11: same
+page-12: same
+page-13: DIFFERENT md5_template=16f2f97b8f403257eb355b8ce7364bb9 md5_output=bc153c4450e9d3f67dc90ab2d2b4e3d1
+  len_template=2673 len_output=2670
+page-14: same
+page-15: same
+
+template_duplicate_ids=2
+  i-settings x2
+  i-users x2
+
+output_duplicate_ids=2
+  i-settings x2
+  i-users x2

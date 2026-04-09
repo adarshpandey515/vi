@@ -1,0 +1,11 @@
+--- template-page-13
++++ output-page-13
+@@ -186,7 +186,7 @@
+ td class=fb
+ td 
+ td 
+-span class=badge orange
++span class=badge red
+ td 
+ button class=btn s
+ span class=ic

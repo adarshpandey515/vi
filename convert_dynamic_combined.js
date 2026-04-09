@@ -34,6 +34,79 @@ function jsString(value) {
   return `'${escapeJsSingleQuoted(value)}'`;
 }
 
+const CP1252_UNICODE_TO_BYTE = new Map([
+  [0x20ac, 0x80],
+  [0x201a, 0x82],
+  [0x0192, 0x83],
+  [0x201e, 0x84],
+  [0x2026, 0x85],
+  [0x2020, 0x86],
+  [0x2021, 0x87],
+  [0x02c6, 0x88],
+  [0x2030, 0x89],
+  [0x0160, 0x8a],
+  [0x2039, 0x8b],
+  [0x0152, 0x8c],
+  [0x017d, 0x8e],
+  [0x2018, 0x91],
+  [0x2019, 0x92],
+  [0x201c, 0x93],
+  [0x201d, 0x94],
+  [0x2022, 0x95],
+  [0x2013, 0x96],
+  [0x2014, 0x97],
+  [0x02dc, 0x98],
+  [0x2122, 0x99],
+  [0x0161, 0x9a],
+  [0x203a, 0x9b],
+  [0x0153, 0x9c],
+  [0x017e, 0x9e],
+  [0x0178, 0x9f],
+]);
+
+function mojibakeScore(value) {
+  const matches = String(value).match(/[\u00C2\u00C3\u00E0\u00E2\u00F0]/g);
+  return matches ? matches.length : 0;
+}
+
+function decodeCp1252Utf8IfBetter(value) {
+  const input = String(value);
+  const bytes = [];
+
+  for (const ch of input) {
+    const cp = ch.codePointAt(0);
+    if (cp <= 0xff) {
+      bytes.push(cp);
+      continue;
+    }
+
+    const mapped = CP1252_UNICODE_TO_BYTE.get(cp);
+    if (mapped === undefined) {
+      return input;
+    }
+    bytes.push(mapped);
+  }
+
+  const decoded = Buffer.from(bytes).toString('utf8');
+  if (decoded.includes('\uFFFD')) {
+    return input;
+  }
+
+  return mojibakeScore(decoded) < mojibakeScore(input) ? decoded : input;
+}
+
+function repairMojibakeText(html) {
+  const input = String(html);
+  if (!/[\u00C2\u00C3\u00E0\u00E2\u00F0]/.test(input)) {
+    return input;
+  }
+
+  return input
+    .split('\n')
+    .map((line) => (/[\u00C2\u00C3\u00E0\u00E2\u00F0]/.test(line) ? decodeCp1252Utf8IfBetter(line) : line))
+    .join('\n');
+}
+
 function formatINR(value) {
   const num = toNumber(value, 0);
   return num.toLocaleString('en-IN', {
@@ -278,6 +351,18 @@ function replaceHeaderFields(html, data) {
   const aiInsightsCount = Math.max(1, Math.round(toNumber(templateOverrides.aiInsightsCount || 4, 4)));
   const smartPaymentSlug = String(templateOverrides.smartPaymentSlug || `VBP-${String(accountNumber).replace(/\D/g, '').slice(-6).padStart(6, '0')}`);
   const deepPayLink = String(templateOverrides.deepPayLink || `viapp://pay/${accountNumber}`);
+  const companyAddressHtmlOverride = String(templateOverrides.companyAddressHtml || templateOverrides.companyNameHtml || '');
+  const companyAddressInlineOverride = String(templateOverrides.companyAddressInline || templateOverrides.companyNameInline || '');
+  const fallbackAddressHtml = 'Tower B, 5th Floor, DLF Cyber City,<br>Sector 25A, Gurugram 122002,<br>Haryana, India';
+  const effectiveAddressHtml = companyAddressHtmlOverride || fallbackAddressHtml;
+  const effectiveAddressInline = companyAddressInlineOverride || effectiveAddressHtml.replace(/<br\s*\/?>/gi, ', ');
+  const pdfAddressParts = effectiveAddressHtml
+    .split(/<br\s*\/?>/i)
+    .map((part) => String(part || '').trim())
+    .filter(Boolean)
+    .slice(0, 3);
+  while (pdfAddressParts.length < 3) pdfAddressParts.push('');
+  const pdfAddressArrayLiteral = `[${jsString(companyName)},${jsString(pdfAddressParts[0])},${jsString(pdfAddressParts[1])},${jsString(pdfAddressParts[2])}]`;
 
   const centers = Array.isArray(templateOverrides.collectionCenters) && templateOverrides.collectionCenters.length >= 3
     ? templateOverrides.collectionCenters
@@ -395,6 +480,125 @@ function replaceHeaderFields(html, data) {
   const aiRecFallback = `<div style="padding:10px;border:1px solid var(--border);border-radius:6px;margin-bottom:8px"><p class="fs sm">No active recommendations</p><p class="xs mt">Usage and billing look healthy for this cycle.</p></div>`;
   const aiApplySavingsText = formatINR(savingsRaw).replace(/\.00$/, '');
 
+  const plansTabRows = data.plansTabData && Array.isArray(data.plansTabData.currentPlans)
+    ? data.plansTabData.currentPlans
+    : [];
+  const planFlagsByLine = new Map();
+  plansTabRows.forEach((p) => {
+    const key = String(p.connection || p.phoneNumber || '').slice(-3);
+    if (!key) return;
+    planFlagsByLine.set(key, { upgrade: !!p.upgrade, downgrade: !!p.downgrade });
+  });
+
+  const plansSource = usageConnections.length
+    ? usageConnections.map((c) => {
+      const key = String(c.phoneNumber || '').slice(-3);
+      const flags = planFlagsByLine.get(key) || {};
+      return {
+        connection: c.phoneNumber,
+        employee: c.employeeName,
+        plan: c.plan && (c.plan.code || c.plan.name) ? (c.plan.code || c.plan.name) : 'Plan',
+        cost: c.charges && c.charges.planCost ? c.charges.planCost : (c.plan && c.plan.baseCost ? c.plan.baseCost : '0'),
+        status: c.status || 'Active',
+        upgrade: !!flags.upgrade,
+        downgrade: !!flags.downgrade,
+      };
+    })
+    : plansTabRows;
+
+  const currentPlanRows = plansSource.map((p) => {
+    const line = String(p.connection || p.phoneNumber || 'NA');
+    const employee = String(p.employee || p.employeeName || 'User');
+    const plan = String(p.plan || p.planName || 'Plan');
+    const cost = formatINR(toNumber(p.cost || p.planCost, 0)).replace(/\.00$/, '');
+    const action = p.upgrade
+      ? `<span class="lt" style="color:var(--green)" onclick="openModal('plan-switch-modal')">Upgrade</span>`
+      : (p.downgrade
+        ? `<span class="lt" style="color:var(--orange)" onclick="openModal('plan-switch-modal')">Downgrade</span>`
+        : `<span class="lt b" onclick="showToast('${escapeJsSingleQuoted(plan)} details')">Details</span>`);
+    return `<tr><td>...${line.slice(-3)}</td><td>${employee}</td><td>${plan}</td><td>Rs.${cost}</td><td>${action}</td></tr>`;
+  }).join('');
+
+  const collectionsPriority = data.predictiveAnalytics && data.predictiveAnalytics.collectionsPriority
+    ? data.predictiveAnalytics.collectionsPriority
+    : {};
+  const lowRiskCount = Math.max(0, Math.round(toNumber(collectionsPriority.lowRisk, 3)));
+  const mediumRiskCount = Math.max(0, Math.round(toNumber(collectionsPriority.mediumRisk, 1)));
+  const highRiskCount = Math.max(0, Math.round(toNumber(collectionsPriority.highRisk, 1)));
+  const totalRiskBuckets = Math.max(1, lowRiskCount + mediumRiskCount + highRiskCount);
+  const lowRiskPct = Math.round((lowRiskCount / totalRiskBuckets) * 100);
+  const mediumRiskPct = Math.round((mediumRiskCount / totalRiskBuckets) * 100);
+  const highRiskPct = Math.max(0, 100 - lowRiskPct - mediumRiskPct);
+
+  const disputeSummary = data.disputeTrackerData && data.disputeTrackerData.summary
+    ? data.disputeTrackerData.summary
+    : {};
+  const activeDisputesCount = Math.max(0, Math.round(toNumber(disputeSummary.activeDisputes, 2)));
+  const pendingDisputesCount = Math.max(0, Math.round(toNumber(disputeSummary.pendingDisputes, 1)));
+  const resolvedDisputesCount = Math.max(0, Math.round(toNumber(disputeSummary.resolvedDisputes, 3)));
+  const disputeSla = String(disputeSummary.slaCompliance || '98%');
+  const disputeSummaryHtml = `<strong>${activeDisputesCount} Active Dispute${activeDisputesCount === 1 ? '' : 's'}</strong> | ${pendingDisputesCount} Pending | ${resolvedDisputesCount} Resolved (90 days) | <span class="tg">SLA: ${disputeSla}</span>`;
+
+  const employeeToConnection = new Map();
+  usageConnections.forEach((c) => {
+    employeeToConnection.set(String(c.employeeName || '').toLowerCase(), String(c.phoneNumber || ''));
+  });
+
+  const disputeRowsSource = data.disputeTrackerData && Array.isArray(data.disputeTrackerData.disputes)
+    ? data.disputeTrackerData.disputes
+    : [];
+
+  const allDisputesJsRows = disputeRowsSource.map((d) => {
+    const employee = String(d.employee || 'User');
+    const mappedConn = employeeToConnection.get(employee.toLowerCase()) || String(d.connection || 'NA');
+    const rawStatus = String(d.status || 'Pending').toLowerCase();
+    const status = rawStatus.includes('resolved')
+      ? 'Resolved'
+      : (rawStatus.includes('pending') ? 'Pending' : 'In Review');
+    const statusColor = status === 'Resolved' ? 'green' : (status === 'Pending' ? 'red' : 'orange');
+    const amount = Math.round(toNumber(d.amount, 0));
+    return `{id:${jsString(String(d.ticketId || 'DSP-NA'))},connName:${jsString(`${employee} (...${String(mappedConn).slice(-3)})`)},conn:${jsString(String(mappedConn))},desc:${jsString(String(d.description || d.category || 'Billing dispute'))},amt:${amount},status:${jsString(status)},statusColor:${jsString(statusColor)}}`;
+  });
+  const allDisputesJs = allDisputesJsRows.length
+    ? `[${allDisputesJsRows.join(',')}]`
+    : `[{id:'DSP-NA',connName:'No Disputes',conn:'NA',desc:'No disputes found for this account',amt:0,status:'Resolved',statusColor:'green'}]`;
+
+  const forecastData = data.forecastData || {};
+  const histMonths = Array.isArray(forecastData.historicalMonths) && forecastData.historicalMonths.length
+    ? forecastData.historicalMonths.map((m) => String(m))
+    : ['Sep', 'Oct', 'Nov', 'Dec', 'Jan', 'Feb'];
+  const actualBills = Array.isArray(forecastData.actualBills) && forecastData.actualBills.length
+    ? forecastData.actualBills.map((v) => Math.round(toNumber(v, 0)))
+    : state.totals;
+  const rawForecastMonths = Array.isArray(forecastData.forecastMonths) ? forecastData.forecastMonths.map((m) => String(m)) : [];
+  const rawForecastBills = Array.isArray(forecastData.forecastBills) ? forecastData.forecastBills.map((v) => Math.round(toNumber(v, 0))) : [];
+  const rawUpper = Array.isArray(forecastData.upperConfidence) ? forecastData.upperConfidence.map((v) => Math.round(toNumber(v, 0))) : [];
+  const rawLower = Array.isArray(forecastData.lowerConfidence) ? forecastData.lowerConfidence.map((v) => Math.round(toNumber(v, 0))) : [];
+  const forecastHorizon = Math.max(rawForecastMonths.length, rawForecastBills.length, rawUpper.length, rawLower.length, 3);
+  const forecastMonths = Array.from({ length: forecastHorizon }, (_, i) => rawForecastMonths[i] || `F${i + 1}`);
+  const lastActual = actualBills.length ? actualBills[actualBills.length - 1] : Math.round(chargeTotal);
+  const forecastBills = Array.from({ length: forecastHorizon }, (_, i) => rawForecastBills[i] || lastActual);
+  const upperForecast = Array.from({ length: forecastHorizon }, (_, i) => rawUpper[i] || forecastBills[i]);
+  const lowerForecast = Array.from({ length: forecastHorizon }, (_, i) => rawLower[i] || forecastBills[i]);
+  const forecastLabels = histMonths.concat(forecastMonths);
+  const forecastActualSeries = actualBills.concat(Array(forecastHorizon).fill(null));
+  const forecastLeadNulls = Array(Math.max(histMonths.length - 1, 0)).fill(null);
+  const forecastSeries = forecastLeadNulls.concat([lastActual], forecastBills);
+  const upperSeries = forecastLeadNulls.concat([lastActual], upperForecast);
+  const lowerSeries = forecastLeadNulls.concat([lastActual], lowerForecast);
+
+  const scenarioRows = data.scenarioModeling && Array.isArray(data.scenarioModeling.scenarios) && data.scenarioModeling.scenarios.length
+    ? data.scenarioModeling.scenarios
+    : [{ name: 'Current', billAmount: chargeTotal }, { name: 'Optimized', billAmount: chargeTotal }];
+  const scenarioLabels = scenarioRows.map((s) => String(s.name || 'Scenario'));
+  const scenarioValues = scenarioRows.map((s) => Math.round(toNumber(s.billAmount || s.monthlyAmount, chargeTotal)));
+  const scenarioPalette = ['#3b82f6', '#f59e0b', '#e60000', '#22c55e', '#8b5cf6', '#14b8a6'];
+  const scenarioColors = scenarioLabels.map((_s, i) => scenarioPalette[i % scenarioPalette.length]);
+
+  const forecastChartScript = `mc('chartForecast',{type:'line',data:{labels:${JSON.stringify(forecastLabels)},datasets:[{label:'Actual',data:${JSON.stringify(forecastActualSeries)},borderColor:'#e60000',borderWidth:2,pointRadius:5,pointBackgroundColor:'#e60000',tension:0.3,spanGaps:false},{label:'Forecast',data:${JSON.stringify(forecastSeries)},borderColor:'#8b5cf6',borderDash:[6,3],borderWidth:2,pointRadius:5,pointBackgroundColor:'#8b5cf6',tension:0.3,spanGaps:false},{label:'U',data:${JSON.stringify(upperSeries)},borderColor:'rgba(106,27,154,0.15)',borderWidth:1,fill:false,pointRadius:0,tension:0.3,spanGaps:false},{label:'L',data:${JSON.stringify(lowerSeries)},borderColor:'rgba(106,27,154,0.15)',borderWidth:1,fill:'-1',backgroundColor:'rgba(106,27,154,0.06)',pointRadius:0,tension:0.3,spanGaps:false}]},options:{...co,plugins:{...co.plugins,legend:{labels:{font:{size:11,family:'Inter'},filter:function(item){return item.text!=='U'&&item.text!=='L'}}}}}});`;
+  const scenarioChartScript = `mc('chartScenario',{type:'bar',data:{labels:${JSON.stringify(scenarioLabels)},datasets:[{label:'Bill',data:${JSON.stringify(scenarioValues)},backgroundColor:${JSON.stringify(scenarioColors)},borderRadius:6}]},options:{...co,indexAxis:'y',plugins:{...co.plugins,legend:{display:false}},scales:{x:{ticks:{font:{size:10,family:'Inter'},callback:function(v){return 'Rs.'+v.toLocaleString()}}},y:{ticks:{font:{size:11,family:'Inter'}}}}}});`;
+  const ratioBaseTotal = Math.max(1, toNumber(employeeTotals.total || chargeTotal, 1)).toFixed(2);
+
   let output = html;
   output = output.replace(/Globe Consultancy Services Ltd\./g, companyName);
   output = output.replace(/Globe Consultancy Services Limited/g, companyName);
@@ -415,10 +619,14 @@ function replaceHeaderFields(html, data) {
   output = output.replace(/All Numbers \(5 lines\)/g, `All Numbers (${lineCount} lines)`);
   output = output.replace(/All Connections \(5 Lines\)/g, `All Connections (${lineCount} Lines)`);
   output = output.replace(/All Connections \(5 lines\)/g, `All Connections (${lineCount} lines)`);
+  output = output.replace(/(Active Lines<\/p><p class="fs" style="font-size:14px">)\d+ of \d+(<\/p>)/g, `$1${lineCount} of ${lineCount}$2`);
   output = output.replace(/<span class="badge purple">4 '\+t\.insights<\/span>/g, `<span class="badge purple">${aiInsightsCount} '+t.insights</span>`);
   output = output.replace(/Save Rs\.1,247/g, `Save Rs.${formatINR(savingsRaw).replace(/\.00$/, '')}`);
   output = output.replace(/<div class="card-b" id="plan-recs">[\s\S]*?<\/div><\/div><\/div>/, `<div class="card-b" id="plan-recs">${aiRecItemsHtml || aiRecFallback}<button class="btn grn" style="width:100%" onclick="showToast('All recommendations applied! Save Rs.${aiApplySavingsText}/mo');launchConfetti()">Apply All Savings</button></div></div></div>`);
   output = output.replace(/AI Recommendations <span class="badge green">Save Rs\.[0-9,]+(?:\.[0-9]{2})?<\/span>/g, `AI Recommendations <span class="badge green">Save Rs.${aiApplySavingsText}</span>`);
+  output = output.replace(/Globe[\s\u00A0]+Enterprise/g, companyName);
+  output = output.replace(/Globe Consultancy Services Building/g, `${companyName} Building`);
+  output = output.replace(/<div class="grid g2"><div class="card"><div class="card-h"><h3>Current Plans<\/h3><\/div><div style="padding:0"><table><thead><tr><th>Line<\/th><th>User<\/th><th>Plan<\/th><th>Cost<\/th><th>Action<\/th><\/tr><\/thead><tbody>[\s\S]*?<\/tbody><\/table><\/div><\/div>/, `<div class="grid g2"><div class="card"><div class="card-h"><h3>Current Plans</h3></div><div style="padding:0"><table><thead><tr><th>Line</th><th>User</th><th>Plan</th><th>Cost</th><th>Action</th></tr></thead><tbody>${currentPlanRows}</tbody></table></div></div>`);
 
   output = output.replace(/id="home-voice-total">[0-9,]+ MIN/g, `id="home-voice-total">${voiceUsed.toLocaleString('en-IN')} MIN`);
   output = output.replace(/id="home-voice-detail">[0-9,]+ of [0-9,]+ MIN/g, `id="home-voice-detail">${voiceUsed.toLocaleString('en-IN')} of ${voiceLimit.toLocaleString('en-IN')} MIN`);
@@ -468,21 +676,72 @@ function replaceHeaderFields(html, data) {
   output = output.replace(/(<p style="font-size:28px" class="fb">)[0-9]+(<\/p><p class="xs mt up">Usage Reports<\/p>)/, `$1${Math.round(toNumber(reportSummary.usageReports, 0))}$2`);
   output = output.replace(/(<p style="font-size:28px" class="fb">)[0-9]+(<\/p><p class="xs mt up">Dept Reports<\/p>)/, `$1${Math.round(toNumber(reportSummary.departmentReports, 0))}$2`);
   output = output.replace(/(<p style="font-size:28px" class="fb">)[0-9]+(<\/p><p class="xs mt up">Custom Reports<\/p>)/, `$1${Math.round(toNumber(reportSummary.customReports, 0))}$2`);
-  output = output.replace(/<div class="grid g2" style="gap:8px" id="doc-itemized-list">[\s\S]*?<\/div><\/div><\/div>/, `<div class="grid g2" style="gap:8px" id="doc-itemized-list">${itemizedList}</div></div></div>`);
+  output = output.replace(/<div class="grid g2" style="gap:8px" id="doc-itemized-list">[\s\S]*?<\/div><\/div><\/div><\/div>/, `<div class="grid g2" style="gap:8px" id="doc-itemized-list">${itemizedList}</div></div></div>`);
   output = output.replace(/<tbody id="doc-dept-table">[\s\S]*?<\/tbody>/, `<tbody id="doc-dept-table">${deptDocRows}</tbody>`);
   output = output.replace(/<tbody id="expense-employee-table">[\s\S]*?<\/tbody>/, `<tbody id="expense-employee-table">${employeeRows}${employeeTotalRow}</tbody>`);
+  output = output.replace(/<div class="card bl-blue"><div class="card-b c" id="dispute-summary">[\s\S]*?<\/div><\/div>/, `<div class="card bl-blue"><div class="card-b c" id="dispute-summary">${disputeSummaryHtml}</div></div>`);
+  output = output.replace(/var allDisputes=\[[\s\S]*?\];/, `var allDisputes=${allDisputesJs};`);
+  output = output.replace(/var ratio=totalAmt\/[0-9]+(?:\.[0-9]+)?;/g, `var ratio=totalAmt/${ratioBaseTotal};`);
+  output = output.replace(/mc\('chartForecast',\{type:'line',data:\{labels:\[[\s\S]*?\}\}\}\);/g, forecastChartScript);
+  output = output.replace(/mc\('chartScenario',\{type:'bar',data:\{labels:\[[\s\S]*?\}\}\}\);/g, scenarioChartScript);
 
-  if (templateOverrides.companyAddressHtml) {
-    output = output.replace(/Tower B, 5th Floor, DLF Cyber City,<br>Sector 25A, Gurugram 122002,<br>Haryana, India/g, String(templateOverrides.companyAddressHtml));
+  output = output.replace(/(<div class="card bl-orange"><div class="card-h"><h3>Collections Engine<\/h3><\/div><div class="card-b">[\s\S]*?)(<\/div><\/div>\s*<\/div>\s*<!-- PAGE 10: PLANS -->)/, (_m, block, suffix) => {
+    let updated = block;
+    updated = updated.replace(/Low Risk \(\d+\)/g, `Low Risk (${lowRiskCount})`);
+    updated = updated.replace(/Medium \(\d+\)/g, `Medium (${mediumRiskCount})`);
+    updated = updated.replace(/High Risk \(\d+\)/g, `High Risk (${highRiskCount})`);
+    updated = updated.replace(/(Low Risk Connections \()\d+%(\))/g, `$1${lowRiskPct}%$2`);
+    updated = updated.replace(/(Medium Risk Connection \()\d+%(\))/g, `$1${mediumRiskPct}%$2`);
+    updated = updated.replace(/(High Risk Connection \()\d+%(\))/g, `$1${highRiskPct}%$2`);
+
+    const scorePcts = [lowRiskPct, mediumRiskPct, highRiskPct];
+    let idx = 0;
+    updated = updated.replace(/(<strong>)\d+% Collection Priority Score(<\/strong>)/g, (_mm, p1, p2) => {
+      const pct = scorePcts[Math.min(idx, scorePcts.length - 1)];
+      idx += 1;
+      return `${p1}${pct}% Collection Priority Score${p2}`;
+    });
+    let badgeIdx = 0;
+    updated = updated.replace(/(<span class="badge (?:green|orange|red)"[^>]*>)\d+%/g, (_mm, p1) => {
+      const pct = scorePcts[Math.min(badgeIdx, scorePcts.length - 1)];
+      badgeIdx += 1;
+      return `${p1}${pct}%`;
+    });
+    updated = updated.replace(/(Low Risk \([^)]*\)[\s\S]*?<div class="prog"><div class="prog-f" style="width:)\d+%/m, `$1${lowRiskPct}%`);
+    updated = updated.replace(/(Medium \([^)]*\)[\s\S]*?<div class="prog"><div class="prog-f" style="width:)\d+%/m, `$1${mediumRiskPct}%`);
+    updated = updated.replace(/(High Risk \([^)]*\)[\s\S]*?<div class="prog"><div class="prog-f" style="width:)\d+%/m, `$1${highRiskPct}%`);
+    return `${updated}${suffix}`;
+  });
+
+  if (effectiveAddressHtml) {
+    output = output.replace(/Tower B, 5th Floor, DLF Cyber City,<br>Sector 25A, Gurugram 122002,<br>Haryana, India/g, String(effectiveAddressHtml));
   }
-  if (templateOverrides.companyAddressInline) {
-    output = output.replace(/Tower B, 5th Floor, DLF Cyber City, Sector 25A, Gurugram 122002, Haryana, India/g, String(templateOverrides.companyAddressInline));
+  if (effectiveAddressInline) {
+    output = output.replace(/Tower B, 5th Floor, DLF Cyber City, Sector 25A, Gurugram 122002, Haryana, India/g, String(effectiveAddressInline));
   }
+  output = output.replace(/\['[^']+','Tower B, 5th Floor, DLF Cyber City,','Sector 25A, Gurugram 122002,','Haryana, India'\]/g, pdfAddressArrayLiteral);
   if (templateOverrides.accountManager) output = output.replace(/Ankit Mehra/g, String(templateOverrides.accountManager));
   if (templateOverrides.slaTier) output = output.replace(/Platinum/g, String(templateOverrides.slaTier));
   if (templateOverrides.creditLimit) output = output.replace(/Rs\.25,000/g, String(templateOverrides.creditLimit));
   if (templateOverrides.contractEnd) output = output.replace(/31 Mar 2027/g, String(templateOverrides.contractEnd));
   if (templateOverrides.contactPhone) output = output.replace(/\+91 124 456 7890/g, String(templateOverrides.contactPhone));
+  output = output.replace(/function changeLang\(lang\)\{/, "function changeLang(lang){\n  document.documentElement.lang=(lang==='hi'||lang==='mr'||lang==='ml')?lang:'en';");
+
+  // Guard against accidental duplicate insertion: keep only one Department-Wise Bill Breakdown card.
+  const deptCardRegex = /<div class="card bl-orange"><div class="card-h"><h3><span class="ic ic-lg"><svg><use href="#i-users"\/><\/svg><\/span> Department-Wise Bill Breakdown<\/h3><\/div><div style="padding:0"><table>[\s\S]*?<\/table><\/div><\/div>/g;
+  const deptCardMatches = output.match(deptCardRegex);
+  if (deptCardMatches && deptCardMatches.length > 1) {
+    let keepFirst = true;
+    output = output.replace(deptCardRegex, (m) => {
+      if (keepFirst) {
+        keepFirst = false;
+        return m;
+      }
+      return '';
+    });
+  }
+
+  output = repairMojibakeText(output);
 
   return output;
 }

@@ -4,7 +4,7 @@
     "accountName": "Adarsh Pandey",
     "companyName": "Adarsh Pandey Enterprises Ltd.",
     "accountCategory": "ENTERPRISE",
-    "totalConnections": 5,
+    "totalConnections": 15,
     "accountStatus": "Active"
   },
   "currentBilling": {
@@ -15,7 +15,7 @@
     },
     "generatedDate": "17/03/2026",
     "dueDate": "15/03/2026",
-    "daysRemaining": 4,
+    "daysRemaining": 14,
     "lateFeeIfNotPaid": "63.00",
     "currencySymbol": "Rs.",
     "totalDue": "7269.49",
@@ -28,11 +28,11 @@
     "budgetUtilization": "84%",
     "remainingBudget": "1508.38",
     "savingsOpportunity": "1344.15",
-    "activeConnections": 5,
-    "inactiveConnections": 0,
-    "totalInvoices": 11,
-    "paidInvoices": 13,
-    "unpaidInvoices": 3
+    "activeConnections": 15,
+    "inactiveConnections": 10,
+    "totalInvoices": 21,
+    "paidInvoices": 23,
+    "unpaidInvoices": 13
   },
   "billBreakdown": {
     "basePlans": "3123.00",
@@ -70,20 +70,20 @@
       "usage": {
         "data": {
           "used": 65.56,
-          "limit": 100,
+          "limit": 110,
           "unit": "GB",
           "utilization": "66%"
         },
         "calls": {
-          "used": 787,
+          "used": 797,
           "unit": "minutes"
         },
         "sms": {
-          "used": 172,
+          "used": 182,
           "unit": "messages"
         },
         "roaming": {
-          "used": 5944,
+          "used": 5954,
           "unit": "minutes"
         }
       },
@@ -96,15 +96,15 @@
       },
       "paymentStatus": "On-time",
       "paymentHistory": {
-        "onTimePercentage": 100,
+        "onTimePercentage": 110,
         "averageDelayDays": "9.26",
-        "delaysInLast12Months": 0
+        "delaysInLast12Months": 10
       },
-      "collectionRiskScore": 33,
+      "collectionRiskScore": 43,
       "collectionPriority": "LOW",
       "lateFeesAccumulated": "0.00",
       "alerts": {
-        "activeAlerts": 2,
+        "activeAlerts": 12,
         "billingAlerts": [],
         "usageAlerts": [],
         "serviceAlerts": []
@@ -128,20 +128,20 @@
       "usage": {
         "data": {
           "used": 76.75,
-          "limit": 75,
+          "limit": 85,
           "unit": "GB",
           "utilization": "102%"
         },
         "calls": {
-          "used": 1455,
+          "used": 1465,
           "unit": "minutes"
         },
         "sms": {
-          "used": 165,
+          "used": 175,
           "unit": "messages"
         },
         "roaming": {
-          "used": 5167,
+          "used": 5177,
           "unit": "minutes"
         }
       },
@@ -154,15 +154,15 @@
       },
       "paymentStatus": "Delayed",
       "paymentHistory": {
-        "onTimePercentage": 4,
+        "onTimePercentage": 14,
         "averageDelayDays": "3.89",
-        "delaysInLast12Months": 8
+        "delaysInLast12Months": 18
       },
-      "collectionRiskScore": 70,
+      "collectionRiskScore": 80,
       "collectionPriority": "MEDIUM",
       "lateFeesAccumulated": "83.93",
       "alerts": {
-        "activeAlerts": 3,
+        "activeAlerts": 13,
         "billingAlerts": [],
         "usageAlerts": [],
         "serviceAlerts": []
@@ -186,20 +186,20 @@
       "usage": {
         "data": {
           "used": 56.7,
-          "limit": 50,
+          "limit": 60,
           "unit": "GB",
           "utilization": "113%"
         },
         "calls": {
-          "used": 2054,
+          "used": 2064,
           "unit": "minutes"
         },
         "sms": {
-          "used": 99,
+          "used": 109,
           "unit": "messages"
         },
         "roaming": {
-          "used": 3710,
+          "used": 3720,
           "unit": "minutes"
         }
       },
@@ -212,15 +212,15 @@
       },
       "paymentStatus": "Occasional Delay",
       "paymentHistory": {
-        "onTimePercentage": 64,
+        "onTimePercentage": 74,
         "averageDelayDays": "0.78",
-        "delaysInLast12Months": 3
+        "delaysInLast12Months": 13
       },
-      "collectionRiskScore": 72,
+      "collectionRiskScore": 82,
       "collectionPriority": "MEDIUM",
       "lateFeesAccumulated": "81.16",
       "alerts": {
-        "activeAlerts": 0,
+        "activeAlerts": 10,
         "billingAlerts": [],
         "usageAlerts": [],
         "serviceAlerts": []
@@ -245,20 +245,20 @@
       "usage": {
         "data": {
           "used": 42.39,
-          "limit": 100,
+          "limit": 110,
           "unit": "GB",
           "utilization": "42%"
         },
         "calls": {
-          "used": 2373,
+          "used": 2383,
           "unit": "minutes"
         },
         "sms": {
-          "used": 225,
+          "used": 235,
           "unit": "messages"
         },
         "roaming": {
-          "used": 3234,
+          "used": 3244,
           "unit": "minutes"
         }
       },
@@ -271,15 +271,15 @@
       },
       "paymentStatus": "On-time",
       "paymentHistory": {
-        "onTimePercentage": 100,
+        "onTimePercentage": 110,
         "averageDelayDays": "13.23",
-        "delaysInLast12Months": 0
+        "delaysInLast12Months": 10
       },
-      "collectionRiskScore": 28,
+      "collectionRiskScore": 38,
       "collectionPriority": "LOW",
       "lateFeesAccumulated": "0.00",
       "alerts": {
-        "activeAlerts": 0,
+        "activeAlerts": 10,
         "billingAlerts": [],
         "usageAlerts": [],
         "serviceAlerts": []
@@ -303,20 +303,20 @@
       "usage": {
         "data": {
           "used": 51.32,
-          "limit": 75,
+          "limit": 85,
           "unit": "GB",
           "utilization": "68%"
         },
         "calls": {
-          "used": 1338,
+          "used": 13848,
           "unit": "minutes"
         },
         "sms": {
-          "used": 58,
+          "used": 68,
           "unit": "messages"
         },
         "roaming": {
-          "used": 3115,
+          "used": 3125,
           "unit": "minutes"
         }
       },
@@ -329,15 +329,15 @@
       },
       "paymentStatus": "On-time",
       "paymentHistory": {
-        "onTimePercentage": 76,
+        "onTimePercentage": 86,
         "averageDelayDays": "8.30",
-        "delaysInLast12Months": 2
+        "delaysInLast12Months": 12
       },
-      "collectionRiskScore": 63,
+      "collectionRiskScore": 73,
       "collectionPriority": "MEDIUM",
       "lateFeesAccumulated": "139.74",
       "alerts": {
-        "activeAlerts": 1,
+        "activeAlerts": 11,
         "billingAlerts": [],
         "usageAlerts": [],
         "serviceAlerts": []
@@ -346,121 +346,121 @@
   ],
   "voiceAndSmsMetrics": {
     "summary": {
-      "totalCallsUsed": 8007,
-      "totalCallsLimit": 15000,
+      "totalCallsUsed": 80317,
+      "totalCallsLimit": 150310,
       "callsUtilization": "53%",
-      "totalSmsUsed": 719,
-      "totalSmsLimit": 2600,
+      "totalSmsUsed": 7149,
+      "totalSmsLimit": 26040,
       "smsUtilization": "28%"
     },
     "connectionBreakdown": [
       {
         "phoneNumber": "91234000",
         "employeeName": "Adarsh Pandey",
-        "callsUsed": 787,
-        "callsLimit": 3000,
+        "callsUsed": 797,
+        "callsLimit": 3010,
         "callUtilization": "26%",
-        "smsUsed": 172,
-        "smsLimit": 172,
+        "smsUsed": 182,
+        "smsLimit": 182,
         "smsUtilization": "100%",
         "calls": {
-          "used": 1842,
-          "limit": 3000,
-          "utilization": 61,
+          "used": 1852,
+          "limit": 3010,
+          "utilization": 71,
           "status": "HIGH_USAGE"
         },
         "sms": {
-          "used": 234,
-          "limit": 1000,
-          "utilization": 23,
+          "used": 244,
+          "limit": 1010,
+          "utilization": 33,
           "status": "NORMAL"
         }
       },
       {
         "phoneNumber": "91234001",
         "employeeName": "Rajesh Kumar",
-        "callsUsed": 1455,
-        "callsLimit": 3000,
+        "callsUsed": 1465,
+        "callsLimit": 3010,
         "callUtilization": "49%",
-        "smsUsed": 165,
-        "smsLimit": 165,
+        "smsUsed": 175,
+        "smsLimit": 175,
         "smsUtilization": "100%",
         "calls": {
-          "used": 987,
-          "limit": 3000,
-          "utilization": 33,
+          "used": 997,
+          "limit": 3010,
+          "utilization": 43,
           "status": "NORMAL"
         },
         "sms": {
-          "used": 156,
-          "limit": 500,
-          "utilization": 31,
+          "used": 166,
+          "limit": 510,
+          "utilization": 41,
           "status": "NORMAL"
         }
       },
       {
         "phoneNumber": "91234002",
         "employeeName": "Priya Sharma",
-        "callsUsed": 2054,
-        "callsLimit": 3000,
+        "callsUsed": 2064,
+        "callsLimit": 3010,
         "callUtilization": "68%",
-        "smsUsed": 99,
-        "smsLimit": 99,
+        "smsUsed": 109,
+        "smsLimit": 109,
         "smsUtilization": "100%",
         "calls": {
-          "used": 2345,
-          "limit": 3000,
-          "utilization": 78,
+          "used": 2355,
+          "limit": 3010,
+          "utilization": 88,
           "status": "VERY_HIGH_USAGE"
         },
         "sms": {
-          "used": 89,
-          "limit": 500,
-          "utilization": 18,
+          "used": 99,
+          "limit": 510,
+          "utilization": 28,
           "status": "NORMAL"
         }
       },
       {
         "phoneNumber": "91234003",
         "employeeName": "Amit Patel",
-        "callsUsed": 2373,
-        "callsLimit": 3000,
+        "callsUsed": 2383,
+        "callsLimit": 3010,
         "callUtilization": "79%",
-        "smsUsed": 225,
-        "smsLimit": 225,
+        "smsUsed": 235,
+        "smsLimit": 235,
         "smsUtilization": "100%",
         "calls": {
-          "used": 456,
-          "limit": 3000,
-          "utilization": 15,
+          "used": 466,
+          "limit": 3010,
+          "utilization": 25,
           "status": "LOW_USAGE"
         },
         "sms": {
-          "used": 67,
-          "limit": 300,
-          "utilization": 22,
+          "used": 77,
+          "limit": 310,
+          "utilization": 32,
           "status": "NORMAL"
         }
       },
       {
         "phoneNumber": "91234004",
         "employeeName": "Vikram Singh",
-        "callsUsed": 1338,
-        "callsLimit": 3000,
+        "callsUsed": 1348,
+        "callsLimit": 3010,
         "callUtilization": "45%",
-        "smsUsed": 58,
-        "smsLimit": 58,
+        "smsUsed": 68,
+        "smsLimit": 68,
         "smsUtilization": "100%",
         "calls": {
-          "used": 1123,
-          "limit": 3000,
-          "utilization": 37,
+          "used": 1133,
+          "limit": 3010,
+          "utilization": 47,
           "status": "NORMAL"
         },
         "sms": {
-          "used": 198,
-          "limit": 300,
-          "utilization": 66,
+          "used": 208,
+          "limit": 310,
+          "utilization": 76,
           "status": "HIGH_USAGE"
         }
       }
@@ -477,66 +477,66 @@
       "Feb"
     ],
     "totals": [
-      7225,
-      7250,
-      6509,
-      6700,
-      5849,
-      7269
+      7235,
+      7260,
+      6519,
+      6710,
+      5859,
+      7279
     ],
     "plans": [
-      3487,
-      3338,
-      3447,
-      3864,
-      4000,
-      3123
+      3497,
+      3348,
+      3457,
+      3874,
+      4010,
+      3133
     ],
     "usage": [
-      370,
-      443,
-      330,
-      313,
-      599,
-      392
+      380,
+      453,
+      340,
+      323,
+      609,
+      402
     ],
     "addOns": [
-      778,
-      794,
-      516,
-      856,
-      756,
-      563
+      788,
+      804,
+      526,
+      866,
+      766,
+      573
     ],
     "roaming": [
-      806,
-      1015,
-      896,
-      1286,
-      724,
-      2190
+      816,
+      1025,
+      906,
+      1296,
+      734,
+      2200
     ],
     "taxes": [
-      935,
-      959,
-      1272,
-      1236,
-      1252,
-      752
+      945,
+      969,
+      1282,
+      1246,
+      1262,
+      762
     ]
   },
   "reportSummary": {
-    "totalInvoicesGenerated": 12,
-    "usageReports": 6,
-    "departmentReports": 3,
-    "customReports": 2,
+    "totalInvoicesGenerated": 22,
+    "usageReports": 16,
+    "departmentReports": 13,
+    "customReports": 12,
     "invoicesAvailable": [
       {
         "month": "Feb 2026",
         "invoiceNumber": "INV-2026-03-0847",
         "amount": "7842.50",
         "status": "Unpaid",
-        "lineItems": 5
+        "lineItems": 15
       },
       {
         "month": "Jan 2026",
@@ -610,18 +610,18 @@
   "predictiveAnalytics": {
     "delinquencyRisk": {
       "currentRiskLevel": "Low",
-      "riskScore": 11,
+      "riskScore": 21,
       "riskPercentage": "11%",
       "probability": "Low delinquency risk",
-      "onTimePaymentPercentage": 94,
+      "onTimePaymentPercentage": 104,
       "averageDelayDays": 2.3,
       "outstandingAmount": "0.00",
       "creditScore": "A+ (Excellent)"
     },
     "collectionsPriority": {
-      "lowRisk": 3,
-      "mediumRisk": 1,
-      "highRisk": 1
+      "lowRisk": 13,
+      "mediumRisk": 11,
+      "highRisk": 11
     },
     "spendForecast": {
       "currentMonth": "7842.50",
@@ -649,21 +649,21 @@
     "departmentBreakdown": [
       {
         "department": "Engineering",
-        "lines": 2,
+        "lines": 12,
         "spend": "3654.00",
         "budget": "4000.00",
         "utilization": "91%"
       },
       {
         "department": "Sales",
-        "lines": 2,
+        "lines": 12,
         "spend": "3290.00",
         "budget": "3500.00",
         "utilization": "94%"
       },
       {
         "department": "Operations",
-        "lines": 1,
+        "lines": 11,
         "spend": "898.50",
         "budget": "1500.00",
         "utilization": "60%"
@@ -678,10 +678,10 @@
   },
   "customerSupport": {
     "complaintsSummary": {
-      "openTickets": 1,
-      "inProgressTickets": 1,
-      "resolvedTickets": 1,
-      "totalTickets": 3
+      "openTickets": 11,
+      "inProgressTickets": 11,
+      "resolvedTickets": 11,
+      "totalTickets": 13
     },
     "complaints": [
       {
@@ -710,19 +710,19 @@
     ]
   },
   "alertsSummary": {
-    "totalAlerts": 12,
-    "billingAlerts": 3,
-    "usageAlerts": 5,
-    "planServiceAlerts": 1,
-    "serviceRequests": 2,
-    "simActivationAlerts": 1
+    "totalAlerts": 22,
+    "billingAlerts": 13,
+    "usageAlerts": 15,
+    "planServiceAlerts": 11,
+    "serviceRequests": 12,
+    "simActivationAlerts": 11
   },
   "billingAlerts": [
     {
       "type": "Payment Due Reminder",
       "amount": "7842.50",
       "dueDate": "2026-03-15",
-      "daysRemaining": 3,
+      "daysRemaining": 13,
       "severity": "HIGH",
       "timestamp": "2h ago",
       "read": false
@@ -752,7 +752,7 @@
       "alertType": "Data Usage",
       "current": {
         "used": 72.1,
-        "limit": 75,
+        "limit": 85,
         "utilization": "96%"
       },
       "severity": "HIGH",
@@ -766,7 +766,7 @@
       "alertType": "Data Usage",
       "current": {
         "used": 48.9,
-        "limit": 50,
+        "limit": 60,
         "utilization": "98%"
       },
       "severity": "HIGH",
@@ -787,8 +787,8 @@
       "employee": "Vikram Singh",
       "alertType": "SMS Usage",
       "current": {
-        "used": 198,
-        "limit": 300,
+        "used": 208,
+        "limit": 310,
         "utilization": "66%"
       },
       "severity": "MEDIUM",
@@ -810,7 +810,7 @@
     {
       "type": "Plan Expiry",
       "plan": "Enterprise Plus 799",
-      "renewalDaysRemaining": 15,
+      "renewalDaysRemaining": 25,
       "applicableToAllLines": true,
       "severity": "MEDIUM",
       "actionRequired": true
@@ -850,8 +850,8 @@
       "planExpiryNotification": false,
       "renewalReminder": true,
       "daysBeforeRenewal": [
-        30,
-        7
+        40,
+        17
       ]
     },
     "anomalyDetection": {
@@ -871,13 +871,13 @@
       "phoneNumber": "9876543210",
       "employeeName": "Rajesh Kumar",
       "department": "Engineering",
-      "riskScore": 8,
+      "riskScore": 18,
       "voiceAndSmsUsage": {
-        "callsUsed": 1842,
-        "callsLimit": 3000,
+        "callsUsed": 1852,
+        "callsLimit": 3010,
         "callUtilization": "61%",
-        "smsUsed": 234,
-        "smsLimit": 1000,
+        "smsUsed": 244,
+        "smsLimit": 1010,
         "smsUtilization": "23%"
       },
       "lineItems": [
@@ -933,13 +933,13 @@
       "phoneNumber": "9876543211",
       "employeeName": "Priya Sharma",
       "department": "Sales",
-      "riskScore": 15,
+      "riskScore": 25,
       "voiceAndSmsUsage": {
-        "callsUsed": 987,
-        "callsLimit": 3000,
+        "callsUsed": 997,
+        "callsLimit": 3010,
         "callUtilization": "33%",
-        "smsUsed": 156,
-        "smsLimit": 500,
+        "smsUsed": 166,
+        "smsLimit": 510,
         "smsUtilization": "31%"
       },
       "lineItems": [
@@ -985,13 +985,13 @@
       "phoneNumber": "9876543212",
       "employeeName": "Amit Patel",
       "department": "Engineering",
-      "riskScore": 72,
+      "riskScore": 82,
       "voiceAndSmsUsage": {
-        "callsUsed": 2345,
-        "callsLimit": 3000,
+        "callsUsed": 2355,
+        "callsLimit": 3010,
         "callUtilization": "78%",
-        "smsUsed": 89,
-        "smsLimit": 500,
+        "smsUsed": 99,
+        "smsLimit": 510,
         "smsUtilization": "18%"
       },
       "lineItems": [
@@ -1037,13 +1037,13 @@
       "phoneNumber": "9876543213",
       "employeeName": "Sneha Reddy",
       "department": "Operations",
-      "riskScore": 5,
+      "riskScore": 15,
       "voiceAndSmsUsage": {
-        "callsUsed": 456,
-        "callsLimit": 3000,
+        "callsUsed": 466,
+        "callsLimit": 3010,
         "callUtilization": "15%",
-        "smsUsed": 67,
-        "smsLimit": 300,
+        "smsUsed": 77,
+        "smsLimit": 310,
         "smsUtilization": "22%"
       },
       "lineItems": [
@@ -1069,13 +1069,13 @@
       "phoneNumber": "9876543214",
       "employeeName": "Vikram Singh",
       "department": "Sales",
-      "riskScore": 45,
+      "riskScore": 55,
       "voiceAndSmsUsage": {
-        "callsUsed": 1123,
-        "callsLimit": 3000,
+        "callsUsed": 1133,
+        "callsLimit": 3010,
         "callUtilization": "37%",
-        "smsUsed": 198,
-        "smsLimit": 300,
+        "smsUsed": 208,
+        "smsLimit": 310,
         "smsUtilization": "66%"
       },
       "lineItems": [
@@ -1201,12 +1201,12 @@
       "Feb"
     ],
     "actualBills": [
-      5890,
-      6234,
-      5720,
-      7450,
-      6980,
-      7842
+      5900,
+      6244,
+      5730,
+      7460,
+      6990,
+      7852
     ],
     "forecastMonths": [
       "Mar*",
@@ -1214,28 +1214,28 @@
       "May*"
     ],
     "forecastBills": [
-      7250,
-      7100,
-      6900
+      7260,
+      7110,
+      6910
     ],
     "upperConfidence": [
-      7800,
-      7700,
-      7500
+      7810,
+      7710,
+      7510
     ],
     "lowerConfidence": [
-      6700,
-      6500,
-      6300
+      6710,
+      6510,
+      6310
     ],
     "trendAnalysis": "Stable with seasonal variation",
     "forecastAccuracy": "92%"
   },
   "disputeTrackerData": {
     "summary": {
-      "activeDisputes": 2,
-      "pendingDisputes": 1,
-      "resolvedDisputes": 3,
+      "activeDisputes": 12,
+      "pendingDisputes": 11,
+      "resolvedDisputes": 13,
       "slaCompliance": "98%"
     },
     "disputes": [
@@ -1248,7 +1248,7 @@
         "description": "Wi-Fi calling charges disputed",
         "status": "Active",
         "createdDate": "2026-03-01",
-        "daysOpen": 19,
+        "daysOpen": 29,
         "priority": "HIGH",
         "lastUpdate": "2026-03-20",
         "expectedResolution": "2026-03-28"
@@ -1262,7 +1262,7 @@
         "description": "Expected data limit not clearly communicated",
         "status": "Active",
         "createdDate": "2026-03-15",
-        "daysOpen": 5,
+        "daysOpen": 15,
         "priority": "MEDIUM",
         "lastUpdate": "2026-03-20"
       },
@@ -1275,7 +1275,7 @@
         "description": "Singapore roaming charges higher than quoted",
         "status": "Pending",
         "createdDate": "2026-03-18",
-        "daysOpen": 2,
+        "daysOpen": 12,
         "priority": "HIGH",
         "investigation": "Comparing rates with competitors"
       },
@@ -1333,7 +1333,7 @@
       4.9,
       4.7,
       4.2,
-      4,
+      14,
       3.9,
       3.6,
       4.4,
@@ -1388,55 +1388,55 @@
   },
   "comparisonTrendsData": {
     "thisMonth": {
-      "amount": 7842,
+      "amount": 7852,
       "change": "+12.4%",
-      "previousMonth": 6980,
+      "previousMonth": 6990,
       "breakdown": {
         "planRental": {
-          "current": 3795,
-          "previous": 3396,
+          "current": 3805,
+          "previous": 3406,
           "change": "+399"
         },
         "dataOverage": {
-          "current": 1198,
-          "previous": 1000,
+          "current": 1208,
+          "previous": 1010,
           "change": "+198 (+19.8%)"
         },
         "roaming": {
-          "current": 1420,
-          "previous": 1000,
+          "current": 1430,
+          "previous": 1010,
           "change": "+420 (+42%)"
         },
         "vasServices": {
-          "current": 234,
-          "previous": 500,
+          "current": 244,
+          "previous": 510,
           "change": "+244 (+48.8%)"
         },
         "taxes": {
-          "current": 1084,
-          "previous": 1084,
+          "current": 1094,
+          "previous": 1094,
           "change": "0%"
         }
       }
     },
     "lastMonth": {
-      "amount": 6980,
+      "amount": 6990,
       "change": "-6.3%",
-      "previousMonth": 7450,
+      "previousMonth": 7460,
       "breakdown": {
         "roaming": {
-          "current": 1000,
-          "previous": 1650,
+          "current": 1010,
+          "previous": 1660,
           "decrease": "-39.4%"
         },
         "vasServices": {
-          "current": 500,
-          "previous": 680,
+          "current": 510,
+          "previous": 690,
           "decrease": "-26.5%"
         },
         "dataOverage": {
-          "current": 1000,
-          "previous": 850,
+          "current": 1010,
+          "previous": 860,
           "increase": "+17.6%"
         }
       }
@@ -1444,11 +1444,11 @@
   },
   "homePageSummary": {
     "totalAmount": "7842.50",
-    "connectionCount": 5,
+    "connectionCount": 15,
     "statusDistribution": {
-      "active": 5,
-      "inactive": 0,
-      "suspended": 0
+      "active": 15,
+      "inactive": 10,
+      "suspended": 10
     },
     "connectionsTable": [
       {
@@ -1523,7 +1523,7 @@
         "amount": "6234.00",
         "method": "Card",
         "status": "Delayed",
-        "delaydaysAfterDue": 5
+        "delaydaysAfterDue": 15
       }
     ],
     "upcomingPayments": [
@@ -1598,59 +1598,59 @@
     ]
   },
   "adhocReportsData": {
-    "reportsGenerated": 23,
-    "invoicesAvailable": 12,
-    "usageReports": 6,
-    "departmentReports": 3,
-    "customReports": 2,
+    "reportsGenerated": 33,
+    "invoicesAvailable": 22,
+    "usageReports": 16,
+    "departmentReports": 13,
+    "customReports": 12,
     "invoiceHistory": [
       {
         "month": "Feb 2026",
         "invoice": "INV-2026-03-0847",
         "amount": "7842.50",
         "status": "Unpaid",
-        "lineItems": 5
+        "lineItems": 15
       },
       {
         "month": "Jan 2026",
         "invoice": "INV-2026-02-0753",
         "amount": "6980.00",
         "status": "Paid",
-        "lineItems": 5
+        "lineItems": 15
       },
       {
         "month": "Dec 2025",
         "invoice": "INV-2026-01-0682",
         "amount": "5720.00",
         "status": "Paid",
-        "lineItems": 5
+        "lineItems": 15
       },
       {
         "month": "Nov 2025",
         "invoice": "INV-2025-12-0598",
         "amount": "7450.00",
         "status": "Paid",
-        "lineItems": 5
+        "lineItems": 15
       },
       {
         "month": "Oct 2025",
         "invoice": "INV-2025-11-0521",
         "amount": "6234.00",
         "status": "Paid",
-        "lineItems": 5
+        "lineItems": 15
       },
       {
         "month": "Sep 2025",
         "invoice": "INV-2025-10-0447",
         "amount": "5890.00",
         "status": "Paid",
-        "lineItems": 5
+        "lineItems": 15
       }
     ],
     "departmentSpend": [
       {
         "department": "Engineering",
-        "lines": 2,
+        "lines": 12,
         "spend": "3654.00",
         "budget": "4000.00",
         "utilization": "91%",
@@ -1658,7 +1658,7 @@
       },
       {
         "department": "Sales",
-        "lines": 2,
+        "lines": 12,
         "spend": "3290.00",
         "budget": "3500.00",
         "utilization": "94%",
@@ -1666,7 +1666,7 @@
       },
       {
         "department": "Operations",
-        "lines": 1,
+        "lines": 11,
         "spend": "898.50",
         "budget": "1500.00",
         "utilization": "60%",
@@ -1676,24 +1676,24 @@
   },
   "templateOverrides": {
     "firstInvoiceDownloadAmount": "7842.50",
-    "companyAddressHtml": "Tower B, 5th Floor, DLF Cyber City,<br>Sector 25A, Gurugram 122002,<br>Haryana, India",
-    "companyAddressInline": "Tower B, 5th Floor, DLF Cyber City, Sector 25A, Gurugram 122002, Haryana, India",
+    "companyNameHtml": "Tower A, 5th Floor, Vasai Cyber City,<br>SeNctor 25A, Gurugram 122002,<br>Haryana, India",
+    "companyNameInline": "Tower A, 5th Floor, DLF Cyber City, Sector 25A, Gurugram 122002, Haryana, India",
     "accountManager": "Ankit Mehra",
     "slaTier": "Platinum",
     "creditLimit": "Rs.25,000",
     "contractEnd": "31 Mar 2027",
     "contactPhone": "+91 124 456 7890",
-    "aiInsightsCount": 4,
+    "aiInsightsCount": 14,
     "smartPaymentSlug": "VBP-079487",
     "deepPayLink": "viapp://pay/ENT-99341022",
     "commitments": {
-      "activeEmi": 1,
+      "activeEmi": 11,
       "model": "Samsung Galaxy S25 Ultra",
       "number": "91234000",
-      "monthly": 399,
-      "paid": 8,
-      "total": 24,
-      "remaining": 6384,
+      "monthly": 409,
+      "paid": 18,
+      "total": 34,
+      "remaining": 6394,
       "end": "Oct 2027"
     },
     "collectionCenters": [

@@ -1,0 +1,44 @@
+STRUCTURE_COMPARE_REPORT
+
+PAGES_TEMPLATE=15 -> page-1,page-2,page-3,page-4,page-5,page-6,page-7,page-8,page-9,page-10,page-11,page-12,page-13,page-14,page-15
+PAGES_OUTPUT=15 -> page-1,page-2,page-3,page-4,page-5,page-6,page-7,page-8,page-9,page-10,page-11,page-12,page-13,page-14,page-15
+
+TAG_BALANCE_METRICS
+divOpenTemplate=1122
+divCloseTemplate=1120
+divOpenOutput=1121
+divCloseOutput=1119
+tableOpenTemplate=13
+tableCloseTemplate=13
+tableOpenOutput=13
+tableCloseOutput=13
+trOpenTemplate=83
+trCloseTemplate=83
+trOpenOutput=83
+trCloseOutput=83
+tdOpenTemplate=381
+tdCloseTemplate=381
+tdOpenOutput=381
+tdCloseOutput=381
+
+MISSING_IDS_IN_OUTPUT=2
+  - rec-amit
+  - rec-sneha
+
+EXTRA_IDS_IN_OUTPUT=1
+  + rec-0
+
+DUPLICATE_IDS_IN_OUTPUT=4
+  * bar x2
+  * line x2
+  * i-users x2
+  * i-settings x2
+
+KEY_PHRASE_COUNTS
+Department-Wise Bill Breakdown | template=3 output=3
+Custom Report Builder | template=3 output=3
+Collections Engine | template=3 output=3
+Current Plans | template=3 output=3
+Self-Service & Disputes | template=6 output=6
+chartForecast | template=4 output=4
+chartScenario | template=4 output=4
