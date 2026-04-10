@@ -349,7 +349,7 @@
       "totalCallsUsed": 20557,
       "totalCallsLimit": 15050,
       "callsUtilization": "137%",
-      "totalSmsUsed": 769,
+      "totalSmsUsed": 819,
       "totalSmsLimit": 769,
       "smsUtilization": "100%"
     },
@@ -966,7 +966,7 @@
           "amount": "149.00"
         },
         {
-          "description": "Samsung Galaxy S25 EMI 8/24",
+          "description": "Realme EMI 8/24",
           "category": "Device EMI",
           "amount": "399.00"
         },
@@ -1705,7 +1705,7 @@
     "deepPayLink": "viapp://pay/ENT-99341022",
     "commitments": {
       "activeEmi": 11,
-      "model": "Samsung Galaxy S25 Ultra",
+      "model": "Realme",
       "number": "91234000",
       "monthly": 409,
       "paid": 18,

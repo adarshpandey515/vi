@@ -1,0 +1,64 @@
+adarsh_hindi.html untranslated English audit
+Generated from latest html/adarsh_hindi.html
+Scope: user-visible/static runtime strings with no effective Hindi render path.
+Ignored by design: i18n dictionaries and multilingual key maps that already provide Hindi equivalents.
+
+1) Line 657
+Text: "Predictive Intelligence" / "AI-Powered Forecasting"
+Reason: Static heading content still rendered in English on the Hindi page.
+
+2) Line 661
+Text: "Delinquency Risk", "View Details", and full modal explanation block
+Reason: Entire predictive risk popup is hardcoded in English.
+
+3) Line 703
+Text: "Alert Configuration", "Payment Due Reminders", "Billing Anomaly Detection", etc.
+Reason: Alert configuration labels and toggle toasts are static English.
+
+4) Line 731
+Text: Account modal labels such as "Account Number", "Account Category", "SLA Tier", "Billing Cycle", "Contact Email", "Contact Phone"
+Reason: Account metadata labels remain static English.
+
+5) Line 735
+Text: "Month Detail", "Plan Rental", "Data Overage", "Add-Ons (VAS)", "Taxes (GST 18%)", "Total"
+Reason: Month detail modal table labels are hardcoded English.
+
+6) Line 754
+Text: "Amazon Pay UPI", "Amazon Pay Balance", "Amazon Pay Later", "Amazon Pay ICICI Card"
+Reason: Payment option labels remain English/brand-English in visible UI.
+
+7) Line 757
+Text: "Vi Enterprise | Interactive Prototype | 3/20/2026"
+Reason: Watermark/title strip still has static English phrase "Interactive Prototype".
+
+8) Line 1937
+Text: "Account Category", "ENTERPRISE", "Total Amount"
+Reason: PDF export metadata rows use fixed English labels.
+
+9) Line 1960
+Text: PDF header columns "Number", "User", "Plan", "Plan Cost", "Data Ovg", "Roaming", "VAS", "Tax", "Total"
+Reason: Export schema remains English.
+
+10) Line 2002
+Text: CSV header "Number,Name,Plan,Plan Cost,Data Overage,Roaming,VAS,Tax,Total Bill"
+Reason: CSV export header remains English.
+
+11) Line 2044
+Text: "Total Amount", "Description", "Category", "TOTAL"
+Reason: Connection-level PDF labels are static English.
+
+12) Line 2193
+Text: ViTM canned responses in English (bill/payment/plan/usage/dispute/support/hello/default)
+Reason: Assistant reply templates are English-only literals in current output.
+
+13) Line 2219
+Text: "Powered by ViTM • Vi Enterprise AI"
+Reason: ViTM footer caption remains English.
+
+14) Lines 2414, 2416
+Text: Month-note narratives in English (trend explanations)
+Reason: Historical note content is still static English copy.
+
+Ignored (translation exists in-page):
+- Lines 765-880 and 2262-2265 contain language dictionaries (en/hi/mr/ml) and are not treated as untranslated defects.
+

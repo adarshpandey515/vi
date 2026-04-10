@@ -1,0 +1,1739 @@
+{
+  "accountSummary": {
+    "accountNumber": "ENT-९९३४१०२२",
+    "accountName": "आदर्श पांडे",
+    "companyName": "आदर्श पांडे इंटरप्राइजेज लिमिटेड",
+    "accountCategory": "उद्यम बड़ा",
+    "totalConnections": 5,
+    "accountStatus": "सक्रिय"
+  },
+  "currentBilling": {
+    "invoiceNumber": "INV-२०२६-०७-९९३४१०२२",
+    "billPeriod": {
+      "startDate": "०१/०३/२०२६",
+      "endDate": "३१/०३/२०२६"
+    },
+    "generatedDate": "०७/०४/२०२६",
+    "dueDate": "१५/०४/२०२६",
+    "daysRemaining": 6,
+    "lateFeeIfNotPaid": "६३.००",
+    "currencySymbol": "रु.",
+    "totalDue": "११२३९.७५",
+    "status": "अवैतनिक"
+  },
+  "dashboardStatistics": {
+    "monthlySpend": "११२४०",
+    "averageSpend": "९५४१",
+    "monthlyBudget": "९४२७.३८",
+    "budgetUtilization": "८४%",
+    "remainingBudget": "१५०८.३८",
+    "savingsOpportunity": "१३४४.१५",
+    "activeConnections": 5,
+    "inactiveConnections": 0,
+    "totalInvoices": 6,
+    "paidInvoices": 5,
+    "unpaidInvoices": 1
+  },
+  "billBreakdown": {
+    "basePlans": "४१९५.००",
+    "dataOverage": "१३७०.६२",
+    "roaming": "२२३७.९२",
+    "vasServices": "१६३१.४६",
+    "subtotal": "९४३५.००",
+    "taxes": {
+      "gst": {
+        "rate": "१२%",
+        "amount": "१८०४.७५"
+      }
+    },
+    "previousBalance": "०.००",
+    "totalCharges": "११२३९.७५",
+    "adjustments": "०.००",
+    "finalTotal": "११२३९.७५"
+  },
+  "connections": [
+    {
+      "phoneNumber": "९१२३४०००",
+      "employeeName": "आदर्श पांडे",
+      "department": "नेतृत्व",
+      "costCenter": "CC-७०६-०१",
+      "isPrimary": true,
+      "plan": {
+        "name": "अधिकतम",
+        "code": "अधिकतम ९९९",
+        "baseCost": "९९९"
+      },
+      "monthlySpend": "२३९६.७२",
+      "monthlyLimit": "२६४७",
+      "limitUtilization": "९६%",
+      "status": "सक्रिय",
+      "usage": {
+        "data": {
+          "used": 65.56,
+          "limit": 110,
+          "unit": "GB",
+          "utilization": "६६%"
+        },
+        "calls": {
+          "used": 797,
+          "unit": "मिनट"
+        },
+        "sms": {
+          "used": 182,
+          "unit": "संदेशों"
+        },
+        "roaming": {
+          "used": 5954,
+          "unit": "मिनट"
+        }
+      },
+      "charges": {
+        "planCost": "९९९",
+        "dataOverage": "४३७.४९",
+        "roaming": "२९०.९२",
+        "vas": "२७५.४७",
+        "tax": "३९३.८४"
+      },
+      "paymentStatus": "समय पर",
+      "paymentHistory": {
+        "onTimePercentage": 100,
+        "averageDelayDays": "९.२६",
+        "delaysInLast12Months": 10
+      },
+      "collectionRiskScore": 43,
+      "collectionPriority": "LOW",
+      "lateFeesAccumulated": "०.००",
+      "alerts": {
+        "activeAlerts": 12,
+        "billingAlerts": [],
+        "usageAlerts": [],
+        "serviceAlerts": []
+      }
+    },
+    {
+      "phoneNumber": "९१२३४००१",
+      "employeeName": "राजेश कुमार",
+      "department": "उत्पाद",
+      "costCenter": "CC-७३५-०२",
+      "isPrimary": false,
+      "plan": {
+        "name": "प्लस",
+        "code": "प्लस ७९९",
+        "baseCost": "७९९"
+      },
+      "monthlySpend": "१७७८.५३",
+      "monthlyLimit": "२८६४",
+      "limitUtilization": "४०%",
+      "status": "सक्रिय",
+      "usage": {
+        "data": {
+          "used": 76.75,
+          "limit": 85,
+          "unit": "GB",
+          "utilization": "१०२%"
+        },
+        "calls": {
+          "used": 1465,
+          "unit": "मिनट"
+        },
+        "sms": {
+          "used": 175,
+          "unit": "संदेशों"
+        },
+        "roaming": {
+          "used": 5177,
+          "unit": "मिनट"
+        }
+      },
+      "charges": {
+        "planCost": "७९९",
+        "dataOverage": "२४.७४",
+        "roaming": "१८५.४२",
+        "vas": "३१५.६५",
+        "tax": "४५३.७२"
+      },
+      "paymentStatus": "विलंबित",
+      "paymentHistory": {
+        "onTimePercentage": 14,
+        "averageDelayDays": "३.८९",
+        "delaysInLast12Months": 18
+      },
+      "collectionRiskScore": 80,
+      "collectionPriority": "MEDIUM",
+      "lateFeesAccumulated": "८३.९३",
+      "alerts": {
+        "activeAlerts": 13,
+        "billingAlerts": [],
+        "usageAlerts": [],
+        "serviceAlerts": []
+      }
+    },
+    {
+      "phoneNumber": "९१२३४००२",
+      "employeeName": "प्रिया शर्मा",
+      "department": "नेतृत्व",
+      "costCenter": "CC-२७४-०३",
+      "isPrimary": false,
+      "plan": {
+        "name": "बुनियादी",
+        "code": "मूल ५९९",
+        "baseCost": "५९९"
+      },
+      "monthlySpend": "१९९८.२८",
+      "monthlyLimit": "२५९०",
+      "limitUtilization": "८०%",
+      "status": "सक्रिय",
+      "usage": {
+        "data": {
+          "used": 56.7,
+          "limit": 60,
+          "unit": "GB",
+          "utilization": "११३%"
+        },
+        "calls": {
+          "used": 2064,
+          "unit": "मिनट"
+        },
+        "sms": {
+          "used": 109,
+          "unit": "संदेशों"
+        },
+        "roaming": {
+          "used": 3720,
+          "unit": "मिनट"
+        }
+      },
+      "charges": {
+        "planCost": "५९९",
+        "dataOverage": "१५६.७४",
+        "roaming": "४८७.५०",
+        "vas": "३१६.८०",
+        "tax": "४३८.२४"
+      },
+      "paymentStatus": "कभी-कभी देरी",
+      "paymentHistory": {
+        "onTimePercentage": 74,
+        "averageDelayDays": "०.७८",
+        "delaysInLast12Months": 13
+      },
+      "collectionRiskScore": 82,
+      "collectionPriority": "MEDIUM",
+      "lateFeesAccumulated": "८१.१६",
+      "alerts": {
+        "activeAlerts": 10,
+        "billingAlerts": [],
+        "usageAlerts": [],
+        "serviceAlerts": []
+      },
+      "outstandingAmount": "२८४७.००"
+    },
+    {
+      "phoneNumber": "९१२३४००३",
+      "employeeName": "अमित पटेल",
+      "department": "सहायता",
+      "costCenter": "CC-५८०-०४",
+      "isPrimary": false,
+      "plan": {
+        "name": "अधिकतम",
+        "code": "अधिकतम ९९९",
+        "baseCost": "९९९"
+      },
+      "monthlySpend": "२९६२.७१",
+      "monthlyLimit": "२४२५",
+      "limitUtilization": "७२%",
+      "status": "सक्रिय",
+      "usage": {
+        "data": {
+          "used": 42.39,
+          "limit": 110,
+          "unit": "GB",
+          "utilization": "४२%"
+        },
+        "calls": {
+          "used": 2383,
+          "unit": "मिनट"
+        },
+        "sms": {
+          "used": 235,
+          "unit": "संदेशों"
+        },
+        "roaming": {
+          "used": 3244,
+          "unit": "मिनट"
+        }
+      },
+      "charges": {
+        "planCost": "९९९",
+        "dataOverage": "४७७.२२",
+        "roaming": "७११.२४",
+        "vas": "४६६.५३",
+        "tax": "३०८.७२"
+      },
+      "paymentStatus": "समय पर",
+      "paymentHistory": {
+        "onTimePercentage": 100,
+        "averageDelayDays": "१३.२३",
+        "delaysInLast12Months": 10
+      },
+      "collectionRiskScore": 38,
+      "collectionPriority": "LOW",
+      "lateFeesAccumulated": "०.००",
+      "alerts": {
+        "activeAlerts": 10,
+        "billingAlerts": [],
+        "usageAlerts": [],
+        "serviceAlerts": []
+      }
+    },
+    {
+      "phoneNumber": "९१२३४००४",
+      "employeeName": "विक्रम सिंह",
+      "department": "मार्केटिंग",
+      "costCenter": "CC-७५९-०५",
+      "isPrimary": false,
+      "plan": {
+        "name": "प्लस",
+        "code": "प्लस ७९९",
+        "baseCost": "७९९"
+      },
+      "monthlySpend": "२१०३.५१",
+      "monthlyLimit": "३००२",
+      "limitUtilization": "४२%",
+      "status": "सक्रिय",
+      "usage": {
+        "data": {
+          "used": 51.32,
+          "limit": 85,
+          "unit": "GB",
+          "utilization": "६८%"
+        },
+        "calls": {
+          "used": 13848,
+          "unit": "मिनट"
+        },
+        "sms": {
+          "used": 68,
+          "unit": "संदेशों"
+        },
+        "roaming": {
+          "used": 3125,
+          "unit": "मिनट"
+        }
+      },
+      "charges": {
+        "planCost": "७९९",
+        "dataOverage": "२७४.४३",
+        "roaming": "५६२.८४",
+        "vas": "२५७.०१",
+        "tax": "२१०.२३"
+      },
+      "paymentStatus": "समय पर",
+      "paymentHistory": {
+        "onTimePercentage": 86,
+        "averageDelayDays": "८.३०",
+        "delaysInLast12Months": 12
+      },
+      "collectionRiskScore": 73,
+      "collectionPriority": "MEDIUM",
+      "lateFeesAccumulated": "१३९.७४",
+      "alerts": {
+        "activeAlerts": 11,
+        "billingAlerts": [],
+        "usageAlerts": [],
+        "serviceAlerts": []
+      }
+    }
+  ],
+  "voiceAndSmsMetrics": {
+    "summary": {
+      "totalCallsUsed": 20557,
+      "totalCallsLimit": 15050,
+      "callsUtilization": "१३७%",
+      "totalSmsUsed": 769,
+      "totalSmsLimit": 769,
+      "smsUtilization": "१००%"
+    },
+    "connectionBreakdown": [
+      {
+        "phoneNumber": "९१२३४०००",
+        "employeeName": "आदर्श पांडे",
+        "callsUsed": 797,
+        "callsLimit": 3010,
+        "callUtilization": "२६%",
+        "smsUsed": 182,
+        "smsLimit": 182,
+        "smsUtilization": "१००%",
+        "calls": {
+          "used": 797,
+          "limit": 3010,
+          "utilization": 26,
+          "status": "NORMAL"
+        },
+        "sms": {
+          "used": 182,
+          "limit": 182,
+          "utilization": 100,
+          "status": "VERY_HIGH_USAGE"
+        }
+      },
+      {
+        "phoneNumber": "९१२३४००१",
+        "employeeName": "राजेश कुमार",
+        "callsUsed": 1465,
+        "callsLimit": 3010,
+        "callUtilization": "४९%",
+        "smsUsed": 175,
+        "smsLimit": 175,
+        "smsUtilization": "१००%",
+        "calls": {
+          "used": 1465,
+          "limit": 3010,
+          "utilization": 49,
+          "status": "NORMAL"
+        },
+        "sms": {
+          "used": 175,
+          "limit": 175,
+          "utilization": 100,
+          "status": "VERY_HIGH_USAGE"
+        }
+      },
+      {
+        "phoneNumber": "९१२३४००२",
+        "employeeName": "प्रिया शर्मा",
+        "callsUsed": 2064,
+        "callsLimit": 3010,
+        "callUtilization": "६९%",
+        "smsUsed": 109,
+        "smsLimit": 109,
+        "smsUtilization": "१००%",
+        "calls": {
+          "used": 2064,
+          "limit": 3010,
+          "utilization": 69,
+          "status": "NORMAL"
+        },
+        "sms": {
+          "used": 109,
+          "limit": 109,
+          "utilization": 100,
+          "status": "VERY_HIGH_USAGE"
+        }
+      },
+      {
+        "phoneNumber": "९१२३४००३",
+        "employeeName": "अमित पटेल",
+        "callsUsed": 2383,
+        "callsLimit": 3010,
+        "callUtilization": "७९%",
+        "smsUsed": 235,
+        "smsLimit": 235,
+        "smsUtilization": "१००%",
+        "calls": {
+          "used": 2383,
+          "limit": 3010,
+          "utilization": 79,
+          "status": "HIGH_USAGE"
+        },
+        "sms": {
+          "used": 235,
+          "limit": 235,
+          "utilization": 100,
+          "status": "VERY_HIGH_USAGE"
+        }
+      },
+      {
+        "phoneNumber": "९१२३४००४",
+        "employeeName": "विक्रम सिंह",
+        "callsUsed": 13848,
+        "callsLimit": 3010,
+        "callUtilization": "४६०%",
+        "smsUsed": 68,
+        "smsLimit": 68,
+        "smsUtilization": "१००%",
+        "calls": {
+          "used": 13848,
+          "limit": 3010,
+          "utilization": 460,
+          "status": "VERY_HIGH_USAGE"
+        },
+        "sms": {
+          "used": 68,
+          "limit": 68,
+          "utilization": 100,
+          "status": "VERY_HIGH_USAGE"
+        }
+      }
+    ],
+    "alerts": []
+  },
+  "historicalMonthlyData": {
+    "months": [
+      "सितम्बर",
+      "अक्टूबर",
+      "नवंबर",
+      "दिसम्बर",
+      "जनवरी",
+      "फ़रवरी"
+    ],
+    "totals": [
+      7235,
+      7260,
+      6519,
+      6710,
+      5859,
+      7279
+    ],
+    "plans": [
+      3497,
+      3348,
+      3457,
+      3874,
+      4010,
+      3133
+    ],
+    "usage": [
+      380,
+      453,
+      340,
+      323,
+      609,
+      402
+    ],
+    "addOns": [
+      788,
+      804,
+      526,
+      866,
+      766,
+      573
+    ],
+    "roaming": [
+      816,
+      1025,
+      906,
+      1296,
+      734,
+      2200
+    ],
+    "taxes": [
+      945,
+      969,
+      1282,
+      1246,
+      1262,
+      762
+    ]
+  },
+  "reportSummary": {
+    "totalInvoicesGenerated": 3,
+    "usageReports": 16,
+    "departmentReports": 13,
+    "customReports": 12,
+    "invoicesAvailable": [
+      {
+        "month": "फ़रवरी २०२६",
+        "invoiceNumber": "INV-२०२६-०३-०८४७",
+        "amount": "११२३९.७५",
+        "status": "अवैतनिक",
+        "lineItems": 5
+      },
+      {
+        "month": "जनवरी २०२६",
+        "invoiceNumber": "INV-२०२६-०२-०७५३",
+        "amount": "६९८०.००",
+        "status": "चुकाया गया"
+      },
+      {
+        "month": "दिसंबर २०२५",
+        "invoiceNumber": "INV-२०२६-०१-०६८२",
+        "amount": "५७२०.००",
+        "status": "चुकाया गया"
+      }
+    ]
+  },
+  "paymentInformation": {
+    "bankDetails": {
+      "accountNumber": "XXXXXXXXX०८४७",
+      "bankName": "एचडीएफसी बैंक",
+      "ifscCode": "HDFC००००००१",
+      "upiId": "ग्लोबकंसल्टेंसी@एचडीएफसी"
+    },
+    "lastPaymentDate": "०१/०२/२०२६",
+    "lastPaymentAmount": "७५००.००",
+    "nextPaymentDue": "१५/०३/२०२६",
+    "emiOptions": [
+      {
+        "period": "३ महीने",
+        "monthlyAmount": "२६१४.००",
+        "interestRate": "०%",
+        "totalCost": "७८४२.५०"
+      },
+      {
+        "period": "६ महीने",
+        "monthlyAmount": "१३०७.००",
+        "interestRate": "०%",
+        "totalCost": "७८४२.५०"
+      },
+      {
+        "period": "१२ महीने",
+        "monthlyAmount": "६५४.००",
+        "interestRate": "५%",
+        "totalCost": "७८४८.००"
+      }
+    ]
+  },
+  "planRecommendations": {
+    "currentPlanStatus": "एंटरप्राइज़ प्लस ७९९",
+    "aiRecommendations": [
+      {
+        "actionType": "उन्नत करना",
+        "line": "९१२३४००२",
+        "employee": "अमित पटेल",
+        "fromPlan": "प्लस ७९९",
+        "toPlan": "अधिकतम ९९९",
+        "reason": "पूरे उद्यम में ९६% औसत डेटा उपयोग",
+        "monthlySavings": "६०.००",
+        "priority": "HIGH"
+      }
+    ],
+    "savingsOpportunity": "१२४७.००",
+    "availablePlanUpgrades": [
+      "अधिकतम ९९९",
+      "प्रीमियम १०९९"
+    ],
+    "availablePlanDowngrades": [
+      "मूल ५९९",
+      "लाइट ३९९"
+    ]
+  },
+  "predictiveAnalytics": {
+    "delinquencyRisk": {
+      "currentRiskLevel": "कम",
+      "riskScore": 31,
+      "riskPercentage": "३१%",
+      "probability": "कम अपराध जोखिम",
+      "onTimePaymentPercentage": 100,
+      "averageDelayDays": 2.3,
+      "outstandingAmount": "११२३९.७५",
+      "creditScore": "ए+ (उत्कृष्ट)"
+    },
+    "collectionsPriority": {
+      "lowRisk": 2,
+      "mediumRisk": 1,
+      "highRisk": 2
+    },
+    "spendForecast": {
+      "currentMonth": "११२३९.७५",
+      "forecastedNext3Months": [
+        "११८४०.००",
+        "११०९०.००",
+        "१२०१०.००"
+      ],
+      "trendAnalysis": "मध्यम अस्थिरता के साथ बढ़ा हुआ खर्च"
+    },
+    "budgetAlerts": {
+      "remaining": "०.००",
+      "percentageRemaining": "०%",
+      "warningLevel": "गंभीर - ११९% उपयोग",
+      "autoAlert": true
+    }
+  },
+  "expenseManagement": {
+    "monthlyBudgetTracking": {
+      "total": "९४२७.३८",
+      "spent": "११२३९.७५",
+      "utilization": "११९%",
+      "remaining": "०.००"
+    },
+    "departmentBreakdown": [
+      {
+        "department": "नेतृत्व",
+        "lines": 2,
+        "spend": "४३९५.००",
+        "budget": "३८००.००",
+        "utilization": "११६%"
+      },
+      {
+        "department": "उत्पाद",
+        "lines": 1,
+        "spend": "१७७८.५३",
+        "budget": "१९००.००",
+        "utilization": "९४%"
+      },
+      {
+        "department": "सहायता",
+        "lines": 1,
+        "spend": "२९६२.७१",
+        "budget": "२१००.००",
+        "utilization": "१४१%"
+      },
+      {
+        "department": "मार्केटिंग",
+        "lines": 1,
+        "spend": "२१०३.५१",
+        "budget": "१६२७.३८",
+        "utilization": "१२९%"
+      }
+    ],
+    "costCenterAssignments": {
+      "CC-ENG-01": "३६५४.००",
+      "CC-SAL-01": "१८४१.५०",
+      "CC-SAL-02": "९२९.५०",
+      "CC-OPS-01": "७१३.५०"
+    }
+  },
+  "customerSupport": {
+    "complaintsSummary": {
+      "openTickets": 1,
+      "inProgressTickets": 1,
+      "resolvedTickets": 1,
+      "totalTickets": 3
+    },
+    "complaints": [
+      {
+        "ticketId": "DSP-००१",
+        "complaint": "आईएसडी कॉल शुल्क",
+        "amount": "१९७.००",
+        "status": "खुला",
+        "createdDate": "२०२६-०३-१८"
+      },
+      {
+        "ticketId": "DSP-००२",
+        "complaint": "डेटा बूस्टर स्वत: नवीनीकरण",
+        "amount": "२००.००",
+        "status": "प्रगति पर है",
+        "createdDate": "२०२६-०३-१५",
+        "underInvestigation": true
+      },
+      {
+        "ticketId": "DSP-००३",
+        "complaint": "रात्रि अधिभार",
+        "amount": "८९.००",
+        "status": "हल किया",
+        "createdDate": "२०२६-०३-१०",
+        "resolution": "८९ रुपये वापस जमा किये गये"
+      }
+    ]
+  },
+  "alertsSummary": {
+    "totalAlerts": 10,
+    "billingAlerts": 3,
+    "usageAlerts": 5,
+    "planServiceAlerts": 2,
+    "serviceRequests": 12,
+    "simActivationAlerts": 11
+  },
+  "billingAlerts": [
+    {
+      "type": "देय भुगतान अनुस्मारक",
+      "amount": "७८४२.५०",
+      "dueDate": "२०२६-०३-१५",
+      "daysRemaining": 13,
+      "severity": "HIGH",
+      "timestamp": "२ घंटे पहले",
+      "read": false
+    },
+    {
+      "type": "बिल जनरेट किया गया",
+      "invoiceNumber": "INV-२०२६-०३-०८४७",
+      "month": "फरवरी २०२६",
+      "severity": "INFO",
+      "timestamp": "१ दिन पहले",
+      "read": false
+    },
+    {
+      "type": "ऑटो-डेबिट शेड्यूल किया गया",
+      "amount": "७८४२.५०",
+      "bankAccount": "HDFC",
+      "debitDate": "२०२६-०३-१५",
+      "severity": "INFO",
+      "timestamp": "२ दिन पहले",
+      "read": false
+    }
+  ],
+  "usageAlerts": [
+    {
+      "connection": "९१२३४००२",
+      "employee": "अमित पटेल",
+      "alertType": "डेटा उपयोग में लाया गया",
+      "current": {
+        "used": 72.1,
+        "limit": 85,
+        "utilization": "९६%"
+      },
+      "severity": "HIGH",
+      "recommendation": "डेटा बूस्टर या प्लान अपग्रेड पर विचार करें",
+      "timestamp": "३० मी पहले",
+      "autoRecommendation": "डेटा बूस्टर की अनुशंसा की गई"
+    },
+    {
+      "connection": "९१२३४००४",
+      "employee": "विक्रम सिंह",
+      "alertType": "डेटा उपयोग में लाया गया",
+      "current": {
+        "used": 48.9,
+        "limit": 60,
+        "utilization": "९८%"
+      },
+      "severity": "HIGH",
+      "recommendation": "ऑटो डेटा-बूस्टर अनुशंसित",
+      "timestamp": "१ घंटा पहले"
+    },
+    {
+      "connection": "९१२३४०००",
+      "employee": "राजेश कुमार",
+      "alertType": "अंतर्राष्ट्रीय रोमिंग",
+      "location": "सिंगापुर",
+      "severity": "MEDIUM",
+      "recommendation": "रोमिंग पैक से १०० रुपये की बचत होती है",
+      "timestamp": "३ घंटे पहले"
+    },
+    {
+      "connection": "९१२३४००४",
+      "employee": "विक्रम सिंह",
+      "alertType": "एसएमएस का उपयोग",
+      "current": {
+        "used": 208,
+        "limit": 310,
+        "utilization": "६६%"
+      },
+      "severity": "MEDIUM",
+      "recommendation": "निकट आ रही दहलीज",
+      "timestamp": "६ घंटे पहले"
+    },
+    {
+      "connection": "सभी पंक्तियाँ",
+      "alertType": "कॉल उपयोग",
+      "current": {
+        "utilization": "६१%"
+      },
+      "severity": "LOW",
+      "recommendation": "सामान्य उपयोग पैटर्न",
+      "timestamp": "१ दिन पहले"
+    }
+  ],
+  "planServiceAlerts": [
+    {
+      "type": "योजना समाप्ति",
+      "plan": "एंटरप्राइज़ प्लस ७९९",
+      "renewalDaysRemaining": 25,
+      "applicableToAllLines": true,
+      "severity": "MEDIUM",
+      "actionRequired": true
+    },
+    {
+      "type": "सेवा अनुरोध अद्यतन",
+      "srId": "SR-२८५६",
+      "description": "९१२३४००२ के लिए सिम प्रतिस्थापन",
+      "status": "भेजा गया",
+      "connection": "९१२३४००२",
+      "employee": "अमित पटेल",
+      "updatedDate": "२०२६-०३-२०"
+    }
+  ],
+  "alertsConfiguration": {
+    "paymentReminders": {
+      "enabled": true,
+      "frequency": "३ दिन, १ दिन, और नियत तारीख पर",
+      "reminderDate": "२०२६-०३-१५"
+    },
+    "billingAlerts": {
+      "paymentReminder": true,
+      "billGenerated": true,
+      "autoDebitScheduled": true,
+      "anomalyDetection": true,
+      "exceedWarning": true,
+      "restrictedToSignatory": true
+    },
+    "usageAlerts": {
+      "dataUsageThreshold": true,
+      "callUsageThreshold": true,
+      "smsUsageThreshold": true,
+      "roamingDetection": true,
+      "overageNotification": true
+    },
+    "planAlerts": {
+      "planExpiryNotification": false,
+      "renewalReminder": true,
+      "daysBeforeRenewal": [
+        40,
+        17
+      ]
+    },
+    "anomalyDetection": {
+      "billingAnomalyDetection": true,
+      "unusualSpendPattern": true,
+      "chargeSpikes": true
+    },
+    "notificationChannels": [
+      "ईमेल",
+      "SMS",
+      "सर्वर पुश नोटीफिकेशन",
+      "इन-ऐप"
+    ]
+  },
+  "billBreakdownByConnection": [
+    {
+      "phoneNumber": "९१२३४०००",
+      "employeeName": "आदर्श पांडे",
+      "department": "नेतृत्व",
+      "riskScore": 43,
+      "voiceAndSmsUsage": {
+        "callsUsed": 797,
+        "callsLimit": 3000,
+        "callUtilization": "२७%",
+        "smsUsed": 182,
+        "smsLimit": 500,
+        "smsUtilization": "३६%"
+      },
+      "lineItems": [
+        {
+          "description": "अधिकतम ९९९ (९१२३४०००)",
+          "category": "किराये की योजना बनाएं",
+          "amount": "९९९.००"
+        },
+        {
+          "description": "डेटा ओवरएज",
+          "category": "डेटा ओवरएज",
+          "amount": "४३७.४९"
+        },
+        {
+          "description": "अंतर्राष्ट्रीय रोमिंग",
+          "category": "अंतर्राष्ट्रीय रोमिंग",
+          "amount": "२९०.९२"
+        },
+        {
+          "description": "मूल्य संवर्धित सेवाएं",
+          "category": "ऐड-ऑन",
+          "amount": "२७५.४७"
+        },
+        {
+          "description": "जीएसटी आवंटन",
+          "category": "करों",
+          "amount": "३९३.८४"
+        }
+      ],
+      "subtotal": "२३९६.७२"
+    },
+    {
+      "phoneNumber": "९१२३४००१",
+      "employeeName": "राजेश कुमार",
+      "department": "उत्पाद",
+      "riskScore": 80,
+      "voiceAndSmsUsage": {
+        "callsUsed": 1465,
+        "callsLimit": 3010,
+        "callUtilization": "४९%",
+        "smsUsed": 175,
+        "smsLimit": 1010,
+        "smsUtilization": "१७%"
+      },
+      "lineItems": [
+        {
+          "description": "अधिकतम ९९९ (९१२३४०००)",
+          "category": "किराये की योजना बनाएं",
+          "amount": "९९९.००"
+        },
+        {
+          "description": "अधिक आयु १.५ जीबी @५०/जीबी",
+          "category": "डेटा ओवरएज",
+          "amount": "७५.००"
+        },
+        {
+          "description": "रात्रि डेटा अधिभार",
+          "category": "डेटा ओवरएज",
+          "amount": "४१.००"
+        },
+        {
+          "description": "सिंगापुर (३ दिन)",
+          "category": "अंतर्राष्ट्रीय रोमिंग",
+          "amount": "५९९.००"
+        },
+        {
+          "description": "आईएसडी कॉल - ४५ मिनट",
+          "category": "अंतर्राष्ट्रीय रोमिंग",
+          "amount": "१९७.००"
+        },
+        {
+          "description": "डेटा रोमिंग ०.८GB",
+          "category": "डेटा ओवरएज",
+          "amount": "२२९.००"
+        },
+        {
+          "description": "ऐमज़ान प्रधान",
+          "category": "ऐड-ऑन",
+          "amount": "१४९.००"
+        },
+        {
+          "description": "रियलमी ईएमआई ८/२४",
+          "category": "डिवाइस ईएमआई",
+          "amount": "३९९.००"
+        },
+        {
+          "description": "जीएसटी आवंटन",
+          "category": "करों",
+          "amount": "४४७.००"
+        }
+      ],
+      "subtotal": "३१३५.००"
+    },
+    {
+      "phoneNumber": "९१२३४००२",
+      "employeeName": "प्रिया शर्मा",
+      "department": "नेतृत्व",
+      "riskScore": 82,
+      "voiceAndSmsUsage": {
+        "callsUsed": 2064,
+        "callsLimit": 3010,
+        "callUtilization": "६९%",
+        "smsUsed": 109,
+        "smsLimit": 510,
+        "smsUtilization": "२१%"
+      },
+      "lineItems": [
+        {
+          "description": "प्लस ७९९ (९१२३४००१)",
+          "category": "किराये की योजना बनाएं",
+          "amount": "७९९.००"
+        },
+        {
+          "description": "अधिक आयु १.६ जीबी @५०/जीबी",
+          "category": "डेटा ओवरएज",
+          "amount": "८०.००"
+        },
+        {
+          "description": "रात्रि डेटा अधिभार",
+          "category": "डेटा ओवरएज",
+          "amount": "२८.००"
+        },
+        {
+          "description": "दुबई (२ दिन)",
+          "category": "अंतर्राष्ट्रीय रोमिंग",
+          "amount": "४४९.००"
+        },
+        {
+          "description": "डेटा रोमिंग ०.५GB",
+          "category": "डेटा ओवरएज",
+          "amount": "५०.००"
+        },
+        {
+          "description": "सुरक्षा सुइट",
+          "category": "ऐड-ऑन",
+          "amount": "१५६.००"
+        },
+        {
+          "description": "जीएसटी आवंटन",
+          "category": "करों",
+          "amount": "२८०.५०"
+        }
+      ],
+      "subtotal": "१८४२.५०"
+    },
+    {
+      "phoneNumber": "९१२३४००३",
+      "employeeName": "अमित पटेल",
+      "department": "सहायता",
+      "riskScore": 38,
+      "voiceAndSmsUsage": {
+        "callsUsed": 2383,
+        "callsLimit": 3010,
+        "callUtilization": "७९%",
+        "smsUsed": 235,
+        "smsLimit": 510,
+        "smsUtilization": "४६%"
+      },
+      "lineItems": [
+        {
+          "description": "प्लस ७९९ (९१२३४००२)",
+          "category": "किराये की योजना बनाएं",
+          "amount": "७९९.००"
+        },
+        {
+          "description": "अधिक आयु २.० जीबी @५०/जीबी",
+          "category": "डेटा ओवरएज",
+          "amount": "१००.००"
+        },
+        {
+          "description": "रात्रि डेटा अधिभार",
+          "category": "डेटा ओवरएज",
+          "amount": "४८.००"
+        },
+        {
+          "description": "आईएसडी कॉल - ३० मिनट",
+          "category": "अंतर्राष्ट्रीय रोमिंग",
+          "amount": "१९८.००"
+        },
+        {
+          "description": "डेटा रोमिंग १.०GB",
+          "category": "डेटा ओवरएज",
+          "amount": "५०.००"
+        },
+        {
+          "description": "क्लाउड लाइट",
+          "category": "ऐड-ऑन",
+          "amount": "१५.००"
+        },
+        {
+          "description": "जीएसटी आवंटन",
+          "category": "करों",
+          "amount": "२१९.००"
+        }
+      ],
+      "subtotal": "१४२९.००"
+    },
+    {
+      "phoneNumber": "९१२३४००४",
+      "employeeName": "विक्रम सिंह",
+      "department": "मार्केटिंग",
+      "riskScore": 73,
+      "voiceAndSmsUsage": {
+        "callsUsed": 13848,
+        "callsLimit": 3010,
+        "callUtilization": "४६०%",
+        "smsUsed": 68,
+        "smsLimit": 310,
+        "smsUtilization": "२२%"
+      },
+      "lineItems": [
+        {
+          "description": "बेसिक ५९९ (९१२३४००४)",
+          "category": "किराये की योजना बनाएं",
+          "amount": "५९९.००"
+        },
+        {
+          "description": "अधिक आयु १.० जीबी @५०/जीबी",
+          "category": "डेटा ओवरएज",
+          "amount": "५०.००"
+        },
+        {
+          "description": "रात्रि डेटा अधिभार",
+          "category": "डेटा ओवरएज",
+          "amount": "४८.००"
+        },
+        {
+          "description": "वीपीएन + टूल्स",
+          "category": "ऐड-ऑन",
+          "amount": "९१.००"
+        },
+        {
+          "description": "जीएसटी आवंटन",
+          "category": "करों",
+          "amount": "१४१.५०"
+        }
+      ],
+      "subtotal": "९२९.५०"
+    }
+  ],
+  "billInsights": {
+    "anomalies": [
+      {
+        "type": "चेतावनी",
+        "title": "रोमिंग शुल्क में बढ़ोतरी",
+        "description": "इस महीने इंटरनेशनल रोमिंग चार्ज १४२० रुपये (~४२% बढ़ोतरी) है। लाइनें: ९१२३४०००, ९१२३४००१। ~४०% बचाने के लिए वार्षिक आईआर पैक पर विचार करें।",
+        "impact": "+१४२०रु",
+        "severity": "HIGH",
+        "dataPoint": "राजेश: सिंगापुर, प्रिया: दुबई"
+      },
+      {
+        "type": "चेतावनी",
+        "title": "डेटा ओवरएज का रुझान बढ़ रहा है",
+        "description": "जनवरी की तुलना में डेटा ओवरएज शुल्क २९९ रुपये बढ़ गया। ६०% सीमा से अधिक ३ लाइनें।",
+        "impact": "+ २९९ रु",
+        "severity": "MEDIUM",
+        "recommendation": "डेटा अनुकूलन या उन्नयन पर विचार करें"
+      }
+    ],
+    "quickInsights": [
+      {
+        "category": "डेटा उपयोग में लाया गया",
+        "insight": "६७% औसत डेटा उपयोग। अमित और विक्रम ९६-९८% पर।",
+        "action": "उच्च उपयोगकर्ताओं के लिए योजना अपग्रेड की अनुशंसा की जाती है"
+      },
+      {
+        "category": "लागत अनुकूलन",
+        "insight": "डुप्लीकेट सब्सक्रिप्शन का पता चला: राजेश की तर्ज पर अमेज़न प्राइम।",
+        "action": "प्रति माह १४९ रुपये बचाने के लिए पारिवारिक साझेदारी की सलाह दें"
+      },
+      {
+        "category": "भुगतान पैटर्न",
+        "insight": "अमित पटेल (९१२३४००२) ने लगातार देरी की। १२ महीनों में ५ देर से भुगतान।",
+        "action": "उच्च संग्रहण प्राथमिकता - बकाया २,८४७ रु"
+      }
+    ],
+    "chargeExplanations": [
+      {
+        "charge": "अंतर्राष्ट्रीय रोमिंग",
+        "breakdown": "राजेश: सिंगापुर यात्रा (रु.५९९) + आईएसडी कॉल (रु.१९७)। प्रिया: दुबई सम्मेलन (४४९ रुपये)।",
+        "totalAmount": "१४२०.००",
+        "recommendation": "आईआर पैक ४०% तक कम हो सकते हैं"
+      },
+      {
+        "charge": "डेटा ओवरएज",
+        "breakdown": "अमित: २.० जीबी अधिक उम्र, विक्रम: १.० जीबी अधिक उम्र, राजेश: कुल १.५ जीबी।",
+        "totalAmount": "५९९.००",
+        "recommendation": "अमित और विक्रम के लिए उच्च योजनाओं की आवश्यकता है"
+      }
+    ]
+  },
+  "scenarioModeling": {
+    "scenarios": [
+      {
+        "name": "मौजूदा",
+        "description": "सभी मौजूदा योजनाओं के साथ वर्तमान बिलिंग",
+        "billAmount": "११२३९.७५",
+        "monthlyAmount": "११२३९.७५"
+      },
+      {
+        "name": "यदि +२०% डेटा",
+        "description": "टीम की गतिविधियों में वृद्धि के कारण डेटा उपयोग में २०% की वृद्धि",
+        "billAmount": "१२६४०.००",
+        "monthlyAmount": "१२६४०.००",
+        "impact": "+१,४०० रु"
+      },
+      {
+        "name": "अगर रोमिंग ट्रिप है",
+        "description": "महीने भर की यात्रा के लिए २ कर्मचारियों के लिए अंतर्राष्ट्रीय रोमिंग जोड़ें",
+        "billAmount": "१३८९०.००",
+        "monthlyAmount": "१३८९०.००",
+        "impact": "+२,६५० रु"
+      },
+      {
+        "name": "अनुकूलित",
+        "description": "अमित को मैक्स प्लान में अपग्रेड करें, आईआर पैक सक्रिय करें",
+        "billAmount": "९७८०.००",
+        "monthlyAmount": "९७८०.००",
+        "impact": "-रु.१,४६० (मासिक बचत)",
+        "recommendation": "RECOMMENDED"
+      }
+    ]
+  },
+  "forecastData": {
+    "historicalMonths": [
+      "सितम्बर",
+      "अक्टूबर",
+      "नवंबर",
+      "दिसम्बर",
+      "जनवरी",
+      "फ़रवरी"
+    ],
+    "actualBills": [
+      7235,
+      7260,
+      6519,
+      6710,
+      5859,
+      7279
+    ],
+    "forecastMonths": [
+      "मार्च*",
+      "अप्रैल*",
+      "मई*"
+    ],
+    "forecastBills": [
+      11840,
+      11090,
+      12010
+    ],
+    "upperConfidence": [
+      12640,
+      11900,
+      12890
+    ],
+    "lowerConfidence": [
+      11040,
+      10350,
+      11220
+    ],
+    "trendAnalysis": "मध्यम अस्थिरता के साथ बढ़ा हुआ खर्च",
+    "forecastAccuracy": "९२%"
+  },
+  "disputeTrackerData": {
+    "summary": {
+      "activeDisputes": 2,
+      "pendingDisputes": 1,
+      "resolvedDisputes": 3,
+      "slaCompliance": "९८%"
+    },
+    "disputes": [
+      {
+        "ticketId": "DSP-DIS-००१",
+        "category": "बिलिंग त्रुटि",
+        "amount": "१९७.००",
+        "connection": "९१२३४०००",
+        "employee": "राजेश कुमार",
+        "description": "वाई-फ़ाई कॉलिंग शुल्क विवादित",
+        "status": "सक्रिय",
+        "createdDate": "२०२६-०३-०१",
+        "daysOpen": 29,
+        "priority": "HIGH",
+        "lastUpdate": "२०२६-०३-२०",
+        "expectedResolution": "२०२६-०३-२८"
+      },
+      {
+        "ticketId": "DSP-DIS-००२",
+        "category": "डेटा ओवरएज",
+        "amount": "७५.००",
+        "connection": "९१२३४००२",
+        "employee": "अमित पटेल",
+        "description": "अपेक्षित डेटा सीमा स्पष्ट रूप से सूचित नहीं की गई है",
+        "status": "सक्रिय",
+        "createdDate": "२०२६-०३-१५",
+        "daysOpen": 15,
+        "priority": "MEDIUM",
+        "lastUpdate": "२०२६-०३-२०"
+      },
+      {
+        "ticketId": "DSP-DIS-००३",
+        "category": "रोमिंग",
+        "amount": "५९९.००",
+        "connection": "९१२३४०००",
+        "employee": "राजेश कुमार",
+        "description": "सिंगापुर रोमिंग शुल्क उद्धृत से अधिक है",
+        "status": "लंबित",
+        "createdDate": "२०२६-०३-१८",
+        "daysOpen": 12,
+        "priority": "HIGH",
+        "investigation": "प्रतिस्पर्धियों के साथ दरों की तुलना करना"
+      },
+      {
+        "ticketId": "DSP-DIS-REV-००१",
+        "category": "वीएएस/सदस्यता",
+        "amount": "१४९.००",
+        "connection": "९१२३४०००",
+        "employee": "राजेश कुमार",
+        "description": "डुप्लिकेट अमेज़न प्राइम शुल्क",
+        "status": "हल किया",
+        "createdDate": "२०२६-०२-०१",
+        "resolvedDate": "२०२६-०२-१५",
+        "resolution": "१४९ रुपये का रिफंड संसाधित, डुप्लिकेट सदस्यता हटा दी गई",
+        "resolutionTime": "१४ दिन"
+      },
+      {
+        "ticketId": "DSP-DIS-REV-००२",
+        "category": "रात्रि अधिभार",
+        "amount": "८९.००",
+        "connection": "९१२३४००३",
+        "employee": "अमित पटेल",
+        "description": "रात्रि अधिभार गलत तरीके से लगाया गया",
+        "status": "हल किया",
+        "createdDate": "२०२६-०१-१५",
+        "resolvedDate": "२०२६-०१-२५",
+        "resolution": "८९ रुपये वापस जमा किये गये",
+        "resolutionTime": "१० दिन"
+      },
+      {
+        "ticketId": "DSP-DIS-REV-००३",
+        "category": "बिलिंग त्रुटि",
+        "amount": "१२०.००",
+        "connection": "९१२३४००१",
+        "employee": "प्रिया शर्मा",
+        "description": "डेटा ओवरेज पर कर गणना त्रुटि",
+        "status": "हल किया",
+        "createdDate": "२०२६-१२-०१",
+        "resolvedDate": "२०२६-१२-१५",
+        "resolution": "१२० रुपये का कर समायोजन जमा किया गया",
+        "resolutionTime": "१४ दिन"
+      }
+    ]
+  },
+  "dailyUsageData": {
+    "data": [
+      3.2,
+      3.5,
+      3.1,
+      3.8,
+      4.2,
+      4.5,
+      5.1,
+      5.3,
+      4.9,
+      4.7,
+      4.2,
+      14,
+      3.9,
+      3.6,
+      4.4,
+      4.8,
+      5.2,
+      5.5,
+      5.8,
+      5.9,
+      6.1,
+      6.3,
+      6.5,
+      6.7,
+      6.4,
+      6.2,
+      5.9,
+      5.7
+    ],
+    "dates": [
+      "१",
+      "२",
+      "३",
+      "४",
+      "५ वीं",
+      "६",
+      "७",
+      "८",
+      "९",
+      "१० वीं",
+      "११ वीं",
+      "१२ वीं",
+      "१३ वीं",
+      "१४ वीं",
+      "१५ वीं",
+      "१६ वीं",
+      "१७",
+      "१८ वीं",
+      "१९ वीं",
+      "२० वीं",
+      "२१",
+      "२२ वें",
+      "२३ वें",
+      "२४ वें",
+      "२५ वीं",
+      "२६ वें",
+      "२७ वें",
+      "२८ वें"
+    ],
+    "month": "फरवरी २०२६",
+    "averageDaily": "४.८ GB",
+    "peakDay": "२४वाँ (६.७ जीबी)",
+    "lowestDay": "पहला (३.१ जीबी)"
+  },
+  "comparisonTrendsData": {
+    "thisMonth": {
+      "amount": 7852,
+      "change": "+१२.४%",
+      "previousMonth": 6990,
+      "breakdown": {
+        "planRental": {
+          "current": 3805,
+          "previous": 3406,
+          "change": "+३९९"
+        },
+        "dataOverage": {
+          "current": 1208,
+          "previous": 1010,
+          "change": "+१९८ (+१९.८%)"
+        },
+        "roaming": {
+          "current": 1430,
+          "previous": 1010,
+          "change": "+४२० (+४२%)"
+        },
+        "vasServices": {
+          "current": 244,
+          "previous": 510,
+          "change": "+२४४ (+४८.८%)"
+        },
+        "taxes": {
+          "current": 1094,
+          "previous": 1094,
+          "change": "०%"
+        }
+      }
+    },
+    "lastMonth": {
+      "amount": 6990,
+      "change": "-६.३%",
+      "previousMonth": 7460,
+      "breakdown": {
+        "roaming": {
+          "current": 1010,
+          "previous": 1660,
+          "decrease": "-३९.४%"
+        },
+        "vasServices": {
+          "current": 510,
+          "previous": 690,
+          "decrease": "-२६.५%"
+        },
+        "dataOverage": {
+          "current": 1010,
+          "previous": 860,
+          "increase": "+१७.६%"
+        }
+      }
+    }
+  },
+  "homePageSummary": {
+    "totalAmount": "११२३९.७५",
+    "connectionCount": 5,
+    "statusDistribution": {
+      "active": 5,
+      "inactive": 0,
+      "suspended": 0
+    },
+    "connectionsTable": [
+      {
+        "number": "९१२३४०००",
+        "employee": "आदर्श पांडे",
+        "plan": "अधिकतम ९९९",
+        "department": "नेतृत्व",
+        "monthlySpend": "२३९६.७२"
+      },
+      {
+        "number": "९१२३४००१",
+        "employee": "राजेश कुमार",
+        "plan": "प्लस ७९९",
+        "department": "उत्पाद",
+        "monthlySpend": "१७७८.५३"
+      },
+      {
+        "number": "९१२३४००२",
+        "employee": "प्रिया शर्मा",
+        "plan": "मूल ५९९",
+        "department": "नेतृत्व",
+        "monthlySpend": "१९९८.२८"
+      },
+      {
+        "number": "९१२३४००३",
+        "employee": "अमित पटेल",
+        "plan": "अधिकतम ९९९",
+        "department": "सहायता",
+        "monthlySpend": "२९६२.७१"
+      },
+      {
+        "number": "९१२३४००४",
+        "employee": "विक्रम सिंह",
+        "plan": "प्लस ७९९",
+        "department": "मार्केटिंग",
+        "monthlySpend": "२१०३.५१"
+      }
+    ]
+  },
+  "paymentsTabData": {
+    "paymentHistory": [
+      {
+        "date": "०१/०२/२०२६",
+        "amount": "७५००.००",
+        "method": "UPI",
+        "status": "सफलता",
+        "txnId": "VBP७६०७९४८७"
+      },
+      {
+        "date": "०१/०१/२०२६",
+        "amount": "६९८०.००",
+        "method": "नेटबैंकिंग",
+        "status": "सफलता",
+        "txnId": "VBP७५२३४५८९"
+      },
+      {
+        "date": "०१/१२/२०२५",
+        "amount": "५७२०.००",
+        "method": "E-NACH",
+        "status": "सफलता",
+        "txnId": "VBP७४१२३४५६"
+      },
+      {
+        "date": "०१/११/२०२५",
+        "amount": "७४५०.००",
+        "method": "UPI",
+        "status": "सफलता",
+        "txnId": "VBP७३८९१२३४"
+      },
+      {
+        "date": "०६/१०/२०२५",
+        "amount": "६२३४.००",
+        "method": "कार्ड",
+        "status": "विलंबित",
+        "delaydaysAfterDue": 15
+      }
+    ],
+    "upcomingPayments": [
+      {
+        "dueDate": "२०२६-०४-१५",
+        "amount": "८१००.००",
+        "status": "२६ दिनों में देय"
+      },
+      {
+        "dueDate": "२०२६-०५-१५",
+        "amount": "७८५०.००",
+        "status": "५६ दिनों में देय"
+      }
+    ]
+  },
+  "plansTabData": {
+    "currentPlans": [
+      {
+        "connection": "९१२३४०००",
+        "employee": "आदर्श पांडे",
+        "plan": "अधिकतम ९९९",
+        "cost": "९९९.००",
+        "status": "सक्रिय"
+      },
+      {
+        "connection": "९१२३४००१",
+        "employee": "राजेश कुमार",
+        "plan": "प्लस ७९९",
+        "cost": "७९९.००",
+        "status": "सक्रिय"
+      },
+      {
+        "connection": "९१२३४००२",
+        "employee": "प्रिया शर्मा",
+        "plan": "मूल ५९९",
+        "cost": "५९९.००",
+        "status": "सक्रिय"
+      },
+      {
+        "connection": "९१२३४००३",
+        "employee": "अमित पटेल",
+        "plan": "अधिकतम ९९९",
+        "cost": "९९९.००",
+        "status": "सक्रिय",
+        "upgrade": true
+      },
+      {
+        "connection": "९१२३४००४",
+        "employee": "विक्रम सिंह",
+        "plan": "प्लस ७९९",
+        "cost": "७९९.००",
+        "status": "सक्रिय",
+        "downgrade": true
+      }
+    ],
+    "switchHistory": [
+      {
+        "date": "२०२६-०२-०१",
+        "connection": "९१२३४०००",
+        "from": "प्लस ७९९",
+        "to": "अधिकतम ९९९",
+        "reason": "उच्च डेटा उपयोग"
+      },
+      {
+        "date": "२०२५-१२-१५",
+        "connection": "९१२३४००३",
+        "from": "मूल ५९९",
+        "to": "मूल ५९९",
+        "reason": "योजना नवीनीकरण",
+        "savingsApplied": "१०० रुपए"
+      }
+    ]
+  },
+  "adhocReportsData": {
+    "reportsGenerated": 33,
+    "invoicesAvailable": 6,
+    "usageReports": 16,
+    "departmentReports": 13,
+    "customReports": 12,
+    "invoiceHistory": [
+      {
+        "month": "फ़रवरी २०२६",
+        "invoice": "INV-२०२६-०३-०८४७",
+        "amount": "११२३९.७५",
+        "status": "अवैतनिक",
+        "lineItems": 5
+      },
+      {
+        "month": "जनवरी २०२६",
+        "invoice": "INV-२०२६-०२-०७५३",
+        "amount": "६९८०.००",
+        "status": "चुकाया गया",
+        "lineItems": 15
+      },
+      {
+        "month": "दिसंबर २०२५",
+        "invoice": "INV-२०२६-०१-०६८२",
+        "amount": "५७२०.००",
+        "status": "चुकाया गया",
+        "lineItems": 15
+      },
+      {
+        "month": "नवंबर २०२५",
+        "invoice": "INV-२०२५-१२-०५९८",
+        "amount": "७४५०.००",
+        "status": "चुकाया गया",
+        "lineItems": 15
+      },
+      {
+        "month": "अक्टूबर २०२५",
+        "invoice": "INV-२०२५-११-०५२१",
+        "amount": "६२३४.००",
+        "status": "चुकाया गया",
+        "lineItems": 15
+      },
+      {
+        "month": "सितम्बर २०२५",
+        "invoice": "INV-२०२५-१०-०४४७",
+        "amount": "५८९०.००",
+        "status": "चुकाया गया",
+        "lineItems": 15
+      }
+    ],
+    "departmentSpend": [
+      {
+        "department": "इंजीनियरिंग",
+        "lines": 12,
+        "spend": "३६५४.००",
+        "budget": "४०००.००",
+        "utilization": "९१%",
+        "trend": "की बढ़ती"
+      },
+      {
+        "department": "बिक्री",
+        "lines": 12,
+        "spend": "३२९०.००",
+        "budget": "३५००.००",
+        "utilization": "९४%",
+        "trend": "स्थिर"
+      },
+      {
+        "department": "संचालन",
+        "lines": 11,
+        "spend": "८९८.५०",
+        "budget": "१५००.००",
+        "utilization": "६०%",
+        "trend": "घटते"
+      }
+    ]
+  },
+  "templateOverrides": {
+    "firstInvoiceDownloadAmount": "११२३९.७५",
+    "companyNameHtml": "टावर ए, ५वीं मंजिल, वसई साइबर सिटी, सेक्टर २५ए, गुरुग्राम १२२००२, हरियाणा, भारत",
+    "companyNameInline": "टावर ए, ५वीं मंजिल, डीएलएफ साइबर सिटी, सेक्टर २५ए, गुरुग्राम १२२००२, हरियाणा, भारत",
+    "accountManager": "अंकित मेहरा",
+    "slaTier": "प्लैटिनम",
+    "creditLimit": "२५,०००",
+    "contractEnd": "३१ मार्च २०२७",
+    "contactPhone": "+९१ १२४ ४५६ ७८९०",
+    "aiInsightsCount": 14,
+    "smartPaymentSlug": "VBP-०७९४८७",
+    "deepPayLink": "viapp://pay/ENT-99341022",
+    "commitments": {
+      "activeEmi": 11,
+      "model": "मुझे पढ़ो",
+      "number": "९१२३४०००",
+      "monthly": 409,
+      "paid": 18,
+      "total": 34,
+      "remaining": 6394,
+      "end": "अक्टूबर २०२७"
+    },
+    "collectionCenters": [
+      {
+        "name": "वीआई स्टोर - अंधेरी",
+        "city": "मुंबई ४०००५३"
+      },
+      {
+        "name": "वीआई स्टोर - बीकेसी",
+        "city": "मुंबई ४०००५१"
+      },
+      {
+        "name": "रिलायंस डिजिटल",
+        "city": "मुंबई ४०००१४"
+      }
+    ]
+  },
+  "documentMetadata": {
+    "documentType": "एंटरप्राइज़ बिलिंग विवरण",
+    "dataVersion": "१.०",
+    "generatedAt": "२०२६-०३-२०T१०:३०:००Z",
+    "validFrom": "२०२६-०२-०१",
+    "validUntil": "२०२६-०३-१५",
+    "lastUpdated": "२०२६-०३-२०"
+  }
+}

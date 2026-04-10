@@ -12,8 +12,17 @@ function ensureDir(dirPath) {
   }
 }
 
+function normalizeIndicDigits(value) {
+  return String(value)
+    .replace(/[\u0966-\u096F]/g, (ch) => String(ch.codePointAt(0) - 0x0966)) // Devanagari ०-९
+    .replace(/[\u0660-\u0669]/g, (ch) => String(ch.codePointAt(0) - 0x0660)) // Arabic-Indic ٠-٩
+    .replace(/[\u06F0-\u06F9]/g, (ch) => String(ch.codePointAt(0) - 0x06F0)) // Eastern Arabic-Indic ۰-۹
+    .replace(/\u066B/g, '.')
+    .replace(/\u066C/g, ',');
+}
+
 function toNumber(value, fallback = 0) {
-  const raw = typeof value === 'string' ? value.replace(/,/g, '').trim() : value;
+  const raw = typeof value === 'string' ? normalizeIndicDigits(value).replace(/,/g, '').trim() : value;
   const parsed = Number(raw);
   return Number.isFinite(parsed) ? parsed : fallback;
 }
@@ -121,7 +130,8 @@ function formatINR(value) {
 
 function parseDDMMYYYY(value) {
   if (typeof value !== 'string') return null;
-  const m = value.trim().match(/^(\d{1,2})\/(\d{1,2})\/(\d{4})$/);
+  const normalized = normalizeIndicDigits(value).trim();
+  const m = normalized.match(/^(\d{1,2})\/(\d{1,2})\/(\d{4})$/);
   if (!m) return null;
   const dd = Number(m[1]);
   const mm = Number(m[2]);
@@ -398,7 +408,7 @@ function replaceHeaderFields(html, data) {
   const amountDueDisplay = firstInvoiceAmountComma;
 
   const commitments = templateOverrides.commitments || {};
-  const commitmentsModel = String(commitments.model || 'Samsung Galaxy S25 Ultra');
+  const commitmentsModel = String(commitments.model || 'Device');
   const commitmentsNumber = String(commitments.number || (Array.isArray(data.connections) && data.connections[0] ? data.connections[0].phoneNumber : '9876543210'));
   const commitmentsMonthly = Math.round(toNumber(commitments.monthly || 399, 399));
   const commitmentsPaid = Math.max(0, Math.round(toNumber(commitments.paid || 8, 8)));
@@ -407,6 +417,296 @@ function replaceHeaderFields(html, data) {
   const commitmentsEnd = String(commitments.end || 'Oct 2027');
   const commitmentsPct = Math.max(0, Math.min(100, Math.round((commitmentsPaid / commitmentsTotal) * 100)));
   const commitmentsActive = Math.max(1, Math.round(toNumber(commitments.activeEmi || 1, 1)));
+  const complaints = (data.customerSupport && Array.isArray(data.customerSupport.complaints)) ? data.customerSupport.complaints : [];
+
+  const isHindiContent = /[\u0900-\u097F]/.test(`${companyName} ${JSON.stringify(data.accountSummary || {})} ${JSON.stringify(data.templateOverrides || {})}`);
+  const uiText = isHindiContent
+    ? {
+      dataBoostersTitle: 'डेटा बूस्टर',
+      buy: 'खरीदें',
+      recommended: 'अनुशंसित',
+      activated: 'सक्रिय हुआ',
+      intlRoaming: 'अंतर्राष्ट्रीय रोमिंग',
+      collectionCentersTitle: 'कलेक्शन सेंटर',
+      directionsTo: 'दिशा निर्देश:',
+      complaintDetailTitle: 'शिकायत विवरण',
+      filed: 'दर्ज',
+      escalate: 'एस्केलेट',
+      chat: 'चैट',
+      withdraw: 'वापस लें',
+      callbackTitle: 'कॉलबैक शेड्यूल करें',
+      callbackWithin30: '30 मिनट के भीतर',
+      callbackWithin2h: '2 घंटे के भीतर',
+      callbackTomorrow10: 'कल सुबह 10 बजे',
+      confirm: 'पुष्टि करें',
+      callbackScheduled: 'कॉलबैक शेड्यूल हो गया',
+      planChangeTitle: 'प्लान परिवर्तन',
+      current: 'वर्तमान',
+      select: 'चुनें',
+      effectiveNextCycle: 'अगले बिलिंग चक्र से लागू।',
+      savePerMonth: 'बचत',
+      noOverage: 'कोई ओवरेज नहीं',
+      unlimitedPremium: 'अनलिमिटेड | प्रीमियम',
+      billPaymentFor: 'बिल भुगतान',
+      earnCashback: 'पहले भुगतान पर Rs.200 कैशबैक पाएं!',
+      minTxnValid: 'न्यूनतम लेनदेन Rs.2,000 | 31 Mar 2026 तक मान्य',
+      linkedBankViaUpi: 'UPI से लिंक्ड बैंक खाता',
+      walletBalance: 'वॉलेट बैलेंस',
+      payInEmi: 'EMI में भुगतान, 0% ब्याज',
+      instantCashback: '5% तुरंत कैशबैक',
+      comparisonLabel: 'तुलना',
+      selfServiceDisputes: 'स्व-सेवा और विवाद',
+      raiseDisputeTitle: 'विवाद दर्ज करें',
+      categoryPlaceholderDisplay: 'श्रेणी...',
+      connectionPlaceholderDisplay: 'कनेक्शन...',
+      amountPlaceholder: 'राशि (Rs.)',
+      describeIssuePlaceholder: 'अपनी समस्या लिखें...',
+      aiGenerateDescription: 'AI विवरण बनाएं',
+      aiFeedback: 'AI फीडबैक',
+      genAiBadge: 'जनरेटिव AI',
+      aiGeneratedTextLabel: 'AI-निर्मित टेक्स्ट',
+      poweredByModel: 'GPT-4o द्वारा संचालित',
+      applyToDescription: 'विवरण में जोड़ें',
+      dismiss: 'हटाएं',
+      submitDispute: 'विवाद सबमिट करें',
+      selectCategoryConnectionToast: 'श्रेणी और कनेक्शन चुनें!',
+      selectCategoryFirstToast: 'कृपया पहले श्रेणी चुनें',
+      aiGeneratingDescriptionToast: 'AI विवाद विवरण बना रहा है...',
+      aiGeneratingFeedbackToast: 'AI फीडबैक विश्लेषण बना रहा है...',
+      aiAppliedToast: 'AI टेक्स्ट विवरण में जोड़ दिया गया',
+      disputeSubmittedPrefix: 'विवाद',
+      disputeSubmittedSuffix: 'सबमिट हुआ! SLA: 6 घंटे।',
+      disputeWithdrawnToast: 'विवाद सफलतापूर्वक वापस लिया गया',
+      noDisputesForConnection: 'इस कनेक्शन के लिए कोई विवाद नहीं',
+      activeDisputeLabel: 'सक्रिय विवाद',
+      pendingLabel: 'लंबित',
+      resolvedLabel: 'सुलझे (90 दिन)',
+      slaLabel: 'SLA',
+      aiDisputeTitle: '[AI-निर्मित विवाद विवरण — GPT-4o]',
+      aiFeedbackTitle: '[AI-निर्मित फीडबैक — Claude 3.5 Sonnet]',
+      aiSeverityLine: 'गंभीरता: उच्च | विश्वास: 92% | समान मामलों का समाधान: 87%',
+      aiResolutionLine: 'अनुशंसित समाधान: क्रेडिट नोट के साथ रेट्रोएक्टिव समायोजन।',
+      aiAnalysisLine: 'AI विश्लेषण: 847 समान विवादों के आधार पर 4.2 घंटे में 91% समाधान दर।',
+      aiActionLine: 'अनुशंसित कार्रवाई: बिलिंग ऑपरेशंस टीम को प्राथमिक एस्केलेशन।',
+    }
+    : {
+      dataBoostersTitle: 'Data Boosters',
+      buy: 'Buy',
+      recommended: 'Recommended',
+      activated: 'activated!',
+      intlRoaming: 'Intl Roaming',
+      collectionCentersTitle: 'Collection Centers',
+      directionsTo: 'Directions to',
+      complaintDetailTitle: 'Complaint Detail',
+      filed: 'Filed',
+      escalate: 'Escalate',
+      chat: 'Chat',
+      withdraw: 'Withdraw',
+      callbackTitle: 'Schedule Callback',
+      callbackWithin30: 'Within 30 min',
+      callbackWithin2h: 'Within 2 hours',
+      callbackTomorrow10: 'Tomorrow 10am',
+      confirm: 'Confirm',
+      callbackScheduled: 'Callback scheduled!',
+      planChangeTitle: 'Plan Change',
+      current: 'Current',
+      select: 'Select',
+      effectiveNextCycle: 'Effective next billing cycle.',
+      savePerMonth: 'Save',
+      noOverage: 'No overage',
+      unlimitedPremium: 'Unlimited | Premium',
+      billPaymentFor: 'Bill Payment for',
+      earnCashback: 'Earn Rs.200 cashback on first payment!',
+      minTxnValid: 'Min transaction Rs.2,000 | Valid till 31 Mar 2026',
+      linkedBankViaUpi: 'Linked bank account via UPI',
+      walletBalance: 'Wallet balance',
+      payInEmi: 'Pay in EMIs, 0% interest',
+      instantCashback: '5% instant cashback',
+      comparisonLabel: 'Comparisons',
+      selfServiceDisputes: 'Self-Service & Disputes',
+      raiseDisputeTitle: 'Raise Dispute',
+      categoryPlaceholderDisplay: 'Category...',
+      connectionPlaceholderDisplay: 'Connection...',
+      amountPlaceholder: 'Amount (Rs.)',
+      describeIssuePlaceholder: 'Describe your issue...',
+      aiGenerateDescription: 'AI Generate Description',
+      aiFeedback: 'AI Feedback',
+      genAiBadge: 'GenAI',
+      aiGeneratedTextLabel: 'AI-Generated Text',
+      poweredByModel: 'Powered by GPT-4o',
+      applyToDescription: 'Apply to Description',
+      dismiss: 'Dismiss',
+      submitDispute: 'Submit Dispute',
+      selectCategoryConnectionToast: 'Select category & connection!',
+      selectCategoryFirstToast: 'Please select a category first',
+      aiGeneratingDescriptionToast: 'AI generating dispute description...',
+      aiGeneratingFeedbackToast: 'AI generating feedback analysis...',
+      aiAppliedToast: 'AI text applied to description',
+      disputeSubmittedPrefix: 'Dispute',
+      disputeSubmittedSuffix: 'submitted! SLA: 6hr.',
+      disputeWithdrawnToast: 'Dispute withdrawn successfully',
+      noDisputesForConnection: 'No disputes for this connection',
+      activeDisputeLabel: 'Active Dispute',
+      pendingLabel: 'Pending',
+      resolvedLabel: 'Resolved (90 days)',
+      slaLabel: 'SLA',
+      aiDisputeTitle: '[AI-Generated Dispute Description — GPT-4o]',
+      aiFeedbackTitle: '[AI-Generated Feedback — Claude 3.5 Sonnet]',
+      aiSeverityLine: 'Severity: High | Confidence: 92% | Similar cases resolved: 87%',
+      aiResolutionLine: 'Recommended resolution: Retroactive adjustment with credit note.',
+      aiAnalysisLine: 'AI Analysis: Based on 847 similar disputes, 91% resolution rate within 4.2 hours.',
+      aiActionLine: 'Recommended action: Priority escalation to billing operations team.',
+    };
+
+  const disputeCategoryOptions = [
+    { value: 'Billing Error', label: isHindiContent ? 'बिलिंग त्रुटि' : 'Billing Error' },
+    { value: 'Roaming', label: isHindiContent ? 'रोमिंग' : 'Roaming' },
+    { value: 'Data Overage', label: isHindiContent ? 'डेटा ओवरेज' : 'Data Overage' },
+    { value: 'VAS/Subscription', label: isHindiContent ? 'VAS/सब्सक्रिप्शन' : 'VAS/Subscription' },
+    { value: 'Device EMI', label: isHindiContent ? 'डिवाइस EMI' : 'Device EMI' },
+  ];
+  const disputeCategoryOptionsHtml = `<option value="Category...">${uiText.categoryPlaceholderDisplay}</option>${disputeCategoryOptions.map((opt) => `<option value="${opt.value}">${opt.label}</option>`).join('')}`;
+  const disputeConnectionOptionsHtml = `<option value="Connection...">${uiText.connectionPlaceholderDisplay}</option>${connections.map((c) => `<option value="${String(c.phoneNumber || '')}">${String(c.phoneNumber || '')}</option>`).join('')}`;
+  const disputeCardHtml = `<div class="grid g2"><div class="card bl-red"><div class="card-h"><h3>${uiText.raiseDisputeTitle}</h3></div><div class="card-b"><select class="fi" style="margin-bottom:8px" id="dispute-cat">${disputeCategoryOptionsHtml}</select><select class="fi" style="margin-bottom:8px" id="dispute-conn">${disputeConnectionOptionsHtml}</select><input placeholder="${uiText.amountPlaceholder}" style="margin-bottom:8px" id="dispute-amt"><textarea style="min-height:60px;margin-bottom:8px" placeholder="${uiText.describeIssuePlaceholder}" id="dispute-desc"></textarea><div style="display:flex;gap:8px;margin-bottom:10px"><button class="btn s blu" onclick="aiGenerateDesc()" style="display:flex;align-items:center;gap:4px"><span class="ic" style="width:14px;height:14px"><svg><use href="#i-brain"/></svg></span> ${uiText.aiGenerateDescription}</button><button class="btn s" onclick="aiGenerateFeedback()" style="display:flex;align-items:center;gap:4px"><span class="ic" style="width:14px;height:14px"><svg><use href="#i-zap"/></svg></span> ${uiText.aiFeedback}</button></div><div id="ai-gen-panel" style="display:none;margin-bottom:10px;padding:10px;border:1px solid var(--blue);border-radius:6px;background:#eff6ff"><div style="display:flex;align-items:center;gap:6px;margin-bottom:6px"><span class="badge blue">${uiText.genAiBadge}</span><span class="xs fb">${uiText.aiGeneratedTextLabel}</span><span class="xs mt" style="margin-left:auto">${uiText.poweredByModel}</span></div><p class="sm" id="ai-gen-text" style="line-height:1.6"></p><div style="margin-top:8px;display:flex;gap:8px"><button class="btn s blu" onclick="applyAiText()">${uiText.applyToDescription}</button><button class="btn s" onclick="document.getElementById('ai-gen-panel').style.display='none'">${uiText.dismiss}</button></div></div><button class="btn pri" style="width:100%" onclick="submitDispute()">${uiText.submitDispute}</button></div></div>`;
+  const aiDisputeTemplates = isHindiContent
+    ? {
+      'Billing Error': {
+        d: 'मैं अपने एंटरप्राइज खाते में गलत बिलिंग शुल्क के संबंध में विवाद दर्ज कर रहा/रही हूं। यह शुल्क डुप्लिकेट/त्रुटिपूर्ण प्रतीत होता है और बिलिंग अवधि में उपयोग की गई किसी सेवा से मेल नहीं खाता। कृपया हमारे एंटरप्राइज SLA के अनुसार तत्काल समीक्षा कर इस राशि को रिवर्स करें।',
+        f: 'इस बिलिंग विसंगति से हमारे विभागीय बजट पर प्रभाव पड़ा है। हमें SLA के अनुसार समयबद्ध समाधान अपेक्षित है। पूर्व में ऐसे मामलों का समाधान क्रेडिट नोट से हुआ है।',
+      },
+      Roaming: {
+        d: 'मेरे कनेक्शन पर लगाए गए अंतरराष्ट्रीय रोमिंग शुल्क पर मैं विवाद दर्ज करना चाहता/चाहती हूं। ये शुल्क सक्रिय किए गए रोमिंग पैक की शर्तों के अनुरूप नहीं लगते। कृपया CDR का विस्तृत विश्लेषण कर पैक शर्तों से तुलना करें।',
+        f: 'हमारी एंटरप्राइज यात्रा नीति के अनुसार प्री-अप्रूव्ड रोमिंग पैक अनिवार्य हैं। शुल्क पैक रेट कार्ड से अधिक हैं। कृपया रेट्रोएक्टिव पैक लाभ लागू कर अंतर राशि क्रेडिट करें।',
+      },
+      'Data Overage': {
+        d: 'मैं अपने कनेक्शन पर डेटा ओवरेज शुल्क पर विवाद दर्ज कर रहा/रही हूं। उपयोग पैटर्न मेरी प्रोफाइल से मेल नहीं खाता और संभव है कि मीटरिंग में सिस्टम/बैकग्राउंड ट्रैफिक शामिल हुआ हो, जिसे हमारे एंटरप्राइज प्लान में शून्य-रेटेड होना चाहिए।',
+        f: 'हमारे एंटरप्राइज समझौते के अनुसार सिस्टम अपडेट और VPN ट्रैफिक शून्य-रेटेड होना चाहिए। कृपया DPI लॉग सत्यापित कर व्यवसायिक और गैर-व्यवसायिक उपयोग अलग करें और शुल्क समायोजित करें।',
+      },
+      'VAS/Subscription': {
+        d: 'मैं VAS/सब्सक्रिप्शन शुल्क पर विवाद दर्ज कर रहा/रही हूं जो मेरी स्पष्ट सहमति के बिना सक्रिय हुआ। TRAI नियमों और हमारे एंटरप्राइज समझौते के अनुसार एडमिन अनुमोदन के बिना कोई VAS सक्रिय नहीं होना चाहिए।',
+        f: 'यह अनधिकृत सक्रियण हमारी एंटरप्राइज VAS नीति का उल्लंघन है। कृपया सेवा तुरंत निष्क्रिय करें, सभी शुल्क रिवर्स करें और ऑडिट ट्रेल साझा करें।',
+      },
+      'Device EMI': {
+        d: 'मैं बिल में दिखाए गए डिवाइस EMI शुल्क पर विवाद कर रहा/रही हूं। EMI राशि खरीद के समय सहमत किस्त अनुसूची से मेल नहीं खाती।',
+        f: 'कृपया मूल डिवाइस फाइनेंस समझौते से EMI राशि का सत्यापन करें। यदि ब्याज दर परिवर्तन के कारण अंतर है तो अनुबंध के अनुसार पूर्व लिखित सूचना अपेक्षित है।',
+      },
+    }
+    : {
+      'Billing Error': {
+        d: 'I am raising a dispute regarding an incorrect billing charge on my enterprise account. The charge appears to be a duplicate/erroneous entry that does not correspond to any service consumed during the billing period. I request an immediate review and reversal of this amount as per our enterprise SLA agreement.',
+        f: 'This billing discrepancy has impacted our department budget allocation. We expect a resolution within the SLA-committed timeframe of 6 hours. Similar issues in the past were resolved via credit note.',
+      },
+      Roaming: {
+        d: 'I wish to dispute international roaming charges applied to my connection. The charges appear excessive and do not align with the roaming pack I had activated prior to travel. I request a detailed CDR analysis and comparison with the pack terms.',
+        f: 'Our enterprise travel policy requires pre-approved roaming packs. The charges exceed the pack rate card. Please apply the retroactive pack benefit and credit the differential amount.',
+      },
+      'Data Overage': {
+        d: 'I am disputing data overage charges on my connection. The data consumption pattern does not match my usage profile, and I suspect the metering may include background/system updates that should be zero-rated under our enterprise plan terms.',
+        f: 'As per our enterprise agreement, system updates and VPN traffic should be zero-rated. Please verify the DPI logs to segregate business vs. non-business data consumption and adjust charges accordingly.',
+      },
+      'VAS/Subscription': {
+        d: 'I am raising a dispute for a VAS/subscription charge that was activated without my explicit consent. As per TRAI regulations and our enterprise agreement, no VAS should be activated without documented approval from the account administrator.',
+        f: 'This unauthorized activation violates our enterprise policy on VAS management. Please deactivate the service immediately, reverse all charges, and provide an audit trail.',
+      },
+      'Device EMI': {
+        d: 'I am disputing the device EMI charge shown on my bill. The EMI amount does not match the agreed installment schedule as per the device purchase agreement signed at the time of procurement.',
+        f: 'Please cross-verify the EMI amount with the original device finance agreement. If there is a discrepancy due to interest rate changes, we require prior written notification as per our contract terms.',
+      },
+    };
+  const aiDisputeTemplatesLiteral = JSON.stringify(aiDisputeTemplates);
+
+  const boosterPacks = Array.isArray(templateOverrides.dataBoosters) && templateOverrides.dataBoosters.length
+    ? templateOverrides.dataBoosters
+    : [
+      { label: '5 GB', price: '99' },
+      { label: '10 GB', price: '179', recommended: true },
+      { label: '25 GB', price: '399' },
+      { label: uiText.intlRoaming, price: '499' },
+    ];
+
+  const boosterRowsHtml = boosterPacks.map((pack) => {
+    const title = String(pack.label || 'Pack');
+    const price = String(pack.price || '0');
+    const recommended = !!pack.recommended;
+    return `<div style="display:flex;justify-content:space-between;align-items:center;padding:12px;border:1px solid ${recommended ? 'var(--green)' : 'var(--border)'};border-radius:8px;margin-bottom:8px;${recommended ? 'background:var(--green-light);' : ''}"><div><p class="fs">${title}</p>${recommended ? `<span class="badge green">${uiText.recommended}</span>` : ''}</div><div style="display:flex;align-items:center;gap:10px"><span class="fb tb">Rs.${price}</span><button class="btn blu s" onclick="showToast('${escapeJsSingleQuoted(title)} ${escapeJsSingleQuoted(uiText.activated)}');closeModal('booster-modal')">${uiText.buy}</button></div></div>`;
+  }).join('');
+
+  const boosterModalHtml = `<div class="mbg" id="booster-modal"><div class="mbox"><div style="display:flex;justify-content:space-between;align-items:center"><h3 style="margin:0;border:none;padding:0">${uiText.dataBoostersTitle}</h3><button class="btn s gh" onclick="closeModal('booster-modal')">&times;</button></div>${boosterRowsHtml}</div></div>`;
+
+  const channelCardsHtml = centers.map((center) => `<div style="padding:12px;border:1px solid var(--border);border-radius:8px;margin-bottom:8px;cursor:pointer" onclick="showToast('${escapeJsSingleQuoted(uiText.directionsTo)} ${escapeJsSingleQuoted(String(center.name || ''))}')"><p class="fs">${String(center.name || '')}</p><p class="xs mt">${String(center.city || '')}</p></div>`).join('');
+  const channelModalHtml = `<div class="mbg" id="channel-modal"><div class="mbox"><div style="display:flex;justify-content:space-between;align-items:center"><h3 style="margin:0;border:none;padding:0">${uiText.collectionCentersTitle}</h3><button class="btn s gh" onclick="closeModal('channel-modal')">&times;</button></div>${channelCardsHtml}</div></div>`;
+
+  const complaintNumbersOptions = connections.map((c) => `<option>${String(c.phoneNumber || '')}</option>`).join('');
+  const newComplaintModalHtml = `<div class="mbg" id="new-complaint-modal"><div class="mbox"><div style="display:flex;justify-content:space-between;align-items:center"><h3 style="margin:0;border:none;padding:0">${isHindiContent ? 'नई शिकायत' : 'New Complaint'}</h3><button class="btn s gh" onclick="closeModal('new-complaint-modal')">&times;</button></div><select class="fi" style="margin-bottom:8px"><option>${isHindiContent ? 'कनेक्शन...' : 'Connection...'}</option>${complaintNumbersOptions}</select><input placeholder="${isHindiContent ? 'विषय' : 'Subject'}" style="margin-bottom:8px"><textarea style="min-height:60px;margin-bottom:8px" placeholder="${isHindiContent ? 'विवरण...' : 'Describe...'}"></textarea><button class="btn pri" style="width:100%" onclick="showToast('${isHindiContent ? 'शिकायत जमा हुई!' : 'Complaint submitted!'}');closeModal('new-complaint-modal')">${isHindiContent ? 'जमा करें' : 'Submit'}</button></div></div>`;
+
+  const complaintSample = complaints[0] || { ticketId: 'DSP-001', complaint: 'Issue', amount: '0', status: isHindiContent ? 'खुला' : 'Open', createdDate: dueDate };
+  const complaintStatusRaw = String(complaintSample.status || '');
+  const complaintStatusLower = complaintStatusRaw.toLowerCase();
+  const complaintStatusClass = complaintStatusLower.includes('resolved') || complaintStatusRaw.includes('हल') ? 'green' : (complaintStatusLower.includes('progress') || complaintStatusRaw.includes('प्रगति') ? 'orange' : 'red');
+  const complaintDateText = String(complaintSample.createdDate || dueDate || '');
+  const complaintDetailModalHtml = `<div class="mbg" id="complaint-detail-modal"><div class="mbox"><div style="display:flex;justify-content:space-between;align-items:center"><h3 style="margin:0;border:none;padding:0">${uiText.complaintDetailTitle}</h3><button class="btn s gh" onclick="closeModal('complaint-detail-modal')">&times;</button></div><div style="display:flex;gap:8px;align-items:center;margin-bottom:10px"><strong>${String(complaintSample.ticketId || 'DSP-001')}</strong><span class="badge ${complaintStatusClass}">${complaintStatusRaw || (isHindiContent ? 'खुला' : 'Open')}</span></div><p class="sm" style="margin-bottom:8px">${String(complaintSample.complaint || 'Issue')} - Rs.${formatINR(toNumber(complaintSample.amount, 0)).replace(/\.00$/, '')}<br><span class="xs mt">${uiText.filed}: ${complaintDateText}</span></p><div style="padding:10px;background:var(--muted-bg);border-radius:6px;font-size:13px;margin-bottom:10px">${String(complaintSample.description || complaintSample.complaint || '')}</div><div style="display:flex;gap:8px"><button class="btn" style="flex:1" onclick="showToast('${isHindiContent ? 'एस्केलेट किया गया!' : 'Escalated!'}');closeModal('complaint-detail-modal')">${uiText.escalate}</button><button class="btn blu" style="flex:1" onclick="showToast('${isHindiContent ? 'चैट खुला' : 'Chat opened'}')">${uiText.chat}</button><button class="btn" style="flex:1;color:var(--red);border-color:var(--red)" onclick="showToast('${isHindiContent ? 'वापस लिया गया' : 'Withdrawn'}');closeModal('complaint-detail-modal')">${uiText.withdraw}</button></div></div></div>`;
+
+  const callbackDefaultNumber = String((connections[0] && connections[0].phoneNumber) || '');
+  const callbackModalHtml = `<div class="mbg" id="callback-modal"><div class="mbox"><div style="display:flex;justify-content:space-between;align-items:center"><h3 style="margin:0;border:none;padding:0">${uiText.callbackTitle}</h3><button class="btn s gh" onclick="closeModal('callback-modal')">&times;</button></div><select class="fi" style="margin-bottom:8px" id="cb-time"><option>${uiText.callbackWithin30}</option><option>${uiText.callbackWithin2h}</option><option>${uiText.callbackTomorrow10}</option></select><input value="${callbackDefaultNumber}" style="margin-bottom:8px"><button class="btn pri" style="width:100%" onclick="showToast('${uiText.callbackScheduled}');closeModal('callback-modal')">${uiText.confirm}</button></div></div>`;
+
+  const firstCurrentPlan = String((connections[0] && connections[0].plan && (connections[0].plan.code || connections[0].plan.name)) || 'Plus 799');
+  const planOptionSource = Array.isArray(templateOverrides.planSwitchOptions) && templateOverrides.planSwitchOptions.length
+    ? templateOverrides.planSwitchOptions
+    : [
+      { code: (data.planRecommendations && Array.isArray(data.planRecommendations.availablePlanDowngrades) && data.planRecommendations.availablePlanDowngrades[0]) || 'Enterprise Lite 399', detail: isHindiContent ? `30GB | ${uiText.savePerMonth} Rs.400/mo` : '30GB | Save Rs.400/mo' },
+      { code: (data.planRecommendations && Array.isArray(data.planRecommendations.availablePlanUpgrades) && data.planRecommendations.availablePlanUpgrades[0]) || 'Enterprise Max 999', detail: isHindiContent ? `100GB | ${uiText.noOverage}` : '100GB | No overage' },
+      { code: (data.planRecommendations && Array.isArray(data.planRecommendations.availablePlanUpgrades) && data.planRecommendations.availablePlanUpgrades[1]) || 'Enterprise Ultra 1499', detail: uiText.unlimitedPremium },
+    ];
+  const planSwitchOptionsHtml = planOptionSource.slice(0, 3).map((opt) => `<div style="padding:10px;border:1px solid var(--border);border-radius:6px;margin-bottom:8px;cursor:pointer;display:flex;justify-content:space-between;align-items:center;transition:.15s" onmouseover="this.style.borderColor='var(--blue)'" onmouseout="this.style.borderColor=''"><div><p class="fs">${String(opt.code || '')}</p><p class="xs mt">${String(opt.detail || '')}</p></div><button class="btn s" onclick="switchPlan('${escapeJsSingleQuoted(String(opt.code || ''))}',this)">${uiText.select}</button></div>`).join('');
+  const planSwitchModalHtml = `<div class="mbg" id="plan-switch-modal"><div class="mbox"><div style="display:flex;justify-content:space-between;align-items:center"><h3 style="margin:0;border:none;padding:0">${uiText.planChangeTitle}</h3><button class="btn s gh" onclick="closeModal('plan-switch-modal')">&times;</button></div><div style="padding:10px;background:var(--muted-bg);border-radius:6px;margin-bottom:10px;font-size:13px"><div style="display:flex;justify-content:space-between"><span>${uiText.current}:</span><strong id="plan-current-display">${firstCurrentPlan}</strong></div></div>${planSwitchOptionsHtml}<p class="xs mt" style="font-style:italic">${uiText.effectiveNextCycle}</p></div></div>`;
+
+  const amazonPayModalHtml = `<div class="mbg" id="amazonpay-modal"><div class="mbox"><div style="display:flex;justify-content:space-between;align-items:center"><h3 style="margin:0;border:none;padding:0"><span style="font-weight:900;color:#232f3e">amazon</span><span style="background:#FF9900;color:#fff;padding:1px 6px;border-radius:3px;font-size:12px;margin-left:4px">pay</span></h3><button class="btn s gh" onclick="closeModal('amazonpay-modal')">&times;</button></div><div style="text-align:center;margin:16px 0"><span style="font-size:24px" class="fb tr" id="amazonpay-amount">Rs.${amountDueDisplay}</span><p class="xs mt">${uiText.billPaymentFor} ${accountNumber}</p></div><div style="padding:12px;background:linear-gradient(135deg,#FFF3E0,#FFF8E1);border:1px solid #FF9900;border-radius:8px;margin-bottom:12px;text-align:center"><p class="fs" style="color:#E65100">🎉 ${uiText.earnCashback}</p><p class="xs mt">${uiText.minTxnValid}</p></div><div style="padding:12px;border:1px solid var(--border);border-radius:8px;margin-bottom:8px;cursor:pointer;transition:.15s;display:flex;align-items:center;gap:12px" onmouseover="this.style.borderColor='#FF9900';this.style.background='#FFF8E1'" onmouseout="this.style.borderColor='';this.style.background=''" onclick="processAmazonPay('Amazon Pay UPI')"><span class="ic ic-xl" style="color:#FF9900"><svg><use href="#i-phone"/></svg></span><div><p class="fs">Amazon Pay UPI</p><p class="xs mt">${uiText.linkedBankViaUpi}</p></div></div><div style="padding:12px;border:1px solid var(--border);border-radius:8px;margin-bottom:8px;cursor:pointer;transition:.15s;display:flex;align-items:center;gap:12px" onmouseover="this.style.borderColor='#FF9900';this.style.background='#FFF8E1'" onmouseout="this.style.borderColor='';this.style.background=''" onclick="processAmazonPay('Amazon Pay Balance')"><span class="ic ic-xl" style="color:#FF9900"><svg><use href="#i-wallet"/></svg></span><div><p class="fs">Amazon Pay Balance</p><p class="xs mt">${uiText.walletBalance}: Rs.1,450</p></div></div><div style="padding:12px;border:1px solid var(--border);border-radius:8px;margin-bottom:8px;cursor:pointer;transition:.15s;display:flex;align-items:center;gap:12px" onmouseover="this.style.borderColor='#FF9900';this.style.background='#FFF8E1'" onmouseout="this.style.borderColor='';this.style.background=''" onclick="processAmazonPay('Amazon Pay Later')"><span class="ic ic-xl" style="color:#FF9900"><svg><use href="#i-clock"/></svg></span><div><p class="fs">Amazon Pay Later</p><p class="xs mt">${uiText.payInEmi}</p></div></div><div style="padding:12px;border:1px solid var(--border);border-radius:8px;margin-bottom:8px;cursor:pointer;transition:.15s;display:flex;align-items:center;gap:12px" onmouseover="this.style.borderColor='#FF9900';this.style.background='#FFF8E1'" onmouseout="this.style.borderColor='';this.style.background=''" onclick="processAmazonPay('Amazon Pay ICICI Card')"><span class="ic ic-xl" style="color:#FF9900"><svg><use href="#i-credit"/></svg></span><div><p class="fs">Amazon Pay ICICI Card</p><p class="xs mt">${uiText.instantCashback}</p></div></div></div></div>`;
+
+  const htmlEscape = (value) => String(value)
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;')
+    .replace(/'/g, '&#39;');
+
+  const formatPaymentDate = (raw) => {
+    const txt = String(raw || '').trim();
+    if (!txt) return 'NA';
+    if (/^\d{4}-\d{2}-\d{2}$/.test(txt)) {
+      const [yyyy, mm, dd] = txt.split('-');
+      return `${dd} ${monthName(Number(mm), true)} ${yyyy}`;
+    }
+    return toShortDateLabel(txt);
+  };
+
+  const normalizePaymentMethod = (raw) => {
+    const method = String(raw || '').trim();
+    const lower = method.toLowerCase();
+    if (!method) return 'NA';
+    if (lower === 'netbanking') return 'NetBanking';
+    if (lower === 'e-nach') return 'E-NACH';
+    return method;
+  };
+
+  const paymentRowsSource = data.paymentsTabData && Array.isArray(data.paymentsTabData.paymentHistory)
+    ? data.paymentsTabData.paymentHistory
+    : [];
+  const paymentHistoryRows = (paymentRowsSource.length ? paymentRowsSource : [{ date: dueDate, amount: totalDue, method: 'UPI', status: 'Success' }])
+    .slice(0, 8)
+    .map((p) => {
+      const statusRaw = String(p.status || '').toLowerCase();
+      const displayStatus = statusRaw.includes('success') || statusRaw.includes('paid')
+        ? 'Paid'
+        : (statusRaw.includes('delay') || statusRaw.includes('pending') || statusRaw.includes('progress')
+          ? 'Pending'
+          : (statusRaw.includes('fail') || statusRaw.includes('error')
+            ? 'Failed'
+            : (String(p.status || 'Pending').trim() || 'Pending')));
+      const statusClass = displayStatus === 'Paid' ? 'green' : (displayStatus === 'Failed' ? 'red' : 'orange');
+      const amountText = formatINR(toNumber(p.amount, 0)).replace(/\.00$/, '');
+      return `<tr><td>${htmlEscape(formatPaymentDate(p.date))}</td><td>Rs.${amountText}</td><td>${htmlEscape(normalizePaymentMethod(p.method))}</td><td><span class="badge ${statusClass}">${htmlEscape(displayStatus)}</span></td></tr>`;
+    })
+    .join('');
 
   const usageConnections = connections;
   const textUsed = smsUsed;
@@ -502,7 +802,6 @@ function replaceHeaderFields(html, data) {
   const complaintOpen = Math.max(0, Math.round(toNumber(complaintsSummary.openTickets, 0)));
   const complaintInProgress = Math.max(0, Math.round(toNumber(complaintsSummary.inProgressTickets, 0)));
   const complaintResolved = Math.max(0, Math.round(toNumber(complaintsSummary.resolvedTickets, 0)));
-  const complaints = (data.customerSupport && Array.isArray(data.customerSupport.complaints)) ? data.customerSupport.complaints : [];
   const complaintsRowsHtml = complaints.map((c) => {
     const id = String(c.ticketId || 'DSP-NA');
     const desc = String(c.complaint || c.description || 'Issue');
@@ -790,7 +1089,7 @@ function replaceHeaderFields(html, data) {
   const pendingDisputesCount = Math.max(0, Math.round(toNumber(disputeSummary.pendingDisputes, 1)));
   const resolvedDisputesCount = Math.max(0, Math.round(toNumber(disputeSummary.resolvedDisputes, 3)));
   const disputeSla = String(disputeSummary.slaCompliance || '98%');
-  const disputeSummaryHtml = `<strong>${activeDisputesCount} Active Dispute${activeDisputesCount === 1 ? '' : 's'}</strong> | ${pendingDisputesCount} Pending | ${resolvedDisputesCount} Resolved (90 days) | <span class="tg">SLA: ${disputeSla}</span>`;
+  const disputeSummaryHtml = `<strong>${activeDisputesCount} ${uiText.activeDisputeLabel}${activeDisputesCount === 1 ? '' : (isHindiContent ? '' : 's')}</strong> | ${pendingDisputesCount} ${uiText.pendingLabel} | ${resolvedDisputesCount} ${uiText.resolvedLabel} | <span class="tg">${uiText.slaLabel}: ${disputeSla}</span>`;
 
   const employeeToConnection = new Map();
   usageConnections.forEach((c) => {
@@ -806,15 +1105,15 @@ function replaceHeaderFields(html, data) {
     const mappedConn = employeeToConnection.get(employee.toLowerCase()) || String(d.connection || 'NA');
     const rawStatus = String(d.status || 'Pending').toLowerCase();
     const status = rawStatus.includes('resolved')
-      ? 'Resolved'
-      : (rawStatus.includes('pending') ? 'Pending' : 'In Review');
+      ? (isHindiContent ? 'सुलझा' : 'Resolved')
+      : (rawStatus.includes('pending') ? (isHindiContent ? 'लंबित' : 'Pending') : (isHindiContent ? 'समीक्षा में' : 'In Review'));
     const statusColor = status === 'Resolved' ? 'green' : (status === 'Pending' ? 'red' : 'orange');
     const amount = Math.round(toNumber(d.amount, 0));
     return `{id:${jsString(String(d.ticketId || 'DSP-NA'))},connName:${jsString(`${employee} (...${String(mappedConn).slice(-3)})`)},conn:${jsString(String(mappedConn))},desc:${jsString(String(d.description || d.category || 'Billing dispute'))},amt:${amount},status:${jsString(status)},statusColor:${jsString(statusColor)}}`;
   });
   const allDisputesJs = allDisputesJsRows.length
     ? `[${allDisputesJsRows.join(',')}]`
-    : `[{id:'DSP-NA',connName:'No Disputes',conn:'NA',desc:'No disputes found for this account',amt:0,status:'Resolved',statusColor:'green'}]`;
+    : `[{id:'DSP-NA',connName:${jsString(isHindiContent ? 'कोई विवाद नहीं' : 'No Disputes')},conn:'NA',desc:${jsString(isHindiContent ? 'इस खाते के लिए कोई विवाद नहीं मिला' : 'No disputes found for this account')},amt:0,status:${jsString(isHindiContent ? 'सुलझा' : 'Resolved')},statusColor:'green'}]`;
 
   const forecastData = data.forecastData || {};
   const histMonths = Array.isArray(forecastData.historicalMonths) && forecastData.historicalMonths.length
@@ -845,6 +1144,12 @@ function replaceHeaderFields(html, data) {
     : [{ name: 'Current', billAmount: chargeTotal }, { name: 'Optimized', billAmount: chargeTotal }];
   const scenarioLabels = scenarioRows.map((s) => String(s.name || 'Scenario'));
   const scenarioValues = scenarioRows.map((s) => Math.round(toNumber(s.billAmount || s.monthlyAmount, chargeTotal)));
+  const scenarioDescriptionMapLiteral = `{${scenarioRows.map((s) => {
+    const label = String(s.name || 'Scenario');
+    const desc = String(s.description || s.impact || `Projected monthly bill: Rs.${formatINR(toNumber(s.billAmount || s.monthlyAmount, chargeTotal)).replace(/\.00$/, '')}`);
+    return `${jsString(label)}:${jsString(desc)}`;
+  }).join(',')}}`;
+  const scenarioLabelsLiteral = JSON.stringify(scenarioLabels);
   const scenarioPalette = ['#3b82f6', '#f59e0b', '#e60000', '#22c55e', '#8b5cf6', '#14b8a6'];
   const scenarioColors = scenarioLabels.map((_s, i) => scenarioPalette[i % scenarioPalette.length]);
 
@@ -964,7 +1269,10 @@ function replaceHeaderFields(html, data) {
   output = output.replace(/Sneha Reddy/g, 'Amit Patel');
 
   output = output.replace(/Globe Consultancy Services Ltd\./g, companyName);
+  output = output.replace(/Globe Consultancy Services Ltd/g, companyName.replace(/\.$/, ''));
   output = output.replace(/Globe Consultancy Services Limited/g, companyName);
+  output = output.replace(/Adarsh Pandey Enterprises Ltd\./g, companyName);
+  output = output.replace(/Adarsh Pandey Enterprises Ltd/g, companyName.replace(/\.$/, ''));
   output = output.replace(/ENT-88234571/g, accountNumber);
   output = output.replace(/INV-2026-03-ENT-0847/g, invoiceNumber);
   output = output.replace(/INV-2026-03-0847/g, invoiceNumber);
@@ -1052,6 +1360,43 @@ function replaceHeaderFields(html, data) {
   output = output.replace(/Globe[\s\u00A0]+Enterprise/g, companyName);
   output = output.replace(/Globe Consultancy Services Building/g, `${companyName} Building`);
   output = output.replace(/<div class="grid g2"><div class="card"><div class="card-h"><h3>Current Plans<\/h3><\/div><div style="padding:0"><table><thead><tr><th>Line<\/th><th>User<\/th><th>Plan<\/th><th>Cost<\/th><th>Action<\/th><\/tr><\/thead><tbody>[\s\S]*?<\/tbody><\/table><\/div><\/div>/, `<div class="grid g2"><div class="card"><div class="card-h"><h3>Current Plans</h3></div><div style="padding:0"><table><thead><tr><th>Line</th><th>User</th><th>Plan</th><th>Cost</th><th>Action</th></tr></thead><tbody>${currentPlanRows}</tbody></table></div></div>`);
+  output = output.replace(/<div class="grid g2"><div class="card bl-red"><div class="card-h"><h3>Raise Dispute<\/h3><\/div><div class="card-b"><select class="fi" style="margin-bottom:8px" id="dispute-cat">[\s\S]*?<button class="btn pri" style="width:100%" onclick="submitDispute\(\)">Submit Dispute<\/button><\/div><\/div>/, disputeCardHtml);
+
+  output = output.replace(/var connOpts='<option>Connection\.\.\.<\/option>';/g, `var connOpts='<option value="Connection...">${escapeJsSingleQuoted(uiText.connectionPlaceholderDisplay)}</option>';`);
+  output = output.replace(/if\(dTitle\) dTitle\.textContent=i===0\?'Self-Service & Disputes':'Self-Service & Disputes — '\+filtered\[0\]\.num;/g, `if(dTitle) dTitle.textContent=i===0?${jsString(uiText.selfServiceDisputes)}:${jsString(`${uiText.selfServiceDisputes} — `)}+filtered[0].num;`);
+  output = output.replace(/dSummary\.innerHTML='<strong>'\+active\+' Active Dispute'\+\(active!==1\?'s':''\)\+'<\/strong> \| '\+pending\+' Pending \| '\+resolved\+' Resolved \(90 days\) \| <span class="tg">SLA: 98%<\/span>';/g, `dSummary.innerHTML='<strong>'+active+' ${escapeJsSingleQuoted(uiText.activeDisputeLabel)}'+(active!==1?${jsString(isHindiContent ? '' : 's')}:'' )+'</strong> | '+pending+' ${escapeJsSingleQuoted(uiText.pendingLabel)} | '+resolved+' ${escapeJsSingleQuoted(uiText.resolvedLabel)} | <span class="tg">${escapeJsSingleQuoted(uiText.slaLabel)}: 98%</span>';`);
+  output = output.replace(/dList\.innerHTML='<div style="padding:16px;text-align:center" class="mt">No disputes for this connection<\/div>';/g, `dList.innerHTML='<div style="padding:16px;text-align:center" class="mt">${escapeJsSingleQuoted(uiText.noDisputesForConnection)}</div>';`);
+  output = output.replace(/showToast\('Dispute withdrawn successfully'\)/g, `showToast(${jsString(uiText.disputeWithdrawnToast)})`);
+  output = output.replace(/showToast\('Select category & connection!'\)/g, `showToast(${jsString(uiText.selectCategoryConnectionToast)})`);
+  output = output.replace(/showToast\('Please select a category first'\)/g, `showToast(${jsString(uiText.selectCategoryFirstToast)})`);
+  output = output.replace(/showToast\('AI generating dispute description\.\.\.'\)/g, `showToast(${jsString(uiText.aiGeneratingDescriptionToast)})`);
+  output = output.replace(/showToast\('AI generating feedback analysis\.\.\.'\)/g, `showToast(${jsString(uiText.aiGeneratingFeedbackToast)})`);
+  output = output.replace(/showToast\('AI text applied to description'\)/g, `showToast(${jsString(uiText.aiAppliedToast)})`);
+  output = output.replace(/showToast\('Dispute '\+id\+' submitted! SLA: 6hr\.'\)/g, `showToast(${jsString(`${uiText.disputeSubmittedPrefix} `)}+id+${jsString(` ${uiText.disputeSubmittedSuffix}`)})`);
+  output = output.replace(/\?\'Self-Service & Disputes\':\'Self-Service & Disputes — '\+filtered\[0\]\.num/g, `?${jsString(uiText.selfServiceDisputes)}:${jsString(`${uiText.selfServiceDisputes} — `)}+filtered[0].num`);
+  output = output.replace("if(dTitle) dTitle.textContent=i===0?'Self-Service & Disputes':'Self-Service & Disputes — '+filtered[0].num;", `if(dTitle) dTitle.textContent=i===0?${jsString(uiText.selfServiceDisputes)}:${jsString(`${uiText.selfServiceDisputes} — `)}+filtered[0].num;`);
+  output = output.replace(/d\.status==='In Review'/g, "(d.status==='In Review'||d.status==='समीक्षा में')");
+  output = output.replace(/d\.status==='Pending'/g, "(d.status==='Pending'||d.status==='लंबित')");
+  output = output.replace(/d\.status==='Resolved'/g, "(d.status==='Resolved'||d.status==='सुलझा')");
+  output = output.replace(/>Withdraw<\/button>/g, `>${escapeJsSingleQuoted(uiText.withdraw)}<\/button>`);
+  output = output.replace(/<span class="badge red">Open<\/span>/g, `<span class="badge red">${isHindiContent ? 'खुला' : 'Open'}</span>`);
+  output = output.replace(/\' Connection: \'\+conn\+'\.\'/g, isHindiContent ? "' कनेक्शन: '+conn+'.'" : "' Connection: '+conn+'.'");
+  output = output.replace(/\' Disputed amount: Rs\.\'\+amt\+'\.\'/g, isHindiContent ? "' विवादित राशि: Rs.'+amt+'.'" : "' Disputed amount: Rs.'+amt+'.'");
+  output = output.replace(/var aiDescTpl=\{[\s\S]*?\};/, `var aiDescTpl=${aiDisputeTemplatesLiteral};`);
+  output = output.replace(/'\[AI-Generated Dispute Description \\u2014 GPT-4o\]\\n\\n'/g, jsString(`${uiText.aiDisputeTitle}\n\n`));
+  output = output.replace(/Severity: High \| Confidence: 92% \| Similar cases resolved: 87%/g, uiText.aiSeverityLine);
+  output = output.replace(/Recommended resolution: Retroactive adjustment with credit note\./g, uiText.aiResolutionLine);
+  output = output.replace(/'\[AI-Generated Feedback \\u2014 Claude 3\.5 Sonnet\]\\n\\n'/g, jsString(`${uiText.aiFeedbackTitle}\n\n`));
+  output = output.replace(/AI Analysis: Based on 847 similar disputes, 91% resolution rate within 4\.2 hours\./g, uiText.aiAnalysisLine);
+  output = output.replace(/Recommended action: Priority escalation to billing operations team\./g, uiText.aiActionLine);
+
+  output = output.replace(/<div class="mbg" id="booster-modal">[\s\S]*?(?=<div class="mbg" id="channel-modal">)/, `${boosterModalHtml}\n\n`);
+  output = output.replace(/<div class="mbg" id="channel-modal">[\s\S]*?(?=<div class="mbg" id="new-complaint-modal">)/, `${channelModalHtml}\n\n`);
+  output = output.replace(/<div class="mbg" id="new-complaint-modal">[\s\S]*?(?=<div class="mbg" id="complaint-detail-modal">)/, `${newComplaintModalHtml}\n\n`);
+  output = output.replace(/<div class="mbg" id="complaint-detail-modal">[\s\S]*?(?=<div class="mbg" id="callback-modal">)/, `${complaintDetailModalHtml}\n\n`);
+  output = output.replace(/<div class="mbg" id="callback-modal">[\s\S]*?(?=<div class="mbg" id="plan-switch-modal">)/, `${callbackModalHtml}\n\n`);
+  output = output.replace(/<div class="mbg" id="plan-switch-modal">[\s\S]*?(?=<!-- Amazon Pay Modal -->)/, `${planSwitchModalHtml}\n\n`);
+  output = output.replace(/<div class="mbg" id="amazonpay-modal">[\s\S]*?(?=<div class="toast" id="toast">)/, `${amazonPayModalHtml}\n\n`);
 
   output = output.replace(/id="home-voice-total">[0-9,]+ MIN/g, `id="home-voice-total">${voiceUsed.toLocaleString('en-IN')} MIN`);
   output = output.replace(/id="home-voice-detail">[0-9,]+ of [0-9,]+ MIN/g, `id="home-voice-detail">${voiceUsed.toLocaleString('en-IN')} of ${voiceLimit.toLocaleString('en-IN')} MIN`);
@@ -1087,7 +1432,9 @@ function replaceHeaderFields(html, data) {
   output = output.replace(/Your current bill for this cycle is [^']*enterprise connections\./g, `Your current bill for this cycle is ₹${amountDueDisplay} for ${lineCount} enterprise connections.`);
 
   output = output.replace(/Commitments <span class="badge blue">[0-9]+ Active EMI<\/span>/g, `Commitments <span class="badge blue">${commitmentsActive} Active EMI</span>`);
-  output = output.replace(/Samsung Galaxy S25 Ultra - 9876543210/g, `${commitmentsModel} - ${commitmentsNumber}`);
+  // Keep device/EMI model text fully JSON-driven, regardless of template seed text.
+  output = output.replace(/Samsung(?:\s+Galaxy)?\s+S25\s+Ultra\s*-\s*\d{6,}/gi, `${commitmentsModel} - ${commitmentsNumber}`);
+  output = output.replace(/(<div class="mbg" id="emi-modal">[\s\S]*?<p class="sm mt" style="margin-bottom:10px">)[\s\S]*?(<\/p>)/, `$1${commitmentsModel} - ${commitmentsNumber}$2`);
   output = output.replace(/<span class="fb">Rs\.[0-9,]+\/mo<\/span> \| [0-9]+ of [0-9]+ paid \| Rs\.[0-9,]+ remaining/g, `<span class="fb">Rs.${commitmentsMonthly}/mo</span> | ${commitmentsPaid} of ${commitmentsTotal} paid | Rs.${formatINR(commitmentsRemaining).replace(/\.00$/, '')} remaining`);
   output = output.replace(/<p class="fb">[0-9]+\/[0-9]+<\/p><p class="xs">Paid<\/p>/g, `<p class="fb">${commitmentsPaid}/${commitmentsTotal}</p><p class="xs">Paid</p>`);
   output = output.replace(/<p class="fb">Rs\.[0-9,]+<\/p><p class="xs">Left<\/p>/g, `<p class="fb">Rs.${formatINR(commitmentsRemaining).replace(/\.00$/, '')}</p><p class="xs">Left</p>`);
@@ -1098,6 +1445,7 @@ function replaceHeaderFields(html, data) {
   output = output.replace(/<tbody><tr><td>Plan Rental<\/td><td>Rs\.[\s\S]*?<\/tr><tr class="tot"><td>Total<\/td><td>Rs\.[\s\S]*?<\/tr><\/tbody>/, chargeTableBodyHtml);
   output = output.replace(/(<div class="mbg" id="month-modal">[\s\S]*?<table><tbody>)[\s\S]*?(<\/tbody><\/table><\/div><\/div>)/, `$1${monthDetailRows}$2`);
   output = output.replace(/<div class="card"><div class="card-h"><h3>Charge Table<\/h3><\/div><div style="padding:0"><table><thead><tr><th>Category<\/th><th>Amount<\/th><th>%<\/th><\/tr><\/thead><tbody>[\s\S]*?<\/tbody><\/table><\/div><\/div>/, `<div class="card"><div class="card-h"><h3>Charge Table</h3></div><div style="padding:0"><table><thead><tr><th>Category</th><th>Amount</th><th>%</th></tr></thead>${chargeTableBodyHtml}</table></div></div>`);
+  output = output.replace(/<div id="report-payment" class="rsec"><div class="card bl-green"><div class="card-h"><h3>Payment History<\/h3><\/div><div style="padding:0"><table><thead><tr><th>Date<\/th><th>Amount<\/th><th>Method<\/th><th>Status<\/th><\/tr><\/thead><tbody>[\s\S]*?<\/tbody><\/table><\/div><\/div><\/div>/, `<div id="report-payment" class="rsec"><div class="card bl-green"><div class="card-h"><h3>Payment History</h3></div><div style="padding:0"><table><thead><tr><th>Date</th><th>Amount</th><th>Method</th><th>Status</th></tr></thead><tbody>${paymentHistoryRows}</tbody></table></div></div></div>`);
   output = output.replace(/<div id="report-usage" class="rsec"><div class="card"><div class="card-h"><h3>Connection-Wise Usage<\/h3><\/div><div style="padding:0"><table><thead><tr><th>Number<\/th><th>User<\/th><th>Data<\/th><th>Calls<\/th><th>Plan<\/th><\/tr><\/thead><tbody>[\s\S]*?<\/tbody><\/table><\/div><\/div><\/div>/, `<div id="report-usage" class="rsec"><div class="card"><div class="card-h"><h3>Connection-Wise Usage</h3></div><div style="padding:0"><table><thead><tr><th>Number</th><th>User</th><th>Data</th><th>Calls</th><th>Plan</th></tr></thead><tbody>${usageReportRows}</tbody></table></div></div></div>`);
   output = output.replace(/<div id="report-dept" class="rsec"><div class="card bl-orange"><div class="card-h"><h3>Department-Wise Spend<\/h3><\/div><div style="padding:0"><table><thead><tr><th>Dept<\/th><th>Lines<\/th><th>Budget<\/th><th>Spent<\/th><th>Status<\/th><\/tr><\/thead><tbody>[\s\S]*?<\/tbody><\/table><\/div><\/div><\/div>/, `<div id="report-dept" class="rsec"><div class="card bl-orange"><div class="card-h"><h3>Department-Wise Spend</h3></div><div style="padding:0"><table><thead><tr><th>Dept</th><th>Lines</th><th>Budget</th><th>Spent</th><th>Status</th></tr></thead><tbody>${deptSpendRows}</tbody></table></div></div></div>`);
 
@@ -1131,6 +1479,9 @@ function replaceHeaderFields(html, data) {
   output = output.replace(/mc\('chartForecast',\{type:'line',data:\{labels:\[[\s\S]*?\}\}\}\);/g, forecastChartScript);
   output = output.replace(/mc\('chartScenario',\{type:'bar',data:\{labels:\[[\s\S]*?\}\}\}\);/g, scenarioChartScript);
   output = output.replace(/var fAmt=Math\.round\(totalAmt\*0\.92\);[\s\S]*?mc\('chartScenario',\{type:'bar',data:\{labels:\[[\s\S]*?\}\}\}\);/, forecastFilterScript);
+  output = output.replace(/if \(label && label\.textContent === 'Comparison'\) label\.textContent = 'Comparisons';/g, `if (label && label.textContent === 'Comparison') label.textContent = ${jsString(uiText.comparisonLabel)};`);
+  output = output.replace(/var scenarioPopups=\{[\s\S]*?\};/, `var scenarioPopups=${scenarioDescriptionMapLiteral};`);
+  output = output.replace(/var labels=\['Current','If \+20% Data','If Roaming Trip','Optimized'\];/, `var labels=${scenarioLabelsLiteral};`);
 
   // Fallback patch: keep scenario chart JSON-driven by removing legacy hardcoded overrides.
   output = output.replace(/if\(scenarioVals\.length>0\)scenarioVals\[0\]=Math\.round\(totalAmt\);\s*if\(scenarioVals\.length>1\)scenarioVals\[1\]=Math\.round\(totalAmt\+\(totalData\*0\.2\)\);\s*if\(scenarioVals\.length>2\)scenarioVals\[2\]=Math\.round\(totalAmt\+Math\.max\(300,totalRoaming\*0\.5\)\);\s*if\(scenarioVals\.length>3\)scenarioVals\[3\]=Math\.round\(Math\.max\(totalAmt\*0\.65,totalAmt-\(totalData\*0\.25\+totalVas\*0\.3\+totalRoaming\*0\.15\)\)\);/g, `if(scenarioVals.length>0&&currentFilter===0){\n    scenarioVals=scenarioBaseValues.slice();\n  }`);
@@ -1183,6 +1534,18 @@ function replaceHeaderFields(html, data) {
   if (templateOverrides.contractEnd) output = output.replace(/31 Mar 2027/g, String(templateOverrides.contractEnd));
   if (templateOverrides.contactPhone) output = output.replace(/\+91 124 456 7890/g, String(templateOverrides.contactPhone));
   output = output.replace(/function changeLang\(lang\)\{/, "function changeLang(lang){\n  document.documentElement.lang=(lang==='hi'||lang==='mr'||lang==='ml')?lang:'en';");
+
+  // Final-pass dispute localization (must run after forecastFilterScript replacement).
+  output = output.replace(/if\(dTitle\) dTitle\.textContent=i===0\?'Self-Service & Disputes':'Self-Service & Disputes — '\+filtered\[0\]\.num;/g, `if(dTitle) dTitle.textContent=i===0?${jsString(uiText.selfServiceDisputes)}:${jsString(`${uiText.selfServiceDisputes} — `)}+filtered[0].num;`);
+  output = output.replace(/if\(dTitle\)[^\n]+/g, `if(dTitle) dTitle.textContent=i===0?${jsString(uiText.selfServiceDisputes)}:${jsString(`${uiText.selfServiceDisputes} — `)}+filtered[0].num;`);
+  output = output.replace(/d\.status==='In Review'/g, "(d.status==='In Review'||d.status==='समीक्षा में')");
+  output = output.replace(/d\.status==='Pending'/g, "(d.status==='Pending'||d.status==='लंबित')");
+  output = output.replace(/d\.status==='Resolved'/g, "(d.status==='Resolved'||d.status==='सुलझा')");
+  output = output.replace(/var connOpts='<option>Connection\.\.\.<\/option>';/g, `var connOpts='<option value="Connection...">${escapeJsSingleQuoted(uiText.connectionPlaceholderDisplay)}</option>';`);
+  output = output.replace(/>Withdraw<\/button>/g, `>${escapeJsSingleQuoted(uiText.withdraw)}<\/button>`);
+  output = output.replace(/<span class="badge red">Open<\/span>/g, `<span class="badge red">${isHindiContent ? 'खुला' : 'Open'}</span>`);
+  output = output.replace(/\' Connection: \'\+conn\+'\.\'/g, isHindiContent ? "' कनेक्शन: '+conn+'.'" : "' Connection: '+conn+'.'");
+  output = output.replace(/\' Disputed amount: Rs\.\'\+amt\+'\.\'/g, isHindiContent ? "' विवादित राशि: Rs.'+amt+'.'" : "' Disputed amount: Rs.'+amt+'.'");
 
   // Guard against accidental duplicate insertion: keep only one Department-Wise Bill Breakdown card.
   const deptCardRegex = /<div class="card bl-orange"><div class="card-h"><h3><span class="ic ic-lg"><svg><use href="#i-users"\/><\/svg><\/span> Department-Wise Bill Breakdown<\/h3><\/div><div style="padding:0"><table>[\s\S]*?<\/table><\/div><\/div>/g;
