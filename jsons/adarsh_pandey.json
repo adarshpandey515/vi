@@ -7,6 +7,88 @@
     "totalConnections": 5,
     "accountStatus": "Active"
   },
+  "localizedContent": {
+    "en": {
+      "accountCategory": "ENTERPRISE Big",
+      "accountInformation": "Account Information",
+      "billNumber": "Bill Number",
+      "alertBilling": "Billing",
+      "alertUsage": "Usage",
+      "alertPlanExpiry": "Plan Expiry",
+      "alertServiceReq": "Service Req",
+      "alertSimActivation": "SIM Activation",
+      "dueBy": "Due By",
+      "totalAmount": "Total Amount",
+      "usageSummary": "Usage Summary",
+      "usage": "Usage",
+      "dataUsage": "Data Usage",
+      "smsUsage": "SMS Usage",
+      "callUsage": "Call Usage",
+      "voiceUsage": "Voice Usage",
+      "enterpriseBillingStatement": "Enterprise Billing Statement",
+      "generated": "Generated"
+    },
+    "hi": {
+      "accountCategory": "एंटरप्राइज़ बिग",
+      "accountInformation": "खाता विवरण",
+      "billNumber": "बिल संख्या",
+      "alertBilling": "बिलिंग",
+      "alertUsage": "उपयोग",
+      "alertPlanExpiry": "प्लान समाप्ति",
+      "alertServiceReq": "सेवा अनुरोध",
+      "alertSimActivation": "सिम सक्रियण",
+      "dueBy": "देय तिथि",
+      "totalAmount": "कुल राशि",
+      "usageSummary": "उपयोग सारांश",
+      "usage": "उपयोग",
+      "dataUsage": "डेटा उपयोग",
+      "smsUsage": "एसएमएस उपयोग",
+      "callUsage": "कॉल उपयोग",
+      "voiceUsage": "वॉइस उपयोग",
+      "enterpriseBillingStatement": "एंटरप्राइज़ बिलिंग स्टेटमेंट",
+      "generated": "जनरेट किया गया"
+    },
+    "mr": {
+      "accountCategory": "एंटरप्राइझ बिग",
+      "accountInformation": "खाते तपशील",
+      "billNumber": "बिल क्रमांक",
+      "alertBilling": "बिलिंग",
+      "alertUsage": "वापर",
+      "alertPlanExpiry": "प्लान समाप्ती",
+      "alertServiceReq": "सेवा विनंती",
+      "alertSimActivation": "सिम सक्रियण",
+      "dueBy": "देय दिनांक",
+      "totalAmount": "एकूण रक्कम",
+      "usageSummary": "वापर सारांश",
+      "usage": "वापर",
+      "dataUsage": "डेटा वापर",
+      "smsUsage": "एसएमएस वापर",
+      "callUsage": "कॉल वापर",
+      "voiceUsage": "आवाज वापर",
+      "enterpriseBillingStatement": "एंटरप्राइझ बिलिंग स्टेटमेंट",
+      "generated": "तयार केले"
+    },
+    "ml": {
+      "accountCategory": "എന്റർപ്രൈസ് ബിഗ്",
+      "accountInformation": "അക്കൗണ്ട് വിവരങ്ങൾ",
+      "billNumber": "ബിൽ നമ്പർ",
+      "alertBilling": "ബില്ലിംഗ്",
+      "alertUsage": "ഉപയോഗം",
+      "alertPlanExpiry": "പ്ലാൻ അവസാനിക്കുന്നു",
+      "alertServiceReq": "സർവീസ് അഭ്യർത്ഥന",
+      "alertSimActivation": "സിം സജീവമാക്കൽ",
+      "dueBy": "അവസാന തീയതി",
+      "totalAmount": "മൊത്തം തുക",
+      "usageSummary": "ഉപയോഗ സംഗ്രഹം",
+      "usage": "ഉപയോഗം",
+      "dataUsage": "ഡാറ്റ ഉപയോഗം",
+      "smsUsage": "എസ്എംഎസ് ഉപയോഗം",
+      "callUsage": "കോൾ ഉപയോഗം",
+      "voiceUsage": "വോയ്സ് ഉപയോഗം",
+      "enterpriseBillingStatement": "എന്റർപ്രൈസ് ബില്ലിംഗ് സ്റ്റേറ്റ്മെന്റ്",
+      "generated": "സൃഷ്ടിച്ചത്"
+    }
+  },
   "currentBilling": {
     "invoiceNumber": "INV-2026-07-99341022",
     "billPeriod": {
@@ -346,33 +428,33 @@
   ],
   "voiceAndSmsMetrics": {
     "summary": {
-      "totalCallsUsed": 20557,
-      "totalCallsLimit": 15050,
+      "totalCallsUsed": 557,
+      "totalCallsLimit": 1550,
       "callsUtilization": "137%",
-      "totalSmsUsed": 819,
-      "totalSmsLimit": 769,
+      "totalSmsUsed": 119,
+      "totalSmsLimit": 269,
       "smsUtilization": "100%"
     },
     "connectionBreakdown": [
       {
         "phoneNumber": "91234000",
         "employeeName": "Adarsh Pandey",
-        "callsUsed": 797,
+        "callsUsed": 990,
         "callsLimit": 3010,
         "callUtilization": "26%",
-        "smsUsed": 182,
-        "smsLimit": 182,
+        "smsUsed": 132,
+        "smsLimit": 132,
         "smsUtilization": "100%",
         "calls": {
-          "used": 797,
+          "used": 990,
           "limit": 3010,
           "utilization": 26,
           "status": "NORMAL"
         },
         "sms": {
-          "used": 182,
-          "limit": 182,
-          "utilization": 100,
+          "used": 132,
+          "limit": 132,
+          "utilization": 110,
           "status": "VERY_HIGH_USAGE"
         }
       },
@@ -383,7 +465,7 @@
         "callsLimit": 3010,
         "callUtilization": "49%",
         "smsUsed": 175,
-        "smsLimit": 175,
+        "smsLimit": 1000,
         "smsUtilization": "100%",
         "calls": {
           "used": 1465,
@@ -393,8 +475,8 @@
         },
         "sms": {
           "used": 175,
-          "limit": 175,
-          "utilization": 100,
+          "limit": 1000,
+          "utilization": 17.5,
           "status": "VERY_HIGH_USAGE"
         }
       },
@@ -404,7 +486,7 @@
         "callsUsed": 2064,
         "callsLimit": 3010,
         "callUtilization": "69%",
-        "smsUsed": 109,
+        "smsUsed": 1409,
         "smsLimit": 109,
         "smsUtilization": "100%",
         "calls": {
@@ -713,12 +795,20 @@
         "status": "Resolved",
         "createdDate": "2026-03-10",
         "resolution": "Rs.89 credited back"
+      },
+       {
+        "ticketId": "DSP-033",
+        "complaint": "Night surcharge",
+        "amount": "3.00",
+        "status": "Resolved",
+        "createdDate": "2026-03-10",
+        "resolution": "Rs.89 credited back"
       }
     ]
   },
   "alertsSummary": {
     "totalAlerts": 10,
-    "billingAlerts": 3,
+    "billingAlerts": 2,
     "usageAlerts": 5,
     "planServiceAlerts": 2,
     "serviceRequests": 12,
@@ -1325,7 +1415,20 @@
       {
         "ticketId": "DSP-DIS-REV-003",
         "category": "Billing Error",
-        "amount": "120.00",
+        "amount": "123.00",
+        "connection": "91234001",
+        "employee": "Priya Sharma",
+        "description": "Tax calculation error on data overage",
+        "status": "Resolved",
+        "createdDate": "2026-12-01",
+        "resolvedDate": "2026-12-15",
+        "resolution": "Tax adjustment of Rs.120 credited",
+        "resolutionTime": "14 days"
+      },
+       {
+        "ticketId": "DSP-DIS-REV-033",
+        "category": "Billing Error",
+        "amount": "3.00",
         "connection": "91234001",
         "employee": "Priya Sharma",
         "description": "Tax calculation error on data overage",

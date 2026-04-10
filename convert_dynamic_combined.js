@@ -347,6 +347,35 @@ function replaceHeaderFields(html, data) {
 
   const accountNumber = data.accountSummary && data.accountSummary.accountNumber ? String(data.accountSummary.accountNumber) : 'NA';
   const companyName = (data.accountSummary && (data.accountSummary.companyName || data.accountSummary.accountName)) || 'Enterprise Account';
+  const accountCategory = (data.accountSummary && data.accountSummary.accountCategory)
+    ? String(data.accountSummary.accountCategory)
+    : 'Enterprise';
+  const localizedContent = (data.localizedContent && typeof data.localizedContent === 'object') ? data.localizedContent : {};
+  const dynamicI18nMap = ['en', 'hi', 'mr', 'ml'].reduce((acc, lang) => {
+    const langContent = (localizedContent && typeof localizedContent[lang] === 'object' && localizedContent[lang]) ? localizedContent[lang] : {};
+    acc[lang] = {
+      accountCategory,
+      accountInformation: 'Account Information',
+      billNumber: 'Bill Number',
+      dueBy: 'Due By',
+      totalAmount: 'Total Amount',
+      usageSummary: 'Usage Summary',
+      usage: 'Usage', 
+      dataUsage: 'Data Usage',
+      smsUsage: 'SMS Usage',
+      callUsage: 'Call Usage',
+      voiceUsage: 'Voice Usage',
+      enterpriseBillingStatement: 'Enterprise Billing Statement',
+      generated: 'Generated',
+      alertBilling: 'Billing',
+      alertUsage: 'Usage',
+      alertPlanExpiry: 'Plan Expiry',
+      alertServiceReq: 'Service Req',
+      alertSimActivation: 'SIM Activation',
+      ...langContent,
+    };
+    return acc;
+  }, {});
   const invoiceNumber = data.currentBilling && data.currentBilling.invoiceNumber ? String(data.currentBilling.invoiceNumber) : 'NA';
   const canonicalTotalDue = computedTotals.total > 0 ? computedTotals.total : toNumber(data.currentBilling && data.currentBilling.totalDue, 0);
   const totalDue = canonicalTotalDue.toFixed(2);
@@ -777,7 +806,7 @@ function replaceHeaderFields(html, data) {
   const planServiceAlertsCount = Math.max(0, Math.round(toNumber(alertsSummary.planServiceAlerts, 0)));
   const serviceReqCount = Math.max(0, Math.round(toNumber(alertsSummary.serviceRequests, 0)));
   const simActivationAlertsCount = Math.max(0, Math.round(toNumber(alertsSummary.simActivationAlerts, 0)));
-  const alertsStatsHtml = `<div class="grid g5" style="margin-bottom:16px" id="alerts-stats"><div class="card bl-red" style="text-align:center"><div class="card-b"><div style="color:var(--red);margin-bottom:4px"><span class="ic ic-xl"><svg><use href="#i-receipt"/></svg></span></div><p style="font-size:24px" class="fb">${billingAlertsCount}</p><p class="xs mt up">Billing</p></div></div><div class="card bl-blue" style="text-align:center"><div class="card-b"><div style="color:var(--blue);margin-bottom:4px"><span class="ic ic-xl"><svg><use href="#i-chart"/></svg></span></div><p style="font-size:24px" class="fb">${usageAlertsCount}</p><p class="xs mt up">Usage</p></div></div><div class="card bl-orange" style="text-align:center"><div class="card-b"><div style="color:var(--orange);margin-bottom:4px"><span class="ic ic-xl"><svg><use href="#i-package"/></svg></span></div><p style="font-size:24px" class="fb">${planServiceAlertsCount}</p><p class="xs mt up">Plan Expiry</p></div></div><div class="card bl-purple" style="text-align:center"><div class="card-b"><div style="color:var(--purple);margin-bottom:4px"><span class="ic ic-xl"><svg><use href="#i-headphones"/></svg></span></div><p style="font-size:24px" class="fb">${serviceReqCount}</p><p class="xs mt up">Service Req</p></div></div><div class="card bl-green" style="text-align:center"><div class="card-b"><div style="color:var(--green);margin-bottom:4px"><span class="ic ic-xl"><svg><use href="#i-phone"/></svg></span></div><p style="font-size:24px" class="fb">${simActivationAlertsCount}</p><p class="xs mt up">SIM Activation</p></div></div></div>`;
+  const alertsStatsHtml = `<div class="grid g5" style="margin-bottom:16px" id="alerts-stats"><div class="card bl-red" style="text-align:center"><div class="card-b"><div style="color:var(--red);margin-bottom:4px"><span class="ic ic-xl"><svg><use href="#i-receipt"/></svg></span></div><p style="font-size:24px" class="fb">${billingAlertsCount}</p><p class="xs mt up" data-dynamic-i18n="alertBilling">Billing</p></div></div><div class="card bl-blue" style="text-align:center"><div class="card-b"><div style="color:var(--blue);margin-bottom:4px"><span class="ic ic-xl"><svg><use href="#i-chart"/></svg></span></div><p style="font-size:24px" class="fb">${usageAlertsCount}</p><p class="xs mt up" data-dynamic-i18n="alertUsage">Usage</p></div></div><div class="card bl-orange" style="text-align:center"><div class="card-b"><div style="color:var(--orange);margin-bottom:4px"><span class="ic ic-xl"><svg><use href="#i-package"/></svg></span></div><p style="font-size:24px" class="fb">${planServiceAlertsCount}</p><p class="xs mt up" data-dynamic-i18n="alertPlanExpiry">Plan Expiry</p></div></div><div class="card bl-purple" style="text-align:center"><div class="card-b"><div style="color:var(--purple);margin-bottom:4px"><span class="ic ic-xl"><svg><use href="#i-headphones"/></svg></span></div><p style="font-size:24px" class="fb">${serviceReqCount}</p><p class="xs mt up" data-dynamic-i18n="alertServiceReq">Service Req</p></div></div><div class="card bl-green" style="text-align:center"><div class="card-b"><div style="color:var(--green);margin-bottom:4px"><span class="ic ic-xl"><svg><use href="#i-phone"/></svg></span></div><p style="font-size:24px" class="fb">${simActivationAlertsCount}</p><p class="xs mt up" data-dynamic-i18n="alertSimActivation">SIM Activation</p></div></div></div>`;
   const usageAlertsList = Array.isArray(data.usageAlerts) ? data.usageAlerts : [];
   const usageAlertsHtml = usageAlertsList.slice(0, 5).map((a) => {
     const severity = String(a.severity || 'LOW').toUpperCase();
@@ -789,9 +818,19 @@ function replaceHeaderFields(html, data) {
     const used = a.current && Number.isFinite(toNumber(a.current.used, NaN)) ? `${toNumber(a.current.used, 0)}` : '';
     const limit = a.current && Number.isFinite(toNumber(a.current.limit, NaN)) ? `${toNumber(a.current.limit, 0)}` : '';
     const usageText = used && limit ? `${used} of ${limit}` : '';
+    const alertTypeKey = ({
+      'Data Usage': 'dataUsage',
+      'SMS Usage': 'smsUsage',
+      'Call Usage': 'callUsage',
+      'Voice Usage': 'voiceUsage',
+      'International Roaming': 'intlRoaming',
+    })[alertType];
+    const alertTypeHtml = alertTypeKey
+      ? `<span data-dynamic-i18n="${alertTypeKey}">${alertType}</span>`
+      : alertType;
     const title = alertType === 'Data Usage'
-      ? `Data${util} - ${employee} (${connection})`
-      : `${alertType}${util ? ` ${util}` : ''} - ${employee}`;
+      ? `${alertTypeHtml}${util} - ${employee} (${connection})`
+      : `${alertTypeHtml}${util ? ` ${util}` : ''} - ${employee}`;
     const recommendation = String(a.recommendation || a.autoRecommendation || 'Review usage trend');
     const line2 = usageText ? `${usageText}. ${recommendation}` : recommendation;
     const ts = String(a.timestamp || 'recent');
@@ -1273,6 +1312,8 @@ function replaceHeaderFields(html, data) {
   output = output.replace(/Globe Consultancy Services Limited/g, companyName);
   output = output.replace(/Adarsh Pandey Enterprises Ltd\./g, companyName);
   output = output.replace(/Adarsh Pandey Enterprises Ltd/g, companyName.replace(/\.$/, ''));
+  output = output.replace(/<span class="mt">Account category<\/span><span class="fs">[^<]*<\/span>/g, `<span class="mt">Account category</span><span class="fs" data-dynamic-i18n="accountCategory">${accountCategory}</span>`);
+  output = output.replace(/<p class="xs mt" style="color:var\(--muted\)">Account Category<\/p><p class="fs" style="font-size:14px">[^<]*<\/p>/g, `<p class="xs mt" style="color:var(--muted)">Account Category</p><p class="fs" style="font-size:14px" data-dynamic-i18n="accountCategory">${accountCategory}</p>`);
   output = output.replace(/ENT-88234571/g, accountNumber);
   output = output.replace(/INV-2026-03-ENT-0847/g, invoiceNumber);
   output = output.replace(/INV-2026-03-0847/g, invoiceNumber);
@@ -1361,6 +1402,13 @@ function replaceHeaderFields(html, data) {
   output = output.replace(/Globe Consultancy Services Building/g, `${companyName} Building`);
   output = output.replace(/<div class="grid g2"><div class="card"><div class="card-h"><h3>Current Plans<\/h3><\/div><div style="padding:0"><table><thead><tr><th>Line<\/th><th>User<\/th><th>Plan<\/th><th>Cost<\/th><th>Action<\/th><\/tr><\/thead><tbody>[\s\S]*?<\/tbody><\/table><\/div><\/div>/, `<div class="grid g2"><div class="card"><div class="card-h"><h3>Current Plans</h3></div><div style="padding:0"><table><thead><tr><th>Line</th><th>User</th><th>Plan</th><th>Cost</th><th>Action</th></tr></thead><tbody>${currentPlanRows}</tbody></table></div></div>`);
   output = output.replace(/<div class="grid g2"><div class="card bl-red"><div class="card-h"><h3>Raise Dispute<\/h3><\/div><div class="card-b"><select class="fi" style="margin-bottom:8px" id="dispute-cat">[\s\S]*?<button class="btn pri" style="width:100%" onclick="submitDispute\(\)">Submit Dispute<\/button><\/div><\/div>/, disputeCardHtml);
+
+  const dynamicI18nJson = JSON.stringify(dynamicI18nMap).replace(/</g, '\\u003c');
+  output = output.replace(/  var orig=window\.changeLang;/, `  window.dynamicI18nMap=${dynamicI18nJson};\n  function translateDynamicContent(lang){\n    var map=window.dynamicI18nMap&&window.dynamicI18nMap[lang]||window.dynamicI18nMap&&window.dynamicI18nMap.en||{};\n    document.querySelectorAll('[data-dynamic-i18n]').forEach(function(el){\n      var key=el.getAttribute('data-dynamic-i18n');\n      if(key&&Object.prototype.hasOwnProperty.call(map,key)){el.textContent=map[key];}\n    });\n  }\n  var orig=window.changeLang;`);
+  output = output.replace(/window\.changeLang=function\(lang\)\{if\(typeof orig==='function'\)orig\(lang\);translateAllContent\(lang\)\};/, `window.changeLang=function(lang){if(typeof orig==='function')orig(lang);translateAllContent(lang);translateDynamicContent(lang)};`);
+  output = output.replace(/setTimeout\(function\(\)\{translateAllContent\(sel\.value\)\},100\);/g, `setTimeout(function(){translateAllContent(sel.value);translateDynamicContent(sel.value)},100);`);
+  output = output.replace(/setTimeout\(function\(\)\{translateAllContent\(sel\.value\)\},400\);/g, `setTimeout(function(){translateAllContent(sel.value);translateDynamicContent(sel.value)},400);`);
+  output = output.replace(/setTimeout\(function\(\)\{var sel=document\.getElementById\('langSelect'\);if\(sel&&sel\.value&&sel\.value!=='en'\)translateAllContent\(sel\.value\)\},500\);/g, `setTimeout(function(){var sel=document.getElementById('langSelect');if(sel&&sel.value&&sel.value!=='en'){translateAllContent(sel.value);translateDynamicContent(sel.value)}},500);`);
 
   output = output.replace(/var connOpts='<option>Connection\.\.\.<\/option>';/g, `var connOpts='<option value="Connection...">${escapeJsSingleQuoted(uiText.connectionPlaceholderDisplay)}</option>';`);
   output = output.replace(/if\(dTitle\) dTitle\.textContent=i===0\?'Self-Service & Disputes':'Self-Service & Disputes — '\+filtered\[0\]\.num;/g, `if(dTitle) dTitle.textContent=i===0?${jsString(uiText.selfServiceDisputes)}:${jsString(`${uiText.selfServiceDisputes} — `)}+filtered[0].num;`);
