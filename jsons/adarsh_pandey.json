@@ -4,7 +4,7 @@
     "accountName": "Adarsh Pandey",
     "companyName": "Adarsh Pandey Enterprises Ltd.",
     "accountCategory": "ENTERPRISE Big",
-    "totalConnections": 5,
+    "totalConnections": 6,
     "accountStatus": "Active"
   },
   "localizedContent": {
@@ -100,38 +100,38 @@
     "daysRemaining": 6,
     "lateFeeIfNotPaid": "63.00",
     "currencySymbol": "Rs.",
-    "totalDue": "11239.75",
+    "totalDue": "12491.15",
     "status": "Unpaid"
   },
   "dashboardStatistics": {
-    "monthlySpend": "11240",
+    "monthlySpend": "12491.15",
     "averageSpend": "9541",
     "monthlyBudget": "9427.38",
-    "budgetUtilization": "84%",
-    "remainingBudget": "1508.38",
+    "budgetUtilization": "132%",
+    "remainingBudget": "0.00",
     "savingsOpportunity": "1344.15",
-    "activeConnections": 5,
+    "activeConnections": 6,
     "inactiveConnections": 0,
     "totalInvoices": 6,
     "paidInvoices": 5,
     "unpaidInvoices": 1
   },
   "billBreakdown": {
-    "basePlans": "4195.00",
-    "dataOverage": "1370.62",
-    "roaming": "2237.92",
-    "vasServices": "1631.46",
-    "subtotal": "9435.00",
+    "basePlans": "4794.00",
+    "dataOverage": "1502.62",
+    "roaming": "2451.92",
+    "vasServices": "1716.46",
+    "subtotal": "10465.00",
     "taxes": {
       "gst": {
         "rate": "12%",
-        "amount": "1804.75"
+        "amount": "2026.15"
       }
     },
     "previousBalance": "0.00",
-    "totalCharges": "11239.75",
+    "totalCharges": "12491.15",
     "adjustments": "0.00",
-    "finalTotal": "11239.75"
+    "finalTotal": "12491.15"
   },
   "connections": [
     {
@@ -424,6 +424,64 @@
         "usageAlerts": [],
         "serviceAlerts": []
       }
+    },
+    {
+      "phoneNumber": "91234005",
+      "employeeName": "Neha Verma",
+      "department": "Finance",
+      "costCenter": "CC-FIN-01",
+      "isPrimary": false,
+      "plan": {
+        "name": "Basic",
+        "code": "Basic 599",
+        "baseCost": "599"
+      },
+      "monthlySpend": "1251.40",
+      "monthlyLimit": "2100",
+      "limitUtilization": "69%",
+      "status": "Active",
+      "usage": {
+        "data": {
+          "used": 44.2,
+          "limit": 60,
+          "unit": "GB",
+          "utilization": "74%"
+        },
+        "calls": {
+          "used": 1120,
+          "unit": "minutes"
+        },
+        "sms": {
+          "used": 94,
+          "unit": "messages"
+        },
+        "roaming": {
+          "used": 960,
+          "unit": "minutes"
+        }
+      },
+      "charges": {
+        "planCost": "599",
+        "dataOverage": "132.00",
+        "roaming": "214.00",
+        "vas": "85.00",
+        "tax": "221.40"
+      },
+      "paymentStatus": "On-time",
+      "paymentHistory": {
+        "onTimePercentage": 92,
+        "averageDelayDays": "1.50",
+        "delaysInLast12Months": 5
+      },
+      "collectionRiskScore": 28,
+      "collectionPriority": "LOW",
+      "lateFeesAccumulated": "0.00",
+      "alerts": {
+        "activeAlerts": 7,
+        "billingAlerts": [],
+        "usageAlerts": [],
+        "serviceAlerts": []
+      }
     }
   ],
   "voiceAndSmsMetrics": {
@@ -545,6 +603,28 @@
           "utilization": 100,
           "status": "VERY_HIGH_USAGE"
         }
+      },
+      {
+        "phoneNumber": "91234005",
+        "employeeName": "Neha Verma",
+        "callsUsed": 1120,
+        "callsLimit": 3010,
+        "callUtilization": "37%",
+        "smsUsed": 94,
+        "smsLimit": 130,
+        "smsUtilization": "72%",
+        "calls": {
+          "used": 1120,
+          "limit": 3010,
+          "utilization": 37,
+          "status": "NORMAL"
+        },
+        "sms": {
+          "used": 94,
+          "limit": 130,
+          "utilization": 72,
+          "status": "HIGH_USAGE"
+        }
       }
     ],
     "alerts": []
@@ -616,9 +696,9 @@
       {
         "month": "Feb 2026",
         "invoiceNumber": "INV-2026-03-0847",
-        "amount": "11239.75",
+        "amount": "12491.15",
         "status": "Unpaid",
-        "lineItems": 5
+        "lineItems": 6
       },
       {
         "month": "Jan 2026",
@@ -697,7 +777,7 @@
       "probability": "Low delinquency risk",
       "onTimePaymentPercentage": 100,
       "averageDelayDays": 2.3,
-      "outstandingAmount": "11239.75",
+      "outstandingAmount": "12491.15",
       "creditScore": "A+ (Excellent)"
     },
     "collectionsPriority": {
@@ -706,7 +786,7 @@
       "highRisk": 2
     },
     "spendForecast": {
-      "currentMonth": "11239.75",
+      "currentMonth": "12491.15",
       "forecastedNext3Months": [
         "11840.00",
         "11090.00",
@@ -717,15 +797,15 @@
     "budgetAlerts": {
       "remaining": "0.00",
       "percentageRemaining": "0%",
-      "warningLevel": "Critical - 119% utilized",
+      "warningLevel": "Critical - 132% utilized",
       "autoAlert": true
     }
   },
   "expenseManagement": {
     "monthlyBudgetTracking": {
       "total": "9427.38",
-      "spent": "11239.75",
-      "utilization": "119%",
+      "spent": "12491.15",
+      "utilization": "132%",
       "remaining": "0.00"
     },
     "departmentBreakdown": [
@@ -756,13 +836,21 @@
         "spend": "2103.51",
         "budget": "1627.38",
         "utilization": "129%"
+      },
+      {
+        "department": "Finance",
+        "lines": 1,
+        "spend": "1451.40",
+        "budget": "1800.00",
+        "utilization": "81%"
       }
     ],
     "costCenterAssignments": {
       "CC-ENG-01": "3654.00",
       "CC-SAL-01": "1841.50",
       "CC-SAL-02": "929.50",
-      "CC-OPS-01": "713.50"
+      "CC-OPS-01": "713.50",
+      "CC-FIN-01": "1451.40"
     }
   },
   "customerSupport": {
@@ -1563,10 +1651,10 @@
     }
   },
   "homePageSummary": {
-    "totalAmount": "11239.75",
-    "connectionCount": 5,
+    "totalAmount": "12491.15",
+    "connectionCount": 6,
     "statusDistribution": {
-      "active": 5,
+      "active": 6,
       "inactive": 0,
       "suspended": 0
     },
@@ -1605,6 +1693,13 @@
         "plan": "Plus 799",
         "department": "Marketing",
         "monthlySpend": "2103.51"
+      },
+      {
+        "number": "91234005",
+        "employee": "Neha Verma",
+        "plan": "Basic 599",
+        "department": "Finance",
+        "monthlySpend": "1451.40"
       }
     ]
   },
@@ -1697,6 +1792,13 @@
         "cost": "799.00",
         "status": "Active",
         "downgrade": true
+      },
+      {
+        "connection": "91234005",
+        "employee": "Neha Verma",
+        "plan": "Basic 599",
+        "cost": "599.00",
+        "status": "Active"
       }
     ],
     "switchHistory": [
