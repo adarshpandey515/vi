@@ -350,32 +350,6 @@ function replaceHeaderFields(html, data) {
   const accountCategory = (data.accountSummary && data.accountSummary.accountCategory)
     ? String(data.accountSummary.accountCategory)
     : 'Enterprise';
-  const localizedContent = (data.localizedContent && typeof data.localizedContent === 'object') ? data.localizedContent : {};
-  const dynamicI18nMap = ['en', 'hi', 'mr', 'ml'].reduce((acc, lang) => {
-    const langContent = (localizedContent && typeof localizedContent[lang] === 'object' && localizedContent[lang]) ? localizedContent[lang] : {};
-    acc[lang] = {
-      accountCategory,
-      accountInformation: 'Account Information',
-      billNumber: 'Bill Number',
-      dueBy: 'Due By',
-      totalAmount: 'Total Amount',
-      usageSummary: 'Usage Summary',
-      usage: 'Usage', 
-      dataUsage: 'Data Usage',
-      smsUsage: 'SMS Usage',
-      callUsage: 'Call Usage',
-      voiceUsage: 'Voice Usage',
-      enterpriseBillingStatement: 'Enterprise Billing Statement',
-      generated: 'Generated',
-      alertBilling: 'Billing',
-      alertUsage: 'Usage',
-      alertPlanExpiry: 'Plan Expiry',
-      alertServiceReq: 'Service Req',
-      alertSimActivation: 'SIM Activation',
-      ...langContent,
-    };
-    return acc;
-  }, {});
   const invoiceNumber = data.currentBilling && data.currentBilling.invoiceNumber ? String(data.currentBilling.invoiceNumber) : 'NA';
   const canonicalTotalDue = computedTotals.total > 0 ? computedTotals.total : toNumber(data.currentBilling && data.currentBilling.totalDue, 0);
   const totalDue = canonicalTotalDue.toFixed(2);
@@ -1403,12 +1377,7 @@ function replaceHeaderFields(html, data) {
   output = output.replace(/<div class="grid g2"><div class="card"><div class="card-h"><h3>Current Plans<\/h3><\/div><div style="padding:0"><table><thead><tr><th>Line<\/th><th>User<\/th><th>Plan<\/th><th>Cost<\/th><th>Action<\/th><\/tr><\/thead><tbody>[\s\S]*?<\/tbody><\/table><\/div><\/div>/, `<div class="grid g2"><div class="card"><div class="card-h"><h3>Current Plans</h3></div><div style="padding:0"><table><thead><tr><th>Line</th><th>User</th><th>Plan</th><th>Cost</th><th>Action</th></tr></thead><tbody>${currentPlanRows}</tbody></table></div></div>`);
   output = output.replace(/<div class="grid g2"><div class="card bl-red"><div class="card-h"><h3>Raise Dispute<\/h3><\/div><div class="card-b"><select class="fi" style="margin-bottom:8px" id="dispute-cat">[\s\S]*?<button class="btn pri" style="width:100%" onclick="submitDispute\(\)">Submit Dispute<\/button><\/div><\/div>/, disputeCardHtml);
 
-  const dynamicI18nJson = JSON.stringify(dynamicI18nMap).replace(/</g, '\\u003c');
-  output = output.replace(/  var orig=window\.changeLang;/, `  window.dynamicI18nMap=${dynamicI18nJson};\n  function translateDynamicContent(lang){\n    var map=window.dynamicI18nMap&&window.dynamicI18nMap[lang]||window.dynamicI18nMap&&window.dynamicI18nMap.en||{};\n    document.querySelectorAll('[data-dynamic-i18n]').forEach(function(el){\n      var key=el.getAttribute('data-dynamic-i18n');\n      if(key&&Object.prototype.hasOwnProperty.call(map,key)){el.textContent=map[key];}\n    });\n  }\n  var orig=window.changeLang;`);
-  output = output.replace(/window\.changeLang=function\(lang\)\{if\(typeof orig==='function'\)orig\(lang\);translateAllContent\(lang\)\};/, `window.changeLang=function(lang){if(typeof orig==='function')orig(lang);translateAllContent(lang);translateDynamicContent(lang)};`);
-  output = output.replace(/setTimeout\(function\(\)\{translateAllContent\(sel\.value\)\},100\);/g, `setTimeout(function(){translateAllContent(sel.value);translateDynamicContent(sel.value)},100);`);
-  output = output.replace(/setTimeout\(function\(\)\{translateAllContent\(sel\.value\)\},400\);/g, `setTimeout(function(){translateAllContent(sel.value);translateDynamicContent(sel.value)},400);`);
-  output = output.replace(/setTimeout\(function\(\)\{var sel=document\.getElementById\('langSelect'\);if\(sel&&sel\.value&&sel\.value!=='en'\)translateAllContent\(sel\.value\)\},500\);/g, `setTimeout(function(){var sel=document.getElementById('langSelect');if(sel&&sel.value&&sel.value!=='en'){translateAllContent(sel.value);translateDynamicContent(sel.value)}},500);`);
+  output = output.replace(/\n  var orig=window\.changeLang;/, `\n  var orig=window.changeLang;`);
 
   output = output.replace(/var connOpts='<option>Connection\.\.\.<\/option>';/g, `var connOpts='<option value="Connection...">${escapeJsSingleQuoted(uiText.connectionPlaceholderDisplay)}</option>';`);
   output = output.replace(/if\(dTitle\) dTitle\.textContent=i===0\?'Self-Service & Disputes':'Self-Service & Disputes — '\+filtered\[0\]\.num;/g, `if(dTitle) dTitle.textContent=i===0?${jsString(uiText.selfServiceDisputes)}:${jsString(`${uiText.selfServiceDisputes} — `)}+filtered[0].num;`);

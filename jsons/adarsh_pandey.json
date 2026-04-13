@@ -7,6 +7,11 @@
     "totalConnections": 6,
     "accountStatus": "Active"
   },
+  "dataNotes": {
+    "translation": "Language switching is handled in the HTML i18n map. This JSON keeps language-neutral billing data only.",
+    "derivedValues": "Totals, dashboard counts, and report summaries should stay consistent with the connection-level records.",
+    "usageMetrics": "Call and SMS usage is derived from the voiceAndSmsMetrics section and the per-connection usage records."
+  },
   "localizedContent": {
     "en": {
       "accountCategory": "ENTERPRISE Big",
